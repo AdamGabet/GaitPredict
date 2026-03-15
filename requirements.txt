@@ -1,0 +1,10 @@
+torch>=2.0.0
+numpy>=1.24
+pandas>=1.5
+matplotlib>=3.7
+scikit-learn>=1.2
+umap-learn>=0.5
+einops
+timm
+wandb
+scipy
