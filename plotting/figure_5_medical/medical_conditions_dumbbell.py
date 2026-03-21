@@ -26,29 +26,62 @@ FDR_THRESHOLD = 0.10
 MIN_DELTA = 0.02
 MIN_SCORE = 0.54
 MIN_POSITIVES = 10
-N_MEDICAL = 8
+
+N_MEDICAL = 12
 N_MEDICATIONS = 5
 
-GAIT_COLOR = "#2471A3"
-BASELINE_COLOR = "#AAB7B8"
+# Publication figure dimensions: 9 cm wide
+FIG_WIDTH_CM = 9.0
+FIG_WIDTH_IN = FIG_WIDTH_CM / 2.54
+FONT_SIZE = 7.5
 
-LABEL_RENAME_DICT = {
-    "Anxiety": "Anxiety Disorder",
-    "Depression": "Depression",
-    "Hypothyroidism": "Hypothyroidism",
-    "Hypertension": "Hypertension",
-    "Type 2 Diabetes": "T2 Diabetes",
-    "Osteoporosis": "Osteoporosis",
-    "Hyperlipidemia": "Hyperlipidemia",
-    "Sleep Apnea": "Sleep Apnea",
-    "Atrial Fibrillation": "Atrial Fibrillation",
-    "Heart Failure": "Heart Failure",
+MALE_COLOR = "#2F66B3"
+FEMALE_COLOR = "#C23A64"
+BASELINE_COLOR = "#8A8A8A"
+GRID_COLOR = "#DADADA"
+TEXT_COLOR = "#333333"
+
+# x-axis layout (in data units)
+LABEL_X = 0.492
+DELTA_X = 0.718
+DELTA_HEADER_X = 0.718
+X_LIM_MIN = 0.46
+X_LIM_MAX = 0.73
+
+EXCLUDE_SYSTEMS = {"medical_conditions_grouped"}
+EXCLUDE_LABELS = {
+    "LIPIDMODIFYINGAGENTSCOMBINATIONS",
+    "LIPIDMODIFYINGAGENTSPLAIN",
+    "urinary_tract_infection",
 }
 
-EXCLUDE_LABELS = [
-    "Obesity", "Overweight", "Underweight",
-    "BMI_OVER_30", "BMI_OVER_25",
-]
+LABEL_RENAME_DICT = {
+    "ADRENERGICSINHALANTS": "Adrenergic Inhalants",
+    "ANTIDEPRESSANTS": "Antidepressants",
+    "ANTIEPILEPTICS": "Antiepileptics",
+    "ANTIGLAUCOMAPREPARATIONSANDMIOTICS": "Anti-Glaucoma",
+    "ANTIHISTAMINESFORSYSTEMICUSE": "Antihistamines",
+    "ANTIMIGRAINEPREPARATIONS": "Anti-Migraine",
+    "ASCORBICACIDVITAMINCINCLCOMBINATIONS": "Vitamin C",
+    "BLOODGLUCOSELOWERINGDRUGSEXCLINSULINS": "Glucose Lowering",
+    "DRUGSAFFECTINGBONESTRUCTUREANDMINERALIZATION": "Bone Structure Drugs",
+    "DRUGSFORPEPTICULCERANDGASTROOESOPHAGEALREFLUXDISEASEGORD": "PPI / GERD Drugs",
+    "DRUGSUSEDINBENIGNPROSTATICHYPERTROPHY": "BPH Drugs",
+    "HORMONEANTAGONISTSANDRELATEDAGENTS": "Hormone Antagonists",
+    "HYPNOTICSANDSEDATIVES": "Hypnotics & Sedatives",
+    "IRONANTIANEMICPREPARATIONS": "Iron Supplements",
+    "OTHERGYNECOLOGICALSinATC": "Gynecological Medications",
+    "OTHERPLAINVITAMINPREPARATIONSinATC": "Other Vitamins",
+    "PROGESTOGENSEXHORMONESANDMODULATORSOFTHEGENITALSYSTEM": "Progestogens",
+    "PSYCHOSTIMULANTSAGENTSUSEDFORADHDANDNOOTROPICS": "ADHD / Nootropics",
+    "SELECTIVECALCIUMCHANNELBLOCKERSWITHMAINLYVASCULAREFFECTS": "Calcium Channel Blockers",
+    "THYROIDPREPARATIONS": "Thyroid Preparations",
+    "UROLOGICALS": "Urologicals",
+    "VITAMINAANDDINCLCOMBINATIONSOFTHETWO": "Vitamin A & D",
+    "VITAMINBn12nANDFOLICACID": "B12 & Folic Acid",
+    "VITAMINBn1nPLAINANDINCOMBINATIONWITHVITAMINBn6nANDBn12n": "B1, B6 & B12",
+    "VITAMINKANDOTHERHEMOSTATICS": "Vitamin K / Hemostatics",
+}
 
 
 def clean_label_name(label):
@@ -61,23 +94,27 @@ def clean_label_name(label):
 
 def select_rows_for_gender(df, gender):
     df = df.copy()
-    df['delta_corrected'] = df['score'] - df['baseline_score'].clip(lower=0.5)
+    df["delta_corrected"] = df["score"] - df[["baseline_score"]].assign(
+        b=lambda x: x["baseline_score"].clip(lower=0.5)
+    )["b"]
 
     filtered = df[
-        (df['gender'] == gender) &
-        (df['model'] == MODEL) &
-        (df['score_type'] == 'auc') &
-        (df['wilcox_pvalue_fdr'] < FDR_THRESHOLD) &
-        (df['delta_corrected'] >= MIN_DELTA) &
-        (df['score'] >= MIN_SCORE)
+        (df["model"] == MODEL)
+        & (df["gender"] == gender)
+        & (df["sub_model"] == "ensemble")
+        & (df["score_type"] == "auc")
+        & (df["wilcox_pvalue_fdr"] < FDR_THRESHOLD)
+        & (df["delta_corrected"] >= MIN_DELTA)
+        & (df["score"] >= MIN_SCORE)
     ].copy()
-    filtered = filtered[~filtered['label'].isin(EXCLUDE_LABELS)]
 
-    cohort_n = int(filtered['n_subjects'].max()) if 'n_subjects' in filtered.columns and not filtered.empty else None
+    filtered = filtered[~filtered["system"].isin(EXCLUDE_SYSTEMS)]
+    filtered = filtered[~filtered["label"].isin(EXCLUDE_LABELS)]
+    cohort_n = int(filtered["n_subjects"].max()) if "n_subjects" in filtered.columns and not filtered.empty else None
 
     selected_rows = []
     for system, top_n in [("medical_conditions", N_MEDICAL), ("medications", N_MEDICATIONS)]:
-        sys_df = filtered[filtered['system'] == system].copy()
+        sys_df = filtered[filtered["system"] == system].copy()
         sys_df = sys_df.sort_values("delta_corrected", ascending=False)
         count = 0
         for _, row in sys_df.iterrows():
@@ -85,23 +122,25 @@ def select_rows_for_gender(df, gender):
             if n_pos < MIN_POSITIVES:
                 continue
 
-            baseline_val = float(max(row['baseline_score'], 0.5))
-            gait_val = float(row['score'])
+            baseline_val = float(max(row["baseline_score"], 0.5))
+            gait_val = float(row["score"])
             delta_val = gait_val - baseline_val
             gait_std = float(row['gait_std']) if pd.notna(row.get('gait_std')) else None
             baseline_std = float(row['baseline_std']) if pd.notna(row.get('baseline_std')) else None
 
-            selected_rows.append({
-                "system": system,
-                "label": row["label"],
-                "label_pretty": clean_label_name(row["label"]),
-                "baseline": baseline_val,
-                "gait": gait_val,
-                "delta": delta_val,
-                "n_positive": n_pos,
-                "gait_std": gait_std,
-                "baseline_std": baseline_std,
-            })
+            selected_rows.append(
+                {
+                    "system": system,
+                    "label": row["label"],
+                    "label_pretty": clean_label_name(row["label"]),
+                    "baseline": baseline_val,
+                    "gait": gait_val,
+                    "delta": delta_val,
+                    "n_positive": int(n_pos),
+                    "gait_std": gait_std,
+                    "baseline_std": baseline_std,
+                }
+            )
             count += 1
             if count >= top_n:
                 break
@@ -109,10 +148,10 @@ def select_rows_for_gender(df, gender):
     return pd.DataFrame(selected_rows), cohort_n
 
 
-def arrange_rows(panel_df):
+def _build_layout_rows(panel_df):
     rows = []
-    section_top = {}
     y = 0.0
+    section_top = {}
 
     for system in ["medical_conditions", "medications"]:
         sys_rows = panel_df[panel_df["system"] == system].copy()
@@ -127,93 +166,117 @@ def arrange_rows(panel_df):
     return rows, section_top
 
 
-def plot_dumbbell(gender):
-    df = pd.read_csv(DATA_CSV, low_memory=False)
-    panel_df, cohort_n = select_rows_for_gender(df, gender)
-
-    if panel_df.empty:
-        print(f"No data for {gender}")
+def draw_gender_panel(ax, panel_df, gender, panel_color, cohort_n=None):
+    rows, section_top = _build_layout_rows(panel_df)
+    if not rows:
+        ax.text(0.5, 0.5, f"No significant rows for {gender}", transform=ax.transAxes, ha="center")
         return
 
-    rows, section_top = arrange_rows(panel_df)
-    n_rows = len(rows)
-
-    fig_h = max(4.0, n_rows * 0.38 + 1.2)
-    fig, ax = plt.subplots(figsize=(3.54, fig_h))
-    fig.patch.set_facecolor("white")
-    ax.set_facecolor("white")
-
-    panel_color = "#1A5276" if gender == "male" else "#922B21"
+    fs = FONT_SIZE
 
     for y, row in rows:
-        # Connecting line
-        ax.plot([row["baseline"], row["gait"]], [y, y],
-                color="#CCCCCC", linewidth=1.2, zorder=1)
+        ax.plot([row["baseline"], row["gait"]], [y, y], color=panel_color, lw=0.9, alpha=0.75, zorder=2)
 
         # Baseline dot with error bar
-        ax.scatter(row["baseline"], y, color=BASELINE_COLOR, s=18, zorder=3)
+        ax.scatter([row["baseline"]], [y], s=8, facecolors="white", edgecolors=BASELINE_COLOR, linewidths=0.7, zorder=3)
         if row["baseline_std"] is not None:
             ax.errorbar(row["baseline"], y, xerr=row["baseline_std"],
-                        fmt='none', elinewidth=0.7, capsize=2, ecolor=BASELINE_COLOR, zorder=2)
+                        fmt='none', elinewidth=0.5, capsize=1.5, ecolor=BASELINE_COLOR, zorder=2)
 
         # Gait dot with error bar
-        ax.scatter(row["gait"], y, color=panel_color, s=18, zorder=3)
+        ax.scatter([row["gait"]], [y], s=18, facecolors=panel_color, edgecolors="white", linewidths=0.4, zorder=4)
         if row["gait_std"] is not None:
             ax.errorbar(row["gait"], y, xerr=row["gait_std"],
-                        fmt='none', elinewidth=0.7, capsize=2, ecolor=panel_color, zorder=2)
+                        fmt='none', elinewidth=0.5, capsize=1.5, ecolor=panel_color, zorder=2)
 
-        # Label
-        ax.text(-0.01, y, row["label_pretty"], ha="right", va="center",
-                fontsize=6.5, transform=ax.get_yaxis_transform())
+        ax.text(LABEL_X, y, row["label_pretty"], ha="right", va="center", fontsize=fs, color=TEXT_COLOR)
+        ax.text(DELTA_X, y, f"+{row['delta']:.3f}", ha="left", va="center", fontsize=fs * 0.93, color=panel_color, fontweight="bold")
 
-        # n_positive annotation
-        ax.text(1.01, y, f"n={row['n_positive']}", ha="left", va="center",
-                fontsize=5.5, color="#555555", transform=ax.get_yaxis_transform())
+    section_headers = {"medical_conditions": "MEDICAL CONDITIONS", "medications": "MEDICATIONS"}
+    for system, header in section_headers.items():
+        if system in section_top:
+            y_header = section_top[system] - 0.55
+            if system == "medications":
+                y_header -= 0.14
+            ax.text(LABEL_X, y_header, header, ha="right", va="center", fontsize=fs, color="black", fontweight="bold")
 
-    # Section labels
-    for system, y_top in section_top.items():
-        label = "Medical Conditions" if system == "medical_conditions" else "Medications"
-        ax.text(-0.01, y_top - 0.55, label, ha="right", va="bottom",
-                fontsize=6.5, fontweight="bold", color="#333333",
-                transform=ax.get_yaxis_transform())
+    if section_top:
+        top_header_y = min(section_top.values()) - 0.55
+        ax.text(DELTA_HEADER_X, top_header_y, "ΔAUC", ha="left", va="center", fontsize=fs * 0.93, color="#666666", fontweight="bold")
 
-    ax.set_xlim(0.5, 1.0)
-    ax.set_ylim(-0.8, n_rows + 0.5)
+    ax.set_xlim(X_LIM_MIN, X_LIM_MAX)
+    ax.set_ylim(-1.0, rows[-1][0] + 0.4)
     ax.invert_yaxis()
-    ax.set_xlabel("AUC", fontsize=7.5, fontweight="bold")
+    ax.set_xticks([0.50, 0.55, 0.60, 0.65, 0.70])
     ax.set_yticks([])
-    ax.spines["top"].set_visible(False)
-    ax.spines["right"].set_visible(False)
-    ax.spines["left"].set_visible(False)
-    ax.tick_params(axis="x", labelsize=6.5)
+    ax.grid(axis="x", color=GRID_COLOR, linewidth=0.5, alpha=0.8)
 
-    legend_elements = [
-        Line2D([0], [0], marker='o', color='w', markerfacecolor=BASELINE_COLOR,
-               markersize=5, label='Age, Gender, BMI & Height'),
-        Line2D([0], [0], marker='o', color='w', markerfacecolor=panel_color,
-               markersize=5, label='+ Gait Embeddings'),
+    for spine in ["top", "right", "left"]:
+        ax.spines[spine].set_visible(False)
+    ax.spines["bottom"].set_color("#BBBBBB")
+    ax.spines["bottom"].set_linewidth(0.5)
+
+    ax.tick_params(axis="x", labelsize=fs, colors="#666666", width=0.5)
+
+    if cohort_n is None:
+        cohort_n = int(panel_df["n_positive"].max()) if not panel_df.empty else 0
+    panel_title = f"{'Male' if gender == 'male' else 'Female'} (n = {cohort_n:,})"
+    ax.set_title(panel_title, loc="left", fontsize=fs, fontweight="bold", color=TEXT_COLOR, pad=4)
+
+
+def create_single_gender_plot(panel_df, gender, cohort_n, panel_color):
+    if panel_df.empty:
+        print(f"No rows for {gender}, skipping.")
+        return
+
+    n_rows = len(panel_df)
+    fig_height_in = max((n_rows * 0.38 + 2.5) / 2.54, 4.0)
+
+    fig, ax = plt.subplots(1, 1, figsize=(FIG_WIDTH_IN, fig_height_in))
+    fig.patch.set_facecolor("white")
+
+    draw_gender_panel(ax, panel_df, gender, panel_color, cohort_n=cohort_n)
+    ax.set_xlabel("AUC-ROC", fontsize=FONT_SIZE, color="#666666")
+
+    legend_handles = [
+        Line2D([0], [0], marker="o", markersize=4, markerfacecolor="white", markeredgecolor=BASELINE_COLOR, lw=0, label="Age, BMI, VAT, Height"),
+        Line2D([0], [0], marker="o", markersize=5, markerfacecolor=panel_color, markeredgecolor="white", lw=0, label="Age, BMI, VAT, Height & Gait"),
     ]
-    ax.legend(handles=legend_elements, loc="lower right", fontsize=6, framealpha=0.9)
+    fig.legend(
+        handles=legend_handles,
+        loc="upper center",
+        bbox_to_anchor=(0.62, 0.993),
+        ncol=1,
+        frameon=False,
+        fontsize=FONT_SIZE * 0.9,
+        handletextpad=0.4,
+        labelspacing=0.3,
+    )
 
-    title = f"{'Male' if gender == 'male' else 'Female'}"
-    if cohort_n:
-        title += f" (n={cohort_n:,})"
-    ax.set_title(title, fontsize=8, fontweight="bold", pad=6)
+    plt.subplots_adjust(left=0.38, right=0.88, top=0.87, bottom=0.10)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    plt.tight_layout(rect=[0.22, 0.0, 0.97, 1.0])
-
-    fname = f"medical_conditions_medications_dumbbell_{MODEL}_{gender}"
-    for ext in ["png", "pdf"]:
-        out_path = os.path.join(OUTPUT_DIR, f"{fname}.{ext}")
-        plt.savefig(out_path, dpi=300, bbox_inches="tight", facecolor="white")
+    base_name = f"medical_conditions_medications_dumbbell_{MODEL}_{gender}"
+    for ext in ("png", "pdf"):
+        out_path = os.path.join(OUTPUT_DIR, f"{base_name}.{ext}")
+        dpi = 300 if ext == "png" else None
+        plt.savefig(out_path, dpi=dpi, facecolor="white", edgecolor="white")
         print(f"Saved: {out_path}")
+
     plt.close()
 
 
-def main():
-    for gender in ["male", "female"]:
-        plot_dumbbell(gender)
+def create_dumbbell_plots():
+    np.random.seed(7)
+
+    df = pd.read_csv(DATA_CSV, low_memory=False)
+
+    male_df, _ = select_rows_for_gender(df, "male")
+    female_df, _ = select_rows_for_gender(df, "female")
+
+    create_single_gender_plot(male_df, "male", 1652, MALE_COLOR)
+    create_single_gender_plot(female_df, "female", 1762, FEMALE_COLOR)
 
 
 if __name__ == "__main__":
-    main()
+    create_dumbbell_plots()
