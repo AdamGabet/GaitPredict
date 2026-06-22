@@ -173,6 +173,26 @@ SHORT_CONFIG = {
 }
 
 
+# Fine-tune from a pretrained checkpoint on proprietary data (MVP retraining).
+# Inherits LONG_CONFIG so the architecture (depth/dim_feat/dim_rep/heads/rope/sink/size_seq)
+# matches the published checkpoint — required for training_type="continue" to load cleanly.
+# Overrides only the fine-tuning knobs. Set MODEL_FILE via env or edit model_file below to
+# point at the checkpoint dir/epoch; load_model_epoch=-1 auto-picks the latest epoch_N.pth.
+import os as _os
+
+FINETUNE_CONFIG = {
+    **LONG_CONFIG,
+    "name": "Finetune - proprietary data",
+    "training_type": "continue",
+    "model_file": _os.getenv("MODEL_FILE", ""),  # path to checkpoint dir or epoch_N.pth
+    "load_model_epoch": -1,                        # -1 = latest .pth in the dir
+    "learning_rate": 1e-4,                         # lower LR for fine-tuning (vs 8e-4 scratch)
+    "epochs": 6,                                   # short MVP run; bump after smoke test
+    "warmup_epochs": 0.1,
+    "debug_mode": False,                           # set True for the smoke test
+}
+
+
 LIKE_OLD_CONFIG = {
     "architecture": "motionBert",
     "dataset": "Skeleton Newton",
