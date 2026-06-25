@@ -1,0 +1,7 @@
+target,feature_set,covariates,activity,direction,status,pearson,mae,rmse,n_scored_stage_rows,n_scored_subjects,train_rows,test_rows,train_subjects,test_subjects,train_ashkenazi_subjects,train_non_ashkenazi_subjects,test_ashkenazi_subjects,test_non_ashkenazi_subjects
+age,embeddings_only,none,activity_ensemble,non_ashkenazi_to_ashkenazi,ok,0.4758922214156757,6.7243304720103785,9.077923052567554,744,722,3674,3634,722,722,0,722,722,0
+age,embeddings_only,none,activity_ensemble,ashkenazi_to_non_ashkenazi,ok,0.6332169723888713,6.360730248285674,8.445659186779936,746,722,3634,3674,722,722,722,0,0,722
+liver_elasticity,embeddings_only,none,activity_ensemble,non_ashkenazi_to_ashkenazi,ok,0.31465510654637785,0.7648619660107973,0.949017288527911,741,718,3649,3617,718,718,0,718,718,0
+liver_elasticity,embeddings_only,none,activity_ensemble,ashkenazi_to_non_ashkenazi,ok,0.32696272494867673,0.7528389413497054,0.9810367891941286,741,718,3617,3649,718,718,718,0,0,718
+liver_elasticity,embeddings_plus_age_gender_bmi,age+gender+bmi,activity_ensemble,non_ashkenazi_to_ashkenazi,ok,0.3820200782379533,0.7349874344925015,0.922671265855126,741,718,3649,3617,718,718,0,718,718,0
+liver_elasticity,embeddings_plus_age_gender_bmi,age+gender+bmi,activity_ensemble,ashkenazi_to_non_ashkenazi,ok,0.3794767124986479,0.7395809280076765,0.9602973125955732,741,718,3617,3649,718,718,718,0,0,718

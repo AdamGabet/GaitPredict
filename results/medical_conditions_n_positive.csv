@@ -1,0 +1,38 @@
+system,label,gender,n_positive
+medical_conditions,Hypercholesterolaemia,male,8
+medical_conditions,Lactose Intolerance,male,5
+medical_conditions,Anal Fissure,male,88
+medical_conditions,Diabetes,male,30
+medical_conditions,Depression,male,40
+medical_conditions,Peptic Ulcer Disease,male,28
+medical_conditions,Insomnia,male,23
+medical_conditions,Sinusitis,male,37
+medical_conditions,AV. Conduction Disorder,male,4
+medical_conditions,Back Pain,male,295
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,2
+medications,ADRENERGICSINHALANTS,male,13
+medications,ANTIDEPRESSANTS,male,82
+medications,ANTIHISTAMINESFORSYSTEMICUSE,male,14
+medications,DRUGSFORPEPTICULCERANDGASTROOESOPHAGEALREFLUXDISEASEGORD,male,59
+medical_conditions,Myocarditis,female,4
+medical_conditions,Hypercholesterolaemia,female,5
+medical_conditions,Psoriasis,female,46
+medical_conditions,Glaucoma,female,8
+medical_conditions,Uveitis,female,7
+medical_conditions,Headache,female,53
+medical_conditions,Peptic Ulcer Disease,female,25
+medical_conditions,Tinnitus,female,5
+medical_conditions,Meniscus Tears,female,8
+medical_conditions,Diabetes,female,22
+medical_conditions,Depression,female,66
+medical_conditions,IBS,female,65
+medical_conditions,Asthma,female,99
+medical_conditions,Perimenopausal Disorders,female,16
+medications,ANTIMIGRAINEPREPARATIONS,female,7
+medications,OTHERGYNECOLOGICALSinATC,female,16
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,female,9
+medications,ADRENERGICSINHALANTS,female,18
+medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,20
+medications,IRONANTIANEMICPREPARATIONS,female,48
+medications,ANTIDEPRESSANTS,female,143
+medications,PSYCHOSTIMULANTSAGENTSUSEDFORADHDANDNOOTROPICS,female,36

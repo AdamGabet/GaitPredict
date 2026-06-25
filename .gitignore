@@ -9,3 +9,6 @@ build/
 *.pt
 *.pth
 plotting/*/output/
+plotting/*/individual_plots/**/*.png
+plotting/*/individual_plots/**/*.pdf
+model/guide.ipynb
