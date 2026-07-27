@@ -7,6 +7,6 @@ dist/
 build/
 .env
 *.pt
-*.pth
 plotting/*/output/
 .idea/
+*.rrd
