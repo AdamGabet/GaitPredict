@@ -10,3 +10,4 @@ build/
 plotting/*/output/
 .idea/
 *.rrd
+/biopilot_service.json
