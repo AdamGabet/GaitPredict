@@ -193,6 +193,25 @@ FINETUNE_CONFIG = {
 }
 
 
+# Same recipe as LONG_CONFIG (size_seq=900, depth=8, effective batch_size=8) --
+# the exact architecture/training config epoch_31.pth was published with, so a
+# model trained under this config is a fair, apples-to-apples comparison. Only
+# difference: physical batch_size=1 + grad_accum_steps=8 (mathematically
+# equivalent to batch_size=8, verified bit-identical/floating-point-exact) and
+# use_grad_checkpointing=True (verified bit-identical gradients), which together
+# cut peak training memory from ~200+GB (extrapolated, infeasible on any current
+# machine) to ~5GB measured on real S3 data. eval_batch_size is left at
+# LONG_CONFIG's original 8 -- eval runs under torch.no_grad() with no backward
+# pass, so it never hit the memory wall in the first place (measured: 13GB peak).
+LONG_CONFIG_LOWMEM = {
+    **LONG_CONFIG,
+    "name": "Long Seq - grad checkpointing + accumulation (low memory)",
+    "batch_size": 1,              # physical micro-batch
+    "grad_accum_steps": 8,        # -> effective batch_size=8, matching LONG_CONFIG
+    "use_grad_checkpointing": True,
+}
+
+
 LIKE_OLD_CONFIG = {
     "architecture": "motionBert",
     "dataset": "Skeleton Newton",

@@ -9,6 +9,22 @@ from torch.utils.data import DataLoader
 import re
 from model.training.utils.loss import loss_mpjpe, n_mpjpe, loss_velocity, loss_quat_geodesic
 
+
+def select_device(requested: str = "auto") -> torch.device:
+    """Pick a device. 'auto' prefers CUDA, then Apple MPS, then CPU.
+
+    Shared by training and inference entry points so both fall back the same
+    way instead of hardcoding torch.device('cuda') with no fallback.
+    """
+    if requested and requested != "auto":
+        return torch.device(requested)
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    if torch.backends.mps.is_available():
+        return torch.device("mps")
+    return torch.device("cpu")
+
+
 def load_checkpoint(model, optimizer, scheduler, checkpoint_path, device, scaler=None):
     """
     Loads a checkpoint containing model, optimizer, scheduler and scaler states.
@@ -231,7 +247,7 @@ class MaskingScheduler:
                                       batch_size=batch_size,
                                       shuffle=True,
                                       num_workers=3,
-                                      pin_memory=True,
+                                      pin_memory=torch.cuda.is_available(),
                                       persistent_workers=True)
 
             return loader, args

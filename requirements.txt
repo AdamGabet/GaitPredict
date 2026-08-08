@@ -9,3 +9,5 @@ timm
 wandb
 scipy
 pyarrow
+python-dotenv
+tqdm
