@@ -1082,11 +1082,21 @@ class DualCameraDataset(Dataset):
 
 
 def get_datasets(root_dir=None, data_dict=None, size_seq=500, graph_data=False, labels=None, overlap_sequence=0,
-                 single_activity=None, eval_unique_ids=False, five_seq_together=False, args_cfg=None):
+                 single_activity=None, eval_unique_ids=False, five_seq_together=False, args_cfg=None,
+                 data_source="legacy_csv"):
     """
     split into train, val, test, the train can contain augmentation but the val and test should not
+    :param data_source: "legacy_csv" (default, DualCameraDataset reading front/back CSVs from
+        SKELETON_DATA_DIR) or "ntds" (NtdsChunkDataset reading the S3 .ntds corpus directly via
+        clips_v1.parquet + a local sync -- see README.md). The ntds path does not support
+        graph_data, overlap_sequence, single_activity, eval_unique_ids, or five_seq_together;
+        it's a lightweight adapter, not a full DualCameraDataset replacement.
     :return: train_dataset, val_dataset, test_dataset
     """
+    if data_source == "ntds":
+        from model.preprocessing.ntds_dataset import build_ntds_datasets
+        return build_ntds_datasets(size_seq=size_seq, labels=labels)
+
     #train_i, test_i, eval_i = DualCameraDataset.train_test_eval_split(dir=root_dir, test_size=test_size, eval_size=eval_size, r_seed=r_seed)
     if labels is None:
         labels = ['age']

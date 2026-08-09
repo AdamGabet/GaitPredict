@@ -7,6 +7,7 @@ dist/
 build/
 .env
 *.pt
-*.pth
 plotting/*/output/
 .idea/
+*.rrd
+/biopilot_service.json
