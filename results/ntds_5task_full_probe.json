@@ -1,0 +1,37 @@
+[
+  {
+    "target":"Gender",
+    "sex":"all",
+    "metric":"auc",
+    "mean":0.998,
+    "std":0.0
+  },
+  {
+    "target":"Age",
+    "sex":"male",
+    "metric":"pearson",
+    "mean":0.686,
+    "std":0.003
+  },
+  {
+    "target":"Age",
+    "sex":"female",
+    "metric":"pearson",
+    "mean":0.671,
+    "std":0.002
+  },
+  {
+    "target":"BMI",
+    "sex":"male",
+    "metric":"pearson",
+    "mean":0.873,
+    "std":0.001
+  },
+  {
+    "target":"BMI",
+    "sex":"female",
+    "metric":"pearson",
+    "mean":0.9,
+    "std":0.001
+  }
+]
