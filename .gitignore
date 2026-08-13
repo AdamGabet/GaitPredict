@@ -9,6 +9,7 @@ build/
 *.pt
 plotting/*/output/
 .idea/
+<<<<<<< Updated upstream
 *.rrd
 /biopilot_service.json
 
@@ -17,3 +18,11 @@ data/ntds/
 results/_ntds_live_demo.parquet
 # embedding stores are large, subject-level, and reproducible from S3 — keep local
 results/*_emb.parquet
+=======
+
+# Real-subject skeleton recordings and derived media — never commit (see CLAUDE.md)
+*.ntds
+*.rrd
+Notebooks/reconstruction_gifs/
+.ipynb_checkpoints/
+>>>>>>> Stashed changes

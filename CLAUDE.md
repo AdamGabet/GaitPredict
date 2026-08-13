@@ -1,4 +1,4 @@
-# CLAUDE.md — Collaboration Guide
+6# CLAUDE.md — Collaboration Guide
 
 > This file defines how Claude should operate as an embedded engineering and data science
 > collaborator for BioPilot.ai. It is read at the start of every Claude Code session.
