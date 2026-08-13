@@ -8,11 +8,8 @@ einops
 timm
 wandb
 scipy
-<<<<<<< Updated upstream
 pyarrow
 python-dotenv
 tqdm
 boto3
-=======
-pyarrow  # read .ntds skeleton clips (Arrow/Feather)
->>>>>>> Stashed changes
+
