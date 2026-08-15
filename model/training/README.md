@@ -120,25 +120,34 @@ Reads `.ntds` (feather) files directly from the S3-migrated corpus
 weight, but **not a full replacement** for `legacy_csv` — see the limitations
 below before relying on it for a real training run, not just a smoke test.
 
-**Setup** (run once, or whenever you want a bigger/different local subset):
+**Setup** (run once, or re-run any time to fetch more of the corpus — it's
+resumable, see below):
 ```bash
-# from repo root, with AWS creds set (see .env)
+# from repo root, with AWS creds set (see .env, or an IAM instance role on EC2)
 aws s3 sync s3://<bucket>/manifests/clips/dataset_version=v1/ data/manifests/
-python3 -c "
-import pandas as pd, boto3, os
-df = pd.read_parquet('data/manifests/clips_v1.parquet')
-# adjust .sample(...) to control how much you pull locally
-sample = df.sample(500, random_state=0)
-s3 = boto3.client('s3')
-os.makedirs('data/ntds', exist_ok=True)
-for uri in sample['ntds_uri']:
-    bucket, key = uri.replace('s3://', '').split('/', 1)
-    s3.download_file(bucket, key, f'data/ntds/{os.path.basename(key)}')
-"
+python3 scripts/sync_ntds_corpus.py
 ```
+`scripts/sync_ntds_corpus.py` downloads each manifest row to a **flat**
+`NTDS_LOCAL_DIR/<basename>` — deliberately not `aws s3 sync` on the raw
+prefix, because the files live under a partitioned S3 layout
+(`interim/ntds/dataset_version=v1/...`) that doesn't match the flat directory
+`NtdsChunkDataset` expects; a plain `aws s3 sync` would preserve that nesting
+and silently yield zero usable files. It's idempotent (skips files already
+present at the expected size) and parallelized (`--max-workers`, default 32).
+Pass `--limit N` to pull just the first N manifest rows for a local smoke
+test instead of the full ~127GB corpus.
+
 `build_ntds_datasets()` (in `model/preprocessing/ntds_dataset.py`) only uses
 rows whose file is actually present in `NTDS_LOCAL_DIR` — a partial sync just
 yields a smaller dataset, not an error, so it's safe to start small and grow it.
+
+Decoding is lazy — `NtdsChunkDataset` reads each file's frame count up front
+(a cheap single-column read) to size itself, then decodes the actual pose data
+per `__getitem__` call rather than holding the whole corpus in RAM (measured
+~7ms/file, no caching needed — that's well under a forward/backward pass on
+this model). This means it's safe to point it at the full corpus regardless of
+instance RAM; the earlier eager-decode version wasn't (it held everything
+decoded in memory for the life of the process, ~0.6x the raw corpus size).
 
 **Known limitations** (documented in `ntds_dataset.py`'s module docstring too):
 - No masking-curriculum augmentation (`group_masking`/`random_mask` configs are
@@ -150,9 +159,21 @@ yields a smaller dataset, not an error, so it's safe to start small and grow it.
   training loss (which never reads labels), but **any probe metric evaluated
   against an unavailable label is meaningless, not just noisy**. Don't trust
   those specific numbers in `run_final_evaluation`'s output on this data source.
+  (`long_lowmem_ntds`, below, restricts `labels` to just `["age", "gender"]`
+  for exactly this reason.)
 - Train/test/eval split is by `test_id` (participant) with a fixed seed —
   reasonable default to avoid leakage, but not configurable yet beyond the
-  `test_size`/`eval_size`/`seed` args on `build_ntds_datasets()`.
+  `test_size`/`eval_size`/`seed` args on `build_ntds_datasets()`. ~1.4% of rows
+  have no linked participant demographics (age/gender/height/weight all null)
+  — they still split safely by `test_id` and fall back to the same `0.0`
+  placeholder as any other missing label, so no special handling is needed.
+- Every recording in this corpus is Azure Kinect-sourced (`source ==
+  "azure_kinect"` for 100% of `clips_v1.parquet`), and the model's joint
+  schema (`KEEP_JOINTS` in `ntds_dataset.py`) is hardcoded to Kinect's 32-joint
+  layout. There is no OpenPose (or other estimator) code or data anywhere in
+  this repo yet, so this isn't a live incompatibility — but it does mean the
+  foundational model's entire input contract is Kinect-shaped, worth knowing
+  before treating results as representative of a future non-Kinect pipeline.
 
 ---
 
@@ -163,7 +184,8 @@ Set `TRAIN_CONFIG` (env var) to one of:
 | Name | What it is |
 |---|---|
 | `long` (default) | Full recipe matching the published `epoch_31.pth` — `size_seq=900`, `depth=8`, `batch_size=8`. **Needs ~200+GB peak memory as-is** — not runnable on a single Mac or most EC2 GPUs without `long_lowmem`. |
-| `long_lowmem` | Identical recipe to `long` (same architecture/hyperparameters, so results are directly comparable), but `batch_size=1` + `grad_accum_steps=8` (mathematically equivalent effective batch of 8 — verified bit-identical/floating-point-exact) + `use_grad_checkpointing=True` (verified bit-identical gradients). Peak memory ~5GB instead of ~200+GB. **Use this one** unless you have a GPU large enough for `long` directly. |
+| `long_lowmem` | Identical recipe to `long` (same architecture/hyperparameters, so results are directly comparable), but `batch_size=1` + `grad_accum_steps=8` (mathematically equivalent effective batch of 8 — verified bit-identical/floating-point-exact) + `use_grad_checkpointing=True` (verified bit-identical gradients). Peak memory ~5GB instead of ~200+GB. **Use this one** unless you have a GPU large enough for `long` directly. Uses `legacy_csv` (needs `SKELETON_DATA_DIR`). |
+| `long_lowmem_ntds` | Same as `long_lowmem`, but `data_source="ntds"` (needs the S3 corpus synced — see §4) and `labels=["age", "gender"]` (the only real labels on this data source). **Use this one for training against the S3 corpus** — `long_lowmem` alone won't touch it, since `data_source` isn't inherited from a config name. |
 | `short` | Shorter sequences (`size_seq=128`), faster iteration, not directly comparable to `epoch_31.pth`. |
 | `default` | The original baseline config. |
 | `like_old` | An older recipe kept for reference. |
@@ -195,3 +217,30 @@ identical held-out split — see the reconstruction-loss, ridge-probe, and UMAP
 metrics it already produces. Confirm the eval split doesn't overlap with
 whatever `epoch_31.pth` was originally trained on before treating the
 comparison as fair.
+
+---
+
+## 7. Full pipeline on a fresh EC2 instance
+
+`scripts/ec2_train_and_upload.sh` wraps install → S3 corpus sync → train →
+checkpoint upload into one script for a fresh instance:
+
+```bash
+export S3_BUCKET=<bucket>          # required
+export TRAIN_CONFIG=long_lowmem_ntds  # default; override for a different config
+scripts/ec2_train_and_upload.sh
+```
+
+- Prefer an **IAM instance role** on the EC2 instance over `AWS_*` keys in
+  `.env` — boto3/aws-cli pick it up automatically, and it avoids putting
+  long-lived credentials on disk.
+- Checkpoints stream to `s3://$S3_BUCKET/checkpoints/<run_tag>/` every 5
+  minutes (`SYNC_INTERVAL_SECONDS`) during training, plus a final sync on
+  exit — so a spot-instance interruption doesn't lose the run. Training itself
+  never talks to S3; the sync is a background loop in the wrapper script.
+- Corpus sync is resumable (`scripts/sync_ntds_corpus.py`) — re-running the
+  script after an interruption just picks up where it left off instead of
+  re-downloading everything.
+- For a smoke test before committing to the full ~127GB corpus, sync a
+  subset first (`python3 scripts/sync_ntds_corpus.py --limit 2000`) and set
+  `debug_mode: True` on the config for a fast partial-epoch run.

@@ -72,33 +72,45 @@ def chunk_sequence(arr: np.ndarray, seq_len: int) -> np.ndarray:
     return np.stack(chunks, axis=0)
 
 
+def _decode_chunks(local_path: str, size_seq: int) -> np.ndarray:
+    """Read + decode one .ntds file into its [n_chunks, size_seq, NUM_JOINTS, 4] chunks."""
+    df = pd.read_feather(local_path)
+    pose_all = extract_pose_array(df)
+    pose_kept = pose_all[:, KEEP_JOINTS, :]
+    pelvis_idx = KEEP_JOINTS.index(CENTROID_JOINT)
+    centroid = pose_kept[:, pelvis_idx:pelvis_idx + 1, :3]
+    pose_kept[:, :, :3] -= centroid
+    return chunk_sequence(pose_kept, size_seq)
+
+
 class NtdsChunkDataset(Dataset):
     """One item = one [size_seq, NUM_JOINTS, 4] chunk from one .ntds file.
 
     `rows` is a list of dicts with at least: local_path (downloaded .ntds file),
     test_id, activity, age_at_session (optional), gender (optional) -- i.e. rows
     pulled from clips_v1.parquet plus a resolved local file path per clip.
+
+    Decoding is lazy: `__init__` only reads each file's frame count (a cheap
+    single-column feather read, ~0.5ms/file measured) to size the chunk index --
+    it does not materialize any pose data. `__getitem__` decodes the requested
+    file on each call (~7ms/file measured, no caching) rather than holding the
+    full corpus in RAM. This matters at full-S3-corpus scale (~56k files,
+    ~127GB raw): eagerly decoding everything upfront in __init__ resident-costs
+    ~0.6x the raw corpus size (measured) held for the life of the process, and
+    that cost is duplicated per DataLoader worker on fork. Lazy decoding is
+    fast enough here (well under a forward/backward pass) that no cache is
+    needed, and it's the same lazy-per-item pattern DualCameraDataset already
+    uses for the legacy_csv path.
     """
 
     def __init__(self, rows: Sequence[dict], size_seq: int = 900, label_names: Sequence[str] = ("age",)):
         self.size_seq = size_seq
         self.label_names = list(label_names)
-        self._chunks: list[dict] = []
+        self._index: list[tuple[dict, int]] = []  # (row, chunk_idx_within_file)
         for row in rows:
-            df = pd.read_feather(row["local_path"])
-            pose_all = extract_pose_array(df)
-            pose_kept = pose_all[:, KEEP_JOINTS, :]
-            pelvis_idx = KEEP_JOINTS.index(CENTROID_JOINT)
-            centroid = pose_kept[:, pelvis_idx:pelvis_idx + 1, :3]
-            pose_kept[:, :, :3] -= centroid
-
-            for chunk in chunk_sequence(pose_kept, size_seq):
-                self._chunks.append({
-                    "pose": chunk,  # [size_seq, NUM_JOINTS, 4]
-                    "activity": row.get("activity", "unknown"),
-                    "id": row.get("test_id", "unknown"),
-                    "labels": [self._label_value(row, name) for name in self.label_names],
-                })
+            n_frames = len(pd.read_feather(row["local_path"], columns=["FrameNumber"]))
+            n_chunks = -(-n_frames // size_seq)  # ceil div, matches chunk_sequence's zero-padded tail
+            self._index.extend((row, i) for i in range(n_chunks))
 
     @staticmethod
     def _label_value(row: dict, name: str) -> float:
@@ -115,18 +127,21 @@ class NtdsChunkDataset(Dataset):
             return 0.0
 
     def __len__(self) -> int:
-        return len(self._chunks)
+        return len(self._index)
 
     def __getitem__(self, idx: int) -> dict:
-        c = self._chunks[idx]
-        pose = torch.tensor(c["pose"], dtype=torch.float32)  # [F, J, 4]
+        row, chunk_idx = self._index[idx]
+        pose = torch.tensor(
+            _decode_chunks(row["local_path"], self.size_seq)[chunk_idx],
+            dtype=torch.float32,
+        )  # [F, J, 4]
         return {
             "data": pose,
             "original": pose,
             "mask": torch.ones_like(pose, dtype=torch.bool),
-            "label_list": c["labels"],
-            "activity": c["activity"],
-            "id": c["id"],
+            "label_list": [self._label_value(row, name) for name in self.label_names],
+            "activity": row.get("activity", "unknown"),
+            "id": row.get("test_id", "unknown"),
         }
 
 

@@ -14,6 +14,7 @@ from model.training.default_config import (
     LIKE_OLD_CONFIG,
     FINETUNE_CONFIG,
     LONG_CONFIG_LOWMEM,
+    LONG_CONFIG_LOWMEM_NTDS,
 )
 from model.training.train_loop import train
 from model.training.eval_loop import run_final_evaluation
@@ -39,6 +40,7 @@ _CONFIGS = {
     "like_old": LIKE_OLD_CONFIG,
     "finetune": FINETUNE_CONFIG,
     "long_lowmem": LONG_CONFIG_LOWMEM,
+    "long_lowmem_ntds": LONG_CONFIG_LOWMEM_NTDS,
 }
 
 

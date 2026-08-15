@@ -212,6 +212,19 @@ LONG_CONFIG_LOWMEM = {
 }
 
 
+# Same recipe as LONG_CONFIG_LOWMEM, pointed at the S3 ntds corpus instead of
+# the legacy_csv (SKELETON_DATA_DIR) path -- see model/training/README.md
+# section 4 for what this data source does and doesn't provide (no masking-
+# curriculum augmentation, only age/gender are real labels).
+LONG_CONFIG_LOWMEM_NTDS = {
+    **LONG_CONFIG_LOWMEM,
+    "name": "Long Seq - grad checkpointing + accumulation (low memory, ntds/S3)",
+    "data_source": "ntds",
+    "labels": ["age", "gender"],
+    "task_types": ["reg", "clas"],
+}
+
+
 LIKE_OLD_CONFIG = {
     "architecture": "motionBert",
     "dataset": "Skeleton Newton",
