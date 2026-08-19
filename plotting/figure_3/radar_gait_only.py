@@ -485,6 +485,11 @@ def create_radar_gender_overlay(df_male, df_female, save_base, figsize=(14, 14),
     y_min = min(0, min_val - 0.02) if min_val < 0 else -0.02
     ax.set_ylim(y_min, arc_radius * 1.02)
     ax.grid(True, alpha=0.3)
+
+    # Embedded Male/Female legend at bottom-right of the plot
+    ax.legend(loc='lower right', bbox_to_anchor=(1.12, 0.0), fontsize=13,
+              framealpha=0.9, handlelength=1.5)
+
     plt.tight_layout()
 
     _save_fig(fig, save_base)

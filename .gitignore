@@ -22,3 +22,6 @@ results/*_emb.parquet
 *.ntds
 Notebooks/reconstruction_gifs/
 .ipynb_checkpoints/
+plotting/*/individual_plots/**/*.png
+plotting/*/individual_plots/**/*.pdf
+model/guide.ipynb

@@ -1,0 +1,16 @@
+masking_strategy,gender,target,score_type,mean_pearson_r,std_pearson_r,n_seeds
+Full masking: frame + group,all,age,pearson_r,0.689,0.0021,15
+Full masking: frame + group,male,age,pearson_r,0.702,0.0029,15
+Full masking: frame + group,female,age,pearson_r,0.6763,0.0029,15
+No frame masking,all,age,pearson_r,0.6773,0.0031,10
+No frame masking,male,age,pearson_r,0.6821,0.0016,10
+No frame masking,female,age,pearson_r,0.6732,0.0048,10
+No group masking,all,age,pearson_r,0.6626,0.002,10
+No group masking,male,age,pearson_r,0.6713,0.0032,10
+No group masking,female,age,pearson_r,0.6557,0.0022,10
+Full masking: no noise,all,age,pearson_r,0.6128,0.0035,10
+Full masking: no noise,male,age,pearson_r,0.6312,0.0025,10
+Full masking: no noise,female,age,pearson_r,0.5985,0.0051,10
+Noise only; no frame/group masking,all,age,pearson_r,0.6485,0.0053,10
+Noise only; no frame/group masking,male,age,pearson_r,0.6652,0.0035,10
+Noise only; no frame/group masking,female,age,pearson_r,0.6347,0.0104,10
