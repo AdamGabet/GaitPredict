@@ -8,3 +8,8 @@ einops
 timm
 wandb
 scipy
+pyarrow
+python-dotenv
+tqdm
+boto3
+

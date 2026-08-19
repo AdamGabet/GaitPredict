@@ -70,7 +70,12 @@ class DualCameraDataset(Dataset):
         self.edge_index = self._get_edge_tensor(edge_directional, self.args)
 
 
-        research_stage_date_file = "/net/mraid20/ifs/wisdom/segal_lab/jafar/Adam/skeleton_data/id_date_long.csv"
+        # Path is environment-configurable so the pipeline runs off the original cluster.
+        # Falls back to the historical cluster path for backward compatibility.
+        research_stage_date_file = os.getenv(
+            "RESEARCH_STAGE_DATE_FILE",
+            "/net/mraid20/ifs/wisdom/segal_lab/jafar/Adam/skeleton_data/id_date_long.csv",
+        )
         if os.path.exists(research_stage_date_file):
             self.research_stage_date_df = pd.read_csv(research_stage_date_file)
 
@@ -1077,25 +1082,47 @@ class DualCameraDataset(Dataset):
 
 
 def get_datasets(root_dir=None, data_dict=None, size_seq=500, graph_data=False, labels=None, overlap_sequence=0,
-                 single_activity=None, eval_unique_ids=False, five_seq_together=False, args_cfg=None):
+                 single_activity=None, eval_unique_ids=False, five_seq_together=False, args_cfg=None,
+                 data_source="legacy_csv"):
     """
     split into train, val, test, the train can contain augmentation but the val and test should not
+    :param data_source: "legacy_csv" (default, DualCameraDataset reading front/back CSVs from
+        SKELETON_DATA_DIR) or "ntds" (NtdsChunkDataset reading the S3 .ntds corpus directly via
+        clips_v1.parquet + a local sync -- see README.md). The ntds path does not support
+        graph_data, overlap_sequence, single_activity, eval_unique_ids, or five_seq_together;
+        it's a lightweight adapter, not a full DualCameraDataset replacement.
     :return: train_dataset, val_dataset, test_dataset
     """
+    if data_source == "ntds":
+        from model.preprocessing.ntds_dataset import build_ntds_datasets
+        return build_ntds_datasets(size_seq=size_seq, labels=labels)
+
     #train_i, test_i, eval_i = DualCameraDataset.train_test_eval_split(dir=root_dir, test_size=test_size, eval_size=eval_size, r_seed=r_seed)
     if labels is None:
         labels = ['age']
 
     args_cfg = args_cfg or args.active_args()
 
-    if args_cfg.use_kalman:
-        train_dir = '/net/mraid20/ifs/wisdom/segal_lab/jafar/Adam/skeleton_data/pointcloud_kalman_train/'
-        test_dir = '/net/mraid20/ifs/wisdom/segal_lab/jafar/Adam/skeleton_data/pointcloud_kalman_test/'
-        eval_dir = '/net/mraid20/ifs/wisdom/segal_lab/jafar/Adam/skeleton_data/pointcloud_kalman_eval/'
+    if root_dir is not None:
+        train_dir = os.path.join(root_dir, 'train/')
+        test_dir  = os.path.join(root_dir, 'test/')
+        eval_dir  = os.path.join(root_dir, 'eval/')
+    elif args_cfg.use_kalman:
+        base = os.getenv(
+            'SKELETON_DATA_KALMAN_DIR',
+            '/net/mraid20/ifs/wisdom/segal_lab/jafar/Adam/skeleton_data/',
+        )
+        train_dir = os.path.join(base, 'pointcloud_kalman_train/')
+        test_dir  = os.path.join(base, 'pointcloud_kalman_test/')
+        eval_dir  = os.path.join(base, 'pointcloud_kalman_eval/')
     else:
-        train_dir = '/net/mraid20/ifs/wisdom/segal_lab/jafar/Adam/skeleton_data/skeleton_full_data_sept/train/'
-        test_dir = '/net/mraid20/ifs/wisdom/segal_lab/jafar/Adam/skeleton_data/skeleton_full_data_sept/test/'
-        eval_dir = '/net/mraid20/ifs/wisdom/segal_lab/jafar/Adam/skeleton_data/skeleton_full_data_sept/eval/'
+        base = os.getenv(
+            'SKELETON_DATA_DIR',
+            '/net/mraid20/ifs/wisdom/segal_lab/jafar/Adam/skeleton_data/skeleton_full_data_sept/',
+        )
+        train_dir = os.path.join(base, 'train/')
+        test_dir  = os.path.join(base, 'test/')
+        eval_dir  = os.path.join(base, 'eval/')
     train_dataset = DualCameraDataset(train_dir, data_dict=data_dict, graph_data=graph_data, size_seq=size_seq,
                                       labels=labels,
                                       overlap_sequence=overlap_sequence, single_activity=single_activity,
