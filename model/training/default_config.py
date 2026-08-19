@@ -173,58 +173,6 @@ SHORT_CONFIG = {
 }
 
 
-# Fine-tune from a pretrained checkpoint on proprietary data (MVP retraining).
-# Inherits LONG_CONFIG so the architecture (depth/dim_feat/dim_rep/heads/rope/sink/size_seq)
-# matches the published checkpoint — required for training_type="continue" to load cleanly.
-# Overrides only the fine-tuning knobs. Set MODEL_FILE via env or edit model_file below to
-# point at the checkpoint dir/epoch; load_model_epoch=-1 auto-picks the latest epoch_N.pth.
-import os as _os
-
-FINETUNE_CONFIG = {
-    **LONG_CONFIG,
-    "name": "Finetune - proprietary data",
-    "training_type": "continue",
-    "model_file": _os.getenv("MODEL_FILE", ""),  # path to checkpoint dir or epoch_N.pth
-    "load_model_epoch": -1,                        # -1 = latest .pth in the dir
-    "learning_rate": 1e-4,                         # lower LR for fine-tuning (vs 8e-4 scratch)
-    "epochs": 6,                                   # short MVP run; bump after smoke test
-    "warmup_epochs": 0.1,
-    "debug_mode": False,                           # set True for the smoke test
-}
-
-
-# Same recipe as LONG_CONFIG (size_seq=900, depth=8, effective batch_size=8) --
-# the exact architecture/training config epoch_31.pth was published with, so a
-# model trained under this config is a fair, apples-to-apples comparison. Only
-# difference: physical batch_size=1 + grad_accum_steps=8 (mathematically
-# equivalent to batch_size=8, verified bit-identical/floating-point-exact) and
-# use_grad_checkpointing=True (verified bit-identical gradients), which together
-# cut peak training memory from ~200+GB (extrapolated, infeasible on any current
-# machine) to ~5GB measured on real S3 data. eval_batch_size is left at
-# LONG_CONFIG's original 8 -- eval runs under torch.no_grad() with no backward
-# pass, so it never hit the memory wall in the first place (measured: 13GB peak).
-LONG_CONFIG_LOWMEM = {
-    **LONG_CONFIG,
-    "name": "Long Seq - grad checkpointing + accumulation (low memory)",
-    "batch_size": 1,              # physical micro-batch
-    "grad_accum_steps": 8,        # -> effective batch_size=8, matching LONG_CONFIG
-    "use_grad_checkpointing": True,
-}
-
-
-# Same recipe as LONG_CONFIG_LOWMEM, pointed at the S3 ntds corpus instead of
-# the legacy_csv (SKELETON_DATA_DIR) path -- see model/training/README.md
-# section 4 for what this data source does and doesn't provide (no masking-
-# curriculum augmentation, only age/gender are real labels).
-LONG_CONFIG_LOWMEM_NTDS = {
-    **LONG_CONFIG_LOWMEM,
-    "name": "Long Seq - grad checkpointing + accumulation (low memory, ntds/S3)",
-    "data_source": "ntds",
-    "labels": ["age", "gender"],
-    "task_types": ["reg", "clas"],
-}
-
-
 LIKE_OLD_CONFIG = {
     "architecture": "motionBert",
     "dataset": "Skeleton Newton",

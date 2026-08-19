@@ -7,21 +7,8 @@ dist/
 build/
 .env
 *.pt
+*.pth
 plotting/*/output/
-.idea/
-*.rrd
-/biopilot_service.json
-
-# ntds are streamed from S3 and not kept locally; live-demo store is a throwaway
-data/ntds/
-results/_ntds_live_demo.parquet
-# embedding stores are large, subject-level, and reproducible from S3 — keep local
-results/*_emb.parquet
-
-# Real-subject skeleton recordings and derived media — never commit (see CLAUDE.md)
-*.ntds
-Notebooks/reconstruction_gifs/
-.ipynb_checkpoints/
 plotting/*/individual_plots/**/*.png
 plotting/*/individual_plots/**/*.pdf
 model/guide.ipynb

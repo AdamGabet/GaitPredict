@@ -1,7 +1,6 @@
 import copy
 import gc
 import os
-import time
 from datetime import datetime
 import torch
 import torch.nn as nn
@@ -13,7 +12,7 @@ from model.architecture.motionBert_full import DSTformer, ReconstructNet
 from model.training.utils.training_helper import *
 from model.training.eval_loop import run_quick_eval, run_final_evaluation
 from model.training.utils.loss import *
-from torch.amp import autocast, GradScaler
+from torch.cuda.amp import autocast, GradScaler
 import warnings
 import pandas as pd
 import numpy as np
@@ -67,8 +66,7 @@ def set_args(config: dict, args_cfg):
     return args_cfg
 
 def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_eval=False) -> dict:
-    device = select_device((config or wandb.config).get('device', 'auto'))
-    print(f"Using device: {device}")
+    device = torch.device('cuda')
 
     if config is None:
         config = wandb.config
@@ -116,20 +114,6 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
         lambda_scale = 0.0
         lambda_3d_velocity = 0.0
 
-    # Micro-batch + accumulate, to hit a target effective batch size without the
-    # memory spike of one large batch. Verified (see dev notes) that this gives
-    # gradients equivalent to a true large batch to floating-point precision --
-    # EXCEPT koleo loss, which compares embeddings *within* a batch and is not
-    # accumulation-safe (a micro-batch's koleo loss isn't the same quantity as
-    # the full effective batch's). Refuse rather than silently give wrong grads.
-    grad_accum_steps = config.get('grad_accum_steps', 1)
-    if grad_accum_steps > 1 and lambda_ko_leo_loss > 0:
-        raise ValueError(
-            "grad_accum_steps > 1 is not valid with lambda_ko_leo_loss > 0: "
-            "koleo loss depends on batch composition and cannot be correctly "
-            "accumulated across micro-batches."
-        )
-
     modality_dropout_prob = config.get('modality_dropout_prob', 0.0)
 
 
@@ -158,14 +142,9 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
     if args_cfg.motionbert_format:
         num_joints = 17
 
-    # cudnn tuning only applies to the CUDA backend
-    if device.type == 'cuda':
-        torch.backends.cudnn.benchmark = True
-        torch.backends.cudnn.deterministic = False
-
-    # pin_memory speeds up host->CUDA transfers specifically; meaningless (and
-    # occasionally noisy) on MPS/CPU
-    pin_memory = device.type == 'cuda'
+    # Enable full mixed precision
+    torch.backends.cudnn.benchmark = True
+    torch.backends.cudnn.deterministic = False
 
     # Initialize Loaders
     print(f"Seq overlap: {config.get('seq_overlap', 0)}")
@@ -173,21 +152,20 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
                                                              labels=config['labels'],
                                                              graph_data=False,
                                                              overlap_sequence=config.get('seq_overlap', 0),
-                                                             args_cfg=args_cfg,
-                                                             data_source=config.get('data_source', 'legacy_csv'))
+                                                             args_cfg=args_cfg)
 
     train_loader = DataLoader(train_dataset,
                               batch_size=batch_size,
                               shuffle=True,
                               num_workers=6,
-                              pin_memory=pin_memory,
+                              pin_memory=True,
                               persistent_workers=True)
 
     eval_loader = DataLoader(eval_dataset,
                              batch_size=batch_size,
                              shuffle=False,
                              num_workers=6,
-                             pin_memory=pin_memory,
+                             pin_memory=True,
                              persistent_workers=True)
 
     masked_eval_dataset = copy.deepcopy(eval_dataset)
@@ -196,7 +174,7 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
                                     batch_size=batch_size,
                                     shuffle=False,
                                     num_workers=6,
-                                    pin_memory=pin_memory,
+                                    pin_memory=True,
                                     persistent_workers=True)
 
     print(f"TrainLoader len {len(train_loader)}")
@@ -218,8 +196,7 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
                                dim_feat=config.get('dim_feat', 256),
                                dim_rep=config['dim_representation'],
                                num_heads=config['num_heads'],
-                               num_sink_tokens=config.get('num_sink_tokens', 0),
-                               use_grad_checkpointing=config.get('use_grad_checkpointing', False))
+                               num_sink_tokens=config.get('num_sink_tokens', 0))
 
     if config.get('lambda_ko_leo_loss', None) is not None:
         koleo_dim = config.get('koleo_dim', 128)
@@ -241,27 +218,20 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
     # Initialize Optimizer, Scheduler, Scaler
     optimizer = torch.optim.AdamW(filter(lambda p: p.requires_grad, model.parameters()),
                                   lr=config["learning_rate"],
-                                  fused=(device.type == 'cuda'),  # fused kernels are CUDA-only
+                                  fused=True,
                                   weight_decay=config["adamw_weight_decay"])
 
     schedular_config = {
         "scheduler_type": config['scheduler_type'],
         "num_epochs": num_epochs,
         "warmup_epochs": config.get('warmup_epochs', None),
-        # scheduler.step() only fires at accumulation boundaries now, not every
-        # micro-batch -- steps_per_epoch must match or the schedule (e.g. cosine
-        # decay/warmup) finishes early or never completes within num_epochs.
-        "steps_per_epoch": math.ceil(len(train_loader) / grad_accum_steps),
+        "steps_per_epoch": len(train_loader),
         "warmup_ratio": config.get('warmup_ratio', None),
         "learning_rate": config.get('learning_rate', None),
     }
     scheduler = get_scheduler(optimizer, schedular_config)
 
-    # GradScaler's loss-scaling only makes sense (and is only reliably
-    # supported) on CUDA; disabling it on MPS/CPU makes it a documented no-op
-    # rather than a device mismatch crash.
-    use_amp_scaler = config['use_scaler'] and device.type == 'cuda'
-    scaler = GradScaler(enabled=use_amp_scaler)
+    scaler = GradScaler()
 
     # Load a model if needed
     if config['training_type'] == 'continue':
@@ -278,19 +248,13 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
 
     # Compile model if enabled (only for single GPU - incompatible with DataParallel)
     if hasattr(torch, 'compile') and config.get('use_compile', True) and config['amount_device'] == 1:
-        print(f"Compiling model for performance optimization (backend device: {device.type})...")
-        try:
-            model = torch.compile(model)  # Significant speedup with compilation
-        except Exception as exc:
-            # torch.compile's non-CUDA backends (esp. MPS) are less mature; fall
-            # back to eager rather than aborting the whole run over a compile error.
-            print(f"torch.compile failed on device={device.type}, falling back to eager mode: {exc}")
+        print("Compiling model for performance optimization...")
+        model = torch.compile(model)  # Significant speedup with compilation
     elif config['amount_device'] > 1:
         print(f"Multi-GPU mode ({config['amount_device']} GPUs): skipping torch.compile (incompatible with DataParallel)")
-
-    # 2 Device training (CUDA-only concept)
+    
+    # 2 Device training
     if config['amount_device'] > 1:
-        assert device.type == 'cuda', "amount_device > 1 (DataParallel) requires CUDA"
         model = nn.DataParallel(model, dim=0)
 
     
@@ -314,13 +278,6 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
 
 
     print('Starting Training Loop')
-    # Throughput timer: wall-clock steps/sec, logged every `timing_log_freq`
-    # micro-batches, to size real training time instead of guessing at it.
-    # Epoch 1 includes torch.compile warmup, so its readings aren't
-    # representative of steady-state -- trust epoch 2+ for extrapolation.
-    timing_log_freq = config.get('timing_log_freq', 50)
-    _window_start = time.time()
-    _window_steps = 0
     for epoch in range(start_epoch, num_epochs):
         if only_eval:
             break
@@ -359,13 +316,9 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
                 quaternion_data = skeleton_data['original'][:, :, :, 4:].to(device)
                 if num_sink_tokens > 0:
                     quaternion_data = quaternion_data[:, :-num_sink_tokens, :, :]
+            optimizer.zero_grad()
 
-            is_accum_start = batch_idx % grad_accum_steps == 0
-            is_accum_boundary = (batch_idx + 1) % grad_accum_steps == 0 or batch_idx == len(train_loader) - 1
-            if is_accum_start:
-                optimizer.zero_grad()
-
-            with autocast(device_type=device.type, enabled=(device.type != 'cpu')):
+            with autocast():
                 predicted_pos, embeddings = model(data, mask=model_mask)
                 predicted_3d_pos = predicted_pos[:, :, :, :3]
 
@@ -440,37 +393,17 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
             if loss_koleo is not None:
                 log_payload["loss_koleo"] = loss_koleo.item()
 
-            _window_steps += 1
-            if _window_steps % timing_log_freq == 0:
-                elapsed = time.time() - _window_start
-                micro_batches_per_sec = timing_log_freq / elapsed
-                samples_per_sec = micro_batches_per_sec * batch_size
-                remaining_in_epoch = len(train_loader) - batch_idx - 1
-                eta_epoch_min = (remaining_in_epoch / micro_batches_per_sec / 60) if micro_batches_per_sec > 0 else float('nan')
-                log_payload["perf/micro_batches_per_sec"] = micro_batches_per_sec
-                log_payload["perf/samples_per_sec"] = samples_per_sec
-                log_payload["perf/eta_this_epoch_min"] = eta_epoch_min
-                print(f"[perf] epoch {epoch} batch {batch_idx}/{len(train_loader)}: "
-                      f"{micro_batches_per_sec:.2f} micro-batches/s, {samples_per_sec:.2f} samples/s, "
-                      f"~{eta_epoch_min:.1f} min left this epoch")
-                _window_start = time.time()
-
             wandb.log(log_payload)
-            # Scale for accumulation (average, not sum, across micro-batches), then
-            # backward every step but only step optimizer/scheduler at the boundary.
-            loss_for_backward = loss_total / grad_accum_steps
-            if use_amp_scaler:
-                scaler.scale(loss_for_backward).backward()
-                if is_accum_boundary:
-                    scaler.step(optimizer)
-                    scaler.update()
+            # Scale, backward, and step
+            if config['use_scaler']:
+                scaler.scale(loss_total).backward()
+                scaler.step(optimizer)
+                scaler.update()
             else:
-                loss_for_backward.backward()
-                if is_accum_boundary:
-                    optimizer.step()
+                loss_total.backward()
+                optimizer.step()
             train_loss += loss_total.item()
-            if is_accum_boundary:
-                scheduler.step()
+            scheduler.step()
 
             # Log sink attention mass periodically (every 100 batches)
             sink_log_freq = config.get('sink_attention_log_freq', 100)
@@ -616,28 +549,27 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
                                                                  labels=config['labels'],
                                                                  graph_data=False,
                                                                  overlap_sequence=0,
-                                                                 args_cfg=args_cfg,
-                                                                 data_source=config.get('data_source', 'legacy_csv'))
+                                                                 args_cfg=args_cfg)
 
         train_loader = DataLoader(train_dataset,
                                   batch_size=batch_size,
                                   shuffle=True,
                                   num_workers=3,
-                                  pin_memory=pin_memory,
+                                  pin_memory=True,
                                   persistent_workers=True)
 
         eval_loader = DataLoader(eval_dataset,
                                  batch_size=batch_size,
                                  shuffle=False,
                                  num_workers=3,
-                                 pin_memory=pin_memory,
+                                 pin_memory=True,
                                  persistent_workers=True)
 
         test_loader = DataLoader(test_dataset,
                                  batch_size=batch_size,
                                  shuffle=False,
                                  num_workers=3,
-                                 pin_memory=pin_memory,
+                                 pin_memory=True,
                                  persistent_workers=True)
 
         final_metrics = run_final_evaluation(

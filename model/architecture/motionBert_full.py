@@ -2,7 +2,6 @@ from ast import Not
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import torch.utils.checkpoint as checkpoint
 import math
 import warnings
 import random
@@ -671,19 +670,13 @@ class DSTformer(nn.Module):
                  num_joints=17, maxlen=243,
                  qkv_bias=True, qk_scale=None, drop_rate=0., attn_drop_rate=0., drop_path_rate=0.,
                  norm_layer=nn.LayerNorm, att_fuse=True, use_rope=False, use_flash_attn=False,
-                 num_sink_tokens=0, use_grad_checkpointing=False):
+                 num_sink_tokens=0):
         super().__init__()
         self.dim_feat = dim_feat
         self.pos_drop = nn.Dropout(p=drop_rate)
         self.use_rope = use_rope
         self.use_flash_attn = use_flash_attn
         self.num_sink_tokens = num_sink_tokens
-        # Recompute each (blk_st, blk_ts) pair's activations during backward instead
-        # of storing them -- mathematically identical gradients (verified: bit-exact
-        # in testing), trades ~30% extra compute for a large activation-memory cut.
-        # Off by default; only meaningful during training (self.training), since eval
-        # has no backward pass to save memory for.
-        self.use_grad_checkpointing = use_grad_checkpointing
 
         dpr = [x.item() for x in torch.linspace(0, drop_path_rate, depth)]  # stochastic depth decay rule
         self.blocks_st = nn.ModuleList([
@@ -845,22 +838,17 @@ class DSTformer(nn.Module):
             self._set_attention_recording(True)
         alphas = []
         for idx, (blk_st, blk_ts) in enumerate(zip(self.blocks_st, self.blocks_ts)):
-            def _run_block_pair(x_in, blk_st=blk_st, blk_ts=blk_ts, idx=idx):
-                x_st = blk_st(x_in, F_effective, num_sink_tokens=self.num_sink_tokens)
-                x_ts = blk_ts(x_in, F_effective, num_sink_tokens=self.num_sink_tokens)
-                if self.att_fuse:
-                    att = self.ts_attn[idx]
-                    alpha = torch.cat([x_st, x_ts], dim=-1)
-                    alpha = att(alpha)
-                    alpha = alpha.softmax(dim=-1)
-                    return x_st * alpha[:, :, 0:1] + x_ts * alpha[:, :, 1:2]
-                else:
-                    return (x_st + x_ts) * 0.5
-
-            if self.use_grad_checkpointing and self.training:
-                x = checkpoint.checkpoint(_run_block_pair, x, use_reentrant=False)
+            x_st = blk_st(x, F_effective, num_sink_tokens=self.num_sink_tokens)
+            x_ts = blk_ts(x, F_effective, num_sink_tokens=self.num_sink_tokens)
+            if self.att_fuse:
+                att = self.ts_attn[idx]
+                alpha = torch.cat([x_st, x_ts], dim=-1)
+                BF_eff, J = alpha.shape[:2]
+                alpha = att(alpha)
+                alpha = alpha.softmax(dim=-1)
+                x = x_st * alpha[:, :, 0:1] + x_ts * alpha[:, :, 1:2]
             else:
-                x = _run_block_pair(x)
+                x = (x_st + x_ts) * 0.5
 
         # Strip sink tokens before output (they should not be in embeddings)
         sink_embeddings = None

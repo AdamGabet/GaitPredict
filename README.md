@@ -60,11 +60,6 @@ pip install -r requirements.txt
 
 Python 3.9+ recommended.
 
-To train a new model rather than just reproduce the paper's figures, see
-[`model/training/README.md`](model/training/README.md) — covers install on
-both Mac (MPS) and Linux EC2 (CUDA), environment variables, and choosing a
-data source/config.
-
 ---
 
 ## Reproducing figures

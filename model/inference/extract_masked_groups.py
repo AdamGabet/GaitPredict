@@ -18,7 +18,7 @@ from model.architecture.motionBert_full import DSTformer, ReconstructNet
 from model.preprocessing import args
 from model.preprocessing.preprocessing import get_datasets
 from model.preprocessing.joints_file import noise_groups
-from model.training.utils.training_helper import get_latest_dir, find_model_dir_for_run, select_device
+from model.training.utils.training_helper import get_latest_dir, find_model_dir_for_run
 
 load_dotenv(interpolate=True)
 
@@ -163,10 +163,6 @@ def _load_checkpoint_for_inference(model: ReconstructNet, checkpoint_path: str, 
         if not k.startswith(EXCLUDE_PREFIXES)
     }
 
-    # load_state_dict copies values into the model's *existing* parameter
-    # tensors, preserving whatever device those were already on -- it does
-    # NOT move the model to match map_location. Move explicitly first.
-    model = model.to(device)
     model.load_state_dict(model_state)
     model.eval()
     return model
@@ -180,7 +176,7 @@ def load_model_and_loaders(
     device: Optional[torch.device] = None,
 ) -> Tuple[ReconstructNet, Dict[str, torch.utils.data.DataLoader], args.PreprocessingArgs]:
     """Load trained weights and create loaders for train/eval/test splits."""
-    device = device or select_device("auto")
+    device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     clean_args = _sanitize_for_inference(args_cfg)
     print(f"Clean args: {clean_args}")
@@ -447,7 +443,7 @@ def extract_masked_embeddings(
     Returns:
         Path to output directory
     """
-    device = device or select_device("auto")
+    device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     print(f"Loading run {run_id}...")
     config, args_cfg, model_dir = load_run_config_and_args(run_id)
@@ -504,14 +500,14 @@ if __name__ == "__main__":
     parser.add_argument("run_id", type=str, help="WandB run ID")
     parser.add_argument("--epoch", type=int, default=None, help="Epoch to load (default: latest)")
     parser.add_argument("--output_dir", type=str, default=None, help="Output directory")
-    parser.add_argument("--device", type=str, default="auto", help="Device (auto/cuda/mps/cpu)")
+    parser.add_argument("--device", type=str, default="cuda", help="Device (cuda/cpu)")
 
     cli_args = parser.parse_args()
     extract_masked_embeddings(
         run_id=cli_args.run_id,
         epoch=cli_args.epoch,
         output_dir=cli_args.output_dir,
-        device=select_device(cli_args.device),
+        device=torch.device(cli_args.device),
     )
 
 

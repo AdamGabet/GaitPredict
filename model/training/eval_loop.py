@@ -9,6 +9,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, accuracy_score, f1_score, roc_auc_score, silhouette_score
 from sklearn.linear_model import LinearRegression, LogisticRegression
 from scipy.stats import pearsonr
+import lightgbm as lgb
 import pandas as pd
 import numpy as np
 

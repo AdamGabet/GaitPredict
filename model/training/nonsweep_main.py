@@ -7,15 +7,7 @@ standard training loop, and lets that loop handle the final evaluation pass.
 import argparse
 
 import wandb
-from model.training.default_config import (
-    LONG_CONFIG,
-    DEFAULT_CONFIG,
-    SHORT_CONFIG,
-    LIKE_OLD_CONFIG,
-    FINETUNE_CONFIG,
-    LONG_CONFIG_LOWMEM,
-    LONG_CONFIG_LOWMEM_NTDS,
-)
+from model.training.default_config import LONG_CONFIG, DEFAULT_CONFIG, SHORT_CONFIG, LIKE_OLD_CONFIG
 from model.training.train_loop import train
 from model.training.eval_loop import run_final_evaluation
 from model.training.continue_training import keep_training
@@ -29,29 +21,9 @@ load_dotenv(interpolate=True)  # Load environment variables from .env file if pr
 
 
 
-# Selectable named configs. Defaults to LONG_CONFIG so existing behaviour is unchanged;
-# set TRAIN_CONFIG=finetune (env) to run the proprietary-data fine-tune, or
-# TRAIN_CONFIG=long_lowmem for the same recipe with gradient checkpointing +
-# accumulation (fits in ~5GB instead of ~200+GB, same effective batch/size_seq).
-_CONFIGS = {
-    "long": LONG_CONFIG,
-    "short": SHORT_CONFIG,
-    "default": DEFAULT_CONFIG,
-    "like_old": LIKE_OLD_CONFIG,
-    "finetune": FINETUNE_CONFIG,
-    "long_lowmem": LONG_CONFIG_LOWMEM,
-    "long_lowmem_ntds": LONG_CONFIG_LOWMEM_NTDS,
-}
-
-
 def build_wandb_config() -> dict:
-    """Return a copy of the selected configuration for the training loop."""
-    name = os.getenv("TRAIN_CONFIG", "long").lower()
-    if name not in _CONFIGS:
-        raise ValueError(
-            f"Unknown TRAIN_CONFIG={name!r}. Choose one of: {sorted(_CONFIGS)}"
-        )
-    return dict(_CONFIGS[name])
+    """Return a copy of the baseline configuration for the training loop."""
+    return dict(LONG_CONFIG)
 
 
 def main() -> None:
