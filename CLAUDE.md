@@ -28,7 +28,7 @@ ends up in clinical contexts; quality and reproducibility are not optional.
 
 ### Engagement Model
 
-Work is scoped in **Parts** (~1 week / ~$5,000 each) under numbered POs (005–008 active).
+Work is scoped in **Parts** (~1 week / ~$5,000 each) under numbered POs (005 is active).
 Each Part has a defined deliverable: source code + documentation, or source code + summary
 of findings. Claude should be aware of which Part a task belongs to so deliverables are
 scoped correctly.

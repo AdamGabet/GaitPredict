@@ -1,6 +1,7 @@
 import copy
 import gc
 import os
+import time
 from datetime import datetime
 import torch
 import torch.nn as nn
@@ -313,6 +314,13 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
 
 
     print('Starting Training Loop')
+    # Throughput timer: wall-clock steps/sec, logged every `timing_log_freq`
+    # micro-batches, to size real training time instead of guessing at it.
+    # Epoch 1 includes torch.compile warmup, so its readings aren't
+    # representative of steady-state -- trust epoch 2+ for extrapolation.
+    timing_log_freq = config.get('timing_log_freq', 50)
+    _window_start = time.time()
+    _window_steps = 0
     for epoch in range(start_epoch, num_epochs):
         if only_eval:
             break
@@ -431,6 +439,21 @@ def train(run_final_eval: bool = True, config: dict = None, sweep=False, only_ev
                 log_payload['loss_quat_degrees'] = loss_4d_quat.item() * 180.0 / math.pi
             if loss_koleo is not None:
                 log_payload["loss_koleo"] = loss_koleo.item()
+
+            _window_steps += 1
+            if _window_steps % timing_log_freq == 0:
+                elapsed = time.time() - _window_start
+                micro_batches_per_sec = timing_log_freq / elapsed
+                samples_per_sec = micro_batches_per_sec * batch_size
+                remaining_in_epoch = len(train_loader) - batch_idx - 1
+                eta_epoch_min = (remaining_in_epoch / micro_batches_per_sec / 60) if micro_batches_per_sec > 0 else float('nan')
+                log_payload["perf/micro_batches_per_sec"] = micro_batches_per_sec
+                log_payload["perf/samples_per_sec"] = samples_per_sec
+                log_payload["perf/eta_this_epoch_min"] = eta_epoch_min
+                print(f"[perf] epoch {epoch} batch {batch_idx}/{len(train_loader)}: "
+                      f"{micro_batches_per_sec:.2f} micro-batches/s, {samples_per_sec:.2f} samples/s, "
+                      f"~{eta_epoch_min:.1f} min left this epoch")
+                _window_start = time.time()
 
             wandb.log(log_payload)
             # Scale for accumulation (average, not sum, across micro-batches), then
