@@ -1,0 +1,5 @@
+panel,gender,comparison,series_a,series_b,wilcoxon_pvalue,printed_label,test,n_seeds
+Male,male,gait vs demo,Gait Embeddings,Age + BMI,6.103515625e-05,P = 6.1×10−5,two-sided paired Wilcoxon signed-rank over seeds,15
+Male,male,gait vs clinical,Gait Embeddings,Age+BMI + routine liver biomarkers,0.00201416015625,P = 0.002,two-sided paired Wilcoxon signed-rank over seeds,15
+Female,female,gait vs demo,Gait Embeddings,Age + BMI,6.103515625e-05,P = 6.1×10−5,two-sided paired Wilcoxon signed-rank over seeds,15
+Female,female,gait vs clinical,Gait Embeddings,Age+BMI + routine liver biomarkers,6.103515625e-05,P = 6.1×10−5,two-sided paired Wilcoxon signed-rank over seeds,15

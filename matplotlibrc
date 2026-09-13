@@ -1,0 +1,27 @@
+# Nature Portfolio artwork requirements (NMED-A150882A).
+# Ref: NRJs-guide-to-preparing-final-artwork.pdf
+#
+# Typography: "All text should be sans-serif typeface, preferably Helvetica or
+# Arial." Neither ships with Linux, so Nimbus Sans (URW) is listed next -- it is
+# metric-compatible with Helvetica, so label widths and line breaks are
+# unchanged wherever the real face is unavailable. mathtext uses STIX Sans so
+# superscripts match the surrounding text.
+#
+# Figures must be vector with EDITABLE text. Matplotlib's default PDF/PS backend
+# emits Type 3 fonts, which are not editable and are rejected by production.
+# fonttype 42 = TrueType, keeping text as text in the exported PDF/EPS.
+#
+# Picked up automatically by any script run from the repo root (see README).
+font.family:      sans-serif
+font.sans-serif:  Helvetica, Arial, Nimbus Sans, DejaVu Sans
+# mathtext.fontset 'stixsans' still resolves some glyphs (italic R, minus sign)
+# from the serif STIXGeneral face, which put serif characters in a sans figure.
+# 'custom' points every mathtext role at the sans-serif family above instead.
+mathtext.fontset: custom
+mathtext.rm:      sans
+mathtext.it:      sans:italic
+mathtext.bf:      sans:bold
+
+pdf.fonttype: 42
+ps.fonttype:  42
+svg.fonttype: none

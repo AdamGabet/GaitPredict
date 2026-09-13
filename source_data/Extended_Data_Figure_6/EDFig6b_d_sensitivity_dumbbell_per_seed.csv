@@ -1,0 +1,301 @@
+panel,gender,row_order,system,endpoint,label_display,seed,sensitivity_baseline_pct,sensitivity_gait_pct
+b,male,1,medical_conditions,Vitiligo,Vitiligo,0,0.0,15.38461538461538
+b,male,1,medical_conditions,Vitiligo,Vitiligo,1,0.0,15.38461538461538
+b,male,1,medical_conditions,Vitiligo,Vitiligo,2,0.0,7.69230769230769
+b,male,1,medical_conditions,Vitiligo,Vitiligo,3,7.69230769230769,7.69230769230769
+b,male,1,medical_conditions,Vitiligo,Vitiligo,4,7.69230769230769,15.38461538461538
+b,male,1,medical_conditions,Vitiligo,Vitiligo,5,0.0,15.38461538461538
+b,male,1,medical_conditions,Vitiligo,Vitiligo,6,0.0,23.07692307692307
+b,male,1,medical_conditions,Vitiligo,Vitiligo,7,0.0,7.69230769230769
+b,male,1,medical_conditions,Vitiligo,Vitiligo,8,7.69230769230769,15.38461538461538
+b,male,1,medical_conditions,Vitiligo,Vitiligo,9,0.0,15.38461538461538
+b,male,2,medical_conditions,Depression,Depression,0,10.0,25.0
+b,male,2,medical_conditions,Depression,Depression,1,12.5,17.5
+b,male,2,medical_conditions,Depression,Depression,2,7.5,27.500000000000004
+b,male,2,medical_conditions,Depression,Depression,3,10.0,20.0
+b,male,2,medical_conditions,Depression,Depression,4,10.0,30.0
+b,male,2,medical_conditions,Depression,Depression,5,12.5,17.5
+b,male,2,medical_conditions,Depression,Depression,6,12.5,20.0
+b,male,2,medical_conditions,Depression,Depression,7,17.5,15.0
+b,male,2,medical_conditions,Depression,Depression,8,12.5,20.0
+b,male,2,medical_conditions,Depression,Depression,9,15.0,25.0
+b,male,3,medical_conditions,Diabetes,Diabetes,0,10.0,13.33333333333333
+b,male,3,medical_conditions,Diabetes,Diabetes,1,10.0,13.33333333333333
+b,male,3,medical_conditions,Diabetes,Diabetes,2,3.33333333333333,20.0
+b,male,3,medical_conditions,Diabetes,Diabetes,3,10.0,16.66666666666666
+b,male,3,medical_conditions,Diabetes,Diabetes,4,10.0,10.0
+b,male,3,medical_conditions,Diabetes,Diabetes,5,6.66666666666666,16.66666666666666
+b,male,3,medical_conditions,Diabetes,Diabetes,6,6.66666666666666,13.33333333333333
+b,male,3,medical_conditions,Diabetes,Diabetes,7,3.33333333333333,6.66666666666666
+b,male,3,medical_conditions,Diabetes,Diabetes,8,13.33333333333333,23.333333333333332
+b,male,3,medical_conditions,Diabetes,Diabetes,9,6.66666666666666,13.33333333333333
+b,male,4,medical_conditions_grouped,Sleep_disorder_any,Sleep Disorders,0,13.33333333333333,21.33333333333333
+b,male,4,medical_conditions_grouped,Sleep_disorder_any,Sleep Disorders,1,13.33333333333333,25.33333333333333
+b,male,4,medical_conditions_grouped,Sleep_disorder_any,Sleep Disorders,2,10.66666666666666,17.333333333333332
+b,male,4,medical_conditions_grouped,Sleep_disorder_any,Sleep Disorders,3,14.66666666666666,21.33333333333333
+b,male,4,medical_conditions_grouped,Sleep_disorder_any,Sleep Disorders,4,9.33333333333333,17.333333333333332
+b,male,4,medical_conditions_grouped,Sleep_disorder_any,Sleep Disorders,5,16.0,18.66666666666666
+b,male,4,medical_conditions_grouped,Sleep_disorder_any,Sleep Disorders,6,14.66666666666666,21.33333333333333
+b,male,4,medical_conditions_grouped,Sleep_disorder_any,Sleep Disorders,7,16.0,21.33333333333333
+b,male,4,medical_conditions_grouped,Sleep_disorder_any,Sleep Disorders,8,17.333333333333332,22.66666666666666
+b,male,4,medical_conditions_grouped,Sleep_disorder_any,Sleep Disorders,9,14.66666666666666,20.0
+b,male,5,medical_conditions,Glaucoma,Glaucoma,0,30.76923076923077,30.76923076923077
+b,male,5,medical_conditions,Glaucoma,Glaucoma,1,15.38461538461538,15.38461538461538
+b,male,5,medical_conditions,Glaucoma,Glaucoma,2,0.0,23.07692307692307
+b,male,5,medical_conditions,Glaucoma,Glaucoma,3,7.69230769230769,23.07692307692307
+b,male,5,medical_conditions,Glaucoma,Glaucoma,4,15.38461538461538,23.07692307692307
+b,male,5,medical_conditions,Glaucoma,Glaucoma,5,15.38461538461538,15.38461538461538
+b,male,5,medical_conditions,Glaucoma,Glaucoma,6,23.07692307692307,23.07692307692307
+b,male,5,medical_conditions,Glaucoma,Glaucoma,7,23.07692307692307,23.07692307692307
+b,male,5,medical_conditions,Glaucoma,Glaucoma,8,15.38461538461538,15.38461538461538
+b,male,5,medical_conditions,Glaucoma,Glaucoma,9,15.38461538461538,30.76923076923077
+b,male,6,medical_conditions,Headache,Headache,0,3.84615384615384,15.38461538461538
+b,male,6,medical_conditions,Headache,Headache,1,7.69230769230769,15.38461538461538
+b,male,6,medical_conditions,Headache,Headache,2,11.53846153846153,19.23076923076923
+b,male,6,medical_conditions,Headache,Headache,3,15.38461538461538,7.69230769230769
+b,male,6,medical_conditions,Headache,Headache,4,3.84615384615384,3.84615384615384
+b,male,6,medical_conditions,Headache,Headache,5,7.69230769230769,7.69230769230769
+b,male,6,medical_conditions,Headache,Headache,6,11.53846153846153,15.38461538461538
+b,male,6,medical_conditions,Headache,Headache,7,7.69230769230769,15.38461538461538
+b,male,6,medical_conditions,Headache,Headache,8,15.38461538461538,15.38461538461538
+b,male,6,medical_conditions,Headache,Headache,9,11.53846153846153,19.23076923076923
+b,male,7,medical_conditions,Psoriasis,Psoriasis,0,7.14285714285714,7.14285714285714
+b,male,7,medical_conditions,Psoriasis,Psoriasis,1,2.38095238095238,7.14285714285714
+b,male,7,medical_conditions,Psoriasis,Psoriasis,2,9.52380952380952,9.52380952380952
+b,male,7,medical_conditions,Psoriasis,Psoriasis,3,7.14285714285714,11.9047619047619
+b,male,7,medical_conditions,Psoriasis,Psoriasis,4,2.38095238095238,7.14285714285714
+b,male,7,medical_conditions,Psoriasis,Psoriasis,5,2.38095238095238,11.9047619047619
+b,male,7,medical_conditions,Psoriasis,Psoriasis,6,11.9047619047619,9.52380952380952
+b,male,7,medical_conditions,Psoriasis,Psoriasis,7,4.76190476190476,9.52380952380952
+b,male,7,medical_conditions,Psoriasis,Psoriasis,8,0.0,4.76190476190476
+b,male,7,medical_conditions,Psoriasis,Psoriasis,9,7.14285714285714,11.9047619047619
+b,male,8,medical_conditions,Renal Stones,Renal Stones,0,5.88235294117647,17.64705882352941
+b,male,8,medical_conditions,Renal Stones,Renal Stones,1,5.88235294117647,17.64705882352941
+b,male,8,medical_conditions,Renal Stones,Renal Stones,2,17.64705882352941,17.64705882352941
+b,male,8,medical_conditions,Renal Stones,Renal Stones,3,0.0,0.0
+b,male,8,medical_conditions,Renal Stones,Renal Stones,4,0.0,11.76470588235294
+b,male,8,medical_conditions,Renal Stones,Renal Stones,5,11.76470588235294,11.76470588235294
+b,male,8,medical_conditions,Renal Stones,Renal Stones,6,5.88235294117647,5.88235294117647
+b,male,8,medical_conditions,Renal Stones,Renal Stones,7,0.0,5.88235294117647
+b,male,8,medical_conditions,Renal Stones,Renal Stones,8,11.76470588235294,11.76470588235294
+b,male,8,medical_conditions,Renal Stones,Renal Stones,9,17.64705882352941,5.88235294117647
+b,male,9,medical_conditions,Fractures,Fractures,0,8.33333333333333,9.61538461538461
+b,male,9,medical_conditions,Fractures,Fractures,1,7.69230769230769,6.41025641025641
+b,male,9,medical_conditions,Fractures,Fractures,2,6.41025641025641,11.53846153846153
+b,male,9,medical_conditions,Fractures,Fractures,3,6.41025641025641,11.53846153846153
+b,male,9,medical_conditions,Fractures,Fractures,4,5.12820512820512,11.53846153846153
+b,male,9,medical_conditions,Fractures,Fractures,5,8.974358974358971,11.53846153846153
+b,male,9,medical_conditions,Fractures,Fractures,6,8.33333333333333,7.69230769230769
+b,male,9,medical_conditions,Fractures,Fractures,7,6.41025641025641,11.53846153846153
+b,male,9,medical_conditions,Fractures,Fractures,8,7.69230769230769,10.89743589743589
+b,male,9,medical_conditions,Fractures,Fractures,9,8.33333333333333,9.61538461538461
+b,male,10,medical_conditions,Anal Fissure,Anal Fissure,0,10.0,6.66666666666666
+b,male,10,medical_conditions,Anal Fissure,Anal Fissure,1,4.444444444444439,10.0
+b,male,10,medical_conditions,Anal Fissure,Anal Fissure,2,6.66666666666666,13.33333333333333
+b,male,10,medical_conditions,Anal Fissure,Anal Fissure,3,8.888888888888879,5.55555555555555
+b,male,10,medical_conditions,Anal Fissure,Anal Fissure,4,6.66666666666666,7.77777777777777
+b,male,10,medical_conditions,Anal Fissure,Anal Fissure,5,2.2222222222222197,10.0
+b,male,10,medical_conditions,Anal Fissure,Anal Fissure,6,7.77777777777777,12.22222222222222
+b,male,10,medical_conditions,Anal Fissure,Anal Fissure,7,6.66666666666666,8.888888888888879
+b,male,10,medical_conditions,Anal Fissure,Anal Fissure,8,4.444444444444439,10.0
+b,male,10,medical_conditions,Anal Fissure,Anal Fissure,9,8.888888888888879,10.0
+b,male,11,medical_conditions,Back Pain,Back Pain,0,11.62790697674418,12.95681063122923
+b,male,11,medical_conditions,Back Pain,Back Pain,1,11.62790697674418,14.950166112956808
+b,male,11,medical_conditions,Back Pain,Back Pain,2,9.30232558139534,12.95681063122923
+b,male,11,medical_conditions,Back Pain,Back Pain,3,10.963455149501659,14.61794019933555
+b,male,11,medical_conditions,Back Pain,Back Pain,4,10.29900332225913,14.950166112956808
+b,male,11,medical_conditions,Back Pain,Back Pain,5,10.29900332225913,12.95681063122923
+b,male,11,medical_conditions,Back Pain,Back Pain,6,11.29568106312292,11.96013289036544
+b,male,11,medical_conditions,Back Pain,Back Pain,7,11.62790697674418,13.95348837209302
+b,male,11,medical_conditions,Back Pain,Back Pain,8,10.63122923588039,12.62458471760797
+b,male,11,medical_conditions,Back Pain,Back Pain,9,10.63122923588039,12.62458471760797
+b,male,12,medical_conditions,Haemorrhoids,Haemorrhoids,0,8.85245901639344,9.18032786885245
+b,male,12,medical_conditions,Haemorrhoids,Haemorrhoids,1,9.83606557377049,12.45901639344262
+b,male,12,medical_conditions,Haemorrhoids,Haemorrhoids,2,8.52459016393442,10.163934426229499
+b,male,12,medical_conditions,Haemorrhoids,Haemorrhoids,3,9.83606557377049,9.83606557377049
+b,male,12,medical_conditions,Haemorrhoids,Haemorrhoids,4,9.83606557377049,11.47540983606557
+b,male,12,medical_conditions,Haemorrhoids,Haemorrhoids,5,9.83606557377049,11.80327868852459
+b,male,12,medical_conditions,Haemorrhoids,Haemorrhoids,6,9.508196721311469,10.81967213114754
+b,male,12,medical_conditions,Haemorrhoids,Haemorrhoids,7,8.85245901639344,11.80327868852459
+b,male,12,medical_conditions,Haemorrhoids,Haemorrhoids,8,9.508196721311469,10.81967213114754
+b,male,12,medical_conditions,Haemorrhoids,Haemorrhoids,9,10.163934426229499,10.81967213114754
+b,male,13,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,0,6.89655172413793,10.34482758620689
+b,male,13,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,1,6.89655172413793,6.89655172413793
+b,male,13,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,2,10.34482758620689,6.89655172413793
+b,male,13,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,3,10.34482758620689,6.89655172413793
+b,male,13,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,4,13.79310344827586,13.79310344827586
+b,male,13,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,5,10.34482758620689,6.89655172413793
+b,male,13,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,6,6.89655172413793,24.137931034482758
+b,male,13,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,7,10.34482758620689,3.44827586206896
+b,male,13,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,8,10.34482758620689,17.24137931034483
+b,male,13,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,9,10.34482758620689,10.34482758620689
+b,male,14,medical_conditions,Osteoarthritis,Osteoarthritis,0,22.22222222222222,18.51851851851851
+b,male,14,medical_conditions,Osteoarthritis,Osteoarthritis,1,18.51851851851851,22.22222222222222
+b,male,14,medical_conditions,Osteoarthritis,Osteoarthritis,2,18.51851851851851,18.51851851851851
+b,male,14,medical_conditions,Osteoarthritis,Osteoarthritis,3,22.22222222222222,25.92592592592592
+b,male,14,medical_conditions,Osteoarthritis,Osteoarthritis,4,22.22222222222222,22.22222222222222
+b,male,14,medical_conditions,Osteoarthritis,Osteoarthritis,5,22.22222222222222,18.51851851851851
+b,male,14,medical_conditions,Osteoarthritis,Osteoarthritis,6,22.22222222222222,14.814814814814811
+b,male,14,medical_conditions,Osteoarthritis,Osteoarthritis,7,18.51851851851851,14.814814814814811
+b,male,14,medical_conditions,Osteoarthritis,Osteoarthritis,8,18.51851851851851,29.629629629629626
+b,male,14,medical_conditions,Osteoarthritis,Osteoarthritis,9,22.22222222222222,25.92592592592592
+b,male,15,medical_conditions,Anemia,Anemia,0,9.375,9.375
+b,male,15,medical_conditions,Anemia,Anemia,1,9.375,6.25
+b,male,15,medical_conditions,Anemia,Anemia,2,3.125,6.25
+b,male,15,medical_conditions,Anemia,Anemia,3,6.25,0.0
+b,male,15,medical_conditions,Anemia,Anemia,4,0.0,9.375
+b,male,15,medical_conditions,Anemia,Anemia,5,6.25,3.125
+b,male,15,medical_conditions,Anemia,Anemia,6,3.125,9.375
+b,male,15,medical_conditions,Anemia,Anemia,7,3.125,3.125
+b,male,15,medical_conditions,Anemia,Anemia,8,6.25,6.25
+b,male,15,medical_conditions,Anemia,Anemia,9,6.25,3.125
+b,male,16,medical_conditions,Heart valve disease,Heart valve disease,0,8.695652173913041,4.347826086956521
+b,male,16,medical_conditions,Heart valve disease,Heart valve disease,1,4.347826086956521,4.347826086956521
+b,male,16,medical_conditions,Heart valve disease,Heart valve disease,2,13.04347826086956,4.347826086956521
+b,male,16,medical_conditions,Heart valve disease,Heart valve disease,3,8.695652173913041,13.04347826086956
+b,male,16,medical_conditions,Heart valve disease,Heart valve disease,4,13.04347826086956,8.695652173913041
+b,male,16,medical_conditions,Heart valve disease,Heart valve disease,5,4.347826086956521,8.695652173913041
+b,male,16,medical_conditions,Heart valve disease,Heart valve disease,6,4.347826086956521,13.04347826086956
+b,male,16,medical_conditions,Heart valve disease,Heart valve disease,7,8.695652173913041,4.347826086956521
+b,male,16,medical_conditions,Heart valve disease,Heart valve disease,8,4.347826086956521,4.347826086956521
+b,male,16,medical_conditions,Heart valve disease,Heart valve disease,9,4.347826086956521,8.695652173913041
+b,male,17,medical_conditions,Asthma,Asthma,0,12.22222222222222,6.66666666666666
+b,male,17,medical_conditions,Asthma,Asthma,1,12.22222222222222,17.77777777777777
+b,male,17,medical_conditions,Asthma,Asthma,2,12.22222222222222,12.22222222222222
+b,male,17,medical_conditions,Asthma,Asthma,3,12.22222222222222,11.11111111111111
+b,male,17,medical_conditions,Asthma,Asthma,4,13.33333333333333,12.22222222222222
+b,male,17,medical_conditions,Asthma,Asthma,5,7.77777777777777,7.77777777777777
+b,male,17,medical_conditions,Asthma,Asthma,6,12.22222222222222,8.888888888888879
+b,male,17,medical_conditions,Asthma,Asthma,7,11.11111111111111,13.33333333333333
+b,male,17,medical_conditions,Asthma,Asthma,8,11.11111111111111,8.888888888888879
+b,male,17,medical_conditions,Asthma,Asthma,9,13.33333333333333,12.22222222222222
+b,male,18,medical_conditions,Sinusitis,Sinusitis,0,16.21621621621621,16.21621621621621
+b,male,18,medical_conditions,Sinusitis,Sinusitis,1,16.21621621621621,18.91891891891892
+b,male,18,medical_conditions,Sinusitis,Sinusitis,2,16.21621621621621,13.513513513513509
+b,male,18,medical_conditions,Sinusitis,Sinusitis,3,16.21621621621621,18.91891891891892
+b,male,18,medical_conditions,Sinusitis,Sinusitis,4,16.21621621621621,13.513513513513509
+b,male,18,medical_conditions,Sinusitis,Sinusitis,5,16.21621621621621,8.1081081081081
+b,male,18,medical_conditions,Sinusitis,Sinusitis,6,18.91891891891892,13.513513513513509
+b,male,18,medical_conditions,Sinusitis,Sinusitis,7,16.21621621621621,13.513513513513509
+b,male,18,medical_conditions,Sinusitis,Sinusitis,8,16.21621621621621,18.91891891891892
+b,male,18,medical_conditions,Sinusitis,Sinusitis,9,18.91891891891892,16.21621621621621
+b,male,19,medical_conditions,B12 Deficiency,B12 Deficiency,0,14.28571428571428,7.14285714285714
+b,male,19,medical_conditions,B12 Deficiency,B12 Deficiency,1,16.07142857142857,7.14285714285714
+b,male,19,medical_conditions,B12 Deficiency,B12 Deficiency,2,14.28571428571428,10.71428571428571
+b,male,19,medical_conditions,B12 Deficiency,B12 Deficiency,3,8.92857142857142,10.71428571428571
+b,male,19,medical_conditions,B12 Deficiency,B12 Deficiency,4,16.07142857142857,10.71428571428571
+b,male,19,medical_conditions,B12 Deficiency,B12 Deficiency,5,7.14285714285714,7.14285714285714
+b,male,19,medical_conditions,B12 Deficiency,B12 Deficiency,6,14.28571428571428,10.71428571428571
+b,male,19,medical_conditions,B12 Deficiency,B12 Deficiency,7,8.92857142857142,7.14285714285714
+b,male,19,medical_conditions,B12 Deficiency,B12 Deficiency,8,12.5,10.71428571428571
+b,male,19,medical_conditions,B12 Deficiency,B12 Deficiency,9,16.07142857142857,14.28571428571428
+d,female,1,medical_conditions,Psoriasis,Psoriasis,0,2.1739130434782603,13.04347826086956
+d,female,1,medical_conditions,Psoriasis,Psoriasis,1,2.1739130434782603,21.7391304347826
+d,female,1,medical_conditions,Psoriasis,Psoriasis,2,8.695652173913041,19.565217391304348
+d,female,1,medical_conditions,Psoriasis,Psoriasis,3,2.1739130434782603,21.7391304347826
+d,female,1,medical_conditions,Psoriasis,Psoriasis,4,0.0,17.391304347826082
+d,female,1,medical_conditions,Psoriasis,Psoriasis,5,4.347826086956521,15.217391304347819
+d,female,1,medical_conditions,Psoriasis,Psoriasis,6,2.1739130434782603,21.7391304347826
+d,female,1,medical_conditions,Psoriasis,Psoriasis,7,4.347826086956521,13.04347826086956
+d,female,1,medical_conditions,Psoriasis,Psoriasis,8,0.0,13.04347826086956
+d,female,1,medical_conditions,Psoriasis,Psoriasis,9,2.1739130434782603,21.7391304347826
+d,female,2,medical_conditions,Perimenopausal Disorders,Perimenopausal Disorders,0,0.0,12.5
+d,female,2,medical_conditions,Perimenopausal Disorders,Perimenopausal Disorders,1,6.25,12.5
+d,female,2,medical_conditions,Perimenopausal Disorders,Perimenopausal Disorders,2,6.25,12.5
+d,female,2,medical_conditions,Perimenopausal Disorders,Perimenopausal Disorders,3,6.25,12.5
+d,female,2,medical_conditions,Perimenopausal Disorders,Perimenopausal Disorders,4,12.5,31.25
+d,female,2,medical_conditions,Perimenopausal Disorders,Perimenopausal Disorders,5,6.25,12.5
+d,female,2,medical_conditions,Perimenopausal Disorders,Perimenopausal Disorders,6,0.0,31.25
+d,female,2,medical_conditions,Perimenopausal Disorders,Perimenopausal Disorders,7,0.0,18.75
+d,female,2,medical_conditions,Perimenopausal Disorders,Perimenopausal Disorders,8,0.0,6.25
+d,female,2,medical_conditions,Perimenopausal Disorders,Perimenopausal Disorders,9,0.0,12.5
+d,female,3,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,0,3.84615384615384,15.38461538461538
+d,female,3,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,1,7.69230769230769,19.23076923076923
+d,female,3,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,2,7.69230769230769,26.923076923076923
+d,female,3,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,3,15.38461538461538,15.38461538461538
+d,female,3,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,4,11.53846153846153,19.23076923076923
+d,female,3,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,5,3.84615384615384,23.07692307692307
+d,female,3,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,6,7.69230769230769,26.923076923076923
+d,female,3,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,7,7.69230769230769,19.23076923076923
+d,female,3,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,8,3.84615384615384,15.38461538461538
+d,female,3,medical_conditions,Peptic Ulcer Disease,Peptic Ulcer Disease,9,3.84615384615384,15.38461538461538
+d,female,4,medical_conditions,Fractures,Fractures,0,9.85915492957746,13.38028169014084
+d,female,4,medical_conditions,Fractures,Fractures,1,10.56338028169014,9.85915492957746
+d,female,4,medical_conditions,Fractures,Fractures,2,9.15492957746478,9.15492957746478
+d,female,4,medical_conditions,Fractures,Fractures,3,9.85915492957746,9.85915492957746
+d,female,4,medical_conditions,Fractures,Fractures,4,5.6338028169014,13.38028169014084
+d,female,4,medical_conditions,Fractures,Fractures,5,7.042253521126759,10.56338028169014
+d,female,4,medical_conditions,Fractures,Fractures,6,9.15492957746478,12.676056338028168
+d,female,4,medical_conditions,Fractures,Fractures,7,8.45070422535211,10.56338028169014
+d,female,4,medical_conditions,Fractures,Fractures,8,11.26760563380281,13.38028169014084
+d,female,4,medical_conditions,Fractures,Fractures,9,9.15492957746478,12.676056338028168
+d,female,5,medical_conditions,Headache,Headache,0,9.43396226415094,11.32075471698113
+d,female,5,medical_conditions,Headache,Headache,1,16.981132075471688,20.75471698113207
+d,female,5,medical_conditions,Headache,Headache,2,15.09433962264151,15.09433962264151
+d,female,5,medical_conditions,Headache,Headache,3,16.981132075471688,16.981132075471688
+d,female,5,medical_conditions,Headache,Headache,4,16.981132075471688,18.86792452830188
+d,female,5,medical_conditions,Headache,Headache,5,11.32075471698113,15.09433962264151
+d,female,5,medical_conditions,Headache,Headache,6,15.09433962264151,20.75471698113207
+d,female,5,medical_conditions,Headache,Headache,7,13.20754716981132,13.20754716981132
+d,female,5,medical_conditions,Headache,Headache,8,15.09433962264151,18.86792452830188
+d,female,5,medical_conditions,Headache,Headache,9,13.20754716981132,16.981132075471688
+d,female,6,medical_conditions,Urinary Tract Stones,Urinary Tract Stones,0,0.0,5.0
+d,female,6,medical_conditions,Urinary Tract Stones,Urinary Tract Stones,1,0.0,5.0
+d,female,6,medical_conditions,Urinary Tract Stones,Urinary Tract Stones,2,5.0,5.0
+d,female,6,medical_conditions,Urinary Tract Stones,Urinary Tract Stones,3,0.0,10.0
+d,female,6,medical_conditions,Urinary Tract Stones,Urinary Tract Stones,4,0.0,0.0
+d,female,6,medical_conditions,Urinary Tract Stones,Urinary Tract Stones,5,5.0,5.0
+d,female,6,medical_conditions,Urinary Tract Stones,Urinary Tract Stones,6,10.0,5.0
+d,female,6,medical_conditions,Urinary Tract Stones,Urinary Tract Stones,7,0.0,5.0
+d,female,6,medical_conditions,Urinary Tract Stones,Urinary Tract Stones,8,0.0,0.0
+d,female,6,medical_conditions,Urinary Tract Stones,Urinary Tract Stones,9,0.0,0.0
+d,female,7,medical_conditions,Depression,Depression,0,14.705882352941169,10.29411764705882
+d,female,7,medical_conditions,Depression,Depression,1,14.705882352941169,20.58823529411764
+d,female,7,medical_conditions,Depression,Depression,2,16.17647058823529,14.705882352941169
+d,female,7,medical_conditions,Depression,Depression,3,10.29411764705882,14.705882352941169
+d,female,7,medical_conditions,Depression,Depression,4,19.11764705882352,13.23529411764706
+d,female,7,medical_conditions,Depression,Depression,5,13.23529411764706,17.64705882352941
+d,female,7,medical_conditions,Depression,Depression,6,11.76470588235294,19.11764705882352
+d,female,7,medical_conditions,Depression,Depression,7,11.76470588235294,17.64705882352941
+d,female,7,medical_conditions,Depression,Depression,8,16.17647058823529,14.705882352941169
+d,female,7,medical_conditions,Depression,Depression,9,20.58823529411764,17.64705882352941
+d,female,8,medical_conditions,Asthma,Asthma,0,16.16161616161616,17.17171717171717
+d,female,8,medical_conditions,Asthma,Asthma,1,15.151515151515149,14.14141414141414
+d,female,8,medical_conditions,Asthma,Asthma,2,17.17171717171717,19.19191919191919
+d,female,8,medical_conditions,Asthma,Asthma,3,17.17171717171717,18.18181818181818
+d,female,8,medical_conditions,Asthma,Asthma,4,19.19191919191919,20.2020202020202
+d,female,8,medical_conditions,Asthma,Asthma,5,12.12121212121212,19.19191919191919
+d,female,8,medical_conditions,Asthma,Asthma,6,19.19191919191919,16.16161616161616
+d,female,8,medical_conditions,Asthma,Asthma,7,13.13131313131313,19.19191919191919
+d,female,8,medical_conditions,Asthma,Asthma,8,18.18181818181818,12.12121212121212
+d,female,8,medical_conditions,Asthma,Asthma,9,16.16161616161616,16.16161616161616
+d,female,9,medical_conditions,Oral apthae,Oral apthae,0,8.33333333333333,8.33333333333333
+d,female,9,medical_conditions,Oral apthae,Oral apthae,1,10.0,11.66666666666666
+d,female,9,medical_conditions,Oral apthae,Oral apthae,2,5.0,6.66666666666666
+d,female,9,medical_conditions,Oral apthae,Oral apthae,3,10.0,8.33333333333333
+d,female,9,medical_conditions,Oral apthae,Oral apthae,4,8.33333333333333,5.0
+d,female,9,medical_conditions,Oral apthae,Oral apthae,5,11.66666666666666,11.66666666666666
+d,female,9,medical_conditions,Oral apthae,Oral apthae,6,8.33333333333333,8.33333333333333
+d,female,9,medical_conditions,Oral apthae,Oral apthae,7,15.0,8.33333333333333
+d,female,9,medical_conditions,Oral apthae,Oral apthae,8,8.33333333333333,6.66666666666666
+d,female,9,medical_conditions,Oral apthae,Oral apthae,9,11.66666666666666,11.66666666666666
+d,female,10,medical_conditions,IBS,IBS,0,30.76923076923077,33.84615384615385
+d,female,10,medical_conditions,IBS,IBS,1,32.30769230769231,30.76923076923077
+d,female,10,medical_conditions,IBS,IBS,2,30.76923076923077,29.230769230769234
+d,female,10,medical_conditions,IBS,IBS,3,30.76923076923077,30.76923076923077
+d,female,10,medical_conditions,IBS,IBS,4,32.30769230769231,27.69230769230769
+d,female,10,medical_conditions,IBS,IBS,5,30.76923076923077,27.69230769230769
+d,female,10,medical_conditions,IBS,IBS,6,30.76923076923077,26.15384615384615
+d,female,10,medical_conditions,IBS,IBS,7,30.76923076923077,29.230769230769234
+d,female,10,medical_conditions,IBS,IBS,8,29.230769230769234,29.230769230769234
+d,female,10,medical_conditions,IBS,IBS,9,30.76923076923077,27.69230769230769
+d,female,11,medical_conditions,Diabetes,Diabetes,0,13.63636363636363,4.54545454545454
+d,female,11,medical_conditions,Diabetes,Diabetes,1,22.72727272727272,27.27272727272727
+d,female,11,medical_conditions,Diabetes,Diabetes,2,9.09090909090909,18.18181818181818
+d,female,11,medical_conditions,Diabetes,Diabetes,3,18.18181818181818,9.09090909090909
+d,female,11,medical_conditions,Diabetes,Diabetes,4,4.54545454545454,9.09090909090909
+d,female,11,medical_conditions,Diabetes,Diabetes,5,22.72727272727272,18.18181818181818
+d,female,11,medical_conditions,Diabetes,Diabetes,6,13.63636363636363,9.09090909090909
+d,female,11,medical_conditions,Diabetes,Diabetes,7,22.72727272727272,9.09090909090909
+d,female,11,medical_conditions,Diabetes,Diabetes,8,13.63636363636363,27.27272727272727
+d,female,11,medical_conditions,Diabetes,Diabetes,9,13.63636363636363,0.0

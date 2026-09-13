@@ -31,12 +31,14 @@ GaitPredict-Paper/
 │   ├── extended_figure_4/           # Normalized-input vs GaitMAE absolute r gain
 │   ├── extended_figure_5/           # Liver ultrasound: gait vs Age+BMI vs blood panel
 │   ├── extended_figure_6/           # Composite: clinical-scenario sensitivity/AUC grid
+│   ├── extended_figure_7/           # 26-joint K4ABT skeleton schematic (bundled de-identified frame)
 │   ├── supp_figure_2/               # Stratified Δr (age/BMI strata) Figure-4-style grid
 │   ├── supp_figure_3/               # Longitudinal next-visit significant improvements
 │   ├── supp_figure_4/               # Lower-limb-only ablation grid (ASBV + Figure 4)
 │   ├── supp_figure_5/               # Ancestry transfer / discrimination 2×2 grid
 │   ├── supp_figure_6/               # Relatedness sensitivity (full vs unrelated-only)
-│   ├── figure_4/  figure_4b/        # Legacy standalone panels (superseded by figure_4_grid)
+│   ├── _superseded_figure_4/        # Legacy standalone panels, kept for reference only
+│   ├── _superseded_figure_4b/       #   (superseded by figure_4_grid -- not the submitted figure)
 │   └── …                            # composite figures keep their panel scripts in individual_plots/
 ├── results/                   # Pre-computed, de-identified CSV results (see below)
 ├── sample_data/               # Sample skeleton CSVs (smoke test + Figure-6 body-group poses)
@@ -44,7 +46,7 @@ GaitPredict-Paper/
 └── LICENSE
 ```
 
-**`individual_plots/` convention.** Composite/grid figures (Figures 2, 4, 6 and Extended 6,
+**`individual_plots/` convention.** Composite/grid figures (Figures 2, 4, 6 and Extended Data 6,
 Supp 4) keep the scripts that render their constituent panels in an `individual_plots/`
 subdirectory. The top-level script in each figure folder is the final assembler; it reads
 the panels produced by the `individual_plots/` scripts and writes the published figure to
@@ -72,7 +74,7 @@ figure's `output/` subdirectory. Run from the repo root.
 ```bash
 python plotting/figure_1/loss_plot.py
 python plotting/figure_1/gait_biomarker_infographic.py
-python plotting/figure_3/radar_gait_only.py                  # Figure 3 + Extended Figure 3
+python plotting/figure_3/radar_gait_only.py                  # Figure 3 + Extended Data Figure 3
 python plotting/figure_4_grid/make_figure_4_grid.py          # Figure 4
 python plotting/figure_5_medical/medical_conditions_dumbbell.py
 python plotting/extended_figure_1/publication_figure_gm.py
@@ -81,7 +83,6 @@ python plotting/extended_figure_4/normalized_vs_gaitmae_absolute_r_gain.py
 python plotting/extended_figure_5/plot_liver_gait_vs_bloodpanel.py
 python plotting/supp_figure_2/stratified_subgroup_delta_r.py
 python plotting/supp_figure_3/plot_longitudinal_significant_improvements.py
-python plotting/supp_figure_4/grid_asbv_figure4.py
 python plotting/supp_figure_5/plot_ancestry_2x2_grid.py
 python plotting/supp_figure_6/plot_relatedness_delta_bars.py
 ```
@@ -100,10 +101,33 @@ python plotting/figure_6/individual_plots/plot_body_system_heatmap.py
 python plotting/figure_6/individual_plots/plot_grouped_by_body_part.py --metric pearson
 python plotting/figure_6/make_figure_6_composite.py
 
-# Extended Figure 6
+# Extended Data Figure 6
 python plotting/extended_figure_6/individual_plots/make_clinical_scenario_panels.py
 python plotting/extended_figure_6/make_clinical_scenario_grid.py
+
+# Supplementary Figure 4
+python plotting/supp_figure_4/individual_plots/make_grid_panels.py
+python plotting/supp_figure_4/grid_asbv_figure4.py
+
+# Extended Data Figure 7 -- draws from the de-identified frame bundled in
+# plotting/extended_figure_7/data/ , so it needs no cohort access
+python plotting/extended_figure_7/plot_skeleton_schematic.py
 ```
+
+### Staging the figures for submission
+
+Nature asks for one file per figure, named so an editor can tell them apart. After
+the figure scripts have run, this collects the shipped PDF for each figure into
+`submission/` under those names, copies `source_data/` alongside them, and re-checks
+every file against the artwork rules (180 mm two-column width, text between 5 and
+7 pt at that width, no taller than ~225 mm, vector with editable text):
+
+```bash
+python plotting/stage_submission.py    # needs pymupdf -> base conda, not NewtonModels
+```
+
+It regenerates nothing, so it is safe to re-run. It prints what is still outside
+the rules and what needs an author decision. `submission/` is gitignored.
 
 ---
 
@@ -123,7 +147,35 @@ distributed.
 | `masking_ablation_pearson.csv` | 6 | Body-system joint-masking ablation Pearson r |
 | `masking_strategy_ablation_age.csv` | — | Pretraining masking-strategy ablation (age, per sex): full / no-frame / no-group / no-noise / noise-only |
 | `roc_gender.csv`, `umap_embeddings.csv`, `asbv_metrics.csv`, `movement_features_asbv.csv` | 2 | ROC curve points, 2D UMAP coords, ASBV metrics, movement-feature baseline |
+| `asbv_seed_values.csv` | 2 | Per-seed Pearson r behind both Figure 2c-h bar series (`source` = embeddings / features); 3 targets x 6 activities x 3 subsets x 15 seeds |
+| `gender_auc_summary.csv`, `gender_auc_seed_values.csv` | 2 | Figure 2a AUC per series -- the pooled value the legend prints, and the AUC of every seed behind it |
+| `activity_one_vs_all_auc_folds.csv` | 2 | Figure 2b one-vs-all activity classification, 5 seeds x 5 folds |
 | `wandb_training_loss.csv` | 1 | W&B training-loss export |
+
+### Source Data
+
+`source_data/` holds the exact values that are drawn in each panel — bar heights, box
+statistics, spoke radii, heatmap cells, curve points — together with the exact P values
+and the n behind them. 36 CSVs covering every Figure and every Extended Data Figure: one
+directory per figure, one CSV per panel, plus a `_per_seed` companion wherever a panel
+summarises repeated cross-validation runs. See
+[`source_data/README.md`](source_data/README.md) for the file index, the column
+conventions and which test each P value comes from. Rebuild with:
+
+```bash
+~/miniconda3/envs/NewtonModels/bin/python plotting/build_source_data.py
+```
+
+Each figure applies its own filters and display names, and several read the same
+results CSV with a different `model` value, so the script imports each figure's own
+selection functions rather than re-implementing them — what is exported is what is
+plotted, in plot order.
+
+`gait_only_pearson.csv` carries no FDR column — Figures 3 and Extended Data 3 apply
+Benjamini-Hochberg at plot time — so the two radar files re-run that correction and
+carry `score_pvalue_fdr` per drawn spoke, with `spoke_index` giving clockwise plot
+order.
+
 | `duration_scaling_plot_data.csv`, `duration_scaling_intermittent_plot_data.csv` | ext 2 | Recording-duration scaling curves + intermittent-sampling seed values |
 | `normalized_vs_gaitmae_gains.csv` | ext 4 | Per-target absolute r gain: GaitMAE vs normalized-keypoint baseline |
 | `liver_predictive_power_summary.csv`, `liver_perseed_pearson.csv` | ext 5 | Liver prediction: per-source mean/std + per-seed Pearson r |

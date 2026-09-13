@@ -1,5 +1,5 @@
 """
-Extended Figure 5 — liver ultrasound prediction: gait embeddings vs Age+BMI vs
+Extended Data Figure 5 — liver ultrasound prediction: gait embeddings vs Age+BMI vs
 Age+BMI + routine liver blood biomarkers (liver elasticity, per sex).
 
 Grouped bars = mean Pearson r over 15 seeds (±std); paired-Wilcoxon significance
@@ -53,7 +53,15 @@ def best_series(df, target, source, gender, metric):
 
 
 def _sig_label(p):
-    return "***" if p < 1e-3 else "**" if p < 1e-2 else "*" if p < 5e-2 else "ns"
+    """Exact P value (Nature policy requires exact values, not significance stars).
+
+    Two-sided paired Wilcoxon signed-rank across the 15 seeds; with n=15 the
+    smallest attainable two-sided P is 2/2^15 = 6.1e-5.
+    """
+    if p < 1e-3:
+        mant, exp = f"{p:.1e}".split("e")
+        return f"P = {mant}\u00d710$^{{{int(exp)}}}$"
+    return f"P = {p:.3f}"
 
 
 _BAR_W = 0.26
@@ -91,13 +99,25 @@ def annotate_sig(ax, df, items, metric, pairs, higher_better=True, fontsize=6.8)
             level += 1
 
 
-def _grouped(ax, labels, triples, title, ylabel):
+def _grouped(ax, labels, triples, title, ylabel, series=None):
     x = np.arange(len(labels)); w = 0.26
     for i, (key, lab, col) in enumerate(SOURCES):
         means = [triples[key][j][0] for j in range(len(labels))]
         stds = [triples[key][j][1] for j in range(len(labels))]
         ax.bar(x + (i - 1) * w, means, w, yerr=stds, capsize=3, label=lab,
                color=col, edgecolor="black", linewidth=0.4)
+        # Nature policy: show the per-seed distribution behind each bar.
+        if series is None:
+            continue
+        for j in range(len(labels)):
+            vals = series.get(key, [None] * len(labels))[j]
+            if not vals:
+                continue
+            vals = np.asarray(list(vals.values()), dtype=float)
+            xc = x[j] + (i - 1) * w
+            jitter = np.linspace(-w * 0.17, w * 0.17, len(vals))
+            ax.scatter(xc + jitter, vals, s=9, color="black", alpha=0.55,
+                       linewidths=0.3, edgecolors="white", zorder=6)
     ax.set_xticks(x); ax.set_xticklabels(labels, rotation=20, ha="right")
     ax.axhline(0, color="black", lw=0.6)
     ax.set_ylabel(ylabel); ax.set_title(title); ax.grid(axis="y", alpha=0.3)
@@ -111,16 +131,30 @@ def main():
     fig, ax = plt.subplots(figsize=(7, 5))
     triples = {k: [best_of(df, "liver_elasticity", k, g, "pearson_r") for g in ["male", "female"]]
                for k, _, _ in SOURCES}
-    _grouped(ax, ["Male", "Female"], triples, "", "Predictive Power (Pearson r)")
+    series = {k: [best_series(df, "liver_elasticity", k, g, "pearson_r")
+                  for g in ["male", "female"]] for k, _, _ in SOURCES}
+    _grouped(ax, ["Male", "Female"], triples, "", "Predictive Power (Pearson r)",
+             series=series)
     top = max(m + s for k, _, _ in SOURCES for m, s in triples[k])
     ax.set_ylim(0, top * 1.9)
+    # Nature: figure text prints between 5 and 7 pt at the 180 mm two-column
+    # width. This figure is saved at ~180 mm, so fontsize is printed size almost
+    # 1:1 -- the old 9-15 pt sizes printed at 9.0-15.0 pt, the worst spread in the
+    # article. Sizes below hold the same ordering inside the window.
+    # The P-value annotation is deliberately the largest element. mathtext renders
+    # an exponent at 0.7x its parent, so no superscripted P value can satisfy both
+    # bounds at once (0.7 x 7 = 4.9 < 5). Sitting the parent right at the 7 pt
+    # ceiling is therefore what makes the "-5" of "P = 6.1x10^-5" as legible as the
+    # window allows, ~4.9 pt. 6.8 here, not 7.0: the figure saves with
+    # bbox_inches="tight", so the canvas comes out at 175 mm and is scaled UP to
+    # 180 mm, multiplying every size by 1.03.
     annotate_sig(ax, df, [("liver_elasticity", "male"), ("liver_elasticity", "female")],
-                 "pearson_r", pairs=[("gait", "demo"), ("gait", "clinical")], fontsize=13)
-    ax.set_ylabel("Liver Elasticity\nPredictive Power (Pearson r)", fontsize=15)
-    ax.tick_params(axis="both", labelsize=13)
+                 "pearson_r", pairs=[("gait", "demo"), ("gait", "clinical")], fontsize=6.8)
+    ax.set_ylabel("Liver Elasticity\nPredictive Power (Pearson r)", fontsize=6.5)
+    ax.tick_params(axis="both", labelsize=6.2)
     for lab in ax.get_xticklabels():
-        lab.set_fontsize(14)
-    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), fontsize=12,
+        lab.set_fontsize(6.5)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), fontsize=6.2,
               framealpha=0.95, ncol=3)
     fig.tight_layout()
     for e in ["pdf", "png"]:

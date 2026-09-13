@@ -9,6 +9,7 @@ import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from statsmodels.stats.multitest import multipletests
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from publication_colors import (
@@ -23,6 +24,11 @@ BODY_SYSTEMS = ['body_composition', 'bone_density', 'anthropometric_group', 'fra
 EXCLUDE_LABELS = ['frailty_height', 'height', 'weight', 'total_scan_vat_area', 'gender', 'bmi', 'age', 'Creatinine']
 EXCLUDE_LABEL_KEYWORDS = ['vat']
 EXCLUDE_SYSTEMS = ['proteomics']
+
+# Benjamini-Hochberg FDR threshold for endpoint selection. Matches the threshold
+# already used by Figures 4 and 5 and Extended Data Figure 1
+# (wilcox_pvalue_fdr < 0.1), so one correction regime applies across the article.
+FDR_Q = 0.10
 
 # Local overrides on top of SYSTEM_RENAME_DICT
 SYSTEM_RENAME_OVERRIDES = {
@@ -513,6 +519,28 @@ def save_gender_legend(save_base):
     plt.close(fig)
 
 
+def significant_by_fdr(df, gender, q=FDR_Q):
+    """Endpoints passing BH-FDR, corrected across every endpoint tested in the panel.
+
+    Replaces the previous uncorrected `score_pvalue < 0.05` gate: Nature requires
+    the figure legend to state whether an adjustment for multiple comparisons was
+    made, and leaving this panel uncorrected made it the only figure in the
+    article without one.
+    """
+    panel = df[
+        (df['model'] == 'long_seq') &
+        (df['sub_model'] == 'ensemble') &
+        (df['gender'] == gender)
+    ].copy()
+
+    valid = panel['score_pvalue'].notna()
+    panel['score_pvalue_fdr'] = np.nan
+    _, corrected, _, _ = multipletests(panel.loc[valid, 'score_pvalue'].values,
+                                       method='fdr_bh')
+    panel.loc[valid, 'score_pvalue_fdr'] = corrected
+    return panel[panel['score_pvalue_fdr'] < q].copy()
+
+
 def main():
     pearson_csv = os.path.join(RESULTS_DIR, 'gait_only_pearson.csv')
 
@@ -522,12 +550,7 @@ def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     # ── Figure 3: Ensemble all-all ────────────────────────────────────────────
-    df_ensemble_all = df[
-        (df['model'] == 'long_seq') &
-        (df['sub_model'] == 'ensemble') &
-        (df['score_pvalue'] < 0.05) &
-        (df['gender'] == 'all')
-    ].copy()
+    df_ensemble_all = significant_by_fdr(df, 'all')
 
     print(f"Ensemble all: {len(df_ensemble_all)} labels")
     create_radar_ensemble_all(
@@ -538,19 +561,9 @@ def main():
     )
 
     # ── Extended: Gender overlay ──────────────────────────────────────────────
-    df_male = df[
-        (df['model'] == 'long_seq') &
-        (df['sub_model'] == 'ensemble') &
-        (df['score_pvalue'] < 0.05) &
-        (df['gender'] == 'male')
-    ].copy()
+    df_male = significant_by_fdr(df, 'male')
 
-    df_female = df[
-        (df['model'] == 'long_seq') &
-        (df['sub_model'] == 'ensemble') &
-        (df['score_pvalue'] < 0.05) &
-        (df['gender'] == 'female')
-    ].copy()
+    df_female = significant_by_fdr(df, 'female')
 
     print(f"Male: {len(df_male)}, Female: {len(df_female)}")
     create_radar_gender_overlay(

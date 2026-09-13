@@ -1,0 +1,151 @@
+target,target_display,protocol,interm_name,seed,pearson_r
+age,Age,Intermittent 5×2s (10s),intermittent_10s_5x2s,0,0.5847079430232158
+age,Age,Intermittent 5×2s (10s),intermittent_10s_5x2s,1,0.5742625261559505
+age,Age,Intermittent 5×2s (10s),intermittent_10s_5x2s,2,0.5816034638548475
+age,Age,Intermittent 5×2s (10s),intermittent_10s_5x2s,3,0.5742564230937348
+age,Age,Intermittent 5×2s (10s),intermittent_10s_5x2s,4,0.5784549352251597
+age,Age,Intermittent 5×2s (10s),intermittent_10s_5x2s,5,0.5789976232688068
+age,Age,Intermittent 5×2s (10s),intermittent_10s_5x2s,6,0.5774386569906386
+age,Age,Intermittent 5×2s (10s),intermittent_10s_5x2s,7,0.5727516350675117
+age,Age,Intermittent 5×2s (10s),intermittent_10s_5x2s,8,0.5806656758909235
+age,Age,Intermittent 5×2s (10s),intermittent_10s_5x2s,9,0.5813958298589024
+age,Age,Intermittent 2×15s (30s),intermittent_30s_2x15s,0,0.6074802876054496
+age,Age,Intermittent 2×15s (30s),intermittent_30s_2x15s,1,0.6006740887845701
+age,Age,Intermittent 2×15s (30s),intermittent_30s_2x15s,2,0.5999370946564906
+age,Age,Intermittent 2×15s (30s),intermittent_30s_2x15s,3,0.5963866404740977
+age,Age,Intermittent 2×15s (30s),intermittent_30s_2x15s,4,0.5986625962826233
+age,Age,Intermittent 2×15s (30s),intermittent_30s_2x15s,5,0.6048520913930162
+age,Age,Intermittent 2×15s (30s),intermittent_30s_2x15s,6,0.6022320144981954
+age,Age,Intermittent 2×15s (30s),intermittent_30s_2x15s,7,0.6008188854973013
+age,Age,Intermittent 2×15s (30s),intermittent_30s_2x15s,8,0.5999342752999246
+age,Age,Intermittent 2×15s (30s),intermittent_30s_2x15s,9,0.6078452504253767
+age,Age,Intermittent 6×5s (30s),intermittent_30s_6x5s,0,0.6100247631464323
+age,Age,Intermittent 6×5s (30s),intermittent_30s_6x5s,1,0.6036127884683675
+age,Age,Intermittent 6×5s (30s),intermittent_30s_6x5s,2,0.6066677555649077
+age,Age,Intermittent 6×5s (30s),intermittent_30s_6x5s,3,0.6046241610058594
+age,Age,Intermittent 6×5s (30s),intermittent_30s_6x5s,4,0.6047163858517108
+age,Age,Intermittent 6×5s (30s),intermittent_30s_6x5s,5,0.6072581144139886
+age,Age,Intermittent 6×5s (30s),intermittent_30s_6x5s,6,0.6072823696746801
+age,Age,Intermittent 6×5s (30s),intermittent_30s_6x5s,7,0.6087311910000989
+age,Age,Intermittent 6×5s (30s),intermittent_30s_6x5s,8,0.6051459461476411
+age,Age,Intermittent 6×5s (30s),intermittent_30s_6x5s,9,0.6103609586508523
+bmi,BMI,Intermittent 5×2s (10s),intermittent_10s_5x2s,0,0.8496538446968822
+bmi,BMI,Intermittent 5×2s (10s),intermittent_10s_5x2s,1,0.8496889161692646
+bmi,BMI,Intermittent 5×2s (10s),intermittent_10s_5x2s,2,0.8480962197493961
+bmi,BMI,Intermittent 5×2s (10s),intermittent_10s_5x2s,3,0.8502494377295243
+bmi,BMI,Intermittent 5×2s (10s),intermittent_10s_5x2s,4,0.8504440496575245
+bmi,BMI,Intermittent 5×2s (10s),intermittent_10s_5x2s,5,0.8490501252143929
+bmi,BMI,Intermittent 5×2s (10s),intermittent_10s_5x2s,6,0.8508415170751497
+bmi,BMI,Intermittent 5×2s (10s),intermittent_10s_5x2s,7,0.8503211692755781
+bmi,BMI,Intermittent 5×2s (10s),intermittent_10s_5x2s,8,0.8492139932637457
+bmi,BMI,Intermittent 5×2s (10s),intermittent_10s_5x2s,9,0.8475849334917855
+bmi,BMI,Intermittent 2×15s (30s),intermittent_30s_2x15s,0,0.8554042619984912
+bmi,BMI,Intermittent 2×15s (30s),intermittent_30s_2x15s,1,0.8561533969584458
+bmi,BMI,Intermittent 2×15s (30s),intermittent_30s_2x15s,2,0.8542800487647617
+bmi,BMI,Intermittent 2×15s (30s),intermittent_30s_2x15s,3,0.8558666820424823
+bmi,BMI,Intermittent 2×15s (30s),intermittent_30s_2x15s,4,0.8550398795592297
+bmi,BMI,Intermittent 2×15s (30s),intermittent_30s_2x15s,5,0.854642235945262
+bmi,BMI,Intermittent 2×15s (30s),intermittent_30s_2x15s,6,0.8554946425500743
+bmi,BMI,Intermittent 2×15s (30s),intermittent_30s_2x15s,7,0.8558487199175623
+bmi,BMI,Intermittent 2×15s (30s),intermittent_30s_2x15s,8,0.8530845031836768
+bmi,BMI,Intermittent 2×15s (30s),intermittent_30s_2x15s,9,0.8540499739792761
+bmi,BMI,Intermittent 6×5s (30s),intermittent_30s_6x5s,0,0.8543639376729003
+bmi,BMI,Intermittent 6×5s (30s),intermittent_30s_6x5s,1,0.8566402208644495
+bmi,BMI,Intermittent 6×5s (30s),intermittent_30s_6x5s,2,0.8541812098260054
+bmi,BMI,Intermittent 6×5s (30s),intermittent_30s_6x5s,3,0.8562685946012875
+bmi,BMI,Intermittent 6×5s (30s),intermittent_30s_6x5s,4,0.8544866616633638
+bmi,BMI,Intermittent 6×5s (30s),intermittent_30s_6x5s,5,0.855737735615891
+bmi,BMI,Intermittent 6×5s (30s),intermittent_30s_6x5s,6,0.8553044831143065
+bmi,BMI,Intermittent 6×5s (30s),intermittent_30s_6x5s,7,0.8552549827169507
+bmi,BMI,Intermittent 6×5s (30s),intermittent_30s_6x5s,8,0.8534737197405218
+bmi,BMI,Intermittent 6×5s (30s),intermittent_30s_6x5s,9,0.8521316866945887
+hr_bpm,Heart rate (BPM),Intermittent 5×2s (10s),intermittent_10s_5x2s,0,0.2496618796118575
+hr_bpm,Heart rate (BPM),Intermittent 5×2s (10s),intermittent_10s_5x2s,1,0.2494849235307966
+hr_bpm,Heart rate (BPM),Intermittent 5×2s (10s),intermittent_10s_5x2s,2,0.2445824246039775
+hr_bpm,Heart rate (BPM),Intermittent 5×2s (10s),intermittent_10s_5x2s,3,0.2474523611604928
+hr_bpm,Heart rate (BPM),Intermittent 5×2s (10s),intermittent_10s_5x2s,4,0.248104652290119
+hr_bpm,Heart rate (BPM),Intermittent 5×2s (10s),intermittent_10s_5x2s,5,0.2414759705692662
+hr_bpm,Heart rate (BPM),Intermittent 5×2s (10s),intermittent_10s_5x2s,6,0.2449382728569302
+hr_bpm,Heart rate (BPM),Intermittent 5×2s (10s),intermittent_10s_5x2s,7,0.2503669931778123
+hr_bpm,Heart rate (BPM),Intermittent 5×2s (10s),intermittent_10s_5x2s,8,0.2372931020851844
+hr_bpm,Heart rate (BPM),Intermittent 5×2s (10s),intermittent_10s_5x2s,9,0.2437027032924878
+hr_bpm,Heart rate (BPM),Intermittent 2×15s (30s),intermittent_30s_2x15s,0,0.2456814795568689
+hr_bpm,Heart rate (BPM),Intermittent 2×15s (30s),intermittent_30s_2x15s,1,0.2603388712867777
+hr_bpm,Heart rate (BPM),Intermittent 2×15s (30s),intermittent_30s_2x15s,2,0.2581003224798946
+hr_bpm,Heart rate (BPM),Intermittent 2×15s (30s),intermittent_30s_2x15s,3,0.2564741104601786
+hr_bpm,Heart rate (BPM),Intermittent 2×15s (30s),intermittent_30s_2x15s,4,0.2621099640272179
+hr_bpm,Heart rate (BPM),Intermittent 2×15s (30s),intermittent_30s_2x15s,5,0.2501029504002008
+hr_bpm,Heart rate (BPM),Intermittent 2×15s (30s),intermittent_30s_2x15s,6,0.249293969372596
+hr_bpm,Heart rate (BPM),Intermittent 2×15s (30s),intermittent_30s_2x15s,7,0.2522492334355432
+hr_bpm,Heart rate (BPM),Intermittent 2×15s (30s),intermittent_30s_2x15s,8,0.2459346520746822
+hr_bpm,Heart rate (BPM),Intermittent 2×15s (30s),intermittent_30s_2x15s,9,0.2563590842501637
+hr_bpm,Heart rate (BPM),Intermittent 6×5s (30s),intermittent_30s_6x5s,0,0.2391399181201008
+hr_bpm,Heart rate (BPM),Intermittent 6×5s (30s),intermittent_30s_6x5s,1,0.2465339771811322
+hr_bpm,Heart rate (BPM),Intermittent 6×5s (30s),intermittent_30s_6x5s,2,0.2416541380620325
+hr_bpm,Heart rate (BPM),Intermittent 6×5s (30s),intermittent_30s_6x5s,3,0.2407195400922806
+hr_bpm,Heart rate (BPM),Intermittent 6×5s (30s),intermittent_30s_6x5s,4,0.2365326089651694
+hr_bpm,Heart rate (BPM),Intermittent 6×5s (30s),intermittent_30s_6x5s,5,0.2401103613522444
+hr_bpm,Heart rate (BPM),Intermittent 6×5s (30s),intermittent_30s_6x5s,6,0.2394530945025996
+hr_bpm,Heart rate (BPM),Intermittent 6×5s (30s),intermittent_30s_6x5s,7,0.2307303190928764
+hr_bpm,Heart rate (BPM),Intermittent 6×5s (30s),intermittent_30s_6x5s,8,0.219182105565836
+hr_bpm,Heart rate (BPM),Intermittent 6×5s (30s),intermittent_30s_6x5s,9,0.2421046766537228
+liver_elasticity,Liver elasticity,Intermittent 5×2s (10s),intermittent_10s_5x2s,0,0.3216898518273039
+liver_elasticity,Liver elasticity,Intermittent 5×2s (10s),intermittent_10s_5x2s,1,0.3252895979519476
+liver_elasticity,Liver elasticity,Intermittent 5×2s (10s),intermittent_10s_5x2s,2,0.325769251673741
+liver_elasticity,Liver elasticity,Intermittent 5×2s (10s),intermittent_10s_5x2s,3,0.3186578298484372
+liver_elasticity,Liver elasticity,Intermittent 5×2s (10s),intermittent_10s_5x2s,4,0.3129141359444063
+liver_elasticity,Liver elasticity,Intermittent 5×2s (10s),intermittent_10s_5x2s,5,0.3171801723703224
+liver_elasticity,Liver elasticity,Intermittent 5×2s (10s),intermittent_10s_5x2s,6,0.3261579783968676
+liver_elasticity,Liver elasticity,Intermittent 5×2s (10s),intermittent_10s_5x2s,7,0.3143538118045429
+liver_elasticity,Liver elasticity,Intermittent 5×2s (10s),intermittent_10s_5x2s,8,0.3101138487825164
+liver_elasticity,Liver elasticity,Intermittent 5×2s (10s),intermittent_10s_5x2s,9,0.3141007889800604
+liver_elasticity,Liver elasticity,Intermittent 2×15s (30s),intermittent_30s_2x15s,0,0.3321232420266272
+liver_elasticity,Liver elasticity,Intermittent 2×15s (30s),intermittent_30s_2x15s,1,0.3327698936531175
+liver_elasticity,Liver elasticity,Intermittent 2×15s (30s),intermittent_30s_2x15s,2,0.3298441386386953
+liver_elasticity,Liver elasticity,Intermittent 2×15s (30s),intermittent_30s_2x15s,3,0.3282071766531078
+liver_elasticity,Liver elasticity,Intermittent 2×15s (30s),intermittent_30s_2x15s,4,0.3258200768559199
+liver_elasticity,Liver elasticity,Intermittent 2×15s (30s),intermittent_30s_2x15s,5,0.3250520365708962
+liver_elasticity,Liver elasticity,Intermittent 2×15s (30s),intermittent_30s_2x15s,6,0.3328089184927065
+liver_elasticity,Liver elasticity,Intermittent 2×15s (30s),intermittent_30s_2x15s,7,0.3286421749859892
+liver_elasticity,Liver elasticity,Intermittent 2×15s (30s),intermittent_30s_2x15s,8,0.3275757888400652
+liver_elasticity,Liver elasticity,Intermittent 2×15s (30s),intermittent_30s_2x15s,9,0.3252151843016066
+liver_elasticity,Liver elasticity,Intermittent 6×5s (30s),intermittent_30s_6x5s,0,0.3294798839835285
+liver_elasticity,Liver elasticity,Intermittent 6×5s (30s),intermittent_30s_6x5s,1,0.3309217646153276
+liver_elasticity,Liver elasticity,Intermittent 6×5s (30s),intermittent_30s_6x5s,2,0.3331745755314078
+liver_elasticity,Liver elasticity,Intermittent 6×5s (30s),intermittent_30s_6x5s,3,0.3287023865492192
+liver_elasticity,Liver elasticity,Intermittent 6×5s (30s),intermittent_30s_6x5s,4,0.319839317641295
+liver_elasticity,Liver elasticity,Intermittent 6×5s (30s),intermittent_30s_6x5s,5,0.3229745970870711
+liver_elasticity,Liver elasticity,Intermittent 6×5s (30s),intermittent_30s_6x5s,6,0.3299012074101439
+liver_elasticity,Liver elasticity,Intermittent 6×5s (30s),intermittent_30s_6x5s,7,0.3282496844925493
+liver_elasticity,Liver elasticity,Intermittent 6×5s (30s),intermittent_30s_6x5s,8,0.3233807444832329
+liver_elasticity,Liver elasticity,Intermittent 6×5s (30s),intermittent_30s_6x5s,9,0.3178846225145593
+total_scan_vat_area,VAT area,Intermittent 5×2s (10s),intermittent_10s_5x2s,0,0.7610061452485022
+total_scan_vat_area,VAT area,Intermittent 5×2s (10s),intermittent_10s_5x2s,1,0.7600897288525335
+total_scan_vat_area,VAT area,Intermittent 5×2s (10s),intermittent_10s_5x2s,2,0.7657340605324093
+total_scan_vat_area,VAT area,Intermittent 5×2s (10s),intermittent_10s_5x2s,3,0.7653523263613512
+total_scan_vat_area,VAT area,Intermittent 5×2s (10s),intermittent_10s_5x2s,4,0.7626122471987552
+total_scan_vat_area,VAT area,Intermittent 5×2s (10s),intermittent_10s_5x2s,5,0.7654516195986902
+total_scan_vat_area,VAT area,Intermittent 5×2s (10s),intermittent_10s_5x2s,6,0.7596317262319031
+total_scan_vat_area,VAT area,Intermittent 5×2s (10s),intermittent_10s_5x2s,7,0.7633590729970375
+total_scan_vat_area,VAT area,Intermittent 5×2s (10s),intermittent_10s_5x2s,8,0.7628998115843475
+total_scan_vat_area,VAT area,Intermittent 5×2s (10s),intermittent_10s_5x2s,9,0.7624265658744116
+total_scan_vat_area,VAT area,Intermittent 2×15s (30s),intermittent_30s_2x15s,0,0.7577513419932906
+total_scan_vat_area,VAT area,Intermittent 2×15s (30s),intermittent_30s_2x15s,1,0.7588932350580582
+total_scan_vat_area,VAT area,Intermittent 2×15s (30s),intermittent_30s_2x15s,2,0.7642935179492364
+total_scan_vat_area,VAT area,Intermittent 2×15s (30s),intermittent_30s_2x15s,3,0.7610036422778493
+total_scan_vat_area,VAT area,Intermittent 2×15s (30s),intermittent_30s_2x15s,4,0.7626474989807568
+total_scan_vat_area,VAT area,Intermittent 2×15s (30s),intermittent_30s_2x15s,5,0.7630240339832798
+total_scan_vat_area,VAT area,Intermittent 2×15s (30s),intermittent_30s_2x15s,6,0.7580270125268775
+total_scan_vat_area,VAT area,Intermittent 2×15s (30s),intermittent_30s_2x15s,7,0.761605476141992
+total_scan_vat_area,VAT area,Intermittent 2×15s (30s),intermittent_30s_2x15s,8,0.759572143786224
+total_scan_vat_area,VAT area,Intermittent 2×15s (30s),intermittent_30s_2x15s,9,0.7602201542031617
+total_scan_vat_area,VAT area,Intermittent 6×5s (30s),intermittent_30s_6x5s,0,0.757583790839636
+total_scan_vat_area,VAT area,Intermittent 6×5s (30s),intermittent_30s_6x5s,1,0.7601617286933021
+total_scan_vat_area,VAT area,Intermittent 6×5s (30s),intermittent_30s_6x5s,2,0.7650447137594913
+total_scan_vat_area,VAT area,Intermittent 6×5s (30s),intermittent_30s_6x5s,3,0.7628038913184598
+total_scan_vat_area,VAT area,Intermittent 6×5s (30s),intermittent_30s_6x5s,4,0.7637846755789383
+total_scan_vat_area,VAT area,Intermittent 6×5s (30s),intermittent_30s_6x5s,5,0.766049794174594
+total_scan_vat_area,VAT area,Intermittent 6×5s (30s),intermittent_30s_6x5s,6,0.7589105281877788
+total_scan_vat_area,VAT area,Intermittent 6×5s (30s),intermittent_30s_6x5s,7,0.7623924638434022
+total_scan_vat_area,VAT area,Intermittent 6×5s (30s),intermittent_30s_6x5s,8,0.7607877626421609
+total_scan_vat_area,VAT area,Intermittent 6×5s (30s),intermittent_30s_6x5s,9,0.7609895907580428

@@ -1,0 +1,49 @@
+row_order,system,system_display,body_group,relative_importance,mean_top10_importance,is_row_max
+1,frailty,Frailty,Head,0.0,0.09485910697675493,False
+1,frailty,Frailty,Arms,0.25473329925061017,0.5544977768958015,False
+1,frailty,Frailty,Torso,0.3657558550673159,0.754825963421582,False
+1,frailty,Frailty,Legs,1.0,1.8992508817122895,True
+2,hematopoietic,Hematopoietic,Head,0.4554457350174244,0.841771513228495,False
+2,hematopoietic,Hematopoietic,Arms,0.2727603671042453,0.7144330342093803,False
+2,hematopoietic,Hematopoietic,Torso,0.0,0.524308938993081,False
+2,hematopoietic,Hematopoietic,Legs,1.0,1.221346038754853,True
+3,cardiovascular_system,Cardiovascular,Head,0.14599199533219953,1.558703629158059,False
+3,cardiovascular_system,Cardiovascular,Arms,0.0,1.4855113423080155,False
+3,cardiovascular_system,Cardiovascular,Torso,0.6775652536436376,1.825204969287094,False
+3,cardiovascular_system,Cardiovascular,Legs,1.0,1.9868558624887076,True
+4,bone_density,Bone Density,Head,0.0,1.2698479398785976,False
+4,bone_density,Bone Density,Arms,0.7376357363032502,1.7443748574839706,False
+4,bone_density,Bone Density,Torso,0.3889824104934895,1.520083408647019,False
+4,bone_density,Bone Density,Legs,1.0,1.913155868509498,True
+5,blood_tests_lipids,Lipids,Head,0.8863355805085081,1.3754059498246864,False
+5,blood_tests_lipids,Lipids,Arms,0.17988469271557023,0.729212773934182,False
+5,blood_tests_lipids,Lipids,Torso,0.0,0.564671596495628,False
+5,blood_tests_lipids,Lipids,Legs,1.0,1.4793752044269763,True
+6,nightingale,Nightingale,Head,0.0,1.3232419909596014,False
+6,nightingale,Nightingale,Arms,0.9434994569490578,1.9103668382915342,False
+6,nightingale,Nightingale,Torso,0.6498897211298466,1.7276581254794916,False
+6,nightingale,Nightingale,Legs,1.0,1.9455262360724561,True
+7,liver,Liver,Head,0.0,0.6598344859084538,False
+7,liver,Liver,Arms,0.303592665505893,0.8222944796748595,False
+7,liver,Liver,Torso,0.9785734478843386,1.1834935011166912,False
+7,liver,Liver,Legs,1.0,1.194959382604129,True
+8,sleep_group,Sleep,Head,0.30946933913378016,0.9623600683610648,False
+8,sleep_group,Sleep,Arms,0.0,0.5463717324847079,False
+8,sleep_group,Sleep,Torso,1.0,1.890570602203849,True
+8,sleep_group,Sleep,Legs,0.21623010510212776,0.8370279953622392,False
+9,lifestyle,Lifestyle,Head,0.0,1.8054047614085356,False
+9,lifestyle,Lifestyle,Arms,0.8032209608666102,1.914134296549792,False
+9,lifestyle,Lifestyle,Torso,1.0,1.9407716659573737,True
+9,lifestyle,Lifestyle,Legs,0.6798554320197615,1.8974346867817637,False
+10,anthropometric_group,Anthropometric,Head,0.0,0.5272476410295063,False
+10,anthropometric_group,Anthropometric,Arms,0.9375789789948866,1.4231379794027552,False
+10,anthropometric_group,Anthropometric,Torso,1.0,1.482783503548172,True
+10,anthropometric_group,Anthropometric,Legs,0.1446498042012043,0.6654657164500601,False
+11,body_composition,Body Composition,Head,0.0,0.724430591545477,False
+11,body_composition,Body Composition,Arms,1.0,2.0,True
+11,body_composition,Body Composition,Torso,0.7879933991124181,1.729570865517373,False
+11,body_composition,Body Composition,Legs,0.957298304688249,1.9455310237711845,False
+12,metabolites,Metabolites,Head,0.41580217190927626,0.8787269651625538,False
+12,metabolites,Metabolites,Arms,1.0,1.221959169418352,True
+12,metabolites,Metabolites,Torso,0.9624862511074137,1.199918815786121,False
+12,metabolites,Metabolites,Legs,0.0,0.6344318152384327,False

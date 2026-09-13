@@ -1,218 +1,106 @@
-"""2x2 paper grid: asbv (age/BMI/VAT) bars on top, figure-4-style system boxplot below.
+"""2x2 grid for Supplementary Figure 4: asbv bars on top, figure-4-style boxplot below.
 
 Columns = Male | Female. Rows = asbv (a, b) / figure-4-style legs-vs-full (c, d).
 
-Each panel is rendered as its own PNG at a common width/dpi (no resizing — preserves
-identical effective font sizes), then composited with PIL.
+The panel PDFs are placed as vector form XObjects, so every axis label, tick and
+legend entry stays real, selectable text. The previous version rendered each panel
+to a PNG and composed the grid on a PIL raster canvas, which flattened the whole
+figure to pixels -- the resulting PDF held a single image and no fonts at all. It
+printed acceptably (620 dpi at 180 mm) but was the only figure in the article
+without editable text, which Nature's artwork guide asks for.
+
+Panels are placed at their NATIVE size (never rescaled), so effective font sizes
+are identical across panels, and each is centred in its grid cell. Placing them at
+native size also reproduces the old raster geometry: the panels were rendered at
+300 dpi and saved into a 450 dpi canvas, i.e. shown at two-thirds size, and the
+same ratio falls out of a 14.6 in page holding 7.2 in panels.
+
+Run make_grid_panels.py first so the panel PDFs are current.
+Output written to output/grid_asbv_figure4.{png,pdf,svg}.
 """
-
-from __future__ import annotations
 import os
-import sys
-from pathlib import Path
 
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.colors as mcolors
-import matplotlib.pyplot as plt
-from matplotlib.patches import Patch
-import numpy as np
-import pandas as pd
-from PIL import Image, ImageChops, ImageDraw, ImageFont
+import pymupdf
 
-HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE / "individual_plots"))
-import figure4_style_legs_vs_full as f4   # noqa: E402
-import bar_chart_asbv as asbv             # noqa: E402
+HERE = os.path.dirname(os.path.abspath(__file__))
+PANEL_DIR = os.path.join(HERE, 'individual_plots', 'grid_panels')
+OUTPUT_DIR = os.path.join(HERE, 'output')
 
-PANEL_DIR = HERE / "individual_plots" / "grid_panels"
-OUT_PNG = HERE / "output" / "grid_asbv_figure4.png"
-OUT_PDF = HERE / "output" / "grid_asbv_figure4.pdf"
+PANELS = [
+    ('a', 'asbv_male.pdf'),
+    ('b', 'asbv_female.pdf'),
+    ('c', 'figure4_male.pdf'),
+    ('d', 'figure4_female.pdf'),
+]
 
-PANEL_DPI = 300
-PANEL_W = 7.2  # common panel width (inches) so columns align cleanly
+OUT_STEM = os.path.join(OUTPUT_DIR, 'grid_asbv_figure4')
 
-# Per-seed Pearson r values (for std-across-seeds error bars on the asbv bars).
-SEED_VALUES_CSV = asbv.RESULTS / "lower_body9_asbv_seed_values.csv"
-_SEED_VALUES = pd.read_csv(SEED_VALUES_CSV)
+PT = 72.0
+# The old PIL compositor used 48 / 2 / 12 px at 300 dpi; these are the same gaps
+# converted to points, so the grid keeps its former spacing.
+GAP_X = 11.5         # gap between columns (points)
+GAP_Y = 0.5          # gap between rows (points)
+OUTER = 3.0          # outer margin (points)
+LETTER_FS = 12       # panel-letter size; 69 px at 300 dpi in the raster version
+LETTER_DX = 2.0      # letter inset from the cell's left edge (points)
+LETTER_DY = 2.0      # letter drop from the cell's top edge (points)
+PNG_DPI = 300
 
-
-def seed_std(source: str, label: str, gender: str) -> float:
-    """Std of the per-seed ensemble Pearson r for one target/gender."""
-    sub = _SEED_VALUES[(_SEED_VALUES["source"] == source) & (_SEED_VALUES["label"] == label)]
-    v = pd.to_numeric(sub[f"{gender}_pearson_r"], errors="coerce").dropna()
-    return float(v.std(ddof=1)) if len(v) > 1 else 0.0
-
-plt.rcParams.update({
-    "font.family": "DejaVu Sans",
-    "pdf.fonttype": 42,
-    "ps.fonttype": 42,
-})
+LETTER_FONT = 'hebo'
 
 
-# ── panel renderers ─────────────────────────────────────────────────────────
-def render_asbv_panel(merged, gender: str, title: str, path: Path) -> None:
-    fig, ax = plt.subplots(figsize=(PANEL_W, 4.0))
-    sub = merged[merged["gender"] == gender]
-    xs = np.arange(len(asbv.TARGETS))
-    bar_w = asbv.BAR_W
-    for i, target in enumerate(asbv.TARGETS):
-        row = sub[sub["label"] == target]
-        if row.empty:
-            continue
-        legs_val = float(row["legs_score"].iloc[0]) if not row["legs_score"].isna().all() else 0.0
-        full_val = float(row["full_score"].iloc[0]) if not row["full_score"].isna().all() else 0.0
-        legs_err = seed_std("legs", target, gender)
-        full_err = seed_std("full", target, gender)
-        ebar = dict(ecolor="black", elinewidth=1.0, capsize=4, capthick=1.0)
-        ax.bar(xs[i] - bar_w / 2, legs_val, width=bar_w, color=asbv.COLOR_LEGS,
-               alpha=0.85, label="Legs only" if i == 0 else "",
-               yerr=legs_err, error_kw=ebar)
-        ax.bar(xs[i] + bar_w / 2, full_val, width=bar_w, color=asbv.COLOR_FULL,
-               alpha=0.85, label="Full body" if i == 0 else "",
-               yerr=full_err, error_kw=ebar)
-        for val, off in [(legs_val, -bar_w / 2), (full_val, bar_w / 2)]:
-            ax.text(xs[i] + off, val + 0.008, f"{val:.2f}", ha="center",
-                    va="bottom", fontsize=8, fontweight="bold")
-    ax.set_xticks(xs)
-    ax.set_xticklabels([asbv.TARGET_LABELS[t] for t in asbv.TARGETS], fontsize=11)
-    ax.set_ylabel("Pearson r", fontsize=10, fontweight="bold")
-    ax.set_ylim(0, 1.0)
-    ax.set_title(title, fontsize=12, fontweight="bold")
-    ax.spines["top"].set_visible(False)
-    ax.spines["right"].set_visible(False)
-    ax.grid(axis="y", alpha=0.25, lw=0.6)
-    ax.legend(fontsize=9, frameon=False)
-    fig.tight_layout()
-    fig.savefig(path, dpi=PANEL_DPI, facecolor="white", edgecolor="white")
-    plt.close(fig)
+def main():
+    missing = [fn for _, fn in PANELS if not os.path.exists(os.path.join(PANEL_DIR, fn))]
+    if missing:
+        raise SystemExit(
+            "Missing panel PDFs: " + ", ".join(missing) +
+            "\nRun plotting/supp_figure_4/individual_plots/make_grid_panels.py first.")
+
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    docs = [(letter, pymupdf.open(os.path.join(PANEL_DIR, fn))) for letter, fn in PANELS]
+    rects = [d[0].rect for _, d in docs]
+    w = [r.width for r in rects]
+    h = [r.height for r in rects]
+
+    col_w = [max(w[0], w[2]), max(w[1], w[3])]
+    row_h = [max(h[0], h[1]), max(h[2], h[3])]
+
+    page_w = OUTER * 2 + col_w[0] + GAP_X + col_w[1]
+    page_h = OUTER * 2 + row_h[0] + GAP_Y + row_h[1]
+
+    out = pymupdf.open()
+    page = out.new_page(width=page_w, height=page_h)
+    page.draw_rect(page.rect, color=None, fill=(1, 1, 1))
+
+    cell_x = [OUTER, OUTER + col_w[0] + GAP_X]
+    cell_y = [OUTER, OUTER + row_h[0] + GAP_Y]
+    cells = [(cell_x[0], cell_y[0], col_w[0]),
+             (cell_x[1], cell_y[0], col_w[1]),
+             (cell_x[0], cell_y[1], col_w[0]),
+             (cell_x[1], cell_y[1], col_w[1])]
+
+    font = pymupdf.Font(LETTER_FONT)
+    writer = pymupdf.TextWriter(page.rect)
+
+    for (letter, doc), (x, y, cw), pw, ph in zip(docs, cells, w, h):
+        # Centre the panel horizontally in its cell, at native size.
+        px = x + (cw - pw) / 2.0
+        page.show_pdf_page(pymupdf.Rect(px, y, px + pw, y + ph), doc, 0)
+        writer.append((x + LETTER_DX, y + LETTER_DY + font.ascender * LETTER_FS),
+                      letter, font=font, fontsize=LETTER_FS)
+
+    writer.write_text(page)
+
+    out.save(OUT_STEM + '.pdf', garbage=4, deflate=True)
+    page.get_pixmap(dpi=PNG_DPI).save(OUT_STEM + '.png')
+    with open(OUT_STEM + '.svg', 'w') as fh:
+        fh.write(page.get_svg_image(text_as_path=False))
+    out.close()
+    for _, d in docs:
+        d.close()
+    print(f"Saved: {OUT_STEM}.png / .pdf / .svg  "
+          f"(figure {page_w / PT:.1f} x {page_h / PT:.1f} in)")
 
 
-def render_figure4_panel(df, sys_order, gender: str, path: Path) -> None:
-    fig, ax = plt.subplots(figsize=(PANEL_W, 5.0))
-    sub = df[df["gender"] == gender].copy()
-    panel_sys = [s for s in sys_order if s in sub["system"].values]
-    rng = np.random.default_rng(42)
-    # title="" and panel_letter="" — the grid adds Male/Female headers and a/b/c/d.
-    f4._draw_panel(ax, sub, panel_sys, rng, "", "")
-    # _draw_panel hardcodes small fonts (7.5pt ticks / 8pt label); enlarge for the grid.
-    ax.tick_params(axis="x", labelsize=12)
-    ax.tick_params(axis="y", labelsize=12)
-    for lbl in ax.get_xticklabels():
-        lbl.set_rotation(40)
-        lbl.set_ha("right")
-    ax.yaxis.label.set_fontsize(13)
-    ax.yaxis.label.set_fontweight("bold")
-    legend_handles = [
-        Patch(facecolor=(*mcolors.to_rgb(c), 0.25), edgecolor=c, lw=1.0, label=lbl)
-        for lbl, _, c in f4.GROUPS
-    ]
-    ax.legend(handles=legend_handles, loc="upper right", fontsize=10,
-              frameon=True, framealpha=0.85)
-    fig.tight_layout()
-    fig.savefig(path, dpi=PANEL_DPI, facecolor="white", edgecolor="white")
-    plt.close(fig)
-
-
-# ── PIL compositor ───────────────────────────────────────────────────────────
-def load_font(size: int) -> ImageFont.ImageFont:
-    for p in [
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-        "/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf",
-        "/usr/share/fonts/dejavu/DejaVuSansMono-Bold.ttf",
-        "/usr/share/fonts/google-droid/DroidSans-Bold.ttf",
-    ]:
-        if Path(p).exists():
-            return ImageFont.truetype(p, size=size)
-    return ImageFont.load_default()
-
-
-def pad_to_height(img: Image.Image, height: int) -> Image.Image:
-    if img.height == height:
-        return img
-    out = Image.new("RGB", (img.width, height), "white")
-    out.paste(img, (0, 0))
-    return out
-
-
-def trim_grid_vertical(img: Image.Image, border: int = 10) -> Image.Image:
-    bbox = ImageChops.difference(img, Image.new("RGB", img.size, "white")).getbbox()
-    if bbox is None:
-        return img
-    top = max(0, bbox[1] - border)
-    bottom = min(img.size[1], bbox[3] + border)
-    return img.crop((0, top, img.size[0], bottom))
-
-
-def composite(panels: list[tuple[str, Path]]) -> None:
-    imgs = [(letter, Image.open(p).convert("RGB")) for letter, p in panels]
-    top_h = max(imgs[0][1].height, imgs[1][1].height)
-    bot_h = max(imgs[2][1].height, imgs[3][1].height)
-    imgs = [
-        (imgs[0][0], pad_to_height(imgs[0][1], top_h)),
-        (imgs[1][0], pad_to_height(imgs[1][1], top_h)),
-        (imgs[2][0], pad_to_height(imgs[2][1], bot_h)),
-        (imgs[3][0], pad_to_height(imgs[3][1], bot_h)),
-    ]
-    label_font = load_font(69)
-    gap_x, gap_y, outer = 48, 2, 12
-
-    col_w = [max(imgs[0][1].width, imgs[2][1].width),
-             max(imgs[1][1].width, imgs[3][1].width)]
-    row_h = [max(imgs[0][1].height, imgs[1][1].height),
-             max(imgs[2][1].height, imgs[3][1].height)]
-
-    canvas_w = outer * 2 + col_w[0] + gap_x + col_w[1]
-    canvas_h = outer * 2 + row_h[0] + gap_y + row_h[1]
-    canvas = Image.new("RGB", (canvas_w, canvas_h), "white")
-    draw = ImageDraw.Draw(canvas)
-
-    positions = [
-        (outer, outer, col_w[0]),
-        (outer + col_w[0] + gap_x, outer, col_w[1]),
-        (outer, outer + row_h[0] + gap_y, col_w[0]),
-        (outer + col_w[0] + gap_x, outer + row_h[0] + gap_y, col_w[1]),
-    ]
-    for (letter, img), (x, y, cell_w) in zip(imgs, positions):
-        canvas.paste(img, (x + (cell_w - img.width) // 2, y))
-        draw.text((x + 10, y + 10), letter, font=label_font, fill="black")
-
-    canvas = trim_grid_vertical(canvas, border=10)
-    canvas.save(OUT_PNG, dpi=(450, 450))
-    canvas.save(OUT_PDF, resolution=450)
-    print(OUT_PNG)
-    print(OUT_PDF)
-
-
-def main() -> None:
-    PANEL_DIR.mkdir(parents=True, exist_ok=True)
-    OUT_PNG.parent.mkdir(parents=True, exist_ok=True)
-
-    # asbv data (reuse bar_chart_asbv loaders/merge)
-    legs_df = asbv._load(asbv.ASBV_CSV).rename(columns={"score": "legs_score", "delta": "legs_delta"})
-    full_df = asbv._load(asbv.FULL_CSV, model_filter="long_seq").rename(
-        columns={"score": "full_score", "delta": "full_delta"})
-    asbv_merged = legs_df.merge(
-        full_df[["label", "gender", "full_score", "full_delta"]],
-        on=["label", "gender"], how="outer")
-
-    # figure-4-style data
-    f4_df = f4._load_data()
-    sys_order = f4._sys_order(f4_df)
-
-    p = {
-        "a": PANEL_DIR / "asbv_male.png",
-        "b": PANEL_DIR / "asbv_female.png",
-        "c": PANEL_DIR / "figure4_male.png",
-        "d": PANEL_DIR / "figure4_female.png",
-    }
-    render_asbv_panel(asbv_merged, "male", "Male", p["a"])
-    render_asbv_panel(asbv_merged, "female", "Female", p["b"])
-    render_figure4_panel(f4_df, sys_order, "male", p["c"])
-    render_figure4_panel(f4_df, sys_order, "female", p["d"])
-
-    composite([("a", p["a"]), ("b", p["b"]), ("c", p["c"]), ("d", p["d"])])
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

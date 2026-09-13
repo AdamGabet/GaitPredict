@@ -1,0 +1,326 @@
+target,target_display,duration_seconds,seed,pearson_r
+age,Age,2,0,0.5223166766960943
+age,Age,2,1,0.5184320880433625
+age,Age,2,2,0.513880984760867
+age,Age,2,3,0.5099366630878199
+age,Age,2,4,0.5129865521704359
+age,Age,2,5,0.5198953469468286
+age,Age,2,6,0.5123726015967369
+age,Age,2,7,0.5179679106472328
+age,Age,2,8,0.5210750217257519
+age,Age,2,9,0.5189225537511869
+age,Age,5,0,0.5448485534951901
+age,Age,5,1,0.5478389409688055
+age,Age,5,2,0.5387428851315227
+age,Age,5,3,0.5340034797355148
+age,Age,5,4,0.5412403575716187
+age,Age,5,5,0.545103286035659
+age,Age,5,6,0.5397176711477507
+age,Age,5,7,0.5367663123024137
+age,Age,5,8,0.5493313292469622
+age,Age,5,9,0.5441961700267042
+age,Age,10,0,0.5665640291289246
+age,Age,10,1,0.5585899833675486
+age,Age,10,2,0.5589163473697981
+age,Age,10,3,0.5525291880875421
+age,Age,10,4,0.554715875188716
+age,Age,10,5,0.5606929976383035
+age,Age,10,6,0.557793880844751
+age,Age,10,7,0.5532519009462217
+age,Age,10,8,0.5601327769226679
+age,Age,10,9,0.5623100020034334
+age,Age,15,0,0.5785390519501575
+age,Age,15,1,0.5715097899096
+age,Age,15,2,0.5763627992190617
+age,Age,15,3,0.5707711988560815
+age,Age,15,4,0.5708780820802228
+age,Age,15,5,0.57406572641021
+age,Age,15,6,0.5772976018122828
+age,Age,15,7,0.5752114074064302
+age,Age,15,8,0.5758227959784533
+age,Age,15,9,0.5785433070961029
+age,Age,30,0,0.594373934611495
+age,Age,30,1,0.5894563737144753
+age,Age,30,2,0.5886564239497314
+age,Age,30,3,0.5883337961441031
+age,Age,30,4,0.5852638626368818
+age,Age,30,5,0.592660609235931
+age,Age,30,6,0.5944824138552012
+age,Age,30,7,0.5905001950345087
+age,Age,30,8,0.5920880534746961
+age,Age,30,9,0.5925627510396747
+age,Age,180,0,0.6386883893995899
+age,Age,180,1,0.6327111131663221
+age,Age,180,2,0.6292507462503227
+age,Age,180,3,0.6323845015894823
+age,Age,180,4,0.6321054055556568
+age,Age,180,5,0.6352511426765722
+age,Age,180,6,0.6336663572147343
+age,Age,180,7,0.6329259827291612
+age,Age,180,8,0.6344739515934134
+age,Age,180,9,0.6359892080248645
+age,Age,180,10,0.6372621828397891
+age,Age,180,11,0.6380636942963419
+age,Age,180,12,0.6320651680854151
+age,Age,180,13,0.6375336497939782
+age,Age,180,14,0.639452286908141
+bmi,BMI,2,0,0.8355335198126577
+bmi,BMI,2,1,0.8331471105312417
+bmi,BMI,2,2,0.8319614322145583
+bmi,BMI,2,3,0.8350238435140933
+bmi,BMI,2,4,0.8353443631191979
+bmi,BMI,2,5,0.8355773263398765
+bmi,BMI,2,6,0.8323516516746233
+bmi,BMI,2,7,0.8327453907587471
+bmi,BMI,2,8,0.833144186547458
+bmi,BMI,2,9,0.8313220274042356
+bmi,BMI,5,0,0.8439892516637366
+bmi,BMI,5,1,0.8412936331562303
+bmi,BMI,5,2,0.840451889285612
+bmi,BMI,5,3,0.8418428183331852
+bmi,BMI,5,4,0.8436109219211407
+bmi,BMI,5,5,0.8409729364826802
+bmi,BMI,5,6,0.8399962060669302
+bmi,BMI,5,7,0.8412179439280785
+bmi,BMI,5,8,0.8399099029420763
+bmi,BMI,5,9,0.8409365529782776
+bmi,BMI,10,0,0.8499693384906309
+bmi,BMI,10,1,0.8489560888848536
+bmi,BMI,10,2,0.8490304407715795
+bmi,BMI,10,3,0.8508370124721423
+bmi,BMI,10,4,0.8499529704067812
+bmi,BMI,10,5,0.8497159335883804
+bmi,BMI,10,6,0.8488518844389261
+bmi,BMI,10,7,0.84934946735079
+bmi,BMI,10,8,0.8483814567428934
+bmi,BMI,10,9,0.8479761682043933
+bmi,BMI,15,0,0.8531856056444606
+bmi,BMI,15,1,0.853132229154908
+bmi,BMI,15,2,0.8521499313089578
+bmi,BMI,15,3,0.8548105173131709
+bmi,BMI,15,4,0.8528549829225879
+bmi,BMI,15,5,0.8535269189887125
+bmi,BMI,15,6,0.8532926217107197
+bmi,BMI,15,7,0.852814604685696
+bmi,BMI,15,8,0.8514937784224381
+bmi,BMI,15,9,0.851210334636558
+bmi,BMI,30,0,0.858379829857828
+bmi,BMI,30,1,0.8585257810676172
+bmi,BMI,30,2,0.857550654538678
+bmi,BMI,30,3,0.8606066728827817
+bmi,BMI,30,4,0.8578676119192962
+bmi,BMI,30,5,0.8588415486450867
+bmi,BMI,30,6,0.8582146276295384
+bmi,BMI,30,7,0.8586256549673997
+bmi,BMI,30,8,0.8564784659333652
+bmi,BMI,30,9,0.8558801354696287
+bmi,BMI,180,0,0.8745481475757133
+bmi,BMI,180,1,0.8757098115342017
+bmi,BMI,180,2,0.8734875344439869
+bmi,BMI,180,3,0.8744470210548221
+bmi,BMI,180,4,0.8743449339749167
+bmi,BMI,180,5,0.8746610323151675
+bmi,BMI,180,6,0.8754014470844281
+bmi,BMI,180,7,0.8748347137807787
+bmi,BMI,180,8,0.8726779908864383
+bmi,BMI,180,9,0.8722340500964021
+bmi,BMI,180,10,0.8735034038377175
+bmi,BMI,180,11,0.8739631426937549
+bmi,BMI,180,12,0.8752751996378648
+bmi,BMI,180,13,0.873507326427789
+bmi,BMI,180,14,0.8750460495855223
+hr_bpm,Heart rate (BPM),2,0,0.241322380246128
+hr_bpm,Heart rate (BPM),2,1,0.2323587334011189
+hr_bpm,Heart rate (BPM),2,2,0.2312442758010002
+hr_bpm,Heart rate (BPM),2,3,0.2439924158226083
+hr_bpm,Heart rate (BPM),2,4,0.2378410129774808
+hr_bpm,Heart rate (BPM),2,5,0.2345003764288238
+hr_bpm,Heart rate (BPM),2,6,0.2340967154482703
+hr_bpm,Heart rate (BPM),2,7,0.2364738459548352
+hr_bpm,Heart rate (BPM),2,8,0.2318908438792425
+hr_bpm,Heart rate (BPM),2,9,0.23926830667418
+hr_bpm,Heart rate (BPM),5,0,0.2579244069202786
+hr_bpm,Heart rate (BPM),5,1,0.2419702792776649
+hr_bpm,Heart rate (BPM),5,2,0.2486748834569049
+hr_bpm,Heart rate (BPM),5,3,0.248804903269326
+hr_bpm,Heart rate (BPM),5,4,0.2492543492268435
+hr_bpm,Heart rate (BPM),5,5,0.2462023094388137
+hr_bpm,Heart rate (BPM),5,6,0.2441784316428205
+hr_bpm,Heart rate (BPM),5,7,0.2498385753060777
+hr_bpm,Heart rate (BPM),5,8,0.2533298144118899
+hr_bpm,Heart rate (BPM),5,9,0.2499025395386929
+hr_bpm,Heart rate (BPM),10,0,0.2549612584731368
+hr_bpm,Heart rate (BPM),10,1,0.241119915812954
+hr_bpm,Heart rate (BPM),10,2,0.2560954062460804
+hr_bpm,Heart rate (BPM),10,3,0.2480432378870713
+hr_bpm,Heart rate (BPM),10,4,0.2572278051125967
+hr_bpm,Heart rate (BPM),10,5,0.2440483423100386
+hr_bpm,Heart rate (BPM),10,6,0.2444179201391425
+hr_bpm,Heart rate (BPM),10,7,0.2370408924617445
+hr_bpm,Heart rate (BPM),10,8,0.2349528873967646
+hr_bpm,Heart rate (BPM),10,9,0.2498655874001387
+hr_bpm,Heart rate (BPM),15,0,0.2536287470677752
+hr_bpm,Heart rate (BPM),15,1,0.2498550056444186
+hr_bpm,Heart rate (BPM),15,2,0.2537888064226133
+hr_bpm,Heart rate (BPM),15,3,0.245380365713852
+hr_bpm,Heart rate (BPM),15,4,0.2570398024438655
+hr_bpm,Heart rate (BPM),15,5,0.2486962207939907
+hr_bpm,Heart rate (BPM),15,6,0.2438635973385313
+hr_bpm,Heart rate (BPM),15,7,0.2422687667387243
+hr_bpm,Heart rate (BPM),15,8,0.2390155253323438
+hr_bpm,Heart rate (BPM),15,9,0.2515204007447721
+hr_bpm,Heart rate (BPM),30,0,0.2422773417944586
+hr_bpm,Heart rate (BPM),30,1,0.2506677379156533
+hr_bpm,Heart rate (BPM),30,2,0.2470784968086896
+hr_bpm,Heart rate (BPM),30,3,0.2472699415179742
+hr_bpm,Heart rate (BPM),30,4,0.2608821946473205
+hr_bpm,Heart rate (BPM),30,5,0.2414077663925601
+hr_bpm,Heart rate (BPM),30,6,0.2457612626563445
+hr_bpm,Heart rate (BPM),30,7,0.2393657828200238
+hr_bpm,Heart rate (BPM),30,8,0.2433854170780157
+hr_bpm,Heart rate (BPM),30,9,0.2516337959973107
+hr_bpm,Heart rate (BPM),180,0,0.315603924699757
+hr_bpm,Heart rate (BPM),180,1,0.3287870921674403
+hr_bpm,Heart rate (BPM),180,2,0.3227523684755728
+hr_bpm,Heart rate (BPM),180,3,0.3224417381349555
+hr_bpm,Heart rate (BPM),180,4,0.3306861884112907
+hr_bpm,Heart rate (BPM),180,5,0.3227701893061053
+hr_bpm,Heart rate (BPM),180,6,0.319107787915892
+hr_bpm,Heart rate (BPM),180,7,0.3188464417219159
+hr_bpm,Heart rate (BPM),180,8,0.3107260094290643
+hr_bpm,Heart rate (BPM),180,9,0.3238636143611612
+hr_bpm,Heart rate (BPM),180,10,0.331146692643722
+hr_bpm,Heart rate (BPM),180,11,0.3236778007366779
+hr_bpm,Heart rate (BPM),180,12,0.3183609369463071
+hr_bpm,Heart rate (BPM),180,13,0.3184462016563659
+hr_bpm,Heart rate (BPM),180,14,0.3328553574046049
+liver_elasticity,Liver elasticity,2,0,0.3219405996164417
+liver_elasticity,Liver elasticity,2,1,0.3148521449497966
+liver_elasticity,Liver elasticity,2,2,0.314288645144782
+liver_elasticity,Liver elasticity,2,3,0.3207578876828661
+liver_elasticity,Liver elasticity,2,4,0.3070935097241258
+liver_elasticity,Liver elasticity,2,5,0.3055392400535225
+liver_elasticity,Liver elasticity,2,6,0.3211460310177619
+liver_elasticity,Liver elasticity,2,7,0.3049174633781645
+liver_elasticity,Liver elasticity,2,8,0.32187565402334
+liver_elasticity,Liver elasticity,2,9,0.3135847378302634
+liver_elasticity,Liver elasticity,5,0,0.3191918605150621
+liver_elasticity,Liver elasticity,5,1,0.3186307053083054
+liver_elasticity,Liver elasticity,5,2,0.3188401572940342
+liver_elasticity,Liver elasticity,5,3,0.3196441473841192
+liver_elasticity,Liver elasticity,5,4,0.3113220260748485
+liver_elasticity,Liver elasticity,5,5,0.3094425126448202
+liver_elasticity,Liver elasticity,5,6,0.3258690200221716
+liver_elasticity,Liver elasticity,5,7,0.3082161796451644
+liver_elasticity,Liver elasticity,5,8,0.320647056043186
+liver_elasticity,Liver elasticity,5,9,0.3207955848063787
+liver_elasticity,Liver elasticity,10,0,0.3103103151436594
+liver_elasticity,Liver elasticity,10,1,0.3074799490293833
+liver_elasticity,Liver elasticity,10,2,0.3099265605593651
+liver_elasticity,Liver elasticity,10,3,0.3197583961116425
+liver_elasticity,Liver elasticity,10,4,0.3026059024694254
+liver_elasticity,Liver elasticity,10,5,0.2884851730185837
+liver_elasticity,Liver elasticity,10,6,0.3162094115123172
+liver_elasticity,Liver elasticity,10,7,0.3014812689243156
+liver_elasticity,Liver elasticity,10,8,0.3089546349751411
+liver_elasticity,Liver elasticity,10,9,0.3026350843101652
+liver_elasticity,Liver elasticity,15,0,0.3216352925220184
+liver_elasticity,Liver elasticity,15,1,0.3273140478433761
+liver_elasticity,Liver elasticity,15,2,0.3272887342616368
+liver_elasticity,Liver elasticity,15,3,0.3279131963868122
+liver_elasticity,Liver elasticity,15,4,0.3200975169560668
+liver_elasticity,Liver elasticity,15,5,0.3129276041029661
+liver_elasticity,Liver elasticity,15,6,0.3328130507265219
+liver_elasticity,Liver elasticity,15,7,0.3165129093512754
+liver_elasticity,Liver elasticity,15,8,0.3250463458814501
+liver_elasticity,Liver elasticity,15,9,0.3200658034313761
+liver_elasticity,Liver elasticity,30,0,0.3380554380330004
+liver_elasticity,Liver elasticity,30,1,0.3426581312590056
+liver_elasticity,Liver elasticity,30,2,0.3350305891288846
+liver_elasticity,Liver elasticity,30,3,0.3301372610238051
+liver_elasticity,Liver elasticity,30,4,0.3262219225983152
+liver_elasticity,Liver elasticity,30,5,0.3259647478818894
+liver_elasticity,Liver elasticity,30,6,0.3452256720777776
+liver_elasticity,Liver elasticity,30,7,0.3336464986547184
+liver_elasticity,Liver elasticity,30,8,0.3306456822048451
+liver_elasticity,Liver elasticity,30,9,0.3301479824445998
+liver_elasticity,Liver elasticity,180,0,0.3937735720576037
+liver_elasticity,Liver elasticity,180,1,0.3877710199925008
+liver_elasticity,Liver elasticity,180,2,0.3898100487296327
+liver_elasticity,Liver elasticity,180,3,0.3865479485128559
+liver_elasticity,Liver elasticity,180,4,0.385752816565389
+liver_elasticity,Liver elasticity,180,5,0.3857420163303924
+liver_elasticity,Liver elasticity,180,6,0.3898464377867714
+liver_elasticity,Liver elasticity,180,7,0.3830574089632962
+liver_elasticity,Liver elasticity,180,8,0.3818926716178977
+liver_elasticity,Liver elasticity,180,9,0.3793448786298781
+liver_elasticity,Liver elasticity,180,10,0.3807825296794699
+liver_elasticity,Liver elasticity,180,11,0.3903070356439176
+liver_elasticity,Liver elasticity,180,12,0.3907679424363549
+liver_elasticity,Liver elasticity,180,13,0.3875236616104958
+liver_elasticity,Liver elasticity,180,14,0.3838200505350733
+total_scan_vat_area,VAT area,2,0,0.7357424282540977
+total_scan_vat_area,VAT area,2,1,0.7381417556663388
+total_scan_vat_area,VAT area,2,2,0.7400686510748574
+total_scan_vat_area,VAT area,2,3,0.7394682263202856
+total_scan_vat_area,VAT area,2,4,0.7397986115445525
+total_scan_vat_area,VAT area,2,5,0.7393142026962726
+total_scan_vat_area,VAT area,2,6,0.73927986436831
+total_scan_vat_area,VAT area,2,7,0.7379353934188992
+total_scan_vat_area,VAT area,2,8,0.7403068233967146
+total_scan_vat_area,VAT area,2,9,0.7412137235643912
+total_scan_vat_area,VAT area,5,0,0.7458695490291237
+total_scan_vat_area,VAT area,5,1,0.746399117014251
+total_scan_vat_area,VAT area,5,2,0.7517956486774469
+total_scan_vat_area,VAT area,5,3,0.7490222833992858
+total_scan_vat_area,VAT area,5,4,0.7470534412220168
+total_scan_vat_area,VAT area,5,5,0.7504378330386272
+total_scan_vat_area,VAT area,5,6,0.7469268462780998
+total_scan_vat_area,VAT area,5,7,0.7482443750301221
+total_scan_vat_area,VAT area,5,8,0.7489902391792385
+total_scan_vat_area,VAT area,5,9,0.7479124570576198
+total_scan_vat_area,VAT area,10,0,0.754327486601884
+total_scan_vat_area,VAT area,10,1,0.7514868492618699
+total_scan_vat_area,VAT area,10,2,0.7593283896320089
+total_scan_vat_area,VAT area,10,3,0.7541548411711675
+total_scan_vat_area,VAT area,10,4,0.7528958487107253
+total_scan_vat_area,VAT area,10,5,0.7563122643589734
+total_scan_vat_area,VAT area,10,6,0.7526840777749408
+total_scan_vat_area,VAT area,10,7,0.7559906761064319
+total_scan_vat_area,VAT area,10,8,0.7545639274167356
+total_scan_vat_area,VAT area,10,9,0.7537827294091577
+total_scan_vat_area,VAT area,15,0,0.7586873276157978
+total_scan_vat_area,VAT area,15,1,0.7584335607892954
+total_scan_vat_area,VAT area,15,2,0.7653783225516082
+total_scan_vat_area,VAT area,15,3,0.7614648781736164
+total_scan_vat_area,VAT area,15,4,0.759892610197485
+total_scan_vat_area,VAT area,15,5,0.7628336686363201
+total_scan_vat_area,VAT area,15,6,0.75991209903094
+total_scan_vat_area,VAT area,15,7,0.7623757905463137
+total_scan_vat_area,VAT area,15,8,0.7614683507292473
+total_scan_vat_area,VAT area,15,9,0.7603896941641289
+total_scan_vat_area,VAT area,30,0,0.7609849251203616
+total_scan_vat_area,VAT area,30,1,0.7629949175465808
+total_scan_vat_area,VAT area,30,2,0.7710701419081878
+total_scan_vat_area,VAT area,30,3,0.7656630765961224
+total_scan_vat_area,VAT area,30,4,0.7650682933553684
+total_scan_vat_area,VAT area,30,5,0.7675379962898671
+total_scan_vat_area,VAT area,30,6,0.7639909709410316
+total_scan_vat_area,VAT area,30,7,0.7674278199389357
+total_scan_vat_area,VAT area,30,8,0.7636293007020977
+total_scan_vat_area,VAT area,30,9,0.7649713297932998
+total_scan_vat_area,VAT area,180,0,0.8028413682011064
+total_scan_vat_area,VAT area,180,1,0.805615510395109
+total_scan_vat_area,VAT area,180,2,0.8101827059121054
+total_scan_vat_area,VAT area,180,3,0.8052907029182934
+total_scan_vat_area,VAT area,180,4,0.8068572186824723
+total_scan_vat_area,VAT area,180,5,0.8092253206723858
+total_scan_vat_area,VAT area,180,6,0.805161369571283
+total_scan_vat_area,VAT area,180,7,0.8080705436337029
+total_scan_vat_area,VAT area,180,8,0.804024624592081
+total_scan_vat_area,VAT area,180,9,0.805524762534895
+total_scan_vat_area,VAT area,180,10,0.8056997778920709
+total_scan_vat_area,VAT area,180,11,0.8064772660956843
+total_scan_vat_area,VAT area,180,12,0.8066487129642658
+total_scan_vat_area,VAT area,180,13,0.8039441221981253
+total_scan_vat_area,VAT area,180,14,0.8056284641170796

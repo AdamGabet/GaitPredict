@@ -1,0 +1,101 @@
+panel,series,series_key,seed,auc,n_samples,n_positive
+a,Gait Fusion,ensemble,0,0.9973198071090044,3405,1646
+a,Gait Fusion,ensemble,1,0.9974472544255994,3405,1646
+a,Gait Fusion,ensemble,2,0.9972037575199098,3405,1646
+a,Gait Fusion,ensemble,3,0.997454162139236,3405,1646
+a,Gait Fusion,ensemble,4,0.9970953064158156,3405,1646
+a,Gait Fusion,ensemble,5,0.997417551256962,3405,1646
+a,Gait Fusion,ensemble,6,0.9975885171694676,3405,1646
+a,Gait Fusion,ensemble,7,0.9974071896865072,3405,1646
+a,Gait Fusion,ensemble,8,0.9975266931324202,3405,1646
+a,Gait Fusion,ensemble,9,0.9971754358939996,3405,1646
+a,Gait Fusion,ensemble,10,0.9972852685408214,3405,1646
+a,Gait Fusion,ensemble,11,0.9970093053810398,3405,1646
+a,Gait Fusion,ensemble,12,0.997253838443775,3405,1646
+a,Gait Fusion,ensemble,13,0.9975173677190108,3405,1646
+a,Gait Fusion,ensemble,14,0.9973091001528676,3405,1646
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,0,0.9939048044713836,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,1,0.9936577232170608,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,2,0.9942223117520184,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,3,0.9943686719854712,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,4,0.994037787694252,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,5,0.9943399507568634,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,6,0.9946861792661058,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,7,0.9944272947671496,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,8,0.9947188349095912,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,9,0.9943470327036432,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,10,0.9943395573153756,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,11,0.9940094599071322,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,12,0.99418139383729,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,13,0.9943006066080858,3189,1567
+a,Treadmill Walk (3 km/h),activity_tm_3kmh,14,0.994079492491956,3189,1567
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,0,0.9937470756041236,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,1,0.9936108553574932,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,2,0.993581045386624,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,3,0.9940417792401852,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,4,0.9936319864760842,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,5,0.9938663154876004,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,6,0.994376103723605,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,7,0.9940308363394864,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,8,0.9942112055303156,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,9,0.9938146197153336,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,10,0.9939255580879356,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,11,0.9934531266508686,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,12,0.9941640378548896,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,13,0.9940530994822876,3257,1585
+a,Treadmill Walk (Self-Paced),activity_self_selected_gait_speed,14,0.9936225529409988,3257,1585
+a,Stationary Walking,activity_stationary_walk,0,0.9920775699869656,3395,1643
+a,Stationary Walking,activity_stationary_walk,1,0.991776722611772,3395,1643
+a,Stationary Walking,activity_stationary_walk,2,0.991777764808222,3395,1643
+a,Stationary Walking,activity_stationary_walk,3,0.9922293832698288,3395,1643
+a,Stationary Walking,activity_stationary_walk,4,0.99249653295981,3395,1643
+a,Stationary Walking,activity_stationary_walk,5,0.9926101323728452,3395,1643
+a,Stationary Walking,activity_stationary_walk,6,0.992884924836792,3395,1643
+a,Stationary Walking,activity_stationary_walk,7,0.992150523738456,3395,1643
+a,Stationary Walking,activity_stationary_walk,8,0.9928355942048318,3395,1643
+a,Stationary Walking,activity_stationary_walk,9,0.9923971768982568,3395,1643
+a,Stationary Walking,activity_stationary_walk,10,0.992233899454445,3395,1643
+a,Stationary Walking,activity_stationary_walk,11,0.9920119116106244,3395,1643
+a,Stationary Walking,activity_stationary_walk,12,0.992457276893532,3395,1643
+a,Stationary Walking,activity_stationary_walk,13,0.9921772734473358,3395,1643
+a,Stationary Walking,activity_stationary_walk,14,0.9921255110236592,3395,1643
+a,Sit-to-Stand,activity_sit_to_stand,0,0.9912612905376128,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,1,0.991403290226533,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,2,0.9916626392916263,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,3,0.9911404692864046,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,4,0.9906776683442766,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,5,0.9917188836671889,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,6,0.9921966136719662,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,7,0.9916841649168416,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,8,0.9907023186570232,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,9,0.991381417413814,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,10,0.9905707345932072,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,11,0.991271706162717,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,12,0.9911092224110922,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,13,0.9917331183548312,3396,1644
+a,Sit-to-Stand,activity_sit_to_stand,14,0.9916525708540256,3396,1644
+a,Romberg's Test,activity_romberg_closed,0,0.9786862004770372,3387,1641
+a,Romberg's Test,activity_romberg_closed,1,0.9785828913026936,3387,1641
+a,Romberg's Test,activity_romberg_closed,2,0.9786600241659704,3387,1641
+a,Romberg's Test,activity_romberg_closed,3,0.9788010272282496,3387,1641
+a,Romberg's Test,activity_romberg_closed,4,0.9783448613807272,3387,1641
+a,Romberg's Test,activity_romberg_closed,5,0.9786694476379544,3387,1641
+a,Romberg's Test,activity_romberg_closed,6,0.9790694216710538,3387,1641
+a,Romberg's Test,activity_romberg_closed,7,0.9772248642845528,3387,1641
+a,Romberg's Test,activity_romberg_closed,8,0.9786216322430724,3387,1641
+a,Romberg's Test,activity_romberg_closed,9,0.9780726277456332,3387,1641
+a,Romberg's Test,activity_romberg_closed,10,0.9787992821408452,3387,1641
+a,Romberg's Test,activity_romberg_closed,11,0.9780213221759424,3387,1641
+a,Romberg's Test,activity_romberg_closed,12,0.9789985711224332,3387,1641
+a,Romberg's Test,activity_romberg_closed,13,0.9784251354013316,3387,1641
+a,Romberg's Test,activity_romberg_closed,14,0.977991306672586,3387,1641
+a,Gait Features Baseline,gait,0,0.959565512793938,2888,1412
+a,Gait Features Baseline,gait,1,0.961402266288952,2888,1412
+a,Gait Features Baseline,gait,2,0.9603025173311224,2888,1412
+a,Gait Features Baseline,gait,3,0.9604862886447562,2888,1412
+a,Gait Features Baseline,gait,4,0.960695490453488,2888,1412
+a,Gait Features Baseline,gait,5,0.9616800824523828,2888,1412
+a,Gait Features Baseline,gait,6,0.9605078805745564,2888,1412
+a,Gait Features Baseline,gait,7,0.9616349793101332,2888,1412
+a,Gait Features Baseline,gait,8,0.9620692170094504,2888,1412
+a,Gait Features Baseline,gait,9,0.9624190062722155,2888,1412

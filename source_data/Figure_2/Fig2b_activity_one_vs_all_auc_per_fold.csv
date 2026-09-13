@@ -1,0 +1,126 @@
+panel,activity,activity_key,seed,fold,auc,accuracy,n_positive,n_negative
+b,Romberg Closed,romberg_closed,0,0,1.0,0.9996996996996996,678,2652
+b,Romberg Closed,romberg_closed,0,1,1.0,0.999400838825644,680,2658
+b,Romberg Closed,romberg_closed,0,2,1.0,1.0,679,2654
+b,Romberg Closed,romberg_closed,0,3,0.9999933038554168,0.9993988578298768,676,2651
+b,Romberg Closed,romberg_closed,0,4,0.9998076082995516,0.9996966019417476,674,2622
+b,Romberg Closed,romberg_closed,1,0,0.9999748332704166,0.9990974729241876,675,2649
+b,Romberg Closed,romberg_closed,1,1,1.0,1.0,677,2633
+b,Romberg Closed,romberg_closed,1,2,0.9996671142441536,0.9996990671080348,675,2648
+b,Romberg Closed,romberg_closed,1,3,1.0,0.9996990671080348,678,2645
+b,Romberg Closed,romberg_closed,1,4,1.0,1.0,682,2662
+b,Romberg Closed,romberg_closed,2,0,0.9999470975316732,0.9993917274939172,672,2616
+b,Romberg Closed,romberg_closed,2,1,1.0,0.999701848539058,680,2674
+b,Romberg Closed,romberg_closed,2,2,1.0,1.0,675,2644
+b,Romberg Closed,romberg_closed,2,3,1.0,0.999699789852897,681,2650
+b,Romberg Closed,romberg_closed,2,4,1.0,1.0,679,2653
+b,Romberg Closed,romberg_closed,3,0,1.0,1.0,676,2639
+b,Romberg Closed,romberg_closed,3,1,0.9999943736081712,0.9993959528843248,674,2637
+b,Romberg Closed,romberg_closed,3,2,0.999909908266718,0.9996998799519808,683,2649
+b,Romberg Closed,romberg_closed,3,3,1.0,1.0,677,2653
+b,Romberg Closed,romberg_closed,3,4,1.0,0.9997002398081536,677,2659
+b,Romberg Closed,romberg_closed,4,0,0.9999110602392868,0.9994020926756352,679,2666
+b,Romberg Closed,romberg_closed,4,1,1.0,1.0,673,2627
+b,Romberg Closed,romberg_closed,4,2,1.0,0.9997036158861884,685,2689
+b,Romberg Closed,romberg_closed,4,3,1.0,1.0,675,2626
+b,Romberg Closed,romberg_closed,4,4,1.0,1.0,675,2629
+b,Self-Selected Speed,self_selected_gait_speed,0,0,0.9617968663107552,0.9106280193236715,648,2664
+b,Self-Selected Speed,self_selected_gait_speed,0,1,0.9644478322099016,0.9110245656081486,654,2684
+b,Self-Selected Speed,self_selected_gait_speed,0,2,0.9657068616319652,0.9175659472422062,659,2677
+b,Self-Selected Speed,self_selected_gait_speed,0,3,0.9596394248574976,0.9051204819277108,653,2667
+b,Self-Selected Speed,self_selected_gait_speed,0,4,0.9652731791689074,0.9153104279686558,643,2675
+b,Self-Selected Speed,self_selected_gait_speed,1,0,0.9624030956011193,0.909667673716012,647,2663
+b,Self-Selected Speed,self_selected_gait_speed,1,1,0.9625248673019954,0.9099939795304034,645,2677
+b,Self-Selected Speed,self_selected_gait_speed,1,2,0.9610689425802086,0.906899668574872,653,2666
+b,Self-Selected Speed,self_selected_gait_speed,1,3,0.9644847473195204,0.9153846153846154,668,2712
+b,Self-Selected Speed,self_selected_gait_speed,1,4,0.9633056186677736,0.9125417552383844,644,2649
+b,Self-Selected Speed,self_selected_gait_speed,2,0,0.961011420171868,0.9032934131736527,660,2680
+b,Self-Selected Speed,self_selected_gait_speed,2,1,0.966235038744377,0.9164436515016354,659,2704
+b,Self-Selected Speed,self_selected_gait_speed,2,2,0.9628486865292312,0.9133977066988532,651,2663
+b,Self-Selected Speed,self_selected_gait_speed,2,3,0.9631204445906408,0.9135281711358842,649,2670
+b,Self-Selected Speed,self_selected_gait_speed,2,4,0.963298633702017,0.9114963503649636,638,2650
+b,Self-Selected Speed,self_selected_gait_speed,3,0,0.9613094017327736,0.9098262432594368,654,2684
+b,Self-Selected Speed,self_selected_gait_speed,3,1,0.9660969791483494,0.9144320578487496,647,2672
+b,Self-Selected Speed,self_selected_gait_speed,3,2,0.9633101234940744,0.9099611127729584,662,2681
+b,Self-Selected Speed,self_selected_gait_speed,3,3,0.9645828658876864,0.9141824751580848,651,2670
+b,Self-Selected Speed,self_selected_gait_speed,3,4,0.9634899846817666,0.9109900090826522,643,2660
+b,Self-Selected Speed,self_selected_gait_speed,4,0,0.9649447294188234,0.9166416791604198,654,2681
+b,Self-Selected Speed,self_selected_gait_speed,4,1,0.9641934422006267,0.9092548076923076,653,2675
+b,Self-Selected Speed,self_selected_gait_speed,4,2,0.96238295784438,0.9119571683521712,661,2701
+b,Self-Selected Speed,self_selected_gait_speed,4,3,0.9642292844324016,0.9162606577344702,642,2642
+b,Self-Selected Speed,self_selected_gait_speed,4,4,0.9611498346653568,0.905580693815988,647,2668
+b,Sit to Stand,sit_to_stand,0,0,1.0,1.0,681,2671
+b,Sit to Stand,sit_to_stand,0,1,1.0,1.0,679,2650
+b,Sit to Stand,sit_to_stand,0,2,1.0,1.0,678,2628
+b,Sit to Stand,sit_to_stand,0,3,1.0,1.0,683,2654
+b,Sit to Stand,sit_to_stand,0,4,0.9999994356261024,0.9993939393939394,675,2625
+b,Sit to Stand,sit_to_stand,1,0,1.0,1.0,680,2653
+b,Sit to Stand,sit_to_stand,1,1,1.0,1.0,679,2651
+b,Sit to Stand,sit_to_stand,1,2,0.9999994505868832,0.9994020926756352,684,2661
+b,Sit to Stand,sit_to_stand,1,3,1.0,1.0,681,2663
+b,Sit to Stand,sit_to_stand,1,4,1.0,1.0,672,2600
+b,Sit to Stand,sit_to_stand,2,0,1.0,1.0,679,2647
+b,Sit to Stand,sit_to_stand,2,1,1.0,1.0,682,2659
+b,Sit to Stand,sit_to_stand,2,2,0.9999994460849562,0.9996998799519808,681,2651
+b,Sit to Stand,sit_to_stand,2,3,1.0,1.0,677,2633
+b,Sit to Stand,sit_to_stand,2,4,1.0,1.0,677,2638
+b,Sit to Stand,sit_to_stand,3,0,1.0,1.0,678,2646
+b,Sit to Stand,sit_to_stand,3,1,1.0,1.0,681,2659
+b,Sit to Stand,sit_to_stand,3,2,0.9999988986905431,0.9997005091344714,684,2655
+b,Sit to Stand,sit_to_stand,3,3,1.0,1.0,678,2635
+b,Sit to Stand,sit_to_stand,3,4,1.0,1.0,675,2633
+b,Sit to Stand,sit_to_stand,4,0,1.0,1.0,680,2645
+b,Sit to Stand,sit_to_stand,4,1,1.0,1.0,676,2641
+b,Sit to Stand,sit_to_stand,4,2,1.0,1.0,683,2671
+b,Sit to Stand,sit_to_stand,4,3,1.0,1.0,679,2628
+b,Sit to Stand,sit_to_stand,4,4,0.9999994419499608,0.9996988858777476,678,2643
+b,Stationary Walking,stationary_walk,0,0,1.0,1.0,679,2665
+b,Stationary Walking,stationary_walk,0,1,1.0,0.9996990671080348,680,2643
+b,Stationary Walking,stationary_walk,0,2,1.0,1.0,677,2638
+b,Stationary Walking,stationary_walk,0,3,1.0,1.0,675,2609
+b,Stationary Walking,stationary_walk,0,4,0.9985391051800532,0.9994044073853484,684,2674
+b,Stationary Walking,stationary_walk,1,0,1.0,1.0,678,2655
+b,Stationary Walking,stationary_walk,1,1,0.9985369682932996,0.9994033412887828,683,2669
+b,Stationary Walking,stationary_walk,1,2,1.0,1.0,681,2644
+b,Stationary Walking,stationary_walk,1,3,1.0,1.0,678,2640
+b,Stationary Walking,stationary_walk,1,4,1.0,0.9996966019417476,675,2621
+b,Stationary Walking,stationary_walk,2,0,0.9999994452703752,0.999399579705794,680,2651
+b,Stationary Walking,stationary_walk,2,1,1.0,1.0,686,2672
+b,Stationary Walking,stationary_walk,2,2,1.0,1.0,678,2643
+b,Stationary Walking,stationary_walk,2,3,1.0,1.0,674,2636
+b,Stationary Walking,stationary_walk,2,4,0.9985240196819868,0.9996973365617432,677,2627
+b,Stationary Walking,stationary_walk,3,0,1.0,1.0,675,2632
+b,Stationary Walking,stationary_walk,3,1,1.0,0.9997029114676174,683,2683
+b,Stationary Walking,stationary_walk,3,2,1.0,1.0,681,2659
+b,Stationary Walking,stationary_walk,3,3,1.0,1.0,676,2618
+b,Stationary Walking,stationary_walk,3,4,0.9985305271141448,0.999397045523063,680,2637
+b,Stationary Walking,stationary_walk,4,0,1.0,0.9996992481203008,681,2644
+b,Stationary Walking,stationary_walk,4,1,0.9985174415019972,0.9996988858777476,674,2647
+b,Stationary Walking,stationary_walk,4,2,1.0,1.0,683,2661
+b,Stationary Walking,stationary_walk,4,3,1.0,0.9996994289149383,679,2648
+b,Stationary Walking,stationary_walk,4,4,1.0,1.0,678,2629
+b,Treadmill 3km/h,tm_3kmh,0,0,0.9671193873262992,0.9144736842105264,649,2695
+b,Treadmill 3km/h,tm_3kmh,0,1,0.9640447952288328,0.9109238639783328,636,2687
+b,Treadmill 3km/h,tm_3kmh,0,2,0.9624782385106412,0.9119155354449472,632,2683
+b,Treadmill 3km/h,tm_3kmh,0,3,0.9650616926932716,0.9171741778319124,624,2660
+b,Treadmill 3km/h,tm_3kmh,0,4,0.9652903056808346,0.9172126265634306,648,2710
+b,Treadmill 3km/h,tm_3kmh,1,0,0.96290217209063,0.9087908790879088,643,2690
+b,Treadmill 3km/h,tm_3kmh,1,1,0.9692379504185246,0.920346062052506,645,2707
+b,Treadmill 3km/h,tm_3kmh,1,2,0.964946749951292,0.917593984962406,633,2692
+b,Treadmill 3km/h,tm_3kmh,1,3,0.9660305031740104,0.9156118143459916,640,2678
+b,Treadmill 3km/h,tm_3kmh,1,4,0.9636939094147192,0.912621359223301,628,2668
+b,Treadmill 3km/h,tm_3kmh,2,0,0.9650055691587198,0.9162413689582708,639,2692
+b,Treadmill 3km/h,tm_3kmh,2,1,0.9661640584592428,0.9178082191780822,644,2714
+b,Treadmill 3km/h,tm_3kmh,2,2,0.9669559514189008,0.9171936163806084,636,2685
+b,Treadmill 3km/h,tm_3kmh,2,3,0.9670347289394908,0.9157099697885196,637,2673
+b,Treadmill 3km/h,tm_3kmh,2,4,0.961458956210376,0.9116222760290555,633,2671
+b,Treadmill 3km/h,tm_3kmh,3,0,0.9645924523837692,0.913516782582401,632,2675
+b,Treadmill 3km/h,tm_3kmh,3,1,0.965233471194504,0.9102792632204396,653,2713
+b,Treadmill 3km/h,tm_3kmh,3,2,0.9636621763367048,0.9125748502994012,643,2697
+b,Treadmill 3km/h,tm_3kmh,3,3,0.967697139252966,0.9159077109896782,628,2666
+b,Treadmill 3km/h,tm_3kmh,3,4,0.9644373185667569,0.9089538739825144,633,2684
+b,Treadmill 3km/h,tm_3kmh,4,0,0.9663799811702228,0.9166917293233082,638,2687
+b,Treadmill 3km/h,tm_3kmh,4,1,0.9640481290893428,0.9135802469135802,641,2680
+b,Treadmill 3km/h,tm_3kmh,4,2,0.9633346832447274,0.9141746411483254,645,2699
+b,Treadmill 3km/h,tm_3kmh,4,3,0.9647123301758248,0.9149383829275624,636,2691
+b,Treadmill 3km/h,tm_3kmh,4,4,0.9663221847687868,0.917750226791654,629,2678

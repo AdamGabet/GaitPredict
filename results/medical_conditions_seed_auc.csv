@@ -1,44 +1,44 @@
 system,label,gender,seed_idx,baseline_auc,gait_auc
-medical_conditions,Hypercholesterolaemia,male,0,0.5,0.5144993894993894
-medical_conditions,Hypercholesterolaemia,male,1,0.5,0.5149572649572649
-medical_conditions,Hypercholesterolaemia,male,2,0.5,0.651480463980464
-medical_conditions,Hypercholesterolaemia,male,3,0.5,0.6932997557997558
-medical_conditions,Hypercholesterolaemia,male,4,0.5,0.5657051282051282
-medical_conditions,Hypercholesterolaemia,male,5,0.5,0.5518162393162394
-medical_conditions,Hypercholesterolaemia,male,6,0.5,0.5495268620268621
-medical_conditions,Hypercholesterolaemia,male,7,0.5,0.573489010989011
-medical_conditions,Hypercholesterolaemia,male,8,0.5,0.5824938949938949
-medical_conditions,Hypercholesterolaemia,male,9,0.5,0.5840201465201467
+medical_conditions,Hypercholesterolaemia,male,0,0.1469780219780219,0.5144993894993894
+medical_conditions,Hypercholesterolaemia,male,1,0.1779609279609279,0.5149572649572649
+medical_conditions,Hypercholesterolaemia,male,2,0.2266865079365079,0.651480463980464
+medical_conditions,Hypercholesterolaemia,male,3,0.2980769230769231,0.6932997557997558
+medical_conditions,Hypercholesterolaemia,male,4,0.2046321733821733,0.5657051282051282
+medical_conditions,Hypercholesterolaemia,male,5,0.1306471306471306,0.5518162393162394
+medical_conditions,Hypercholesterolaemia,male,6,0.1353785103785103,0.5495268620268621
+medical_conditions,Hypercholesterolaemia,male,7,0.1524725274725274,0.573489010989011
+medical_conditions,Hypercholesterolaemia,male,8,0.2213827838827838,0.5824938949938949
+medical_conditions,Hypercholesterolaemia,male,9,0.2010836385836386,0.5840201465201467
 medical_conditions,Lactose Intolerance,male,0,0.506764168190128,0.6821450335161487
 medical_conditions,Lactose Intolerance,male,1,0.5397928092626447,0.6812918951858624
 medical_conditions,Lactose Intolerance,male,2,0.5317489335770872,0.7318708104814138
-medical_conditions,Lactose Intolerance,male,3,0.5,0.7038391224862888
-medical_conditions,Lactose Intolerance,male,4,0.5,0.6898232784887264
+medical_conditions,Lactose Intolerance,male,3,0.4831200487507617,0.7038391224862888
+medical_conditions,Lactose Intolerance,male,4,0.4205971968312005,0.6898232784887264
 medical_conditions,Lactose Intolerance,male,5,0.5513711151736745,0.6987202925045704
-medical_conditions,Lactose Intolerance,male,6,0.5,0.7050578915295551
+medical_conditions,Lactose Intolerance,male,6,0.4893357708714199,0.7050578915295551
 medical_conditions,Lactose Intolerance,male,7,0.5472273004265692,0.7603900060938452
 medical_conditions,Lactose Intolerance,male,8,0.5316270566727606,0.7867154174283975
-medical_conditions,Lactose Intolerance,male,9,0.5,0.6575258988421695
-medical_conditions,Anal Fissure,male,0,0.5,0.5084475864038847
-medical_conditions,Anal Fissure,male,1,0.5,0.5434875749785776
-medical_conditions,Anal Fissure,male,2,0.5,0.556962296486718
-medical_conditions,Anal Fissure,male,3,0.5,0.5216795201371037
-medical_conditions,Anal Fissure,male,4,0.5,0.5175735504141674
-medical_conditions,Anal Fissure,male,5,0.5,0.5290988289060269
-medical_conditions,Anal Fissure,male,6,0.5,0.5591045415595544
-medical_conditions,Anal Fissure,male,7,0.5,0.5371679520137104
-medical_conditions,Anal Fissure,male,8,0.5,0.5652813481862324
-medical_conditions,Anal Fissure,male,9,0.5,0.541059697229363
-medical_conditions,Diabetes,male,0,0.5,0.5976072607260726
+medical_conditions,Lactose Intolerance,male,9,0.471176112126752,0.6575258988421695
+medical_conditions,Anal Fissure,male,0,0.4511818051985147,0.5084475864038847
+medical_conditions,Anal Fissure,male,1,0.4056555269922879,0.5434875749785776
+medical_conditions,Anal Fissure,male,2,0.4067052270779777,0.556962296486718
+medical_conditions,Anal Fissure,male,3,0.4166595258497572,0.5216795201371037
+medical_conditions,Anal Fissure,male,4,0.379684375892602,0.5175735504141674
+medical_conditions,Anal Fissure,male,5,0.3834404455869751,0.5290988289060269
+medical_conditions,Anal Fissure,male,6,0.4102256498143388,0.5591045415595544
+medical_conditions,Anal Fissure,male,7,0.4577406455298486,0.5371679520137104
+medical_conditions,Anal Fissure,male,8,0.4194087403598971,0.5652813481862324
+medical_conditions,Anal Fissure,male,9,0.4020565552699228,0.541059697229363
+medical_conditions,Diabetes,male,0,0.4789603960396039,0.5976072607260726
 medical_conditions,Diabetes,male,1,0.5021039603960397,0.565243399339934
-medical_conditions,Diabetes,male,2,0.5,0.583910891089109
-medical_conditions,Diabetes,male,3,0.5,0.5764438943894389
-medical_conditions,Diabetes,male,4,0.5,0.5869430693069307
-medical_conditions,Diabetes,male,5,0.5,0.5906559405940595
-medical_conditions,Diabetes,male,6,0.5,0.5779909240924092
-medical_conditions,Diabetes,male,7,0.5,0.554496699669967
-medical_conditions,Diabetes,male,8,0.5,0.598927392739274
-medical_conditions,Diabetes,male,9,0.5,0.5461633663366336
+medical_conditions,Diabetes,male,2,0.4842409240924092,0.583910891089109
+medical_conditions,Diabetes,male,3,0.4600041254125413,0.5764438943894389
+medical_conditions,Diabetes,male,4,0.4962871287128713,0.5869430693069307
+medical_conditions,Diabetes,male,5,0.4611798679867986,0.5906559405940595
+medical_conditions,Diabetes,male,6,0.4724009900990099,0.5779909240924092
+medical_conditions,Diabetes,male,7,0.4041254125412541,0.554496699669967
+medical_conditions,Diabetes,male,8,0.4828795379537953,0.598927392739274
+medical_conditions,Diabetes,male,9,0.4428630363036304,0.5461633663366336
 medical_conditions,Depression,male,0,0.5452677459526775,0.6517901618929016
 medical_conditions,Depression,male,1,0.5268835616438357,0.6320672478206725
 medical_conditions,Depression,male,2,0.5480386052303861,0.6318648816936487
@@ -50,32 +50,32 @@ medical_conditions,Depression,male,7,0.5232409713574098,0.6655354919053549
 medical_conditions,Depression,male,8,0.5318026151930262,0.6428549190535492
 medical_conditions,Depression,male,9,0.5445672478206725,0.678455790784558
 medical_conditions,Peptic Ulcer Disease,male,0,0.5320623547224532,0.5772503358710255
-medical_conditions,Peptic Ulcer Disease,male,1,0.5,0.5387371249440215
+medical_conditions,Peptic Ulcer Disease,male,1,0.4667434371867869,0.5387371249440215
 medical_conditions,Peptic Ulcer Disease,male,2,0.5363060584735462,0.5340242680144158
-medical_conditions,Peptic Ulcer Disease,male,3,0.5,0.4810526091314269
-medical_conditions,Peptic Ulcer Disease,male,4,0.5,0.6259356407139659
+medical_conditions,Peptic Ulcer Disease,male,3,0.4555264111914358,0.4810526091314269
+medical_conditions,Peptic Ulcer Disease,male,4,0.4640991192715331,0.6259356407139659
 medical_conditions,Peptic Ulcer Disease,male,5,0.5003945151728403,0.5561384428379502
-medical_conditions,Peptic Ulcer Disease,male,6,0.5,0.5735397607318788
+medical_conditions,Peptic Ulcer Disease,male,6,0.4520504126415455,0.5735397607318788
 medical_conditions,Peptic Ulcer Disease,male,7,0.5209093041605357,0.5486533171262236
-medical_conditions,Peptic Ulcer Disease,male,8,0.5,0.5164949992536199
-medical_conditions,Peptic Ulcer Disease,male,9,0.5,0.5208879790160579
-medical_conditions,Insomnia,male,0,0.5,0.5598328377400948
-medical_conditions,Insomnia,male,1,0.5,0.5191406145356158
-medical_conditions,Insomnia,male,2,0.5,0.4748319001312652
-medical_conditions,Insomnia,male,3,0.5,0.5268557957620081
-medical_conditions,Insomnia,male,4,0.5,0.5409735058533579
+medical_conditions,Peptic Ulcer Disease,male,8,0.4914806047810974,0.5164949992536199
+medical_conditions,Peptic Ulcer Disease,male,9,0.4382530441643742,0.5208879790160579
+medical_conditions,Insomnia,male,0,0.4778858260333789,0.5598328377400948
+medical_conditions,Insomnia,male,1,0.4418816469768812,0.5191406145356158
+medical_conditions,Insomnia,male,2,0.4571512764874494,0.4748319001312652
+medical_conditions,Insomnia,male,3,0.4230491039138471,0.5268557957620081
+medical_conditions,Insomnia,male,4,0.4649736130086528,0.5409735058533579
 medical_conditions,Insomnia,male,5,0.5457687052961504,0.6210185110771786
-medical_conditions,Insomnia,male,6,0.5,0.5494387741434273
+medical_conditions,Insomnia,male,6,0.4749390554260762,0.5494387741434273
 medical_conditions,Insomnia,male,7,0.5218462857295936,0.4802432425192209
-medical_conditions,Insomnia,male,8,0.5,0.5707894666345201
-medical_conditions,Insomnia,male,9,0.5,0.4476680328966755
+medical_conditions,Insomnia,male,8,0.4267727504085295,0.5707894666345201
+medical_conditions,Insomnia,male,9,0.4701974336306892,0.4476680328966755
 medical_conditions,Sinusitis,male,0,0.5211563334621134,0.545411788419868
 medical_conditions,Sinusitis,male,1,0.5065425898241311,0.5808207212806343
 medical_conditions,Sinusitis,male,2,0.5146893319671443,0.5663581543009759
-medical_conditions,Sinusitis,male,3,0.5,0.5970806107536997
-medical_conditions,Sinusitis,male,4,0.5,0.5422202811885845
+medical_conditions,Sinusitis,male,3,0.4949859741655887,0.5970806107536997
+medical_conditions,Sinusitis,male,4,0.4980766969579897,0.5422202811885845
 medical_conditions,Sinusitis,male,5,0.5165706414929535,0.521593066030605
-medical_conditions,Sinusitis,male,6,0.5,0.5603110879680178
+medical_conditions,Sinusitis,male,6,0.4919792384055902,0.5603110879680178
 medical_conditions,Sinusitis,male,7,0.5047620647372046,0.5637377588900274
 medical_conditions,Sinusitis,male,8,0.5291854937597635,0.5936707372381704
 medical_conditions,Sinusitis,male,9,0.5022592511716191,0.5735810390875649
@@ -99,34 +99,34 @@ medical_conditions,Back Pain,male,6,0.5443144907310206,0.5753189492274822
 medical_conditions,Back Pain,male,7,0.561036940063481,0.5846484457014414
 medical_conditions,Back Pain,male,8,0.5630574664377725,0.5645222245550766
 medical_conditions,Back Pain,male,9,0.5467697513863331,0.5730217737652682
-medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,0,0.5,0.6313868613138687
-medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,1,0.5,0.6100973236009732
-medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,2,0.5,0.6861313868613139
-medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,3,0.5,0.6578467153284672
-medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,4,0.5,0.6049270072992701
-medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,5,0.5,0.6058394160583942
-medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,6,0.5,0.5663017031630171
-medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,7,0.5,0.5094282238442822
-medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,8,0.5,0.6298661800486618
-medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,9,0.5,0.6213503649635037
-medications,ADRENERGICSINHALANTS,male,0,0.5,0.546092609166706
-medications,ADRENERGICSINHALANTS,male,1,0.5,0.56597107729992
-medications,ADRENERGICSINHALANTS,male,2,0.5,0.6021008997126571
-medications,ADRENERGICSINHALANTS,male,3,0.5,0.4931932733524895
-medications,ADRENERGICSINHALANTS,male,4,0.5,0.5045927740355174
-medications,ADRENERGICSINHALANTS,male,5,0.5,0.5846248056903293
-medications,ADRENERGICSINHALANTS,male,6,0.5,0.6208959442272364
-medications,ADRENERGICSINHALANTS,male,7,0.5,0.5629092279429083
-medications,ADRENERGICSINHALANTS,male,8,0.5,0.560648169956192
-medications,ADRENERGICSINHALANTS,male,9,0.5,0.4895190541240755
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,0,0.4373479318734793,0.6313868613138687
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,1,0.371654501216545,0.6100973236009732
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,2,0.4674574209245742,0.6861313868613139
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,3,0.3604014598540146,0.6578467153284672
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,4,0.465632603406326,0.6049270072992701
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,5,0.1715328467153284,0.6058394160583942
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,6,0.3394160583941605,0.5663017031630171
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,7,0.4260948905109488,0.5094282238442822
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,8,0.4613746958637469,0.6298661800486618
+medications,OTHERPLAINVITAMINPREPARATIONSinATC,male,9,0.3512773722627737,0.6213503649635037
+medications,ADRENERGICSINHALANTS,male,0,0.4528239672146592,0.546092609166706
+medications,ADRENERGICSINHALANTS,male,1,0.3459418719675916,0.56597107729992
+medications,ADRENERGICSINHALANTS,male,2,0.4685571623722266,0.6021008997126571
+medications,ADRENERGICSINHALANTS,male,3,0.356729002779217,0.4931932733524895
+medications,ADRENERGICSINHALANTS,male,4,0.4102407084648358,0.5045927740355174
+medications,ADRENERGICSINHALANTS,male,5,0.3918225069480428,0.5846248056903293
+medications,ADRENERGICSINHALANTS,male,6,0.4541900230816336,0.6208959442272364
+medications,ADRENERGICSINHALANTS,male,7,0.3830138018747939,0.5629092279429083
+medications,ADRENERGICSINHALANTS,male,8,0.4312026002166847,0.560648169956192
+medications,ADRENERGICSINHALANTS,male,9,0.4153751943096707,0.4895190541240755
 medications,ANTIDEPRESSANTS,male,0,0.5091999475830385,0.5776272074863755
 medications,ANTIDEPRESSANTS,male,1,0.5005819824403179,0.5906158222139999
-medications,ANTIDEPRESSANTS,male,2,0.5,0.592542916387238
+medications,ANTIDEPRESSANTS,male,2,0.478613108865404,0.592542916387238
 medications,ANTIDEPRESSANTS,male,3,0.5252950381179228,0.590438529550062
 medications,ANTIDEPRESSANTS,male,4,0.5079203570520083,0.6034117275243006
 medications,ANTIDEPRESSANTS,male,5,0.5250021198035906,0.5649238026963902
-medications,ANTIDEPRESSANTS,male,6,0.5,0.5981700313730932
-medications,ANTIDEPRESSANTS,male,7,0.5,0.6025715144647689
+medications,ANTIDEPRESSANTS,male,6,0.4783510240578437,0.5981700313730932
+medications,ANTIDEPRESSANTS,male,7,0.4765318471583068,0.6025715144647689
 medications,ANTIDEPRESSANTS,male,8,0.5139714327559759,0.5879024736180807
 medications,ANTIDEPRESSANTS,male,9,0.5371736466017621,0.5925968750240886
 medications,ANTIHISTAMINESFORSYSTEMICUSE,male,0,0.5747986694677871,0.633797268907563
@@ -149,36 +149,36 @@ medications,DRUGSFORPEPTICULCERANDGASTROOESOPHAGEALREFLUXDISEASEGORD,male,6,0.61
 medications,DRUGSFORPEPTICULCERANDGASTROOESOPHAGEALREFLUXDISEASEGORD,male,7,0.6406788566624633,0.6847730138713746
 medications,DRUGSFORPEPTICULCERANDGASTROOESOPHAGEALREFLUXDISEASEGORD,male,8,0.6292664985287937,0.653520386717108
 medications,DRUGSFORPEPTICULCERANDGASTROOESOPHAGEALREFLUXDISEASEGORD,male,9,0.6261244220260613,0.689186633039092
-medical_conditions,Myocarditis,female,0,0.5,0.5552706552706553
-medical_conditions,Myocarditis,female,1,0.5,0.7531339031339032
-medical_conditions,Myocarditis,female,2,0.5,0.6370370370370371
-medical_conditions,Myocarditis,female,3,0.5,0.7162393162393161
-medical_conditions,Myocarditis,female,4,0.5,0.6331908831908832
-medical_conditions,Myocarditis,female,5,0.5,0.6361823361823362
-medical_conditions,Myocarditis,female,6,0.5,0.595014245014245
-medical_conditions,Myocarditis,female,7,0.5,0.7760683760683762
-medical_conditions,Myocarditis,female,8,0.5,0.7663817663817665
-medical_conditions,Myocarditis,female,9,0.5,0.5937321937321938
-medical_conditions,Hypercholesterolaemia,female,0,0.5,0.5283922462941848
-medical_conditions,Hypercholesterolaemia,female,1,0.5,0.5501710376282782
-medical_conditions,Hypercholesterolaemia,female,2,0.5,0.5462941847206385
-medical_conditions,Hypercholesterolaemia,female,3,0.5,0.5421892816419612
-medical_conditions,Hypercholesterolaemia,female,4,0.5,0.5526795895096921
-medical_conditions,Hypercholesterolaemia,female,5,0.5,0.5567844925883695
-medical_conditions,Hypercholesterolaemia,female,6,0.5,0.538654503990878
-medical_conditions,Hypercholesterolaemia,female,7,0.5,0.4835803876852908
-medical_conditions,Hypercholesterolaemia,female,8,0.5,0.585860889395667
-medical_conditions,Hypercholesterolaemia,female,9,0.5,0.5669327251995439
-medical_conditions,Psoriasis,female,0,0.5,0.5701033021142669
-medical_conditions,Psoriasis,female,1,0.5,0.6007385974263306
-medical_conditions,Psoriasis,female,2,0.5,0.6070458641082261
-medical_conditions,Psoriasis,female,3,0.5,0.586766161577705
-medical_conditions,Psoriasis,female,4,0.5,0.6121475164344273
-medical_conditions,Psoriasis,female,5,0.5,0.6163354399857864
-medical_conditions,Psoriasis,female,6,0.5,0.6288357572527222
+medical_conditions,Myocarditis,female,0,0.2066951566951566,0.5552706552706553
+medical_conditions,Myocarditis,female,1,0.1532763532763532,0.7531339031339032
+medical_conditions,Myocarditis,female,2,0.4264957264957265,0.6370370370370371
+medical_conditions,Myocarditis,female,3,0.2346153846153846,0.7162393162393161
+medical_conditions,Myocarditis,female,4,0.1233618233618233,0.6331908831908832
+medical_conditions,Myocarditis,female,5,0.3884615384615384,0.6361823361823362
+medical_conditions,Myocarditis,female,6,0.1096866096866096,0.595014245014245
+medical_conditions,Myocarditis,female,7,0.2853276353276354,0.7760683760683762
+medical_conditions,Myocarditis,female,8,0.227065527065527,0.7663817663817665
+medical_conditions,Myocarditis,female,9,0.178062678062678,0.5937321937321938
+medical_conditions,Hypercholesterolaemia,female,0,0.277309007981756,0.5283922462941848
+medical_conditions,Hypercholesterolaemia,female,1,0.3729760547320411,0.5501710376282782
+medical_conditions,Hypercholesterolaemia,female,2,0.3473204104903078,0.5462941847206385
+medical_conditions,Hypercholesterolaemia,female,3,0.3099771949828962,0.5421892816419612
+medical_conditions,Hypercholesterolaemia,female,4,0.2126567844925884,0.5526795895096921
+medical_conditions,Hypercholesterolaemia,female,5,0.2287343215507411,0.5567844925883695
+medical_conditions,Hypercholesterolaemia,female,6,0.2864880273660205,0.538654503990878
+medical_conditions,Hypercholesterolaemia,female,7,0.1936145952109464,0.4835803876852908
+medical_conditions,Hypercholesterolaemia,female,8,0.3659064994298745,0.585860889395667
+medical_conditions,Hypercholesterolaemia,female,9,0.3152793614595211,0.5669327251995439
+medical_conditions,Psoriasis,female,0,0.4687809335262316,0.5701033021142669
+medical_conditions,Psoriasis,female,1,0.4560775654204421,0.6007385974263306
+medical_conditions,Psoriasis,female,2,0.4573339424858499,0.6070458641082261
+medical_conditions,Psoriasis,female,3,0.4546815909033224,0.586766161577705
+medical_conditions,Psoriasis,female,4,0.4288497169978933,0.6121475164344273
+medical_conditions,Psoriasis,female,5,0.4809132211477448,0.6163354399857864
+medical_conditions,Psoriasis,female,6,0.4852788141831011,0.6288357572527222
 medical_conditions,Psoriasis,female,7,0.5026269702276707,0.600294423716338
-medical_conditions,Psoriasis,female,8,0.5,0.5650651031752075
-medical_conditions,Psoriasis,female,9,0.5,0.6229472829259626
+medical_conditions,Psoriasis,female,8,0.4163303637148151,0.5650651031752075
+medical_conditions,Psoriasis,female,9,0.4846633163278255,0.6229472829259626
 medical_conditions,Glaucoma,female,0,0.6782195888063963,0.7775556824671617
 medical_conditions,Glaucoma,female,1,0.6565533980582524,0.7686322101656197
 medical_conditions,Glaucoma,female,2,0.6107224443175329,0.7687749857224443
@@ -190,26 +190,26 @@ medical_conditions,Glaucoma,female,7,0.6616219303255282,0.7646344945745289
 medical_conditions,Glaucoma,female,8,0.6939962878355226,0.8849229011993146
 medical_conditions,Glaucoma,female,9,0.6852512849800114,0.8687892632781267
 medical_conditions,Uveitis,female,0,0.547945205479452,0.691617742987606
-medical_conditions,Uveitis,female,1,0.5,0.5732224396607959
-medical_conditions,Uveitis,female,2,0.5,0.6765329419439008
+medical_conditions,Uveitis,female,1,0.4963307240704501,0.5732224396607959
+medical_conditions,Uveitis,female,2,0.4906229615133725,0.6765329419439008
 medical_conditions,Uveitis,female,3,0.5234018264840182,0.6840345727332029
 medical_conditions,Uveitis,female,4,0.5070939334637965,0.6494618395303327
-medical_conditions,Uveitis,female,5,0.5,0.6775114155251142
+medical_conditions,Uveitis,female,5,0.4946999347684279,0.6775114155251142
 medical_conditions,Uveitis,female,6,0.5600130463144162,0.6447325505544683
 medical_conditions,Uveitis,female,7,0.5341650358773646,0.7418460534898892
-medical_conditions,Uveitis,female,8,0.5,0.5723255055446836
+medical_conditions,Uveitis,female,8,0.492579908675799,0.5723255055446836
 medical_conditions,Uveitis,female,9,0.5828440965427266,0.5622961513372472
-medical_conditions,Headache,female,0,0.5,0.6340662257515096
-medical_conditions,Headache,female,1,0.5,0.6123559468247474
-medical_conditions,Headache,female,2,0.5,0.5931230507199894
+medical_conditions,Headache,female,0,0.4916941316994404,0.6340662257515096
+medical_conditions,Headache,female,1,0.4941272755424805,0.6123559468247474
+medical_conditions,Headache,female,2,0.4788648277997743,0.5931230507199894
 medical_conditions,Headache,female,3,0.522760954677166,0.6052224114667433
 medical_conditions,Headache,female,4,0.5264217301864673,0.6101550576212701
-medical_conditions,Headache,female,5,0.5,0.5440841425379902
+medical_conditions,Headache,female,5,0.49503417461125,0.5440841425379902
 medical_conditions,Headache,female,6,0.5061934570550111,0.6284257559335531
 medical_conditions,Headache,female,7,0.5102192041407684,0.6148112101572696
 medical_conditions,Headache,female,8,0.511491074785994,0.6077661527571945
 medical_conditions,Headache,female,9,0.501083854984627,0.5817315136366652
-medical_conditions,Peptic Ulcer Disease,female,0,0.5,0.5747037152115051
+medical_conditions,Peptic Ulcer Disease,female,0,0.4906120999600515,0.5747037152115051
 medical_conditions,Peptic Ulcer Disease,female,1,0.5316813884326868,0.6204891473212304
 medical_conditions,Peptic Ulcer Disease,female,2,0.5504682853211417,0.636002485685117
 medical_conditions,Peptic Ulcer Disease,female,3,0.5289182831017799,0.5795197301256159
@@ -222,33 +222,33 @@ medical_conditions,Peptic Ulcer Disease,female,9,0.5301500288517023,0.6048648408
 medical_conditions,Tinnitus,female,0,0.5805017103762828,0.7405929304446979
 medical_conditions,Tinnitus,female,1,0.6023945267958951,0.6685290763968074
 medical_conditions,Tinnitus,female,2,0.6709236031927025,0.6371721778791334
-medical_conditions,Tinnitus,female,3,0.5,0.603648802736602
+medical_conditions,Tinnitus,female,3,0.4590649942987457,0.603648802736602
 medical_conditions,Tinnitus,female,4,0.6286202964652223,0.6347776510832384
 medical_conditions,Tinnitus,female,5,0.6167616875712657,0.7540478905359179
 medical_conditions,Tinnitus,female,6,0.6795895096921323,0.7366020524515393
 medical_conditions,Tinnitus,female,7,0.6812998859749145,0.7419612314709236
 medical_conditions,Tinnitus,female,8,0.525769669327252,0.6318129988597492
 medical_conditions,Tinnitus,female,9,0.5889395667046751,0.6374002280501709
-medical_conditions,Meniscus Tears,female,0,0.5,0.5818103940605368
+medical_conditions,Meniscus Tears,female,0,0.4922187321530554,0.5818103940605368
 medical_conditions,Meniscus Tears,female,1,0.5333380925185608,0.5764563106796117
-medical_conditions,Meniscus Tears,female,2,0.5,0.5636778983438036
-medical_conditions,Meniscus Tears,female,3,0.5,0.5598943460879497
-medical_conditions,Meniscus Tears,female,4,0.5,0.5250571102227298
-medical_conditions,Meniscus Tears,female,5,0.5,0.5338378069674472
+medical_conditions,Meniscus Tears,female,2,0.4958595088520845,0.5636778983438036
+medical_conditions,Meniscus Tears,female,3,0.4651627641347801,0.5598943460879497
+medical_conditions,Meniscus Tears,female,4,0.4416047972587092,0.5250571102227298
+medical_conditions,Meniscus Tears,female,5,0.4423186750428327,0.5338378069674472
 medical_conditions,Meniscus Tears,female,6,0.5542547115933752,0.5844517418617933
 medical_conditions,Meniscus Tears,female,7,0.5335522558537978,0.5760279840091377
 medical_conditions,Meniscus Tears,female,8,0.5039977155910909,0.5326242147344374
-medical_conditions,Meniscus Tears,female,9,0.5,0.6215019988577956
+medical_conditions,Meniscus Tears,female,9,0.4496716162193033,0.6215019988577956
 medical_conditions,Diabetes,female,0,0.5222431569581828,0.5977390485162506
 medical_conditions,Diabetes,female,1,0.5074056628460772,0.568535091851154
 medical_conditions,Diabetes,female,2,0.5100748416810592,0.5698173444287434
-medical_conditions,Diabetes,female,3,0.5,0.5637724394201078
-medical_conditions,Diabetes,female,4,0.5,0.548045219029675
+medical_conditions,Diabetes,female,3,0.4939812634113152,0.5637724394201078
+medical_conditions,Diabetes,female,4,0.4244517716020306,0.548045219029675
 medical_conditions,Diabetes,female,5,0.5463704401528235,0.6367038258229968
-medical_conditions,Diabetes,female,6,0.5,0.5524938504213115
+medical_conditions,Diabetes,female,6,0.4783587167006856,0.5524938504213115
 medical_conditions,Diabetes,female,7,0.5315067776207673,0.5371068194902392
 medical_conditions,Diabetes,female,8,0.5343591353954047,0.6361804574239808
-medical_conditions,Diabetes,female,9,0.5,0.5497199979065264
+medical_conditions,Diabetes,female,9,0.4754278536661956,0.5497199979065264
 medical_conditions,Depression,female,0,0.5640588583156504,0.5990364211917766
 medical_conditions,Depression,female,1,0.5537099523428531,0.6242825338296171
 medical_conditions,Depression,female,2,0.5786951681914635,0.6076894980345776
@@ -279,14 +279,14 @@ medical_conditions,Asthma,female,6,0.5236886941706219,0.5644091517585493
 medical_conditions,Asthma,female,7,0.5306072775952293,0.555080929779725
 medical_conditions,Asthma,female,8,0.5221005233053426,0.5531215772179627
 medical_conditions,Asthma,female,9,0.5263234757210661,0.5753255446026531
-medical_conditions,Perimenopausal Disorders,female,0,0.5,0.4681224899598393
+medical_conditions,Perimenopausal Disorders,female,0,0.4722819850831898,0.4681224899598393
 medical_conditions,Perimenopausal Disorders,female,1,0.5879231210556513,0.5910068846815835
 medical_conditions,Perimenopausal Disorders,female,2,0.5496629374641423,0.6037363740676994
 medical_conditions,Perimenopausal Disorders,female,3,0.5780622489959839,0.5363955823293172
 medical_conditions,Perimenopausal Disorders,female,4,0.560025817555938,0.6343588640275387
 medical_conditions,Perimenopausal Disorders,female,5,0.5605098967297762,0.5879589787722317
 medical_conditions,Perimenopausal Disorders,female,6,0.5403399311531841,0.6294104991394147
-medical_conditions,Perimenopausal Disorders,female,7,0.5,0.5284351692484223
+medical_conditions,Perimenopausal Disorders,female,7,0.4567197360872059,0.5284351692484223
 medical_conditions,Perimenopausal Disorders,female,8,0.5548085197934595,0.589393287435456
 medical_conditions,Perimenopausal Disorders,female,9,0.571464429145152,0.6007960413080895
 medications,ANTIMIGRAINEPREPARATIONS,female,0,0.5196510110893673,0.669194390084801
@@ -294,20 +294,20 @@ medications,ANTIMIGRAINEPREPARATIONS,female,1,0.5023646444879322,0.6187214611872
 medications,ANTIMIGRAINEPREPARATIONS,female,2,0.5162263535551206,0.6581865622961514
 medications,ANTIMIGRAINEPREPARATIONS,female,3,0.5212818003913895,0.7439660795825179
 medications,ANTIMIGRAINEPREPARATIONS,female,4,0.5317188519243314,0.659409654272668
-medications,ANTIMIGRAINEPREPARATIONS,female,5,0.5,0.6580234833659491
+medications,ANTIMIGRAINEPREPARATIONS,female,5,0.4717058056099152,0.6580234833659491
 medications,ANTIMIGRAINEPREPARATIONS,female,6,0.520221787345075,0.7114318330071755
-medications,ANTIMIGRAINEPREPARATIONS,female,7,0.5,0.6462818003913895
-medications,ANTIMIGRAINEPREPARATIONS,female,8,0.5,0.6053489889106327
-medications,ANTIMIGRAINEPREPARATIONS,female,9,0.5,0.6462002609262882
-medications,OTHERGYNECOLOGICALSinATC,female,0,0.5,0.555364314400459
-medications,OTHERGYNECOLOGICALSinATC,female,1,0.5,0.5618545611015491
-medications,OTHERGYNECOLOGICALSinATC,female,2,0.5,0.5634323006310958
+medications,ANTIMIGRAINEPREPARATIONS,female,7,0.4875244618395303,0.6462818003913895
+medications,ANTIMIGRAINEPREPARATIONS,female,8,0.4951891715590345,0.6053489889106327
+medications,ANTIMIGRAINEPREPARATIONS,female,9,0.4682811480756686,0.6462002609262882
+medications,OTHERGYNECOLOGICALSinATC,female,0,0.494226907630522,0.555364314400459
+medications,OTHERGYNECOLOGICALSinATC,female,1,0.4546041308089501,0.5618545611015491
+medications,OTHERGYNECOLOGICALSinATC,female,2,0.4403686173264487,0.5634323006310958
 medications,OTHERGYNECOLOGICALSinATC,female,3,0.5125143430866322,0.5377581755593803
-medications,OTHERGYNECOLOGICALSinATC,female,4,0.5,0.5376147446930579
-medications,OTHERGYNECOLOGICALSinATC,female,5,0.5,0.5619979919678715
-medications,OTHERGYNECOLOGICALSinATC,female,6,0.5,0.5505952380952381
-medications,OTHERGYNECOLOGICALSinATC,female,7,0.5,0.5822934595524957
-medications,OTHERGYNECOLOGICALSinATC,female,8,0.5,0.6099397590361446
+medications,OTHERGYNECOLOGICALSinATC,female,4,0.4575803212851406,0.5376147446930579
+medications,OTHERGYNECOLOGICALSinATC,female,5,0.4443129661503155,0.5619979919678715
+medications,OTHERGYNECOLOGICALSinATC,female,6,0.322289156626506,0.5505952380952381
+medications,OTHERGYNECOLOGICALSinATC,female,7,0.4393646012621915,0.5822934595524957
+medications,OTHERGYNECOLOGICALSinATC,female,8,0.3568918531267929,0.6099397590361446
 medications,OTHERGYNECOLOGICALSinATC,female,9,0.5046973608720597,0.5812535857716581
 medications,OTHERPLAINVITAMINPREPARATIONSinATC,female,0,0.5864761904761905,0.7366349206349206
 medications,OTHERPLAINVITAMINPREPARATIONSinATC,female,1,0.6125079365079364,0.7586666666666666
@@ -322,20 +322,20 @@ medications,OTHERPLAINVITAMINPREPARATIONSinATC,female,9,0.6241904761904762,0.740
 medications,ADRENERGICSINHALANTS,female,0,0.6129938094326377,0.6143659454974791
 medications,ADRENERGICSINHALANTS,female,1,0.5538962282213288,0.6690599272448784
 medications,ADRENERGICSINHALANTS,female,2,0.6167911162167337,0.6236198863998978
-medications,ADRENERGICSINHALANTS,female,3,0.5,0.5692450060629267
+medications,ADRENERGICSINHALANTS,female,3,0.4742166060373987,0.5692450060629267
 medications,ADRENERGICSINHALANTS,female,4,0.5379092475588743,0.6231412342842555
 medications,ADRENERGICSINHALANTS,female,5,0.5167209139064395,0.5965919969366265
 medications,ADRENERGICSINHALANTS,female,6,0.5249856404365307,0.5807326568383432
 medications,ADRENERGICSINHALANTS,female,7,0.5382602591103453,0.6303848363009765
 medications,ADRENERGICSINHALANTS,female,8,0.6006764949901078,0.6831961197268492
-medications,ADRENERGICSINHALANTS,female,9,0.5,0.596496266513498
-medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,0,0.5,0.5570155261644623
+medications,ADRENERGICSINHALANTS,female,9,0.4985321335120301,0.596496266513498
+medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,0,0.4931282346175963,0.5570155261644623
 medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,1,0.5525876940770558,0.6125071880391029
 medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,2,0.5066417481311098,0.548188614146061
 medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,3,0.563254744105808,0.5803335250143761
-medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,4,0.5,0.615066129959747
+medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,4,0.4691489361702127,0.615066129959747
 medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,5,0.5720241518113859,0.6008625646923519
-medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,6,0.5,0.4783208740655549
+medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,6,0.4893617021276596,0.4783208740655549
 medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,7,0.5215928694652099,0.6206440483036227
 medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,8,0.5338987924094307,0.6449971247843589
 medications,HORMONEANTAGONISTSANDRELATEDAGENTS,female,9,0.5248418631397355,0.6402242668200115

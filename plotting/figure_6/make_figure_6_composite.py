@@ -1,66 +1,59 @@
 """
 Assemble the Figure 6 composite (panels a-c) from the individually-rendered
-review1 panels in this directory:
+panels in individual_plots/:
 
-  a = figure6a/body_system_heatmap_top10_both.png      (Both-sexes body-system x body-group heatmap)
-  b = figure6b/grouped_by_body_part_male_pearson.png   (Male: 4 body groups + top labels)
-  c = figure6b/grouped_by_body_part_female_pearson.png (Female: 4 body groups + top labels)
+  a = figure6a/body_system_heatmap_top10_both.pdf      (Both-sexes body-system x body-group heatmap)
+  b = figure6b/grouped_by_body_part_male_pearson.pdf   (Male: 4 body groups + top labels)
+  c = figure6b/grouped_by_body_part_female_pearson.pdf (Female: 4 body groups + top labels)
+
+The panel PDFs are placed as vector form XObjects, so every axis label, tick and
+legend entry in the composite stays real, selectable text. The previous version
+pasted rendered PNGs, which flattened all of that to pixels.
 
 Layout: panel a fills the left column and is exactly as tall as panels b and c
-combined; b (top) and c (bottom) stack on the right. Each panel is autocropped
-to its non-white bounding box first, so surrounding whitespace is removed, and
-placed at its native aspect ratio (no distortion).
+combined; b (top) and c (bottom) stack on the right. Panels keep their native
+aspect ratios (no distortion); the panel PDFs are already tightly cropped by
+bbox_inches='tight', so no autocropping is needed.
 
 Run plot_body_system_heatmap.py and plot_grouped_by_body_part.py --metric pearson
-first so the component PNGs are current, then run this.
+first so the component PDFs are current, then run this.
+Output written to output/figure_6_composite.{png,pdf,svg}.
 """
 import os
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
+import pymupdf
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PANELS = os.path.join(HERE, 'individual_plots')
+OUTPUT_DIR = os.path.join(HERE, 'output')
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-HEATMAP = os.path.join(PANELS, 'figure6a', 'body_system_heatmap_top10_both.png')
-MALE = os.path.join(PANELS, 'figure6b', 'grouped_by_body_part_male_pearson.png')
-FEMALE = os.path.join(PANELS, 'figure6b', 'grouped_by_body_part_female_pearson.png')
+HEATMAP = os.path.join(PANELS, 'figure6a', 'body_system_heatmap_top10_both.pdf')
+MALE = os.path.join(PANELS, 'figure6b', 'grouped_by_body_part_male_pearson.pdf')
+FEMALE = os.path.join(PANELS, 'figure6b', 'grouped_by_body_part_female_pearson.pdf')
 
-OUT_STEM = os.path.join(HERE, 'output', 'figure_6_composite')
+OUT_STEM = os.path.join(OUTPUT_DIR, 'figure_6_composite')
 
-FIGW = 22.0          # total figure width (inches)
-HGAP = 0.45          # horizontal gap between left (a) and right (b/c) columns (inches)
-VGAP = 0.10          # vertical gap between panels b and c (inches)
-PAD = 8              # px of white padding kept around each autocropped panel
-LETTER_FS = 34
+PT = 72.0            # points per inch
+FIGW = 22.0 * PT     # total figure width
+HGAP = 0.45 * PT     # gap between left (a) and right (b/c) columns
+VGAP = 0.10 * PT     # gap between panels b and c
+LETTER_FS = 34       # panel-letter size (points)
+PNG_DPI = 200
 
-
-def autocrop(img, thresh=0.985, pad=PAD):
-    """Trim uniform near-white borders. img is HxWx{3,4} float in [0,1]."""
-    rgb = img[..., :3]
-    nonwhite = np.any(rgb < thresh, axis=2)
-    if not nonwhite.any():
-        return img
-    rows = np.where(nonwhite.any(axis=1))[0]
-    cols = np.where(nonwhite.any(axis=0))[0]
-    r0, r1 = rows[0], rows[-1] + 1
-    c0, c1 = cols[0], cols[-1] + 1
-    r0 = max(0, r0 - pad); c0 = max(0, c0 - pad)
-    r1 = min(img.shape[0], r1 + pad); c1 = min(img.shape[1], c1 + pad)
-    return img[r0:r1, c0:c1]
+# Panel letters use the PDF base-14 Helvetica-Bold, matching Nature's
+# sans-serif requirement. base-14 needs no embedding, which also avoids the
+# viewer-rejection seen when an OpenType/CFF face was embedded here.
+LETTER_FONT = 'hebo'
 
 
-def ar(img):
+def ar(page):
     """Aspect ratio width / height."""
-    return img.shape[1] / img.shape[0]
+    return page.rect.width / page.rect.height
 
 
 def main():
-    heat = autocrop(mpimg.imread(HEATMAP))
-    male = autocrop(mpimg.imread(MALE))
-    female = autocrop(mpimg.imread(FEMALE))
-
-    ar_h, ar_m, ar_f = ar(heat), ar(male), ar(female)
+    heat, male, female = (pymupdf.open(p) for p in (HEATMAP, MALE, FEMALE))
+    ar_h, ar_m, ar_f = ar(heat[0]), ar(male[0]), ar(female[0])
 
     # Solve geometry so panel a height == (b height + VGAP + c height), both
     # columns at native AR, total width == FIGW.
@@ -73,41 +66,52 @@ def main():
     female_h = right_w / ar_f
     right_h = male_h + VGAP + female_h
     a_w = right_h * ar_h
-    figh = right_h
 
-    fig = plt.figure(figsize=(FIGW, figh))
+    # Margins hold the panel letters that overhang up and to the left.
+    ml = 0.02 * a_w
+    mt = 0.03 * right_h
 
-    def add(x_in, y_in, w_in, h_in):
-        axx = fig.add_axes([x_in / FIGW, y_in / figh, w_in / FIGW, h_in / figh])
-        axx.axis('off')
-        return axx
+    page_w = ml + FIGW
+    page_h = mt + right_h
 
-    # --- Panel a: left column, full height ---
-    ax_a = add(0.0, 0.0, a_w, figh)
-    ax_a.imshow(heat)
-    ax_a.text(-0.04, 1.0, 'a', transform=ax_a.transAxes,
-              ha='right', va='top', fontsize=LETTER_FS, fontweight='bold')
+    out = pymupdf.open()
+    page = out.new_page(width=page_w, height=page_h)
+    page.draw_rect(page.rect, color=None, fill=(1, 1, 1))
 
-    # --- Right column: b (top) over c (bottom) ---
-    right_x = a_w + HGAP
-    b_y = figh - male_h
-    c_y = 0.0
+    def place(doc, x, y, w, h):
+        page.show_pdf_page(pymupdf.Rect(x, y, x + w, y + h), doc, 0)
 
-    ax_b = add(right_x, b_y, right_w, male_h)
-    ax_b.imshow(male)
-    ax_b.text(0.0, 1.0, 'b', transform=ax_b.transAxes,
-              ha='right', va='top', fontsize=LETTER_FS, fontweight='bold')
+    # Panel a: left column, full height
+    place(heat, ml, mt, a_w, right_h)
 
-    ax_c = add(right_x, c_y, right_w, female_h)
-    ax_c.imshow(female)
-    ax_c.text(0.0, 1.0, 'c', transform=ax_c.transAxes,
-              ha='right', va='top', fontsize=LETTER_FS, fontweight='bold')
+    # Right column: b (top) over c (bottom)
+    right_x = ml + a_w + HGAP
+    place(male, right_x, mt, right_w, male_h)
+    place(female, right_x, mt + male_h + VGAP, right_w, female_h)
 
-    for ext in ('png', 'pdf'):
-        out = f'{OUT_STEM}.{ext}'
-        fig.savefig(out, dpi=300, bbox_inches='tight', facecolor='white')
-        print(f'Saved: {out}')
-    plt.close(fig)
+    # --- Panel letters ---
+    font = pymupdf.Font(LETTER_FONT)
+    writer = pymupdf.TextWriter(page.rect)
+
+    def letter(s, x, y_top):
+        """x = left edge, y_top = top of the glyph box (matplotlib va='top')."""
+        writer.append((x, y_top + font.ascender * LETTER_FS), s,
+                      font=font, fontsize=LETTER_FS)
+
+    letter('a', ml - 0.018 * a_w, mt - 0.025 * right_h)
+    letter('b', right_x - 0.018 * right_w, mt - 0.025 * right_h)
+    letter('c', right_x - 0.018 * right_w, mt + male_h + VGAP - 0.025 * right_h)
+    writer.write_text(page)
+
+    out.save(OUT_STEM + '.pdf', garbage=4, deflate=True)
+    page.get_pixmap(dpi=PNG_DPI).save(OUT_STEM + '.png')
+    with open(OUT_STEM + '.svg', 'w') as fh:
+        fh.write(page.get_svg_image(text_as_path=False))
+    out.close()
+    for d in (heat, male, female):
+        d.close()
+    print(f"Saved: {OUT_STEM}.png / .pdf / .svg  "
+          f"(figure {page_w / PT:.1f} x {page_h / PT:.1f} in)")
 
 
 if __name__ == '__main__':

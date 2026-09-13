@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.transforms import ScaledTranslation
 from publication_colors import get_system_colors, SYSTEM_RENAME_DICT, SYSTEM_COLOR_MAP, merge_systems
 
 
@@ -109,6 +110,12 @@ def draw_boxplot_on_ax(ax, data, systems_ordered, color_dict, sig_counts, total_
     ax.set_xticks(range(1, len(systems_ordered) + 1))
     if show_xticklabels:
         ax.set_xticklabels(tick_labels, rotation=45, ha='right', fontsize=14)
+        label_shift_points = 7
+        label_shift = ScaledTranslation(
+            label_shift_points / 72, 0, ax.figure.dpi_scale_trans
+        )
+        for label in ax.get_xticklabels():
+            label.set_transform(label.get_transform() + label_shift)
     else:
         ax.set_xticklabels([])
     ax.set_ylabel(ylabel, fontsize=15, fontweight='bold')

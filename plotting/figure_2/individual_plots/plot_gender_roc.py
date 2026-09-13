@@ -35,8 +35,7 @@ ACTIVITY_COLORS = {
 def main():
     df = pd.read_csv(os.path.join(RESULTS_DIR, 'roc_gender.csv'))
 
-    plt.rcParams['font.family'] = 'sans-serif'
-    plt.rcParams['font.sans-serif'] = ['Arial', 'Helvetica', 'DejaVu Sans']
+    # Font comes from the repo-root matplotlibrc (Times New Roman).
     plt.rcParams['axes.edgecolor'] = '#333333'
     plt.rcParams['axes.linewidth'] = 0.8
 

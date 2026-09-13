@@ -1,0 +1,1081 @@
+panel,target,gender,x_position,x_label,series,seed,pearson_r
+c,age,male,1,Gait Fusion,Gait Embeddings,0,0.7021850475887155
+c,age,male,1,Gait Fusion,Gait Embeddings,1,0.7019320206493875
+c,age,male,1,Gait Fusion,Gait Embeddings,2,0.7016139668211736
+c,age,male,1,Gait Fusion,Gait Embeddings,3,0.6995079694697861
+c,age,male,1,Gait Fusion,Gait Embeddings,4,0.6969389889602363
+c,age,male,1,Gait Fusion,Gait Embeddings,5,0.7084210386805071
+c,age,male,1,Gait Fusion,Gait Embeddings,6,0.7015049681807526
+c,age,male,1,Gait Fusion,Gait Embeddings,7,0.7014727699099969
+c,age,male,1,Gait Fusion,Gait Embeddings,8,0.7002872827948404
+c,age,male,1,Gait Fusion,Gait Embeddings,9,0.7044761753849911
+c,age,male,1,Gait Fusion,Gait Embeddings,10,0.7038002605898152
+c,age,male,1,Gait Fusion,Gait Embeddings,11,0.7032736273937487
+c,age,male,1,Gait Fusion,Gait Embeddings,12,0.697320330697178
+c,age,male,1,Gait Fusion,Gait Embeddings,13,0.7044510074035563
+c,age,male,1,Gait Fusion,Gait Embeddings,14,0.7031688787907834
+c,age,male,1,Gait Fusion,Gait Features,0,0.4610494161289756
+c,age,male,1,Gait Fusion,Gait Features,1,0.4538144680522673
+c,age,male,1,Gait Fusion,Gait Features,2,0.4526042105203788
+c,age,male,1,Gait Fusion,Gait Features,3,0.4391345007114866
+c,age,male,1,Gait Fusion,Gait Features,4,0.4677883379093487
+c,age,male,1,Gait Fusion,Gait Features,5,0.4658263882053288
+c,age,male,1,Gait Fusion,Gait Features,6,0.4620633126668669
+c,age,male,1,Gait Fusion,Gait Features,7,0.4572095024805779
+c,age,male,1,Gait Fusion,Gait Features,8,0.4554978842557514
+c,age,male,1,Gait Fusion,Gait Features,9,0.4555192780567963
+c,age,male,1,Gait Fusion,Gait Features,10,0.451096984575452
+c,age,male,1,Gait Fusion,Gait Features,11,0.4495727750993649
+c,age,male,1,Gait Fusion,Gait Features,12,0.4488990742453975
+c,age,male,1,Gait Fusion,Gait Features,13,0.4574533696050492
+c,age,male,1,Gait Fusion,Gait Features,14,0.4514704803483763
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,0,0.641849319992259
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,1,0.6389289664656955
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,2,0.6389152021748293
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,3,0.6428733778140171
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,4,0.6368207164374646
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,5,0.6475474764641516
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,6,0.6448305085031616
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,7,0.6419626302595124
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,8,0.6420020844492476
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,9,0.6495480770165359
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,10,0.6476601846432387
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,11,0.6458302633761622
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,12,0.6361060769347378
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,13,0.6503983514387148
+c,age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,14,0.6505291180601653
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,0,0.318242559035456
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,1,0.2968217384401922
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,2,0.2930464502683003
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,3,0.3202342018082055
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,4,0.3212318668928607
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,5,0.3173667739901395
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,6,0.3105807016102266
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,7,0.3189853183441133
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,8,0.2955727261199973
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,9,0.3035211178348308
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,10,0.3033929227581566
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,11,0.3104847544633067
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,12,0.298616950813955
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,13,0.311137820681672
+c,age,male,2,Treadmill Walk (3 km/h),Gait Features,14,0.3070016834855968
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,0,0.6423138980341637
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,1,0.6343765722041549
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,2,0.6373980741831056
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,3,0.6330550074795844
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,4,0.6360847822000517
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,5,0.6445419364143562
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,6,0.6399405567962445
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,7,0.6386288943247103
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,8,0.6349898174292319
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,9,0.6489248366857181
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,10,0.6492608945071112
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,11,0.6376875292090101
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,12,0.6337078620287367
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,13,0.6425042468923217
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,14,0.6423863869002152
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,0,0.2671153013412302
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,1,0.2592978759874813
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,2,0.2544552924874907
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,3,0.2626699441126305
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,4,0.2752307873928388
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,5,0.2665400642905873
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,6,0.2794494068074546
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,7,0.2590235879289934
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,8,0.2602803961208845
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,9,0.2651414137832793
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,10,0.2709874346172872
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,11,0.263189620605853
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,12,0.2674908076546549
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,13,0.2590553958179905
+c,age,male,3,Treadmill Walk (Self-Paced),Gait Features,14,0.2557475976267841
+c,age,male,4,Stationary Walking,Gait Embeddings,0,0.5859825835640226
+c,age,male,4,Stationary Walking,Gait Embeddings,1,0.5866889793189953
+c,age,male,4,Stationary Walking,Gait Embeddings,2,0.582535403555751
+c,age,male,4,Stationary Walking,Gait Embeddings,3,0.5870509749980002
+c,age,male,4,Stationary Walking,Gait Embeddings,4,0.5766269421219842
+c,age,male,4,Stationary Walking,Gait Embeddings,5,0.5884046193611139
+c,age,male,4,Stationary Walking,Gait Embeddings,6,0.580034600994457
+c,age,male,4,Stationary Walking,Gait Embeddings,7,0.5855165336556214
+c,age,male,4,Stationary Walking,Gait Embeddings,8,0.587787708715839
+c,age,male,4,Stationary Walking,Gait Embeddings,9,0.586771996644917
+c,age,male,4,Stationary Walking,Gait Embeddings,10,0.5796983042302569
+c,age,male,4,Stationary Walking,Gait Embeddings,11,0.5823514606562428
+c,age,male,4,Stationary Walking,Gait Embeddings,12,0.5861064929508227
+c,age,male,4,Stationary Walking,Gait Embeddings,13,0.5849640362298602
+c,age,male,4,Stationary Walking,Gait Embeddings,14,0.5853669766818471
+c,age,male,4,Stationary Walking,Gait Features,0,0.3977175573277929
+c,age,male,4,Stationary Walking,Gait Features,1,0.3939146794129788
+c,age,male,4,Stationary Walking,Gait Features,2,0.4012405766414978
+c,age,male,4,Stationary Walking,Gait Features,3,0.3971896789830095
+c,age,male,4,Stationary Walking,Gait Features,4,0.394262840266472
+c,age,male,4,Stationary Walking,Gait Features,5,0.3967002718639545
+c,age,male,4,Stationary Walking,Gait Features,6,0.3937461669412349
+c,age,male,4,Stationary Walking,Gait Features,7,0.396583786570609
+c,age,male,4,Stationary Walking,Gait Features,8,0.3946298606018523
+c,age,male,4,Stationary Walking,Gait Features,9,0.3971398566819304
+c,age,male,4,Stationary Walking,Gait Features,10,0.3949168470841099
+c,age,male,4,Stationary Walking,Gait Features,11,0.393364879277796
+c,age,male,4,Stationary Walking,Gait Features,12,0.3983067839439917
+c,age,male,4,Stationary Walking,Gait Features,13,0.3990562429075746
+c,age,male,4,Stationary Walking,Gait Features,14,0.3910931019988425
+c,age,male,5,Sit-to-Stand,Gait Embeddings,0,0.5069805675936564
+c,age,male,5,Sit-to-Stand,Gait Embeddings,1,0.5170113761279695
+c,age,male,5,Sit-to-Stand,Gait Embeddings,2,0.5157815091052532
+c,age,male,5,Sit-to-Stand,Gait Embeddings,3,0.510900659667633
+c,age,male,5,Sit-to-Stand,Gait Embeddings,4,0.5121898944197087
+c,age,male,5,Sit-to-Stand,Gait Embeddings,5,0.5220261356756842
+c,age,male,5,Sit-to-Stand,Gait Embeddings,6,0.5035637333071937
+c,age,male,5,Sit-to-Stand,Gait Embeddings,7,0.5103662984469435
+c,age,male,5,Sit-to-Stand,Gait Embeddings,8,0.5096861153585678
+c,age,male,5,Sit-to-Stand,Gait Embeddings,9,0.5151837342477109
+c,age,male,5,Sit-to-Stand,Gait Embeddings,10,0.5189633609279585
+c,age,male,5,Sit-to-Stand,Gait Embeddings,11,0.5167236544444651
+c,age,male,5,Sit-to-Stand,Gait Embeddings,12,0.5041944889973102
+c,age,male,5,Sit-to-Stand,Gait Embeddings,13,0.5148451022095839
+c,age,male,5,Sit-to-Stand,Gait Embeddings,14,0.5066248515157376
+c,age,male,5,Sit-to-Stand,Gait Features,0,0.2754506982317764
+c,age,male,5,Sit-to-Stand,Gait Features,1,0.3403939849839397
+c,age,male,5,Sit-to-Stand,Gait Features,2,0.3420324094287411
+c,age,male,5,Sit-to-Stand,Gait Features,3,0.2198496141045549
+c,age,male,5,Sit-to-Stand,Gait Features,4,0.3407869572389553
+c,age,male,5,Sit-to-Stand,Gait Features,5,0.2679849532739572
+c,age,male,5,Sit-to-Stand,Gait Features,6,0.2686662388552895
+c,age,male,5,Sit-to-Stand,Gait Features,7,0.2617466120152859
+c,age,male,5,Sit-to-Stand,Gait Features,8,0.3333592225491982
+c,age,male,5,Sit-to-Stand,Gait Features,9,0.3348132362409592
+c,age,male,5,Sit-to-Stand,Gait Features,10,0.2555643269806524
+c,age,male,5,Sit-to-Stand,Gait Features,11,0.280025563278272
+c,age,male,5,Sit-to-Stand,Gait Features,12,0.3372609535598585
+c,age,male,5,Sit-to-Stand,Gait Features,13,0.3416417366340911
+c,age,male,5,Sit-to-Stand,Gait Features,14,0.3291961392423888
+c,age,male,6,Romberg's Test,Gait Embeddings,0,0.3997342183295915
+c,age,male,6,Romberg's Test,Gait Embeddings,1,0.4062260368820013
+c,age,male,6,Romberg's Test,Gait Embeddings,2,0.4042931954620057
+c,age,male,6,Romberg's Test,Gait Embeddings,3,0.40145387442019
+c,age,male,6,Romberg's Test,Gait Embeddings,4,0.3980638059721523
+c,age,male,6,Romberg's Test,Gait Embeddings,5,0.4047178969664117
+c,age,male,6,Romberg's Test,Gait Embeddings,6,0.4001379784154119
+c,age,male,6,Romberg's Test,Gait Embeddings,7,0.3963636296290689
+c,age,male,6,Romberg's Test,Gait Embeddings,8,0.4040915799917278
+c,age,male,6,Romberg's Test,Gait Embeddings,9,0.4066577968968605
+c,age,male,6,Romberg's Test,Gait Embeddings,10,0.4009989235899575
+c,age,male,6,Romberg's Test,Gait Embeddings,11,0.4153611540169354
+c,age,male,6,Romberg's Test,Gait Embeddings,12,0.4047756848050761
+c,age,male,6,Romberg's Test,Gait Embeddings,13,0.4012210512368373
+c,age,male,6,Romberg's Test,Gait Embeddings,14,0.4006464339174882
+c,age,male,6,Romberg's Test,Gait Features,0,0.1568889822364056
+c,age,male,6,Romberg's Test,Gait Features,1,0.15833572798169
+c,age,male,6,Romberg's Test,Gait Features,2,0.1671642230645544
+c,age,male,6,Romberg's Test,Gait Features,3,0.1508471287150045
+c,age,male,6,Romberg's Test,Gait Features,4,0.1713147774023244
+c,age,male,6,Romberg's Test,Gait Features,5,0.1625684260663109
+c,age,male,6,Romberg's Test,Gait Features,6,0.1712690865715255
+c,age,male,6,Romberg's Test,Gait Features,7,0.157569040720393
+c,age,male,6,Romberg's Test,Gait Features,8,0.1691534629641058
+c,age,male,6,Romberg's Test,Gait Features,9,0.1627429027894281
+c,age,male,6,Romberg's Test,Gait Features,10,0.1618187150906276
+c,age,male,6,Romberg's Test,Gait Features,11,0.1546239866081622
+c,age,male,6,Romberg's Test,Gait Features,12,0.1624714382002035
+c,age,male,6,Romberg's Test,Gait Features,13,0.163199312033885
+c,age,male,6,Romberg's Test,Gait Features,14,0.1578186071812807
+d,age,female,1,Gait Fusion,Gait Embeddings,0,0.6785219647522304
+d,age,female,1,Gait Fusion,Gait Embeddings,1,0.6772232074266137
+d,age,female,1,Gait Fusion,Gait Embeddings,2,0.6697700916572753
+d,age,female,1,Gait Fusion,Gait Embeddings,3,0.6728840018187919
+d,age,female,1,Gait Fusion,Gait Embeddings,4,0.6797837194091334
+d,age,female,1,Gait Fusion,Gait Embeddings,5,0.6748983072764987
+d,age,female,1,Gait Fusion,Gait Embeddings,6,0.6741454404532932
+d,age,female,1,Gait Fusion,Gait Embeddings,7,0.6747950783912072
+d,age,female,1,Gait Fusion,Gait Embeddings,8,0.6748600061496216
+d,age,female,1,Gait Fusion,Gait Embeddings,9,0.6758915769052077
+d,age,female,1,Gait Fusion,Gait Embeddings,10,0.679028982074366
+d,age,female,1,Gait Fusion,Gait Embeddings,11,0.6752318493949917
+d,age,female,1,Gait Fusion,Gait Embeddings,12,0.6768686221858737
+d,age,female,1,Gait Fusion,Gait Embeddings,13,0.6806748502542445
+d,age,female,1,Gait Fusion,Gait Embeddings,14,0.6794454885876283
+d,age,female,1,Gait Fusion,Gait Features,0,0.4637545585290112
+d,age,female,1,Gait Fusion,Gait Features,1,0.4669025853723721
+d,age,female,1,Gait Fusion,Gait Features,2,0.4724477774993469
+d,age,female,1,Gait Fusion,Gait Features,3,0.457040848255974
+d,age,female,1,Gait Fusion,Gait Features,4,0.4716233580950731
+d,age,female,1,Gait Fusion,Gait Features,5,0.4639540866902787
+d,age,female,1,Gait Fusion,Gait Features,6,0.4829726681860226
+d,age,female,1,Gait Fusion,Gait Features,7,0.4781687141538994
+d,age,female,1,Gait Fusion,Gait Features,8,0.4631614543207971
+d,age,female,1,Gait Fusion,Gait Features,9,0.4546196639448445
+d,age,female,1,Gait Fusion,Gait Features,10,0.4670029579964976
+d,age,female,1,Gait Fusion,Gait Features,11,0.4427671919403926
+d,age,female,1,Gait Fusion,Gait Features,12,0.4491592599416303
+d,age,female,1,Gait Fusion,Gait Features,13,0.462493536493272
+d,age,female,1,Gait Fusion,Gait Features,14,0.465746905168025
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,0,0.6129832489728144
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,1,0.6052620141996921
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,2,0.6012314430038772
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,3,0.600936075084077
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,4,0.6039994974407266
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,5,0.600522302199855
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,6,0.601613121226834
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,7,0.6022377782821119
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,8,0.6057238069787246
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,9,0.6046841926500937
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,10,0.6074278292600402
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,11,0.6090255445286232
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,12,0.6034022536976898
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,13,0.605111529511663
+d,age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,14,0.6110237012095127
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,0,0.3705278868298237
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,1,0.3785752033637507
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,2,0.3822162802938864
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,3,0.3662602829216274
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,4,0.3742843485182376
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,5,0.3594813877518399
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,6,0.3713340538920427
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,7,0.3582729176770911
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,8,0.3645897263827639
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,9,0.3503951571113411
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,10,0.3626268212649291
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,11,0.3539502149298804
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,12,0.366468013491097
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,13,0.3633360207829854
+d,age,female,2,Treadmill Walk (3 km/h),Gait Features,14,0.3640185803554981
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,0,0.5852920160052445
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,1,0.5788312552305656
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,2,0.5846764868248456
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,3,0.5752609842304369
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,4,0.5807650018039124
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,5,0.5809017959862101
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,6,0.5753869074938293
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,7,0.5801243689934915
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,8,0.5804381469273558
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,9,0.5837015303302155
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,10,0.5813547473563588
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,11,0.5860769488423735
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,12,0.5755557192837149
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,13,0.5848700118471417
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,14,0.5841208576005021
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,0,0.3194494264497153
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,1,0.3236294475664732
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,2,0.3181128211213711
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,3,0.3337123068354645
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,4,0.3327349454777994
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,5,0.3286271750892413
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,6,0.3321576850697024
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,7,0.3160548641644146
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,8,0.3461621945223456
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,9,0.3353400664546089
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,10,0.3271045342528715
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,11,0.3234164780719568
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,12,0.314898278557001
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,13,0.3290888225316982
+d,age,female,3,Treadmill Walk (Self-Paced),Gait Features,14,0.3284694487373211
+d,age,female,4,Stationary Walking,Gait Embeddings,0,0.567905965970222
+d,age,female,4,Stationary Walking,Gait Embeddings,1,0.5637448503584388
+d,age,female,4,Stationary Walking,Gait Embeddings,2,0.5604496792164749
+d,age,female,4,Stationary Walking,Gait Embeddings,3,0.5603385553028043
+d,age,female,4,Stationary Walking,Gait Embeddings,4,0.5696949369062053
+d,age,female,4,Stationary Walking,Gait Embeddings,5,0.5649721065888307
+d,age,female,4,Stationary Walking,Gait Embeddings,6,0.562017567912725
+d,age,female,4,Stationary Walking,Gait Embeddings,7,0.5584048406884601
+d,age,female,4,Stationary Walking,Gait Embeddings,8,0.5645615603259899
+d,age,female,4,Stationary Walking,Gait Embeddings,9,0.5648517930337477
+d,age,female,4,Stationary Walking,Gait Embeddings,10,0.5639199141963646
+d,age,female,4,Stationary Walking,Gait Embeddings,11,0.5606703116726252
+d,age,female,4,Stationary Walking,Gait Embeddings,12,0.5673233363039133
+d,age,female,4,Stationary Walking,Gait Embeddings,13,0.5654724732773875
+d,age,female,4,Stationary Walking,Gait Embeddings,14,0.5666778757846666
+d,age,female,4,Stationary Walking,Gait Features,0,0.3302983208239889
+d,age,female,4,Stationary Walking,Gait Features,1,0.3947550499543323
+d,age,female,4,Stationary Walking,Gait Features,2,0.3699366179058576
+d,age,female,4,Stationary Walking,Gait Features,3,0.2876932486402705
+d,age,female,4,Stationary Walking,Gait Features,4,0.3763433692119974
+d,age,female,4,Stationary Walking,Gait Features,5,0.3515334193709843
+d,age,female,4,Stationary Walking,Gait Features,6,0.3795387481884789
+d,age,female,4,Stationary Walking,Gait Features,7,0.3841385689529305
+d,age,female,4,Stationary Walking,Gait Features,8,0.3773886834696062
+d,age,female,4,Stationary Walking,Gait Features,9,0.362510096418599
+d,age,female,4,Stationary Walking,Gait Features,10,0.3712993721723079
+d,age,female,4,Stationary Walking,Gait Features,11,0.3079908197584327
+d,age,female,4,Stationary Walking,Gait Features,12,0.3318000807612575
+d,age,female,4,Stationary Walking,Gait Features,13,0.3580252807535817
+d,age,female,4,Stationary Walking,Gait Features,14,0.3796668384034846
+d,age,female,5,Sit-to-Stand,Gait Embeddings,0,0.4914291585551275
+d,age,female,5,Sit-to-Stand,Gait Embeddings,1,0.4947582676885204
+d,age,female,5,Sit-to-Stand,Gait Embeddings,2,0.4810089040482608
+d,age,female,5,Sit-to-Stand,Gait Embeddings,3,0.4864287352289804
+d,age,female,5,Sit-to-Stand,Gait Embeddings,4,0.5000940646380844
+d,age,female,5,Sit-to-Stand,Gait Embeddings,5,0.495343741262212
+d,age,female,5,Sit-to-Stand,Gait Embeddings,6,0.4882451012586749
+d,age,female,5,Sit-to-Stand,Gait Embeddings,7,0.4922755779114585
+d,age,female,5,Sit-to-Stand,Gait Embeddings,8,0.4852210580361382
+d,age,female,5,Sit-to-Stand,Gait Embeddings,9,0.4937165683952813
+d,age,female,5,Sit-to-Stand,Gait Embeddings,10,0.5012250661854751
+d,age,female,5,Sit-to-Stand,Gait Embeddings,11,0.4959926729761019
+d,age,female,5,Sit-to-Stand,Gait Embeddings,12,0.4882619414745929
+d,age,female,5,Sit-to-Stand,Gait Embeddings,13,0.4974520951087774
+d,age,female,5,Sit-to-Stand,Gait Embeddings,14,0.4926291722177466
+d,age,female,5,Sit-to-Stand,Gait Features,0,0.2340467041363182
+d,age,female,5,Sit-to-Stand,Gait Features,1,0.1821981704260859
+d,age,female,5,Sit-to-Stand,Gait Features,2,0.2201247654662814
+d,age,female,5,Sit-to-Stand,Gait Features,3,0.2070395681981918
+d,age,female,5,Sit-to-Stand,Gait Features,4,0.2195885533814983
+d,age,female,5,Sit-to-Stand,Gait Features,5,0.1923352082980801
+d,age,female,5,Sit-to-Stand,Gait Features,6,0.2189607142710845
+d,age,female,5,Sit-to-Stand,Gait Features,7,0.236864555841502
+d,age,female,5,Sit-to-Stand,Gait Features,8,0.191631917615832
+d,age,female,5,Sit-to-Stand,Gait Features,9,0.2049557380333352
+d,age,female,5,Sit-to-Stand,Gait Features,10,0.1932874853273321
+d,age,female,5,Sit-to-Stand,Gait Features,11,0.2106618947059146
+d,age,female,5,Sit-to-Stand,Gait Features,12,0.2429918878036968
+d,age,female,5,Sit-to-Stand,Gait Features,13,0.2228029718990804
+d,age,female,5,Sit-to-Stand,Gait Features,14,0.216742084420486
+d,age,female,6,Romberg's Test,Gait Embeddings,0,0.4101016631158088
+d,age,female,6,Romberg's Test,Gait Embeddings,1,0.405933183235434
+d,age,female,6,Romberg's Test,Gait Embeddings,2,0.4013312103703861
+d,age,female,6,Romberg's Test,Gait Embeddings,3,0.4058815246209356
+d,age,female,6,Romberg's Test,Gait Embeddings,4,0.4054392229915632
+d,age,female,6,Romberg's Test,Gait Embeddings,5,0.4078283737503982
+d,age,female,6,Romberg's Test,Gait Embeddings,6,0.4146985608519388
+d,age,female,6,Romberg's Test,Gait Embeddings,7,0.40705053319248
+d,age,female,6,Romberg's Test,Gait Embeddings,8,0.4057677205180469
+d,age,female,6,Romberg's Test,Gait Embeddings,9,0.4066568427710919
+d,age,female,6,Romberg's Test,Gait Embeddings,10,0.4125026737851966
+d,age,female,6,Romberg's Test,Gait Embeddings,11,0.4030750719841612
+d,age,female,6,Romberg's Test,Gait Embeddings,12,0.4153657579506934
+d,age,female,6,Romberg's Test,Gait Embeddings,13,0.4144740114389211
+d,age,female,6,Romberg's Test,Gait Embeddings,14,0.4180251652371913
+d,age,female,6,Romberg's Test,Gait Features,0,0.1236952673023478
+d,age,female,6,Romberg's Test,Gait Features,1,0.163387224882623
+d,age,female,6,Romberg's Test,Gait Features,2,0.1811347790862559
+d,age,female,6,Romberg's Test,Gait Features,3,0.1695642270872673
+d,age,female,6,Romberg's Test,Gait Features,4,0.1689876810546994
+d,age,female,6,Romberg's Test,Gait Features,5,0.1446658787207838
+d,age,female,6,Romberg's Test,Gait Features,6,0.1638281891362646
+d,age,female,6,Romberg's Test,Gait Features,7,0.1601163820935079
+d,age,female,6,Romberg's Test,Gait Features,8,0.1330074890555352
+d,age,female,6,Romberg's Test,Gait Features,9,0.1507873711152728
+d,age,female,6,Romberg's Test,Gait Features,10,0.1495336717977656
+d,age,female,6,Romberg's Test,Gait Features,11,0.1308077892915912
+d,age,female,6,Romberg's Test,Gait Features,12,0.1491378671522719
+d,age,female,6,Romberg's Test,Gait Features,13,0.1493007692466433
+d,age,female,6,Romberg's Test,Gait Features,14,0.1404512815331821
+e,bmi,male,1,Gait Fusion,Gait Embeddings,0,0.8980659067854702
+e,bmi,male,1,Gait Fusion,Gait Embeddings,1,0.897539179080393
+e,bmi,male,1,Gait Fusion,Gait Embeddings,2,0.8975445866852735
+e,bmi,male,1,Gait Fusion,Gait Embeddings,3,0.8971897887892472
+e,bmi,male,1,Gait Fusion,Gait Embeddings,4,0.8980003325221286
+e,bmi,male,1,Gait Fusion,Gait Embeddings,5,0.8971711001116113
+e,bmi,male,1,Gait Fusion,Gait Embeddings,6,0.8976531776861786
+e,bmi,male,1,Gait Fusion,Gait Embeddings,7,0.8978973740858418
+e,bmi,male,1,Gait Fusion,Gait Embeddings,8,0.8977132868195886
+e,bmi,male,1,Gait Fusion,Gait Embeddings,9,0.897897490662506
+e,bmi,male,1,Gait Fusion,Gait Embeddings,10,0.8977185734782915
+e,bmi,male,1,Gait Fusion,Gait Embeddings,11,0.8986667161734557
+e,bmi,male,1,Gait Fusion,Gait Embeddings,12,0.8970581999578523
+e,bmi,male,1,Gait Fusion,Gait Embeddings,13,0.8982765632344066
+e,bmi,male,1,Gait Fusion,Gait Embeddings,14,0.8977295005730374
+e,bmi,male,1,Gait Fusion,Gait Features,0,0.4079058093518842
+e,bmi,male,1,Gait Fusion,Gait Features,1,0.4106671667158408
+e,bmi,male,1,Gait Fusion,Gait Features,2,0.4361289527831379
+e,bmi,male,1,Gait Fusion,Gait Features,3,0.4240027200203918
+e,bmi,male,1,Gait Fusion,Gait Features,4,0.4090636656080867
+e,bmi,male,1,Gait Fusion,Gait Features,5,0.4108491547883258
+e,bmi,male,1,Gait Fusion,Gait Features,6,0.4133045257492546
+e,bmi,male,1,Gait Fusion,Gait Features,7,0.3890072530923809
+e,bmi,male,1,Gait Fusion,Gait Features,8,0.4174997360527719
+e,bmi,male,1,Gait Fusion,Gait Features,9,0.4027459666348065
+e,bmi,male,1,Gait Fusion,Gait Features,10,0.4169819111187378
+e,bmi,male,1,Gait Fusion,Gait Features,11,0.4010139738117556
+e,bmi,male,1,Gait Fusion,Gait Features,12,0.4102508937618352
+e,bmi,male,1,Gait Fusion,Gait Features,13,0.4067767291450939
+e,bmi,male,1,Gait Fusion,Gait Features,14,0.4049816482225888
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,0,0.8395573850308493
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,1,0.8423463422319101
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,2,0.8392293522486577
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,3,0.8405531948045806
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,4,0.8385203900006999
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,5,0.8417415087019352
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,6,0.8418606111057184
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,7,0.8411325807826617
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,8,0.8398353049033135
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,9,0.840298142602346
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,10,0.837363883966038
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,11,0.8410130073000257
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,12,0.8409834970456231
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,13,0.8427302583975977
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Embeddings,14,0.8391505309927053
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,0,0.290300224841568
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,1,0.2842828879631762
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,2,0.2987434601596176
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,3,0.2768650770495539
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,4,0.2733013876699097
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,5,0.2683015615599208
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,6,0.290141836022275
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,7,0.26466674215846
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,8,0.2731545485094738
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,9,0.2809319169927508
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,10,0.2795957946941746
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,11,0.2547843968178828
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,12,0.2673588188219157
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,13,0.2859003722481585
+e,bmi,male,2,Treadmill Walk (3 km/h),Gait Features,14,0.2935091280274284
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,0,0.8373874489613334
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,1,0.8386224505066309
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,2,0.8376158876323966
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,3,0.8377546933906547
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,4,0.8380243048685238
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,5,0.8373413717989461
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,6,0.8372504787469628
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,7,0.8378524884813251
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,8,0.8356750573402979
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,9,0.8375568091755963
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,10,0.8361548183621853
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,11,0.8383170577073931
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,12,0.8377947050672712
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,13,0.838831067777036
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,14,0.8373573755252701
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,0,0.3077026359606292
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,1,0.303691739064925
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,2,0.3045169543911805
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,3,0.3134166577383022
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,4,0.3117386535668963
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,5,0.29185128502524
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,6,0.317187657933444
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,7,0.3105607194875576
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,8,0.3034053340338687
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,9,0.3083371406230051
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,10,0.3197829858146541
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,11,0.3038411960819616
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,12,0.3093459906195105
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,13,0.3190015333592932
+e,bmi,male,3,Treadmill Walk (Self-Paced),Gait Features,14,0.2969539180004246
+e,bmi,male,4,Stationary Walking,Gait Embeddings,0,0.8627831575883106
+e,bmi,male,4,Stationary Walking,Gait Embeddings,1,0.860512449975643
+e,bmi,male,4,Stationary Walking,Gait Embeddings,2,0.8617088071439053
+e,bmi,male,4,Stationary Walking,Gait Embeddings,3,0.8620668897831396
+e,bmi,male,4,Stationary Walking,Gait Embeddings,4,0.8617930118797226
+e,bmi,male,4,Stationary Walking,Gait Embeddings,5,0.8618537722062803
+e,bmi,male,4,Stationary Walking,Gait Embeddings,6,0.8605065232520028
+e,bmi,male,4,Stationary Walking,Gait Embeddings,7,0.8616169858450137
+e,bmi,male,4,Stationary Walking,Gait Embeddings,8,0.8624029855634845
+e,bmi,male,4,Stationary Walking,Gait Embeddings,9,0.8628272361785362
+e,bmi,male,4,Stationary Walking,Gait Embeddings,10,0.8614441528526375
+e,bmi,male,4,Stationary Walking,Gait Embeddings,11,0.862976317881674
+e,bmi,male,4,Stationary Walking,Gait Embeddings,12,0.8603333414704617
+e,bmi,male,4,Stationary Walking,Gait Embeddings,13,0.8627843435235473
+e,bmi,male,4,Stationary Walking,Gait Embeddings,14,0.8627434246840135
+e,bmi,male,4,Stationary Walking,Gait Features,0,0.2548756487830295
+e,bmi,male,4,Stationary Walking,Gait Features,1,0.2549036367965239
+e,bmi,male,4,Stationary Walking,Gait Features,2,0.2625912124122574
+e,bmi,male,4,Stationary Walking,Gait Features,3,0.2637768844697649
+e,bmi,male,4,Stationary Walking,Gait Features,4,0.2586228021943613
+e,bmi,male,4,Stationary Walking,Gait Features,5,0.2550786194422854
+e,bmi,male,4,Stationary Walking,Gait Features,6,0.2636249163315824
+e,bmi,male,4,Stationary Walking,Gait Features,7,0.2547460617714803
+e,bmi,male,4,Stationary Walking,Gait Features,8,0.2591592675093019
+e,bmi,male,4,Stationary Walking,Gait Features,9,0.2629867782594069
+e,bmi,male,4,Stationary Walking,Gait Features,10,0.2576926830069599
+e,bmi,male,4,Stationary Walking,Gait Features,11,0.2566474534271075
+e,bmi,male,4,Stationary Walking,Gait Features,12,0.2620877109116274
+e,bmi,male,4,Stationary Walking,Gait Features,13,0.2560095717871067
+e,bmi,male,4,Stationary Walking,Gait Features,14,0.2535667612969303
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,0,0.8005334127530681
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,1,0.7962626043251374
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,2,0.7996054630121378
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,3,0.7927447008360564
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,4,0.8001215560261643
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,5,0.7964843973513865
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,6,0.8004696583697255
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,7,0.7969808139301555
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,8,0.7972905633451524
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,9,0.8001996998739057
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,10,0.8032871873310771
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,11,0.7973701901618968
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,12,0.8012827599858886
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,13,0.8000614255010848
+e,bmi,male,5,Sit-to-Stand,Gait Embeddings,14,0.8006352587493851
+e,bmi,male,5,Sit-to-Stand,Gait Features,0,0.1395928187415722
+e,bmi,male,5,Sit-to-Stand,Gait Features,1,0.1557807658569285
+e,bmi,male,5,Sit-to-Stand,Gait Features,2,0.1889086343578891
+e,bmi,male,5,Sit-to-Stand,Gait Features,3,0.1729686252643327
+e,bmi,male,5,Sit-to-Stand,Gait Features,4,0.1518813142711845
+e,bmi,male,5,Sit-to-Stand,Gait Features,5,0.1765426556559687
+e,bmi,male,5,Sit-to-Stand,Gait Features,6,0.1389099127308077
+e,bmi,male,5,Sit-to-Stand,Gait Features,7,0.1384027119979599
+e,bmi,male,5,Sit-to-Stand,Gait Features,8,0.1500982658306837
+e,bmi,male,5,Sit-to-Stand,Gait Features,9,0.1260771010199094
+e,bmi,male,5,Sit-to-Stand,Gait Features,10,0.1552017300126023
+e,bmi,male,5,Sit-to-Stand,Gait Features,11,0.151496826812699
+e,bmi,male,5,Sit-to-Stand,Gait Features,12,0.1498931223237836
+e,bmi,male,5,Sit-to-Stand,Gait Features,13,0.155877879499578
+e,bmi,male,5,Sit-to-Stand,Gait Features,14,0.134664853322525
+e,bmi,male,6,Romberg's Test,Gait Embeddings,0,0.817207603796199
+e,bmi,male,6,Romberg's Test,Gait Embeddings,1,0.8168133283720997
+e,bmi,male,6,Romberg's Test,Gait Embeddings,2,0.8189875317967156
+e,bmi,male,6,Romberg's Test,Gait Embeddings,3,0.8161248000704876
+e,bmi,male,6,Romberg's Test,Gait Embeddings,4,0.8144268228441013
+e,bmi,male,6,Romberg's Test,Gait Embeddings,5,0.8168809450286656
+e,bmi,male,6,Romberg's Test,Gait Embeddings,6,0.8187026324922109
+e,bmi,male,6,Romberg's Test,Gait Embeddings,7,0.8188844985952176
+e,bmi,male,6,Romberg's Test,Gait Embeddings,8,0.8154376405734673
+e,bmi,male,6,Romberg's Test,Gait Embeddings,9,0.8178851302852278
+e,bmi,male,6,Romberg's Test,Gait Embeddings,10,0.8163600887056974
+e,bmi,male,6,Romberg's Test,Gait Embeddings,11,0.819336193178224
+e,bmi,male,6,Romberg's Test,Gait Embeddings,12,0.8173484238270587
+e,bmi,male,6,Romberg's Test,Gait Embeddings,13,0.814865559326405
+e,bmi,male,6,Romberg's Test,Gait Embeddings,14,0.8168708135561248
+e,bmi,male,6,Romberg's Test,Gait Features,0,0.2310776222606528
+e,bmi,male,6,Romberg's Test,Gait Features,1,0.2499886148327515
+e,bmi,male,6,Romberg's Test,Gait Features,2,0.2154724175463147
+e,bmi,male,6,Romberg's Test,Gait Features,3,0.2508741861093
+e,bmi,male,6,Romberg's Test,Gait Features,4,0.2388590213554843
+e,bmi,male,6,Romberg's Test,Gait Features,5,0.2417043351373185
+e,bmi,male,6,Romberg's Test,Gait Features,6,0.2414678138475332
+e,bmi,male,6,Romberg's Test,Gait Features,7,0.2526315125428111
+e,bmi,male,6,Romberg's Test,Gait Features,8,0.2064114395875001
+e,bmi,male,6,Romberg's Test,Gait Features,9,0.2470916130968041
+e,bmi,male,6,Romberg's Test,Gait Features,10,0.2556873187419697
+e,bmi,male,6,Romberg's Test,Gait Features,11,0.2447884882658553
+e,bmi,male,6,Romberg's Test,Gait Features,12,0.2418978930199096
+e,bmi,male,6,Romberg's Test,Gait Features,13,0.2491149373315414
+e,bmi,male,6,Romberg's Test,Gait Features,14,0.2430783722956853
+f,bmi,female,1,Gait Fusion,Gait Embeddings,0,0.9133523781609544
+f,bmi,female,1,Gait Fusion,Gait Embeddings,1,0.9111635416027956
+f,bmi,female,1,Gait Fusion,Gait Embeddings,2,0.9107770598185474
+f,bmi,female,1,Gait Fusion,Gait Embeddings,3,0.9112887214286614
+f,bmi,female,1,Gait Fusion,Gait Embeddings,4,0.9087449519858788
+f,bmi,female,1,Gait Fusion,Gait Embeddings,5,0.9091225653463126
+f,bmi,female,1,Gait Fusion,Gait Embeddings,6,0.9119218560233144
+f,bmi,female,1,Gait Fusion,Gait Embeddings,7,0.9070463511908332
+f,bmi,female,1,Gait Fusion,Gait Embeddings,8,0.9077172880857316
+f,bmi,female,1,Gait Fusion,Gait Embeddings,9,0.9111634415518756
+f,bmi,female,1,Gait Fusion,Gait Embeddings,10,0.9072775601124118
+f,bmi,female,1,Gait Fusion,Gait Embeddings,11,0.9110581848072924
+f,bmi,female,1,Gait Fusion,Gait Embeddings,12,0.9097894657047196
+f,bmi,female,1,Gait Fusion,Gait Embeddings,13,0.9101916745600328
+f,bmi,female,1,Gait Fusion,Gait Embeddings,14,0.9089706523579554
+f,bmi,female,1,Gait Fusion,Gait Features,0,0.4700420184382759
+f,bmi,female,1,Gait Fusion,Gait Features,1,0.4474594536071989
+f,bmi,female,1,Gait Fusion,Gait Features,2,0.4815669676351662
+f,bmi,female,1,Gait Fusion,Gait Features,3,0.4755140688632592
+f,bmi,female,1,Gait Fusion,Gait Features,4,0.4628777934129132
+f,bmi,female,1,Gait Fusion,Gait Features,5,0.4650093245352668
+f,bmi,female,1,Gait Fusion,Gait Features,6,0.4533709982479847
+f,bmi,female,1,Gait Fusion,Gait Features,7,0.440785522363452
+f,bmi,female,1,Gait Fusion,Gait Features,8,0.477635575744077
+f,bmi,female,1,Gait Fusion,Gait Features,9,0.4600759889350944
+f,bmi,female,1,Gait Fusion,Gait Features,10,0.46167982539838
+f,bmi,female,1,Gait Fusion,Gait Features,11,0.4710960121952539
+f,bmi,female,1,Gait Fusion,Gait Features,12,0.4556182548104218
+f,bmi,female,1,Gait Fusion,Gait Features,13,0.4455879246536504
+f,bmi,female,1,Gait Fusion,Gait Features,14,0.4415664822338295
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,0,0.8743416257612109
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,1,0.875533255453081
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,2,0.8725194360968483
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,3,0.8737376505364511
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,4,0.872761605287833
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,5,0.8734635804172041
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,6,0.8748960534785006
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,7,0.8740277864759549
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,8,0.8704808725673604
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,9,0.8703509341225325
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,10,0.8729518400995664
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,11,0.8738407001766736
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,12,0.8745274940851466
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,13,0.8721715945118931
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Embeddings,14,0.8745686181386896
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,0,0.3357679848460035
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,1,0.3220549900499295
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,2,0.3470444287544949
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,3,0.3499369096188386
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,4,0.3313642493850302
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,5,0.3356780698202407
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,6,0.3358649739110585
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,7,0.3021845157373372
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,8,0.3509524510744568
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,9,0.3394273647145492
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,10,0.315644447665212
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,11,0.3312757823667684
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,12,0.3260387378559903
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,13,0.3206480294145947
+f,bmi,female,2,Treadmill Walk (3 km/h),Gait Features,14,0.3116975734626844
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,0,0.8742189321717078
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,1,0.8742954605723154
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,2,0.8736890990227275
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,3,0.8746847893194927
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,4,0.8728620793323238
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,5,0.8754546051912973
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,6,0.8739434725914911
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,7,0.873440155970335
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,8,0.8704777655195824
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,9,0.8719691618542477
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,10,0.8708450048703483
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,11,0.8729928555503168
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,12,0.8742412736898763
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,13,0.8739235187480812
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,14,0.8731830236724244
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,0,0.3164995405805046
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,1,0.312739127678577
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,2,0.319699510043115
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,3,0.3233978804318833
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,4,0.3216056206695098
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,5,0.3147537155573808
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,6,0.3206146584356019
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,7,0.3086561093992055
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,8,0.2991028925742921
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,9,0.3214213816561745
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,10,0.3213981169444658
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,11,0.3231564038019044
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,12,0.3180555846091014
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,13,0.3240528679679317
+f,bmi,female,3,Treadmill Walk (Self-Paced),Gait Features,14,0.3059474799307541
+f,bmi,female,4,Stationary Walking,Gait Embeddings,0,0.8750854501040268
+f,bmi,female,4,Stationary Walking,Gait Embeddings,1,0.8691084701729807
+f,bmi,female,4,Stationary Walking,Gait Embeddings,2,0.8709774001989562
+f,bmi,female,4,Stationary Walking,Gait Embeddings,3,0.8701409472392357
+f,bmi,female,4,Stationary Walking,Gait Embeddings,4,0.8649146560252671
+f,bmi,female,4,Stationary Walking,Gait Embeddings,5,0.8644895777099364
+f,bmi,female,4,Stationary Walking,Gait Embeddings,6,0.8687065177020179
+f,bmi,female,4,Stationary Walking,Gait Embeddings,7,0.862750361847715
+f,bmi,female,4,Stationary Walking,Gait Embeddings,8,0.8673914701211195
+f,bmi,female,4,Stationary Walking,Gait Embeddings,9,0.8696172253186614
+f,bmi,female,4,Stationary Walking,Gait Embeddings,10,0.8614857563314319
+f,bmi,female,4,Stationary Walking,Gait Embeddings,11,0.872637987956686
+f,bmi,female,4,Stationary Walking,Gait Embeddings,12,0.8665489806253399
+f,bmi,female,4,Stationary Walking,Gait Embeddings,13,0.8666078775895507
+f,bmi,female,4,Stationary Walking,Gait Embeddings,14,0.8656235547327318
+f,bmi,female,4,Stationary Walking,Gait Features,0,0.3168811587425079
+f,bmi,female,4,Stationary Walking,Gait Features,1,0.287882102920756
+f,bmi,female,4,Stationary Walking,Gait Features,2,0.3090439163136658
+f,bmi,female,4,Stationary Walking,Gait Features,3,0.319617295184901
+f,bmi,female,4,Stationary Walking,Gait Features,4,0.3163319118096388
+f,bmi,female,4,Stationary Walking,Gait Features,5,0.3098372534760347
+f,bmi,female,4,Stationary Walking,Gait Features,6,0.2438550990589169
+f,bmi,female,4,Stationary Walking,Gait Features,7,0.3058872902802569
+f,bmi,female,4,Stationary Walking,Gait Features,8,0.3206853796137577
+f,bmi,female,4,Stationary Walking,Gait Features,9,0.3161990339891188
+f,bmi,female,4,Stationary Walking,Gait Features,10,0.307078253067275
+f,bmi,female,4,Stationary Walking,Gait Features,11,0.3081143461666785
+f,bmi,female,4,Stationary Walking,Gait Features,12,0.3047882485414389
+f,bmi,female,4,Stationary Walking,Gait Features,13,0.259042707033676
+f,bmi,female,4,Stationary Walking,Gait Features,14,0.274653247297442
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,0,0.8292861293208397
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,1,0.8277930399553827
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,2,0.8244895236174622
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,3,0.8271280960204368
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,4,0.8225376149000311
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,5,0.8250646441861101
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,6,0.8294267143976113
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,7,0.8185878714774009
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,8,0.8223324139770494
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,9,0.8305433270567415
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,10,0.8200728865830604
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,11,0.8266871190793057
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,12,0.824860722543558
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,13,0.8264165374208794
+f,bmi,female,5,Sit-to-Stand,Gait Embeddings,14,0.8222005769430405
+f,bmi,female,5,Sit-to-Stand,Gait Features,0,0.2960978128788651
+f,bmi,female,5,Sit-to-Stand,Gait Features,1,0.2690292175781161
+f,bmi,female,5,Sit-to-Stand,Gait Features,2,0.2896961162169767
+f,bmi,female,5,Sit-to-Stand,Gait Features,3,0.2839438425346452
+f,bmi,female,5,Sit-to-Stand,Gait Features,4,0.2655659370454954
+f,bmi,female,5,Sit-to-Stand,Gait Features,5,0.2699499022749062
+f,bmi,female,5,Sit-to-Stand,Gait Features,6,0.2839210713673826
+f,bmi,female,5,Sit-to-Stand,Gait Features,7,0.2716714907846161
+f,bmi,female,5,Sit-to-Stand,Gait Features,8,0.28778134219303
+f,bmi,female,5,Sit-to-Stand,Gait Features,9,0.2690112224256842
+f,bmi,female,5,Sit-to-Stand,Gait Features,10,0.276179166651449
+f,bmi,female,5,Sit-to-Stand,Gait Features,11,0.2935053858992343
+f,bmi,female,5,Sit-to-Stand,Gait Features,12,0.2614843351479609
+f,bmi,female,5,Sit-to-Stand,Gait Features,13,0.2689431873899033
+f,bmi,female,5,Sit-to-Stand,Gait Features,14,0.2500273783365625
+f,bmi,female,6,Romberg's Test,Gait Embeddings,0,0.8471570658787009
+f,bmi,female,6,Romberg's Test,Gait Embeddings,1,0.8434940220989818
+f,bmi,female,6,Romberg's Test,Gait Embeddings,2,0.8423245679294543
+f,bmi,female,6,Romberg's Test,Gait Embeddings,3,0.842080592055048
+f,bmi,female,6,Romberg's Test,Gait Embeddings,4,0.8355320519796329
+f,bmi,female,6,Romberg's Test,Gait Embeddings,5,0.8357154074175567
+f,bmi,female,6,Romberg's Test,Gait Embeddings,6,0.846453696382818
+f,bmi,female,6,Romberg's Test,Gait Embeddings,7,0.8359461509819461
+f,bmi,female,6,Romberg's Test,Gait Embeddings,8,0.8366018196897819
+f,bmi,female,6,Romberg's Test,Gait Embeddings,9,0.8483815058959081
+f,bmi,female,6,Romberg's Test,Gait Embeddings,10,0.8375454858105086
+f,bmi,female,6,Romberg's Test,Gait Embeddings,11,0.8430473185040063
+f,bmi,female,6,Romberg's Test,Gait Embeddings,12,0.8400919522858407
+f,bmi,female,6,Romberg's Test,Gait Embeddings,13,0.8419672905290935
+f,bmi,female,6,Romberg's Test,Gait Embeddings,14,0.8390333475908184
+f,bmi,female,6,Romberg's Test,Gait Features,0,0.1918545591296011
+f,bmi,female,6,Romberg's Test,Gait Features,1,0.19750199790179
+f,bmi,female,6,Romberg's Test,Gait Features,2,0.2302425892705714
+f,bmi,female,6,Romberg's Test,Gait Features,3,0.1990333279812569
+f,bmi,female,6,Romberg's Test,Gait Features,4,0.2038849380403667
+f,bmi,female,6,Romberg's Test,Gait Features,5,0.2088536002904154
+f,bmi,female,6,Romberg's Test,Gait Features,6,0.1958836345914284
+f,bmi,female,6,Romberg's Test,Gait Features,7,0.2121599842938263
+f,bmi,female,6,Romberg's Test,Gait Features,8,0.2258848924023611
+f,bmi,female,6,Romberg's Test,Gait Features,9,0.1837220291968075
+f,bmi,female,6,Romberg's Test,Gait Features,10,0.1910614577949307
+f,bmi,female,6,Romberg's Test,Gait Features,11,0.2134695030180191
+f,bmi,female,6,Romberg's Test,Gait Features,12,0.203359103247696
+f,bmi,female,6,Romberg's Test,Gait Features,13,0.2249400430380276
+f,bmi,female,6,Romberg's Test,Gait Features,14,0.2054419636937559
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,0,0.8140477005417287
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,1,0.8155216847012609
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,2,0.8158074625875942
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,3,0.8127087039326325
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,4,0.8155994628602931
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,5,0.815456594818272
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,6,0.8139536288783956
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,7,0.8153098326949825
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,8,0.8138855506409768
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,9,0.813055980786754
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,10,0.814957414101681
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,11,0.8130916872812165
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,12,0.816274495601233
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,13,0.8103587823206108
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Embeddings,14,0.8114781465938857
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,0,0.4788118493197307
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,1,0.497141717194285
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,2,0.4954443096001236
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,3,0.5025927021981742
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,4,0.4762647646057916
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,5,0.476659075683213
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,6,0.4827029947160293
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,7,0.4984158345942068
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,8,0.4740825111806515
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,9,0.4811958597398346
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,10,0.5014833753549696
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,11,0.4986321390643586
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,12,0.4726322354594262
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,13,0.4942410668474047
+g,total_scan_vat_area,male,1,Gait Fusion,Gait Features,14,0.4874404569808631
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,0,0.766912829966753
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,1,0.768405411949637
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,2,0.7759674556714379
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,3,0.7685306028716884
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,4,0.7688046984891904
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,5,0.7740356825643074
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,6,0.7685524668194406
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,7,0.7728281883398885
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,8,0.768255591182375
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,9,0.7688407061317032
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,10,0.7737476819621546
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,11,0.76966983320474
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,12,0.7725182523667004
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,13,0.7678792795036266
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,14,0.7698216254650295
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,0,0.3219745886603621
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,1,0.3357503217010804
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,2,0.3308358236206682
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,3,0.3590351172901423
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,4,0.3049049522758718
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,5,0.3091771159374276
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,6,0.3168143572266897
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,7,0.327397535089075
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,8,0.3444392089255157
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,9,0.3423967249325548
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,10,0.340952820472416
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,11,0.3361606976407646
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,12,0.3345538462112595
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,13,0.3556772642017891
+g,total_scan_vat_area,male,2,Treadmill Walk (3 km/h),Gait Features,14,0.3323051557709074
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,0,0.7696674013310973
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,1,0.7705480525226666
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,2,0.7777714891722058
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,3,0.7730499477475024
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,4,0.7726741179325742
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,5,0.7757728684737488
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,6,0.7720903253815821
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,7,0.773197454603503
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,8,0.7727739239959099
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,9,0.7714016816406278
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,10,0.775095795773029
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,11,0.7711052158202385
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,12,0.7758909803070778
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,13,0.7678327087271701
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,14,0.7719640331376273
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,0,0.3430897669722355
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,1,0.3530985159490808
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,2,0.3564667041939263
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,3,0.3565589641698397
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,4,0.3402584116965772
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,5,0.3711429334117094
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,6,0.3593463181581767
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,7,0.3566842183865999
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,8,0.3581421267106375
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,9,0.3535657058739663
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,10,0.3518074022280882
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,11,0.3542664826825119
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,12,0.3419158795173773
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,13,0.3586004311188963
+g,total_scan_vat_area,male,3,Treadmill Walk (Self-Paced),Gait Features,14,0.3347041494241563
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,0,0.7877215918133771
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,1,0.7868182949647443
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,2,0.7896103490758826
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,3,0.7880827820440477
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,4,0.7898339291706822
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,5,0.7898246440709442
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,6,0.7855654924064339
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,7,0.7886436016494541
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,8,0.7868380934911524
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,9,0.7863562529451482
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,10,0.786402466606624
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,11,0.7879863368561327
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,12,0.7923564899950053
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,13,0.7844015021260268
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Embeddings,14,0.787108020099389
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,0,0.3663900358689279
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,1,0.3619311754819712
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,2,0.3586387773295879
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,3,0.3574880561548457
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,4,0.3525000868356331
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,5,0.3500717779318776
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,6,0.3586599444070573
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,7,0.3624114959562355
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,8,0.3559480855709461
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,9,0.3611413390380301
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,10,0.3603372388251741
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,11,0.3557131872773554
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,12,0.3662079150585825
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,13,0.3575500991650252
+g,total_scan_vat_area,male,4,Stationary Walking,Gait Features,14,0.3657982476995516
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,0,0.7049835248280969
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,1,0.7046433202291631
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,2,0.6951635264404453
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,3,0.6911460643280901
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,4,0.7018258710645524
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,5,0.6984931806839788
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,6,0.698442367906885
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,7,0.6985696716835088
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,8,0.6969264483889306
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,9,0.6956959817900794
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,10,0.6980864314741807
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,11,0.6931607614118412
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,12,0.6960478479357999
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,13,0.693052210909579
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Embeddings,14,0.6934238759430396
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,0,0.2157937077285877
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,1,0.2889232419688751
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,2,0.2879410058634946
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,3,0.2870766877153939
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,4,0.2926711406579865
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,5,0.2192927552548654
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,6,0.2306427257581561
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,7,0.2850647441958102
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,8,0.1805699279665503
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,9,0.1980137288322683
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,10,0.2917048373015271
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,11,0.2967182939255643
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,12,0.1919772127495811
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,13,0.219900524944922
+g,total_scan_vat_area,male,5,Sit-to-Stand,Gait Features,14,0.215510757280869
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,0,0.7233027438623453
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,1,0.7232922938039376
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,2,0.7277058195186384
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,3,0.721126543955308
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,4,0.722401447107176
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,5,0.7222538741206133
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,6,0.7276526003127539
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,7,0.7259097666818604
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,8,0.7224715857848605
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,9,0.7216903053629012
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,10,0.7246076352249197
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,11,0.7205192013407963
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,12,0.7218643649444478
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,13,0.7216881737246736
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Embeddings,14,0.7135266674026195
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,0,0.1911608234842015
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,1,0.2007646261291732
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,2,0.1964059511597937
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,3,0.1904447928169922
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,4,0.2071826281367297
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,5,0.1946255371255763
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,6,0.2004924109798234
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,7,0.2014086973546573
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,8,0.2066608600340751
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,9,0.1873117361634149
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,10,0.2015811201402527
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,11,0.1945730345934396
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,12,0.2139473603646307
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,13,0.1815106525688759
+g,total_scan_vat_area,male,6,Romberg's Test,Gait Features,14,0.2041103221129641
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,0,0.7971604067803861
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,1,0.79675466750226
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,2,0.8004279297847375
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,3,0.7970361748505825
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,4,0.797828988702067
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,5,0.7993601068122601
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,6,0.7973873939007247
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,7,0.7976286771600232
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,8,0.7958575943913057
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,9,0.7958184132721755
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,10,0.797698254254283
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,11,0.7987574977063894
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,12,0.7958574712300556
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,13,0.796507227202507
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Embeddings,14,0.7964542114051429
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,0,0.415933919330849
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,1,0.4122051786397883
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,2,0.4182244211741124
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,3,0.4032966476508905
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,4,0.4106910938279001
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,5,0.4324774853818776
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,6,0.4390756563222044
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,7,0.4308654681069815
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,8,0.4290795951768748
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,9,0.4339370129402029
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,10,0.4286113894471824
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,11,0.4111230930603204
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,12,0.437111939706872
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,13,0.4258356604232339
+h,total_scan_vat_area,female,1,Gait Fusion,Gait Features,14,0.4205878490525239
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,0,0.719508576047802
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,1,0.7212778530319714
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,2,0.7286470131259337
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,3,0.7235841343471107
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,4,0.7276049883728405
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,5,0.7261259223376643
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,6,0.7219353671202686
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,7,0.7229270583096966
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,8,0.721497347590561
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,9,0.7249414352087227
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,10,0.7218019267590114
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,11,0.7271646480386308
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,12,0.7232680974405696
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,13,0.7207307644979615
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,14,0.7220495540573552
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,0,0.2717163746143892
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,1,0.2949708570452546
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,2,0.295345581267917
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,3,0.2901860013624299
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,4,0.2876883610185867
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,5,0.3034927471703773
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,6,0.2865663463016463
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,7,0.2872603121670876
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,8,0.2847024654643963
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,9,0.2787971919205601
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,10,0.2932182959216115
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,11,0.2888084637026437
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,12,0.2870674560444541
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,13,0.2741188609474702
+h,total_scan_vat_area,female,2,Treadmill Walk (3 km/h),Gait Features,14,0.280748687057842
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,0,0.7225049371036616
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,1,0.7232554666388665
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,2,0.7252804925633607
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,3,0.7254408828325475
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,4,0.7261068198742654
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,5,0.7255473646946461
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,6,0.7208189997503986
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,7,0.7255970756943229
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,8,0.7184236302501007
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,9,0.7184716700558438
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,10,0.7214539992936847
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,11,0.7221141395511183
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,12,0.7193527101727804
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,13,0.7179163602083771
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,14,0.7220555813509629
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,0,0.2802164908635023
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,1,0.2967777552586083
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,2,0.2926111680983674
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,3,0.2852075429983045
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,4,0.2817123962366198
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,5,0.2977289520582308
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,6,0.3034641847252032
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,7,0.2949236887297418
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,8,0.2896902636718479
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,9,0.2990129710044806
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,10,0.2829564263619268
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,11,0.2869897058202307
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,12,0.2987751590046872
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,13,0.2883241464858255
+h,total_scan_vat_area,female,3,Treadmill Walk (Self-Paced),Gait Features,14,0.2791308864355846
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,0,0.766892720953666
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,1,0.759876538469253
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,2,0.77020635485548
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,3,0.7659155963635054
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,4,0.7647730406187886
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,5,0.7678308176081109
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,6,0.7662372341907498
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,7,0.7655954577635893
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,8,0.7673474767152842
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,9,0.7632610013170456
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,10,0.7665568483630719
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,11,0.7654583703043963
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,12,0.7665323926254726
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,13,0.7655368995520465
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Embeddings,14,0.7640524770880512
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,0,0.3110719762440065
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,1,0.3124855796322667
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,2,0.3171327789246846
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,3,0.3169841078268398
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,4,0.309650711691901
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,5,0.3108795425366784
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,6,0.3085921964077668
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,7,0.3164564207686194
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,8,0.3062691772015459
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,9,0.3135246855389713
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,10,0.3161884602909394
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,11,0.2953407876246007
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,12,0.3193945071965641
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,13,0.3150097043577899
+h,total_scan_vat_area,female,4,Stationary Walking,Gait Features,14,0.2905681896606036
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,0,0.6969166546802535
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,1,0.6969115767032629
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,2,0.6978371378516305
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,3,0.6923131351676061
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,4,0.6930072256084727
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,5,0.701585060654195
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,6,0.6962851651797078
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,7,0.6945335489497242
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,8,0.6953723969068824
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,9,0.6935700468155935
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,10,0.6970644427907271
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,11,0.6964277954047184
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,12,0.6889896668469458
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,13,0.6956343068930003
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Embeddings,14,0.6958362045771617
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,0,0.209257949574617
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,1,0.1743852347625939
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,2,0.1841194612237662
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,3,0.1712779146274577
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,4,0.189468782281505
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,5,0.2089064174936647
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,6,0.2273576492278837
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,7,0.2319591422486799
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,8,0.2230594864691291
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,9,0.2267980901993268
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,10,0.2250982263589953
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,11,0.2005432825615393
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,12,0.2233224920674436
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,13,0.2160749178534337
+h,total_scan_vat_area,female,5,Sit-to-Stand,Gait Features,14,0.2207419483351921
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,0,0.7305864733389937
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,1,0.7323936320190275
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,2,0.7318289063417692
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,3,0.7298946574838815
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,4,0.7314167024821352
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,5,0.7272274564881804
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,6,0.7310769022814735
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,7,0.7288982356468737
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,8,0.728731884028305
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,9,0.7310079319540691
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,10,0.7329842250558587
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,11,0.7302577996335841
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,12,0.729106004477888
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,13,0.7319850276780023
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Embeddings,14,0.7300066515692141
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,0,0.190745123617046
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,1,0.1930860752026665
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,2,0.1951309857507152
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,3,0.1880359050018489
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,4,0.1934188388406061
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,5,0.1990280489613631
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,6,0.1826472471725451
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,7,0.1912149152684911
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,8,0.1803716486999313
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,9,0.1986928689312426
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,10,0.199644777692409
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,11,0.1707645334065823
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,12,0.1868470203254102
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,13,0.1853159124409091
+h,total_scan_vat_area,female,6,Romberg's Test,Gait Features,14,0.2041871082366466

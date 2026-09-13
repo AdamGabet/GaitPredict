@@ -1,14 +1,51 @@
+# --- Python ---
 __pycache__/
 *.pyc
 *.pyo
-.DS_Store
 *.egg-info/
 dist/
 build/
+.ipynb_checkpoints/
+
+# --- Environments / secrets ---
 .env
+.venv/
+venv/
+
+# --- Editors & tooling ---
+.idea/
+.vscode/
+.DS_Store
+.claude/
+# NFS silly-rename turds left behind by open files on the lab share
+.nfs*
+
+# --- Model weights (too large for git; see README for how to obtain) ---
 *.pt
 *.pth
+*.ckpt
+
+# --- Generated figure artwork -------------------------------------------
+# Every panel is rebuilt from plotting/<figure>/*.py; only the scripts and the
+# source_data/ CSVs behind them are tracked.
 plotting/*/output/
+plotting/*/figures/
 plotting/*/individual_plots/**/*.png
 plotting/*/individual_plots/**/*.pdf
+plotting/*/individual_plots/**/*.eps
+
+# Original lab photographs, kept locally as the source of rasters that draw.io
+# already re-encoded and embedded in figure_1_layout.svg. make_figure_1_composite.py
+# reads only the two SVGs (see plotting/figure_1/assets/README.md), so these are
+# never needed to build the figure.
+plotting/figure_1/assets/*.jpg
+
+# Staged figure files for submission; rebuild with plotting/stage_submission.py
+submission/
+
+# --- Scratch / superseded analyses --------------------------------------
+# Exploratory wandb loss plotting; the published curve is figure_1/loss_plot.py
+# driven by results/wandb_training_loss.csv
+plotting_loss/
 model/guide.ipynb
+model/submit_jupyter.py

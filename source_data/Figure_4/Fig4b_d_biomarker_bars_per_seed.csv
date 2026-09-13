@@ -1,0 +1,706 @@
+panel,gender,bar_order,system,label,label_display,seed,baseline_pearson_r,gait_pearson_r
+b,male,1,frailty,hand_grip_left,L Hand Grip,0,0.3983988952113474,0.4971574607649126
+b,male,1,frailty,hand_grip_left,L Hand Grip,1,0.3959564498962388,0.4992169524022777
+b,male,1,frailty,hand_grip_left,L Hand Grip,2,0.3934616401504719,0.4961093198644363
+b,male,1,frailty,hand_grip_left,L Hand Grip,3,0.3974582769051875,0.4914518057703477
+b,male,1,frailty,hand_grip_left,L Hand Grip,4,0.395506862537235,0.4913304933278821
+b,male,1,frailty,hand_grip_left,L Hand Grip,5,0.3988138847892236,0.4893341231698931
+b,male,1,frailty,hand_grip_left,L Hand Grip,6,0.3933128315637272,0.4889772994081298
+b,male,1,frailty,hand_grip_left,L Hand Grip,7,0.3973892904524781,0.4911564562040398
+b,male,1,frailty,hand_grip_left,L Hand Grip,8,0.3928515068773359,0.4878957110555906
+b,male,1,frailty,hand_grip_left,L Hand Grip,9,0.3937668328873298,0.4880801253312199
+b,male,1,frailty,hand_grip_left,L Hand Grip,10,0.3931337199782537,0.4811764746377952
+b,male,1,frailty,hand_grip_left,L Hand Grip,11,0.3939972785202272,0.4847567938231697
+b,male,1,frailty,hand_grip_left,L Hand Grip,12,0.3982755249576749,0.4975118617697753
+b,male,1,frailty,hand_grip_left,L Hand Grip,13,0.396774034854005,0.4921941843234354
+b,male,1,frailty,hand_grip_left,L Hand Grip,14,0.3981382328607534,0.4987714157632109
+b,male,2,frailty,hand_grip_right,R Hand Grip,0,0.3887014363885039,0.4752553922542141
+b,male,2,frailty,hand_grip_right,R Hand Grip,1,0.3871511623547771,0.4675283014774592
+b,male,2,frailty,hand_grip_right,R Hand Grip,2,0.389432887505675,0.468669539611983
+b,male,2,frailty,hand_grip_right,R Hand Grip,3,0.3861346556390786,0.4689797789161229
+b,male,2,frailty,hand_grip_right,R Hand Grip,4,0.3883002278648232,0.4727255219181655
+b,male,2,frailty,hand_grip_right,R Hand Grip,5,0.3895355618064325,0.4691870240377408
+b,male,2,frailty,hand_grip_right,R Hand Grip,6,0.3874543433110785,0.4678681866986305
+b,male,2,frailty,hand_grip_right,R Hand Grip,7,0.3888027703644728,0.4740886278417865
+b,male,2,frailty,hand_grip_right,R Hand Grip,8,0.3902875884882628,0.4721007533955008
+b,male,2,frailty,hand_grip_right,R Hand Grip,9,0.3867550964810633,0.4672078432885781
+b,male,2,frailty,hand_grip_right,R Hand Grip,10,0.3893408065123425,0.4708782064924231
+b,male,2,frailty,hand_grip_right,R Hand Grip,11,0.3880195608475587,0.4712830063959811
+b,male,2,frailty,hand_grip_right,R Hand Grip,12,0.3875953670662498,0.4726502418684651
+b,male,2,frailty,hand_grip_right,R Hand Grip,13,0.3868612167949743,0.4581608514904904
+b,male,2,frailty,hand_grip_right,R Hand Grip,14,0.3835186203046563,0.4647026542979323
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,0,0.0923890019008501,0.1213512556254748
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,1,0.0959700371286395,0.1418333737531568
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,2,0.1053013256246649,0.1260211140961231
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,3,0.0975931935180479,0.1191234721704272
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,4,0.0789996918471081,0.1369762305144113
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,5,0.0787180697013529,0.1451417692684369
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,6,0.0837732088258258,0.1195700602169075
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,7,0.0823117656712997,0.1383328421301317
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,8,0.0842217639769257,0.1248385339850999
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,9,0.0797651750588383,0.1267057314106186
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,10,0.0931704666157143,0.1463275143847945
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,11,0.0850393124433932,0.1229087780506492
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,12,0.0669012160309172,0.1037245866845944
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,13,0.0992151545858766,0.1430862442912937
+b,male,3,lifestyle,sleep_hours,Sleep Hours in 24H,14,0.0879779681993302,0.1265319466040049
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,0,0.239650823341305,0.3172786034858845
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,1,0.2444217878270447,0.3171001115680317
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,2,0.2030630659946626,0.2939173629433007
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,3,0.2438936414678915,0.3222294745698794
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,4,0.238479724847553,0.300467243431427
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,5,0.2049347199021981,0.3089529522893828
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,6,0.2041875591482382,0.2941463460618697
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,7,0.2463087001551941,0.3110023167810497
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,8,0.2043121940284936,0.3179526265283869
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,9,0.2435880760702455,0.325301532973801
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,10,0.2552399247138724,0.3196814278688172
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,11,0.2104926885108571,0.3144492184783475
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,12,0.2374236029603353,0.3043913817433163
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,13,0.2362946626043849,0.3120622693316968
+b,male,4,lifestyle,work_hours_per_day,Work Hours Per Day,14,0.2128829868957088,0.3262221351804699
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,0,0.3873430200874704,0.4208898497095203
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,1,0.3843711603160085,0.4198231561395265
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,2,0.3891790393081635,0.4152346752651257
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,3,0.3895859333452863,0.4158041145376646
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,4,0.3913379241468207,0.4143443335374773
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,5,0.3937718669924557,0.4166740890814581
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,6,0.3843576200394024,0.4081183558519462
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,7,0.3915241093193045,0.4120865099843219
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,8,0.3891878198830034,0.4201352185372689
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,9,0.3894521332517444,0.4260761251510601
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,10,0.3805405123706624,0.4058267547210722
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,11,0.3897232813060795,0.4146012443084136
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,12,0.3877421590851136,0.4194086533735064
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,13,0.3906470245146719,0.4196559294035621
+b,male,5,blood_tests_lipids,bt__triglycerides,Triglycerides,14,0.3909913393679948,0.417438357578077
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,0,0.3557406084927235,0.4029254303982704
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,1,0.3518082698549035,0.3965435563516312
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,2,0.3575224131119195,0.3995058303794768
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,3,0.3569715101269565,0.3904304471408433
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,4,0.3538375428956016,0.3978019930674007
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,5,0.352617979346622,0.4039298334475311
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,6,0.3523113592971196,0.392501489361559
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,7,0.3571135718224126,0.3918940105517787
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,8,0.3530407258099456,0.395654447360116
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,9,0.3528174979166028,0.3954563075725158
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,10,0.3497054123502517,0.3948657840634599
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,11,0.3524030917338279,0.4029398280351555
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,12,0.3542429423735775,0.3947070371958737
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,13,0.3533771304753243,0.3992610678687897
+b,male,6,blood_tests_lipids,bt__hdl_cholesterol,HDL Cholesterol,14,0.3547587769422481,0.3963022587470976
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,0,0.397784221715444,0.4857258113959678
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,1,0.4005844730966105,0.4691055138629718
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,2,0.4025621284475764,0.4648157181839412
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,3,0.3996738935235749,0.4800031069825777
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,4,0.4032437962259121,0.4737235601578511
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,5,0.4019369750167382,0.4610933939626243
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,6,0.4048954593678815,0.4637515508181409
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,7,0.4053814424512806,0.4756574028992423
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,8,0.4013703443050006,0.4809006604395767
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,9,0.4022328560588336,0.4854070617429503
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,10,0.3995373473660559,0.48113128096143
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,11,0.3995243193182188,0.4927939031866025
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,12,0.3986342060452013,0.4781160288628726
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,13,0.40140483367147,0.4781066542182056
+b,male,7,nightingale,XL_HDL_PL,XL HDL Phospholipids,14,0.3975922286256499,0.4730798356130218
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,0,0.3747204882395525,0.4051620122630565
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,1,0.3739570876796877,0.4018304967989083
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,2,0.3733478733289064,0.4060235905890712
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,3,0.3759408677648849,0.396977593763867
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,4,0.3706233412105951,0.4037038252077748
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,5,0.3715036124531101,0.402838905010336
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,6,0.3670445749616657,0.3898382361296423
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,7,0.3682638891642287,0.4059078893208813
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,8,0.3663813100418219,0.4043798285515987
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,9,0.3733541942305521,0.4092398838515134
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,10,0.3783820340745003,0.3973674940535126
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,11,0.3610038009531257,0.3956286916112242
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,12,0.3753730682719649,0.4019159656053401
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,13,0.3703493967441424,0.4043156352943433
+b,male,8,nightingale,GlycA,GlycA Inflammation Signal,14,0.3707531757414975,0.4090335388304309
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),0,0.0388916618754719,0.1142181269997681
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),1,0.0360943296929318,0.10837726919103
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),2,0.0422656024072258,0.1245273465816484
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),3,0.0113867395524518,0.1007249719278299
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),4,0.0043251350341312,0.0914097299663574
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),5,0.0480083926417391,0.122820376644086
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),6,0.01612206923019,0.0951473116720682
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),7,0.0057985097930114,0.0606717220376025
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),8,0.0301230475614976,0.1092473055805467
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),9,0.0295907099507358,0.0997953899309755
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),10,0.0075635675852561,0.0945933396565048
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),11,0.0367044892483081,0.1193552730749262
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),12,0.0163075070136829,0.066717475560728
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),13,0.0430206496321142,0.0781239445263796
+b,male,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),14,0.0239160936905542,0.0847504766847452
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,0,0.0124731831483247,0.259841109403342
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,1,-0.0429054829412558,0.2352524973695247
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,2,0.0206242203103807,0.2452248736122817
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,3,-0.0170173753490481,0.2475534134690884
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,4,-0.0131052535051304,0.2428348409591476
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,5,-0.0556896067393593,0.2260257532097682
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,6,-0.0326897148105886,0.249749450623532
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,7,-0.0447455857566349,0.2280248041444501
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,8,-0.0609552047999733,0.2491621909474783
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,9,-0.0533677971556343,0.2419163516256291
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,10,-0.0102089688478297,0.2186366129869328
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,11,-0.0116396857648231,0.2192096289078629
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,12,-0.0433116152918513,0.2384260747608186
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,13,-0.0478771308270418,0.2389071391566873
+b,male,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,14,-0.0155080586331995,0.2487729580780038
+b,male,11,mental,happiness_level,Happiness Level,0,0.0265383881952716,0.0720418454849646
+b,male,11,mental,happiness_level,Happiness Level,1,-0.0081019124552301,0.048195277710779
+b,male,11,mental,happiness_level,Happiness Level,2,0.0155373055240613,0.0855057719447511
+b,male,11,mental,happiness_level,Happiness Level,3,0.0007592797745972,0.0657063161866033
+b,male,11,mental,happiness_level,Happiness Level,4,-0.0377435543504207,0.0566819147264507
+b,male,11,mental,happiness_level,Happiness Level,5,-0.0037167168028884,0.0777888735843641
+b,male,11,mental,happiness_level,Happiness Level,6,-0.0365263009068203,0.0550466701179644
+b,male,11,mental,happiness_level,Happiness Level,7,0.0025187345955291,0.0810824410884376
+b,male,11,mental,happiness_level,Happiness Level,8,-0.041987023877073,0.0473859641046288
+b,male,11,mental,happiness_level,Happiness Level,9,-0.0146994579004394,0.0755507610287415
+b,male,11,mental,happiness_level,Happiness Level,10,-0.0100607348063415,0.0691056996198078
+b,male,11,mental,happiness_level,Happiness Level,11,-0.0246404912633319,0.073054516209876
+b,male,11,mental,happiness_level,Happiness Level,12,0.0147025027701258,0.0960777864591037
+b,male,11,mental,happiness_level,Happiness Level,13,-0.0135315733402514,0.0647315087857695
+b,male,11,mental,happiness_level,Happiness Level,14,0.002009922078392,0.0901095991381843
+b,male,12,mental,health_satisfaction,Health Satisfaction,0,0.2392397769027784,0.2714953752647709
+b,male,12,mental,health_satisfaction,Health Satisfaction,1,0.2377731737071135,0.2678891458669387
+b,male,12,mental,health_satisfaction,Health Satisfaction,2,0.236361861926335,0.2738426485598593
+b,male,12,mental,health_satisfaction,Health Satisfaction,3,0.2398886712124388,0.2541052595322228
+b,male,12,mental,health_satisfaction,Health Satisfaction,4,0.2276782131609213,0.2668478312947291
+b,male,12,mental,health_satisfaction,Health Satisfaction,5,0.2353694142967929,0.2746670517117706
+b,male,12,mental,health_satisfaction,Health Satisfaction,6,0.2338836993349929,0.2664556989031394
+b,male,12,mental,health_satisfaction,Health Satisfaction,7,0.2397050593794374,0.2730382866677888
+b,male,12,mental,health_satisfaction,Health Satisfaction,8,0.2364786094170262,0.2657762457736801
+b,male,12,mental,health_satisfaction,Health Satisfaction,9,0.2290261078036868,0.2574574718125232
+b,male,12,mental,health_satisfaction,Health Satisfaction,10,0.2408390529570873,0.2654558873946621
+b,male,12,mental,health_satisfaction,Health Satisfaction,11,0.2376060986892882,0.2705840660410743
+b,male,12,mental,health_satisfaction,Health Satisfaction,12,0.2408504030524863,0.2571848374092328
+b,male,12,mental,health_satisfaction,Health Satisfaction,13,0.2389012948371625,0.2699399293719022
+b,male,12,mental,health_satisfaction,Health Satisfaction,14,0.2352560754837654,0.264999128316647
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,0,0.5300413211547644,0.5592582831799223
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,1,0.5322842775610149,0.5645138880425224
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,2,0.5314447081607373,0.5568982391563938
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,3,0.5319302911477689,0.5551843483001109
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,4,0.5305044228696105,0.5571436045658346
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,5,0.5325081180846419,0.5495792979599641
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,6,0.5322893922649344,0.5586316349925711
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,7,0.5321998464559794,0.5601609733803895
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,8,0.5321632503434992,0.5581697645009931
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,9,0.5300052766707383,0.5510858789741437
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,10,0.5320582868162396,0.5556428887735544
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,11,0.53349751111468,0.5539784794609884
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,12,0.5338123043790333,0.5604235476159407
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,13,0.5316061680197565,0.5569214872069422
+b,male,13,liver,liver_sound_speed,Liver Sound Speed,14,0.5299030525297007,0.5548134352666235
+b,male,14,liver,liver_viscosity,Liver Viscosity,0,0.2146229861887769,0.2339465151150481
+b,male,14,liver,liver_viscosity,Liver Viscosity,1,0.2146235247365581,0.2459781020191285
+b,male,14,liver,liver_viscosity,Liver Viscosity,2,0.222222956747237,0.2443075770089276
+b,male,14,liver,liver_viscosity,Liver Viscosity,3,0.2219523517300567,0.2356432384388949
+b,male,14,liver,liver_viscosity,Liver Viscosity,4,0.215602554865808,0.2300080722111071
+b,male,14,liver,liver_viscosity,Liver Viscosity,5,0.2193495244104163,0.2245895442456369
+b,male,14,liver,liver_viscosity,Liver Viscosity,6,0.2080551861355494,0.2212083255635249
+b,male,14,liver,liver_viscosity,Liver Viscosity,7,0.2214466791503345,0.2357228690512618
+b,male,14,liver,liver_viscosity,Liver Viscosity,8,0.2178744036357447,0.2252412611909119
+b,male,14,liver,liver_viscosity,Liver Viscosity,9,0.2188629877145751,0.2331343967767837
+b,male,14,liver,liver_viscosity,Liver Viscosity,10,0.219318256471814,0.2362046086212127
+b,male,14,liver,liver_viscosity,Liver Viscosity,11,0.2177115762516086,0.2483044291676067
+b,male,14,liver,liver_viscosity,Liver Viscosity,12,0.2182862427931182,0.2450866034780941
+b,male,14,liver,liver_viscosity,Liver Viscosity,13,0.2155742658024413,0.2403596619324583
+b,male,14,liver,liver_viscosity,Liver Viscosity,14,0.219926033126182,0.2279949992672748
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,0,0.2749937071238313,0.3562180988949278
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,1,0.2765400090093506,0.3585258252931016
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,2,0.2755237139471048,0.3633499941457317
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,3,0.2786391955597265,0.3650414632656482
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,4,0.2794670329575852,0.3653723682624221
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,5,0.2795245486711047,0.3612313181721341
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,6,0.2797396867734059,0.3539555794141664
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,7,0.2793816460582333,0.3538276286118635
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,8,0.2769231772125325,0.3495578935510297
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,9,0.2778625156902821,0.3565769442047951
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,10,0.2792604219123593,0.3488574350269645
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,11,0.2775337313602348,0.3598912995937465
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,12,0.2766122570983111,0.3578797068142704
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,13,0.2774761741679452,0.3419581805526636
+b,male,15,cardiovascular_system,hr_bpm,Heart Rate,14,0.2779779146779005,0.3595484528294138
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,0,0.1847069456618404,0.2395386129694995
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,1,0.1444372027324089,0.228022523814296
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,2,0.1762876606712441,0.2193246668340673
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,3,0.1653648809934488,0.2245548309111796
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,4,0.1617601977463398,0.240093920273213
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,5,0.1501243147120959,0.2520266615146057
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,6,0.1676064743635802,0.2339351452487252
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,7,0.1933455242033212,0.2257506300412491
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,8,0.1775572706865563,0.2328615439209416
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,9,0.1836579531274348,0.2330005507619189
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,10,0.1878270765627509,0.242149484412853
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,11,0.1783450966596772,0.2488484696606749
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,12,0.1917473118357334,0.2222359633421239
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,13,0.1837078734760457,0.2479000125895318
+b,male,16,cardiovascular_system,automorph_vein_fractal_dimension,Vein Fractal Dimension,14,0.181898154701605,0.2300742019400218
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,0,0.3553834993217739,0.5494504044921911
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,1,0.3582995915360169,0.5410338155106731
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,2,0.3535590749546915,0.5394818197233264
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,3,0.3875255624962896,0.5449511776904393
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,4,0.359500296669818,0.5411072023218587
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,5,0.3559326821529723,0.5397588423461943
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,6,0.3717455500016283,0.5480711070861887
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,7,0.3586731888197269,0.5496090631901625
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,8,0.3607398099580189,0.55305202796915
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,9,0.3583961612454501,0.5441674514509868
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,10,0.3599490650916604,0.5454820404257144
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,11,0.3554293733723227,0.5426067381882539
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,12,0.3600501244186031,0.5500581015356911
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,13,0.3574454980972907,0.5439614673065037
+b,male,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,14,0.3627747697193836,0.5460564880538697
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,0,0.279271025796065,0.4538056077455752
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,1,0.2787196820705983,0.4533360571762859
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,2,0.2755299422296903,0.4483716887412652
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,3,0.2774516863160829,0.4408007246339396
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,4,0.2786174695013994,0.4424364842272231
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,5,0.2764184393103786,0.4394232239052894
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,6,0.2792110776508165,0.4462216062685633
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,7,0.2797590470147955,0.4504371530557494
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,8,0.2772512218554552,0.4552587922830473
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,9,0.2784836350207963,0.4401371708215705
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,10,0.2821184459502638,0.4559621016346382
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,11,0.2757369299855035,0.4465528357060055
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,12,0.2783597056221381,0.4384779819713769
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,13,0.2754064299021483,0.4407611048255336
+b,male,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,14,0.2738497043990923,0.4433131140955271
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,0,0.1526098667204058,0.190639882698647
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,1,0.1585267018882958,0.197986626213665
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,2,0.1584447973813117,0.2002890029965343
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,3,0.1427410082223081,0.1770862154208135
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,4,0.1655261259870603,0.1885379591527738
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,5,0.1597966867320268,0.1990465183077316
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,6,0.166038696244935,0.207240234033999
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,7,0.1499074346353001,0.1981412751113858
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,8,0.1609958140977565,0.182445636952331
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,9,0.1573345638570989,0.2031178922980358
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,10,0.157220275784763,0.1914615144133411
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,11,0.1500796619854419,0.1869625951587743
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,12,0.1577105300018134,0.1779679681245812
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,13,0.1492634213637537,0.1967854579804392
+b,male,19,high_level_diet_with_stage,folate_mcg,Folate Mcg,14,0.1552019481876008,0.1973323031776291
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,0,0.1980533105840067,0.2326918193108486
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,1,0.2026285642456274,0.2310940298009972
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,2,0.1955044007123545,0.1999325406658216
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,3,0.1989108584977366,0.2327877117950044
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,4,0.1977948325671293,0.2011703237489694
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,5,0.1943815442476814,0.2419481858327329
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,6,0.2002502794944717,0.2081225554919667
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,7,0.1957512068758327,0.220169235177969
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,8,0.2001597620751372,0.2209711534641222
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,9,0.2014574249369889,0.2300927420028306
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,10,0.197145321484657,0.2402249678591264
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,11,0.1920962623092975,0.2144047543397334
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,12,0.1980972002085607,0.2284607075256267
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,13,0.1850870691749588,0.2024973186710524
+b,male,20,high_level_diet_with_stage,copper_mg,Copper Mg,14,0.2014985840985972,0.2387954025815483
+b,male,21,hematopoietic,bt__hct,Hct,0,0.2113248925262599,0.2499579699295408
+b,male,21,hematopoietic,bt__hct,Hct,1,0.2001717506003799,0.2316577429299357
+b,male,21,hematopoietic,bt__hct,Hct,2,0.2098217427649691,0.2368707101815468
+b,male,21,hematopoietic,bt__hct,Hct,3,0.2132628940817104,0.2473868204285978
+b,male,21,hematopoietic,bt__hct,Hct,4,0.2097648492813066,0.2302593530200479
+b,male,21,hematopoietic,bt__hct,Hct,5,0.2108686912859942,0.2482131693522469
+b,male,21,hematopoietic,bt__hct,Hct,6,0.2066429905406132,0.2181958506926073
+b,male,21,hematopoietic,bt__hct,Hct,7,0.2058377749012953,0.2134957234493343
+b,male,21,hematopoietic,bt__hct,Hct,8,0.2126006150305052,0.2274744433934097
+b,male,21,hematopoietic,bt__hct,Hct,9,0.2119058562417195,0.2467809400583811
+b,male,21,hematopoietic,bt__hct,Hct,10,0.2146543156529205,0.2483195017961348
+b,male,21,hematopoietic,bt__hct,Hct,11,0.2092246695379329,0.2421280303679093
+b,male,21,hematopoietic,bt__hct,Hct,12,0.2124996796431147,0.215806473940706
+b,male,21,hematopoietic,bt__hct,Hct,13,0.2061466822008299,0.2216466882998183
+b,male,21,hematopoietic,bt__hct,Hct,14,0.2119181856395124,0.2290031872607835
+b,male,22,sleep_group,ahi,AHI,0,0.4485600709886332,0.4603613200112085
+b,male,22,sleep_group,ahi,AHI,1,0.4474155923657551,0.4548821008085194
+b,male,22,sleep_group,ahi,AHI,2,0.4446060976607872,0.4579906580571329
+b,male,22,sleep_group,ahi,AHI,3,0.450374090385216,0.4596928231672313
+b,male,22,sleep_group,ahi,AHI,4,0.4495253118449788,0.4542205815169823
+b,male,22,sleep_group,ahi,AHI,5,0.4489487926108595,0.4619789704174762
+b,male,22,sleep_group,ahi,AHI,6,0.4469650343442071,0.4601594545775447
+b,male,22,sleep_group,ahi,AHI,7,0.4495290274491683,0.4523223892347085
+b,male,22,sleep_group,ahi,AHI,8,0.4492721083268887,0.442788537085654
+b,male,22,sleep_group,ahi,AHI,9,0.449833301341208,0.4658318264416922
+b,male,22,sleep_group,ahi,AHI,10,0.4480021911643814,0.4632145449070331
+b,male,22,sleep_group,ahi,AHI,11,0.4494051554114907,0.4718461880135121
+b,male,22,sleep_group,ahi,AHI,12,0.4464974914362233,0.4580770976355463
+b,male,22,sleep_group,ahi,AHI,13,0.4484248850952315,0.4552664209499146
+b,male,22,sleep_group,ahi,AHI,14,0.4492695549578108,0.4615044155885188
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,0,0.444922789932993,0.4603169808953808
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,1,0.4439069413154275,0.4478945417119468
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,2,0.4410724331157381,0.4554591724128227
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,3,0.4466729722880218,0.4578977216837682
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,4,0.4458491996826465,0.4552604929243899
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,5,0.445289892915149,0.4633261630971007
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,6,0.4432789680910897,0.4516826772134206
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,7,0.4459072708010721,0.4542606258665872
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,8,0.4455205581912703,0.4368637413606474
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,9,0.4462604051708719,0.460828914374704
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,10,0.4444079343416703,0.4599004822645186
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,11,0.4458325063837272,0.4660616709615294
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,12,0.4427106051791127,0.460221720987732
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,13,0.4448295240006399,0.4511154745014351
+b,male,23,sleep_group,hypoxic_burden,Hypoxic Burden,14,0.4455791687379912,0.459779326295423
+b,male,24,renal_function,bt__creatinine,Creatinine,0,0.0692773604133703,0.0929946628263167
+b,male,24,renal_function,bt__creatinine,Creatinine,1,0.079946095617606,0.0909122441388179
+b,male,24,renal_function,bt__creatinine,Creatinine,2,0.0852310880540258,0.0889614112816777
+b,male,24,renal_function,bt__creatinine,Creatinine,3,0.0700727831020149,0.0589673950683239
+b,male,24,renal_function,bt__creatinine,Creatinine,4,0.0865385985734061,0.0973691507578704
+b,male,24,renal_function,bt__creatinine,Creatinine,5,0.0880853701613296,0.0884272602335662
+b,male,24,renal_function,bt__creatinine,Creatinine,6,0.0852458688437192,0.103362777061514
+b,male,24,renal_function,bt__creatinine,Creatinine,7,0.0638988084253716,0.0679859762783109
+b,male,24,renal_function,bt__creatinine,Creatinine,8,0.0700972016767272,0.0808780688669136
+b,male,24,renal_function,bt__creatinine,Creatinine,9,0.080097677883183,0.1038794258533351
+b,male,24,renal_function,bt__creatinine,Creatinine,10,0.0787552795778974,0.0966159301943168
+b,male,24,renal_function,bt__creatinine,Creatinine,11,0.0883457567192667,0.0927551257672423
+b,male,24,renal_function,bt__creatinine,Creatinine,12,0.0856952640008644,0.0948244423099311
+b,male,24,renal_function,bt__creatinine,Creatinine,13,0.0816680405811711,0.0807974301215977
+b,male,24,renal_function,bt__creatinine,Creatinine,14,0.0784207903895559,0.1149726967026242
+d,female,1,frailty,hand_grip_left,L Hand Grip,0,0.3285281220205227,0.4254140469839567
+d,female,1,frailty,hand_grip_left,L Hand Grip,1,0.3252713212067781,0.4246002889505871
+d,female,1,frailty,hand_grip_left,L Hand Grip,2,0.3300602816257214,0.4287069815138107
+d,female,1,frailty,hand_grip_left,L Hand Grip,3,0.3258732996800041,0.415857825070537
+d,female,1,frailty,hand_grip_left,L Hand Grip,4,0.3280470437983277,0.4237734215098618
+d,female,1,frailty,hand_grip_left,L Hand Grip,5,0.3276027565681565,0.4273116958077319
+d,female,1,frailty,hand_grip_left,L Hand Grip,6,0.3299191061435388,0.4256369758086475
+d,female,1,frailty,hand_grip_left,L Hand Grip,7,0.3289996386565467,0.4251940213896195
+d,female,1,frailty,hand_grip_left,L Hand Grip,8,0.3293523978871245,0.4304793027281676
+d,female,1,frailty,hand_grip_left,L Hand Grip,9,0.3291214615599179,0.4232525503917521
+d,female,1,frailty,hand_grip_left,L Hand Grip,10,0.3266360614241556,0.4132680762863939
+d,female,1,frailty,hand_grip_left,L Hand Grip,11,0.3292678485786668,0.4210930479748305
+d,female,1,frailty,hand_grip_left,L Hand Grip,12,0.3308717873280299,0.4297599441159256
+d,female,1,frailty,hand_grip_left,L Hand Grip,13,0.3294874835733287,0.4232842208113033
+d,female,1,frailty,hand_grip_left,L Hand Grip,14,0.3279701992856115,0.4264012593637471
+d,female,2,frailty,hand_grip_right,R Hand Grip,0,0.3438283254483051,0.4238631616678727
+d,female,2,frailty,hand_grip_right,R Hand Grip,1,0.3447919321088799,0.4226664156649075
+d,female,2,frailty,hand_grip_right,R Hand Grip,2,0.3425367948830022,0.4217112006398089
+d,female,2,frailty,hand_grip_right,R Hand Grip,3,0.3455946499229982,0.4163719670887003
+d,female,2,frailty,hand_grip_right,R Hand Grip,4,0.3481511270137801,0.4242594319413952
+d,female,2,frailty,hand_grip_right,R Hand Grip,5,0.3433855979241748,0.4244185347503459
+d,female,2,frailty,hand_grip_right,R Hand Grip,6,0.3450799976258772,0.4213813958731979
+d,female,2,frailty,hand_grip_right,R Hand Grip,7,0.3472543858016433,0.4221864728608049
+d,female,2,frailty,hand_grip_right,R Hand Grip,8,0.3439010323597341,0.423256942064552
+d,female,2,frailty,hand_grip_right,R Hand Grip,9,0.3464874703273956,0.4141217387353096
+d,female,2,frailty,hand_grip_right,R Hand Grip,10,0.3441306823057559,0.4272434233931711
+d,female,2,frailty,hand_grip_right,R Hand Grip,11,0.347806745949889,0.4248468553056985
+d,female,2,frailty,hand_grip_right,R Hand Grip,12,0.3447207379605833,0.4097101458201123
+d,female,2,frailty,hand_grip_right,R Hand Grip,13,0.3444547071489177,0.4211574532686569
+d,female,2,frailty,hand_grip_right,R Hand Grip,14,0.3455206143359938,0.4184732441594548
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,0,0.1857214074059107,0.2445158847430733
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,1,0.1767400153375604,0.2244868082788652
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,2,0.1840421715816742,0.2361594199775177
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,3,0.1840700631274243,0.2183568428092481
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,4,0.1785541986990915,0.2377995124954134
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,5,0.187975958492397,0.2385012747433332
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,6,0.1852787831442488,0.2285824291769807
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,7,0.1780154187010489,0.2393851457142352
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,8,0.1785819345365175,0.2420651785295682
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,9,0.1852043159260098,0.2403884273204455
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,10,0.1862387097186759,0.2343999616906451
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,11,0.1768796258082148,0.238309800703498
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,12,0.1782271374598289,0.2225677042263254
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,13,0.1911468426920819,0.234833354887543
+d,female,3,lifestyle,vigorous_activity_minutes,Vigorous Activity,14,0.1811622973750821,0.2449283386289502
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,0,0.0070789906851915,0.0869044946981902
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,1,0.0194325306439966,0.0561098320955846
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,2,0.0536462546797673,0.0625699438944229
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,3,0.033963801953146,0.0506442055212696
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,4,0.0041579714854281,0.0505496807127623
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,5,0.021689535358788,0.0423494918185563
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,6,0.0283579904720348,0.0722555339439341
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,7,0.0767605135141158,0.0745919710718826
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,8,0.0123733209562379,0.0773602429494103
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,9,0.0279833090239169,0.083156140663244
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,10,0.0253630511811186,0.0737892974883358
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,11,0.0549002030293945,0.0619139069788447
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,12,0.0203652310666724,0.0645725279346648
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,13,0.0215739079690767,0.0774042764875742
+d,female,4,lifestyle,walking_minutes_day,Walking Minutes Day,14,0.0198493048067165,0.0562194112271001
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,0,0.2798556127264934,0.3204286894573667
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,1,0.2868072113112568,0.328341462484081
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,2,0.2910823176604887,0.3229707014265831
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,3,0.2791947452879729,0.3172055458635106
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,4,0.2937384734372123,0.3172493239947817
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,5,0.2952073188649016,0.3156414030589013
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,6,0.2929101797343446,0.3298198797534853
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,7,0.2853953551051347,0.3258705752971912
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,8,0.2872387112432248,0.3231849446558583
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,9,0.2864469116703645,0.3339689981855497
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,10,0.283308416658425,0.3218609352598758
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,11,0.2927458783492391,0.3270667992453691
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,12,0.2909679701434332,0.3219932821819154
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,13,0.2895698891993902,0.3038438557024855
+d,female,5,blood_tests_lipids,bt__total_cholesterol,Total Cholesterol,14,0.2887361157413098,0.3148451526686859
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,0,0.3421045870188316,0.380074469488463
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,1,0.3423846269195758,0.3901205910837638
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,2,0.3409757833006336,0.376182714201031
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,3,0.338700740657575,0.3946570794960952
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,4,0.3428383175346026,0.3900148186641664
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,5,0.3431615081797584,0.3880844887990692
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,6,0.3414923361182854,0.377417255562873
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,7,0.3429578231931832,0.3803730324537971
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,8,0.3293055553807239,0.3750426017848104
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,9,0.3354558113323673,0.3813595656652842
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,10,0.3345043517265986,0.3940874297529181
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,11,0.3502380083758993,0.4008165817072471
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,12,0.3421178140048085,0.3932906186153336
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,13,0.3410957681708563,0.3765504005325701
+d,female,6,blood_tests_lipids,bt__non_hdl_cholesterol,Non-HDL Cholesterol,14,0.3402220176527324,0.3851017030183034
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,0,0.443321007276136,0.4617962470480162
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,1,0.4390915638148628,0.4697108585217521
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,2,0.4431700481466978,0.4836070334379756
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,3,0.4445156728164013,0.4838787428898719
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,4,0.4414162133327964,0.4856287268315813
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,5,0.4399839616583526,0.4684554943306495
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,6,0.4435428869355556,0.4535951652731085
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,7,0.4395470606356472,0.4673630151150968
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,8,0.4415493620676215,0.476968727722193
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,9,0.4425298748790947,0.4623034175188226
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,10,0.4440906916276576,0.4644828761089855
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,11,0.4378216132392685,0.4727324063842577
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,12,0.4410291125032212,0.4602757047951297
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,13,0.4402233332580876,0.4961471558913623
+d,female,7,nightingale,L_VLDL_FC,L VLDL Free Cholesterol,14,0.4340368567122806,0.4647720410902586
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,0,0.3994584101102212,0.4348413054480205
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,1,0.3976157472226927,0.4291163975890562
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,2,0.4050553096069166,0.4290449818490602
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,3,0.3999568874137935,0.449114512967824
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,4,0.397826379705798,0.4390496854090097
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,5,0.4042989470383252,0.4380797230383573
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,6,0.4030252770172159,0.4220552532977522
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,7,0.4034297963151957,0.4363749222831893
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,8,0.401138870396321,0.433321897440699
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,9,0.3982026939808005,0.4385009843930648
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,10,0.4025524046957061,0.4500961721164501
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,11,0.3979958731388043,0.443592630257465
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,12,0.3989147090025349,0.4315893631679627
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,13,0.4007787065014155,0.4201800202611733
+d,female,8,nightingale,XL_HDL_PL,XL HDL Phospholipids,14,0.3983629363780822,0.4246830986614324
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),0,0.0045298668083308,0.097710518591861
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),1,-0.0216929154593262,0.0791972915230604
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),2,-0.0047804805905963,0.0826442576083898
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),3,-0.0812644441675804,0.0677568915947146
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),4,-0.0212208141797061,0.0543125335182088
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),5,-0.0298440584415477,0.0631819642043308
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),6,-0.023890571041252,0.0751572470883668
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),7,-0.0135355296176247,0.0906275541103303
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),8,-0.0018066888823232,0.0771636950425844
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),9,-0.0094977894417581,0.0767085302305297
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),10,-0.0045174819394758,0.0699270740869385
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),11,-0.0051162199691092,0.1041632057125591
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),12,-0.0442351123758909,0.0597831059452754
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),13,-0.0461868896394271,0.0674879831120653
+d,female,9,metabolites,Fibrinopeptide B (1-12),Fibrinopeptide B (1-12),14,-0.0402260141422161,0.0627427783316002
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,0,-0.0016446041478197,0.2147095817826119
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,1,0.1291133077014835,0.2154771672805931
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,2,0.0685409368243467,0.2253662558160958
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,3,0.0783484335048387,0.1927855227691886
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,4,0.0969776450691611,0.1958753280796444
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,5,0.0991397547905505,0.21273362135691
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,6,0.0765736327576491,0.2115634590000784
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,7,0.0456066807297485,0.1806518221813743
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,8,0.0890192555880928,0.2107395265828843
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,9,0.0966728927749819,0.2109103996829896
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,10,0.0734041418039201,0.2170618946597722
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,11,0.086392457141514,0.1826294252561483
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,12,0.064547784723027,0.2249867491718284
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,13,0.0913394620704861,0.2179153981519639
+d,female,10,metabolites,5.37_291.1602m_z,5.37 291.1602M Z,14,0.0785050705483901,0.220449154121488
+d,female,11,mental,happiness_level,Happiness Level,0,-0.074650486682521,0.0762865910191074
+d,female,11,mental,happiness_level,Happiness Level,1,-0.0631806292701055,0.0634432217244845
+d,female,11,mental,happiness_level,Happiness Level,2,-0.0818880142502492,0.0543763937069098
+d,female,11,mental,happiness_level,Happiness Level,3,-0.0687831977931759,0.0680935044616825
+d,female,11,mental,happiness_level,Happiness Level,4,-0.0541681083709054,0.0865057284522102
+d,female,11,mental,happiness_level,Happiness Level,5,-0.0387074300028785,0.0934700831765371
+d,female,11,mental,happiness_level,Happiness Level,6,-0.0766804370814715,0.0735212461445103
+d,female,11,mental,happiness_level,Happiness Level,7,-0.0653898153438814,0.0834650290956658
+d,female,11,mental,happiness_level,Happiness Level,8,-0.0808044228056388,0.061670450163032
+d,female,11,mental,happiness_level,Happiness Level,9,-0.0650593824480257,0.0646338405428582
+d,female,11,mental,happiness_level,Happiness Level,10,-0.076563342807211,0.0915210043579532
+d,female,11,mental,happiness_level,Happiness Level,11,-0.0484531441423219,0.0720934273659818
+d,female,11,mental,happiness_level,Happiness Level,12,-0.0416939888184305,0.0723690855640719
+d,female,11,mental,happiness_level,Happiness Level,13,-0.087428177193809,0.0669744656002337
+d,female,11,mental,happiness_level,Happiness Level,14,-0.0413637391125067,0.0883072344451457
+d,female,12,mental,health_satisfaction,Health Satisfaction,0,0.3000409060462068,0.3198619813604933
+d,female,12,mental,health_satisfaction,Health Satisfaction,1,0.2963589405051929,0.3196109823986273
+d,female,12,mental,health_satisfaction,Health Satisfaction,2,0.2950635976802125,0.3156351528233835
+d,female,12,mental,health_satisfaction,Health Satisfaction,3,0.2998158309494514,0.3167633372736558
+d,female,12,mental,health_satisfaction,Health Satisfaction,4,0.2923744713296474,0.3118947363229668
+d,female,12,mental,health_satisfaction,Health Satisfaction,5,0.2981978207148547,0.3200367385275022
+d,female,12,mental,health_satisfaction,Health Satisfaction,6,0.2968306883287326,0.3199265368734714
+d,female,12,mental,health_satisfaction,Health Satisfaction,7,0.3014414771017391,0.3238252579933394
+d,female,12,mental,health_satisfaction,Health Satisfaction,8,0.298149087161454,0.3225160164678912
+d,female,12,mental,health_satisfaction,Health Satisfaction,9,0.2953809465377911,0.3076077835970474
+d,female,12,mental,health_satisfaction,Health Satisfaction,10,0.2989937992934471,0.3213442782796759
+d,female,12,mental,health_satisfaction,Health Satisfaction,11,0.3007051381683918,0.3135110145403885
+d,female,12,mental,health_satisfaction,Health Satisfaction,12,0.2934100252971416,0.318786661980275
+d,female,12,mental,health_satisfaction,Health Satisfaction,13,0.2937100490281011,0.3100773105861177
+d,female,12,mental,health_satisfaction,Health Satisfaction,14,0.3014816406684071,0.3198687510602058
+d,female,13,liver,liver_elasticity,Liver Elasticity,0,0.0938469602162379,0.1697978035650457
+d,female,13,liver,liver_elasticity,Liver Elasticity,1,0.0905445576296545,0.1539565828379729
+d,female,13,liver,liver_elasticity,Liver Elasticity,2,0.0957469016367035,0.1537235008424641
+d,female,13,liver,liver_elasticity,Liver Elasticity,3,0.0882197088786453,0.1711203080117538
+d,female,13,liver,liver_elasticity,Liver Elasticity,4,0.0825236928357651,0.1625238655912125
+d,female,13,liver,liver_elasticity,Liver Elasticity,5,0.0910488384621377,0.1608330399462783
+d,female,13,liver,liver_elasticity,Liver Elasticity,6,0.081262459714989,0.1715813213109282
+d,female,13,liver,liver_elasticity,Liver Elasticity,7,0.0871025446650688,0.1585216478251554
+d,female,13,liver,liver_elasticity,Liver Elasticity,8,0.0919946924380745,0.1360328012652631
+d,female,13,liver,liver_elasticity,Liver Elasticity,9,0.0811983050751098,0.1488469491643027
+d,female,13,liver,liver_elasticity,Liver Elasticity,10,0.0888298614206078,0.1534287654243472
+d,female,13,liver,liver_elasticity,Liver Elasticity,11,0.0892585807145286,0.176314336014821
+d,female,13,liver,liver_elasticity,Liver Elasticity,12,0.0852590885523835,0.1574842983068947
+d,female,13,liver,liver_elasticity,Liver Elasticity,13,0.0914203876592323,0.1600121871549266
+d,female,13,liver,liver_elasticity,Liver Elasticity,14,0.0822424410218917,0.1639746665484243
+d,female,14,liver,bt__protein_total,Protein Total,0,0.1217016586741424,0.1018553048351732
+d,female,14,liver,bt__protein_total,Protein Total,1,0.1146780381366866,0.1411733771559233
+d,female,14,liver,bt__protein_total,Protein Total,2,0.1026299868192609,0.1282408067012269
+d,female,14,liver,bt__protein_total,Protein Total,3,0.1171087322729908,0.1541851879877329
+d,female,14,liver,bt__protein_total,Protein Total,4,0.10931450462541,0.1352192210212464
+d,female,14,liver,bt__protein_total,Protein Total,5,0.1122963163833287,0.1334432875174872
+d,female,14,liver,bt__protein_total,Protein Total,6,0.1221910907366289,0.1503594375378233
+d,female,14,liver,bt__protein_total,Protein Total,7,0.1066567487234476,0.1383052734286609
+d,female,14,liver,bt__protein_total,Protein Total,8,0.1196805737590874,0.1440478584759326
+d,female,14,liver,bt__protein_total,Protein Total,9,0.1062702729562607,0.1182962543646916
+d,female,14,liver,bt__protein_total,Protein Total,10,0.127680613531676,0.1756503072567897
+d,female,14,liver,bt__protein_total,Protein Total,11,0.1334634686439168,0.1385817399166587
+d,female,14,liver,bt__protein_total,Protein Total,12,0.124614258085514,0.1414720497054075
+d,female,14,liver,bt__protein_total,Protein Total,13,0.1122198399864084,0.1916127377673564
+d,female,14,liver,bt__protein_total,Protein Total,14,0.1286811352600686,0.1422163404792036
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,0,0.1927878157644572,0.2329024905870395
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,1,0.2173315579312544,0.267994794094105
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,2,0.1895697479706192,0.2341714338202251
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,3,0.1892428486935656,0.2255108835979089
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,4,0.2013670993375305,0.2154241735792058
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,5,0.1922399340974267,0.2425398349393231
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,6,0.1937987419832104,0.229975574387737
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,7,0.2013880449979282,0.2374705304719449
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,8,0.1884510165055374,0.2229209240563779
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,9,0.1967519874082295,0.2310119473026077
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,10,0.2032845516017574,0.2416150611397327
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,11,0.205154643718541,0.2292600549944154
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,12,0.1833626600840496,0.2258111176141904
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,13,0.1773570362538327,0.2421004892920287
+d,female,15,cardiovascular_system,automorph_artery_fractal_dimension,Artery Fractal Dim,14,0.2071454380049382,0.2393484272544315
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,0,0.0262088208797145,0.0881977931464582
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,1,0.0344273725386063,0.0794705429098183
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,2,0.060001299633337,0.0882170881328589
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,3,0.0527343504437143,0.0666065414786434
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,4,0.0283445495588516,0.0811404652980112
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,5,0.0239263829463199,0.0642557575762843
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,6,0.004767984275344,0.0702796395500452
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,7,0.0305269554697353,0.0525528014560409
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,8,0.0415556324732589,0.0637401831395479
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,9,0.0310697782736447,0.0724085996132686
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,10,0.0247731993106909,0.0751250814304703
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,11,0.0388765351347679,0.0713016016414517
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,12,0.046588798666912,0.0939632639850312
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,13,0.0291533910166165,0.0566062406989596
+d,female,16,cardiovascular_system,intima_media_th_2_fit,Carotid IMT,14,0.0326400629669296,0.0907801222198464
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,0,0.3439807135830739,0.5095158338571043
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,1,0.340594824238936,0.5041283255612498
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,2,0.3410608692264287,0.4950205920927142
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,3,0.3879320207248006,0.5058006411503525
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,4,0.338756752801763,0.5028113550719047
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,5,0.3439451435831218,0.5067589741293574
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,6,0.4065865424050487,0.5088980123687671
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,7,0.3413335795880687,0.500358307898357
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,8,0.3474576174373332,0.5063026461210238
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,9,0.3430891896709319,0.4987543389344451
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,10,0.3448048084435625,0.5026760916672216
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,11,0.3424476131095512,0.5052063579999437
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,12,0.344321404064211,0.5078337644347717
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,13,0.3454878001004103,0.5101721355865696
+d,female,17,bone_density,spine_l1_l4_area,Spine L1-L4 Area,14,0.4004731100735504,0.5032891956734177
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,0,0.3734709983358237,0.4817477076646083
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,1,0.3765330082481417,0.4823744468128467
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,2,0.377661452534821,0.4866528358417105
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,3,0.3744921627582482,0.4770784169825931
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,4,0.3749572514467014,0.4792518075812897
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,5,0.3772956228191187,0.4775589358583033
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,6,0.3755348511668356,0.485829971087802
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,7,0.3755532785210533,0.4804974669285465
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,8,0.3756090028941695,0.4814272195712097
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,9,0.376516117502878,0.4715954448854444
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,10,0.3748240687407027,0.481727412501328
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,11,0.3719321410760746,0.478493928301971
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,12,0.3731693929346995,0.481602299440698
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,13,0.3735176535856975,0.4808465714705521
+d,female,18,bone_density,spine_l1_l3_bmc,Spine L1-L3 BMC,14,0.3737083464231184,0.469856359412747
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),0,0.1013380427957244,0.1456096244671975
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),1,0.1038690783543827,0.1319156381447694
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),2,0.0996398766505378,0.139626585592134
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),3,0.1085993532522245,0.1492974777687203
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),4,0.1030398016576271,0.1348122013315427
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),5,0.10069590591944,0.1458107442438452
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),6,0.10442803345645,0.1533521000358543
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),7,0.1028035338387077,0.1488746880012091
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),8,0.1087925769773109,0.1255389750830569
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),9,0.1118691432523024,0.142086508289748
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),10,0.1075082617257447,0.1422156326563403
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),11,0.0986602073171433,0.1464793916444376
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),12,0.1032529166967678,0.1219984120638064
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),13,0.1059602440785244,0.1440977070820017
+d,female,19,high_level_diet_with_stage,totalpolyunsaturatedfattyacids_g,Total PUFA (g),14,0.1063836194694744,0.143382893311498
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,0,0.1379656508247846,0.186089755085191
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,1,0.1375592742384846,0.1652157300814226
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,2,0.1341487461643575,0.1477288127420887
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,3,0.1386806697957068,0.1840002413220696
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,4,0.138803090949571,0.152923027357521
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,5,0.1348708517976503,0.1778398881904102
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,6,0.1399877937069678,0.1774960692981753
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,7,0.1384468060622606,0.1698509976266173
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,8,0.1349278365789691,0.170380194562854
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,9,0.1400923125622914,0.1869923585772278
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,10,0.1360824667855294,0.1885357874946281
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,11,0.1254989893328361,0.171265742625289
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,12,0.1420409948019754,0.1850485942533577
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,13,0.1394843751480229,0.1569861172482708
+d,female,20,high_level_diet_with_stage,copper_mg,Copper Mg,14,0.1371336197440301,0.1713677239989251
+d,female,21,hematopoietic,bt__mcv,MCV,0,0.2009898048090897,0.2157691009390545
+d,female,21,hematopoietic,bt__mcv,MCV,1,0.2069050634846337,0.2302909753436662
+d,female,21,hematopoietic,bt__mcv,MCV,2,0.198893158973821,0.2299523155424273
+d,female,21,hematopoietic,bt__mcv,MCV,3,0.1989885465656687,0.2145594879829269
+d,female,21,hematopoietic,bt__mcv,MCV,4,0.2059068154652422,0.2240139106459394
+d,female,21,hematopoietic,bt__mcv,MCV,5,0.2066711618438762,0.2246362654901926
+d,female,21,hematopoietic,bt__mcv,MCV,6,0.2063990597604539,0.2167059460625445
+d,female,21,hematopoietic,bt__mcv,MCV,7,0.2076445657136135,0.22656320556134
+d,female,21,hematopoietic,bt__mcv,MCV,8,0.2048876207140322,0.2106358323078589
+d,female,21,hematopoietic,bt__mcv,MCV,9,0.2042297916048706,0.2189654341721314
+d,female,21,hematopoietic,bt__mcv,MCV,10,0.2024442773124873,0.2332856695567926
+d,female,21,hematopoietic,bt__mcv,MCV,11,0.2053451823362796,0.2158191024892789
+d,female,21,hematopoietic,bt__mcv,MCV,12,0.2083433134666917,0.2245599230292968
+d,female,21,hematopoietic,bt__mcv,MCV,13,0.206834011329924,0.2160008211173558
+d,female,21,hematopoietic,bt__mcv,MCV,14,0.2073818637590365,0.2164017689323755
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,0,0.0500406768589773,0.0904940462640839
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,1,0.0474255031852663,0.0647265475972069
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,2,0.0302202374194516,0.0685903607596779
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,3,0.03291541505974,0.0679420653590669
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,4,0.0472407895764566,0.0802667670087221
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,5,0.0367336425891543,0.0855567437901996
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,6,0.0500749522245093,0.0832931677316008
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,7,0.0337870757780279,0.1091149070772354
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,8,0.0325096747516898,0.064105294372866
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,9,0.0536222064498864,0.0808860822277024
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,10,0.0229620444969428,0.0581599808343229
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,11,0.0440324213879797,0.0888564011489088
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,12,0.0395222736428268,0.0683465411837489
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,13,0.041955683680858,0.0864804068058624
+d,female,22,sleep_group,sleep_efficiency,Sleep Efficiency,14,0.0434019109034603,0.0795978097052627
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,0,0.5081611354341582,0.5222953854919541
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,1,0.5063454033709879,0.521665583186983
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,2,0.5091839089176601,0.5220356361286166
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,3,0.5083895839768037,0.5235508340004329
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,4,0.5072514030832554,0.5259969636845696
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,5,0.5094787409340262,0.531894714625839
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,6,0.5108751863873615,0.5198811466481754
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,7,0.5089881944846847,0.5229319570455393
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,8,0.5093392260821065,0.5263217197723906
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,9,0.5094651829250917,0.5229879863182261
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,10,0.5084818717516546,0.5233835465017448
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,11,0.5076971026709701,0.5216720066899126
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,12,0.5089664799204628,0.5254113597363428
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,13,0.5066953561573095,0.5225803855780262
+d,female,23,sleep_group,hypoxic_burden,Hypoxic Burden,14,0.5097735389804974,0.5228428483548754

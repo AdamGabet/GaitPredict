@@ -1,4 +1,4 @@
-"""Extended Figure 2 — duration scaling with intermittent-sampling overlay.
+"""Extended Data Figure 2 — duration scaling with intermittent-sampling overlay.
 
 Overlays intermittent-sampling points on the continuous duration-scaling
 curves for the age/BMI/VAT core-target panel (treadmill 3 km/h activity).
@@ -121,6 +121,15 @@ PLOT_GROUP = {
     "absolute_scores": True,
 }
 
+# Nature: every piece of figure text must print between 5 and 7 pt at the 180 mm
+# two-column width. This figure's canvas is 8 in (203 mm) wide, so printed pt =
+# fontsize x 180/203 = x0.886 -- almost 1:1, which is why the old 9-13 pt sizes
+# printed at 8.0-11.5 pt. Ticks previously inherited the 10 pt rcParams default.
+FS_TITLE = 7.5    # prints at 6.6 pt
+FS_TICK = 7.0     # prints at 6.2 pt
+FS_LEGEND = 7.0   # prints at 6.2 pt
+FS_LABEL = 7.5    # axis labels; prints at 6.6 pt
+
 ACTIVITY_DISPLAY = {
     "tm_3kmh": "Treadmill 3 km/h",
     "self_selected_gait_speed": "Self-selected gait speed",
@@ -203,11 +212,16 @@ def plot_overlay(continuous_df, interm_df, activity, plot_group, x_order, x_labe
             x = np.array(x_order, dtype=np.float64)
             valid = ~np.isnan(y)
 
-            ax.fill_between(x[valid], (y - sd)[valid], (y + sd)[valid],
-                            color=color, alpha=0.12, linewidth=0)
+            # Use T-shaped error bars instead of a shaded corridor so the
+            # seed-level uncertainty remains legible when several curves overlap.
+            ax.errorbar(
+                x[valid], y[valid], yerr=sd[valid],
+                fmt="none", ecolor=color, elinewidth=1.2, capsize=4.0,
+                capthick=1.2, alpha=0.4, barsabove=True, zorder=5,
+            )
             ax.plot(x[valid], y[valid], color=color, linewidth=2.4,
                     marker="o", markersize=5.2, markerfacecolor="white",
-                    markeredgewidth=1.6, label=target["display"])
+                    markeredgewidth=1.6, label=target["display"], zorder=4)
 
             # Full protocol point (ensemble only)
             if full_protocol_df is not None and "full_protocol_seconds" in (full_protocol_df or {}):
@@ -226,23 +240,15 @@ def plot_overlay(continuous_df, interm_df, activity, plot_group, x_order, x_labe
                     xi *= interm.get("dodge", 1.0)
                     vals = rows["pearson_r"].to_numpy(dtype=np.float64)
                     yi_mean = vals.mean()
-                    yi_sd = vals.std(ddof=1) if len(vals) > 1 else 0.0
                     yi_lo, yi_hi = vals.min(), vals.max()
 
-                    # Seed corridor: ±1 SD shaded band, matching the continuous bands
-                    x_lo, x_hi = xi / 1.06, xi * 1.06
-                    ax.fill_between(
-                        [x_lo, x_hi],
-                        [yi_mean - yi_sd, yi_mean - yi_sd],
-                        [yi_mean + yi_sd, yi_mean + yi_sd],
-                        color=color, alpha=0.12, linewidth=0, zorder=8,
-                    )
                     # Seed interval: min–max whisker across seeds
                     ax.errorbar(
                         xi, yi_mean,
                         yerr=[[yi_mean - yi_lo], [yi_hi - yi_mean]],
-                        color=color, elinewidth=1.3, capsize=3,
-                        linestyle="none", zorder=9,
+                        color=color, elinewidth=1.4, capsize=4,
+                        capthick=1.4, alpha=0.45, barsabove=True,
+                        linestyle="none", zorder=11,
                     )
                     filled = interm.get("filled", True)
                     ax.plot(
@@ -260,14 +266,20 @@ def plot_overlay(continuous_df, interm_df, activity, plot_group, x_order, x_labe
         ax.set_xticks(x_order)
         ax.set_xticklabels(x_labels)
         ax.xaxis.set_minor_locator(mticker.NullLocator())
-        ax.set_xlabel("Recording duration")
-        ax.set_title(gender_titles[gender], fontsize=13, fontweight="bold")
+        ax.set_xlabel("Recording duration", fontsize=FS_LABEL)
+        ax.tick_params(axis="both", labelsize=FS_TICK)
+        ax.set_title(gender_titles[gender], fontsize=FS_TITLE, fontweight="bold")
         ax.yaxis.set_major_formatter(mticker.FormatStrFormatter("%.2f"))
 
     if absolute:
-        axes[0].set_ylabel("Pearson r")
+        axes[0].set_ylabel("Pearson r", fontsize=FS_LABEL)
+        # Nature policy: y-axis must start at 0 for absolute-magnitude panels.
+        # (Delta panels are exempt -- they are centred on a zero reference line
+        # and can legitimately go negative, so their limits are left to autoscale.)
+        for ax in axes:
+            ax.set_ylim(0, ax.get_ylim()[1])
     else:
-        axes[0].set_ylabel("Improvement over covariate-only model (Δ Pearson r)")
+        axes[0].set_ylabel("Improvement over covariate-only model (Δ Pearson r)", fontsize=FS_LABEL)
 
     # Build legend
     target_handles = [
@@ -286,31 +298,15 @@ def plot_overlay(continuous_df, interm_df, activity, plot_group, x_order, x_labe
     ]
     axes[-1].legend(
         handles=target_handles + interm_handles,
-        frameon=True, loc="upper left", fontsize=9,
+        frameon=True, loc="upper left", fontsize=FS_LEGEND,
         bbox_to_anchor=(1.02, 1.0), borderaxespad=0,
     )
 
     fig.suptitle(
         f"{plot_group['title']} — {ACTIVITY_DISPLAY.get(activity, activity)} (with intermittent sampling)",
-        fontsize=13, fontweight="bold",
+        fontsize=FS_TITLE, fontweight="bold",
     )
 
-    n_seeds = int(continuous_df.groupby(["target", "duration_seconds"])["pearson_r"].count().median())
-    group_models = {m["name"] for m in models_for_group(plot_group["name"])}
-    if {"intermittent_30s_6x5s", "intermittent_30s_2x15s"} & group_models:
-        diamond_note = "intermittent 30s sampling: diamond = 6×5s, square = 2×15s"
-    else:
-        diamond_note = "diamonds = intermittent sampling at matched total duration"
-    fig.text(
-        0.01, 0.01,
-        (
-            f"variant5 no-Room-A | {plot_group['note']} | "
-            f"{diamond_note} | "
-            f"shaded band = ±1 SD across seeds; whisker = seed min–max "
-            f"(n≈{n_seeds} seeds)"
-        ),
-        fontsize=7.5, color="#9a9a9a",
-    )
     right_margin = (5.5 * len(genders)) / fig_width - 0.02
     fig.subplots_adjust(left=0.08, right=right_margin, bottom=0.20, top=0.84, wspace=0.08)
 

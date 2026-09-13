@@ -182,7 +182,7 @@ def plot_sensitivity_panel(sens: pd.DataFrame, utility: pd.DataFrame, gender: st
         ax.plot([base, gait], [y, y], color=color, lw=lw, alpha=alpha, zorder=2)
         ax.scatter([base], [y], s=18, facecolors="white", edgecolors=BASELINE, linewidths=0.9, zorder=3)
         ax.scatter([gait], [y], s=28, color=color, edgecolors="white", linewidths=0.45, zorder=4)
-        ax.text(-1.0, y, row["plot_label"], ha="right", va="center", fontsize=10.1, color=TEXT)
+        ax.text(-1.0, y, row["plot_label"], ha="right", va="center", fontsize=7.37, color=TEXT)
         ax.text(
             1.025,
             y,
@@ -190,14 +190,14 @@ def plot_sensitivity_panel(sens: pd.DataFrame, utility: pd.DataFrame, gender: st
             transform=ax.get_yaxis_transform(),
             ha="left",
             va="center",
-            fontsize=9.9,
+            fontsize=7.23,
             color=color,
             fontweight="bold",
             clip_on=False,
         )
 
     for title, y in headers.items():
-        ax.text(-1.0, y, title, ha="right", va="center", fontsize=10.5, color="black", fontweight="bold")
+        ax.text(-1.0, y, title, ha="right", va="center", fontsize=7.67, color="black", fontweight="bold")
 
     if rows:
         ax.text(
@@ -207,7 +207,7 @@ def plot_sensitivity_panel(sens: pd.DataFrame, utility: pd.DataFrame, gender: st
             transform=ax.get_yaxis_transform(),
             ha="left",
             va="center",
-            fontsize=9.9,
+            fontsize=7.23,
             color="#666666",
             fontweight="bold",
             clip_on=False,
@@ -223,9 +223,9 @@ def plot_sensitivity_panel(sens: pd.DataFrame, utility: pd.DataFrame, gender: st
         ax.spines[spine].set_visible(False)
     ax.spines["bottom"].set_color("#BBBBBB")
     ax.spines["bottom"].set_linewidth(0.6)
-    ax.tick_params(axis="x", labelsize=10.1, colors="#666666", width=0.5)
-    ax.set_xlabel("Sensitivity among top-risk 10% referred (%)", fontsize=10.5, color="#666666")
-    ax.set_title(f"{SEX_TITLES[gender]} (n = {SEX_N[gender]:,})", loc="left", fontsize=12.4, fontweight="bold", color=TEXT, pad=4)
+    ax.tick_params(axis="x", labelsize=7.37, colors="#666666", width=0.5)
+    ax.set_xlabel("Sensitivity among top-risk 10% referred (%)", fontsize=7.67, color="#666666")
+    ax.set_title(f"{SEX_TITLES[gender]} (n = {SEX_N[gender]:,})", loc="left", fontsize=9.05, fontweight="bold", color=TEXT, pad=4)
 
     legend = [
         Line2D([0], [0], marker="o", markersize=4.4, markerfacecolor="white", markeredgecolor=BASELINE, lw=0, label="Age, BMI, Height"),
@@ -237,7 +237,7 @@ def plot_sensitivity_panel(sens: pd.DataFrame, utility: pd.DataFrame, gender: st
         loc="lower center",
         bbox_to_anchor=(0.55, legend_y),
         frameon=False,
-        fontsize=9.9,
+        fontsize=7.23,
         handletextpad=0.35,
         borderaxespad=0,
     )
@@ -264,14 +264,14 @@ def plot_auc_panel(sens: pd.DataFrame, utility: pd.DataFrame, gender: str) -> No
         ax.plot([base, gait], [y, y], color=color, lw=1.2, alpha=0.78, zorder=2)
         ax.scatter([base], [y], s=18, facecolors="white", edgecolors=BASELINE, linewidths=0.9, zorder=3)
         ax.scatter([gait], [y], s=30, color=color, edgecolors="white", linewidths=0.45, zorder=4)
-        ax.text(0.492, y, row["display_endpoint"], ha="right", va="center", fontsize=10.5, color=TEXT)
-        ax.text(0.716, y, f"+{row['delta_auc']:.3f}", ha="left", va="center", fontsize=10.0, color=color, fontweight="bold")
+        ax.text(0.492, y, row["display_endpoint"], ha="right", va="center", fontsize=7.67, color=TEXT)
+        ax.text(0.716, y, f"+{row['delta_auc']:.3f}", ha="left", va="center", fontsize=7.3, color=color, fontweight="bold")
 
     for title, y in headers.items():
-        ax.text(0.492, y, title, ha="right", va="center", fontsize=10.8, color="black", fontweight="bold")
+        ax.text(0.492, y, title, ha="right", va="center", fontsize=7.88, color="black", fontweight="bold")
 
     if rows:
-        ax.text(0.716, min(headers.values()), "ΔAUC", ha="left", va="center", fontsize=10.0, color="#666666", fontweight="bold")
+        ax.text(0.716, min(headers.values()), "ΔAUC", ha="left", va="center", fontsize=7.3, color="#666666", fontweight="bold")
 
     ax.set_xlim(0.46, 0.755)
     ax.set_ylim(-0.9, rows[-1][0] + 0.45 if rows else 1)
@@ -283,9 +283,9 @@ def plot_auc_panel(sens: pd.DataFrame, utility: pd.DataFrame, gender: str) -> No
         ax.spines[spine].set_visible(False)
     ax.spines["bottom"].set_color("#BBBBBB")
     ax.spines["bottom"].set_linewidth(0.6)
-    ax.tick_params(axis="x", labelsize=10.1, colors="#666666", width=0.5)
-    ax.set_xlabel("AUC-ROC", fontsize=10.5, color="#666666")
-    ax.set_title(f"{SEX_TITLES[gender]} (n = {SEX_N[gender]:,})", loc="left", fontsize=12.4, fontweight="bold", color=TEXT, pad=4)
+    ax.tick_params(axis="x", labelsize=7.37, colors="#666666", width=0.5)
+    ax.set_xlabel("AUC-ROC", fontsize=7.67, color="#666666")
+    ax.set_title(f"{SEX_TITLES[gender]} (n = {SEX_N[gender]:,})", loc="left", fontsize=9.05, fontweight="bold", color=TEXT, pad=4)
 
     legend = [
         Line2D([0], [0], marker="o", markersize=4.4, markerfacecolor="white", markeredgecolor=BASELINE, lw=0, label="Age, BMI, Height"),
@@ -297,7 +297,7 @@ def plot_auc_panel(sens: pd.DataFrame, utility: pd.DataFrame, gender: str) -> No
         loc="lower center",
         bbox_to_anchor=(0.55, legend_y),
         frameon=False,
-        fontsize=9.9,
+        fontsize=7.23,
         handletextpad=0.35,
         borderaxespad=0,
     )

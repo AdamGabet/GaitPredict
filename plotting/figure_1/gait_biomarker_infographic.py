@@ -13,7 +13,7 @@ OUTPUT_DIR = os.path.join(os.path.dirname(__file__), 'output')
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
-def create_gait_infographic(save_path=None):
+def create_gait_infographic(save_path=None, extra_systems=None):
     fig, ax = plt.subplots(figsize=(14, 20))
     ax.set_xlim(0, 14)
     ax.set_ylim(0, 23)
@@ -40,6 +40,11 @@ def create_gait_infographic(save_path=None):
         [('Microbiome', 'microbiome', ['Bacteria', 'Species']),
          ('Diet', 'high_level_diet_with_stage', ['Vegetables', 'Fiber'])],
     ]
+
+    # Extra rows appended by the Figure 1 composite build (same
+    # [[(name, color_key, [labels]), ...], ...] shape as `systems` above).
+    if extra_systems:
+        systems = systems + [list(r) for r in extra_systems]
 
     box_width = 5.2
     box_height = 1.5
