@@ -1,0 +1,241 @@
+target,gender,model,seed,value
+Age,Male,Normalized keypoints,0,0.5892299443837119
+Age,Male,Normalized keypoints,1,0.5926927686463896
+Age,Male,Normalized keypoints,2,0.5805526868731206
+Age,Male,Normalized keypoints,3,0.5884352452659423
+Age,Male,Normalized keypoints,4,0.5775611838570858
+Age,Female,Normalized keypoints,0,0.5489635368691002
+Age,Female,Normalized keypoints,1,0.5478634382721308
+Age,Female,Normalized keypoints,2,0.541018678818588
+Age,Female,Normalized keypoints,3,0.5421854820502852
+Age,Female,Normalized keypoints,4,0.5471529514737978
+Age,Male,GaitMAE gait embeddings,0,0.7021850475887155
+Age,Male,GaitMAE gait embeddings,1,0.7019320206493875
+Age,Male,GaitMAE gait embeddings,2,0.7016139668211736
+Age,Male,GaitMAE gait embeddings,3,0.6995079694697861
+Age,Male,GaitMAE gait embeddings,4,0.6969389889602363
+Age,Male,GaitMAE gait embeddings,5,0.7084210386805071
+Age,Male,GaitMAE gait embeddings,6,0.7015049681807526
+Age,Male,GaitMAE gait embeddings,7,0.7014727699099969
+Age,Male,GaitMAE gait embeddings,8,0.7002872827948404
+Age,Male,GaitMAE gait embeddings,9,0.7044761753849911
+Age,Male,GaitMAE gait embeddings,10,0.7038002605898152
+Age,Male,GaitMAE gait embeddings,11,0.7032736273937487
+Age,Male,GaitMAE gait embeddings,12,0.697320330697178
+Age,Male,GaitMAE gait embeddings,13,0.7044510074035563
+Age,Male,GaitMAE gait embeddings,14,0.7031688787907834
+Age,Female,GaitMAE gait embeddings,0,0.6785219647522304
+Age,Female,GaitMAE gait embeddings,1,0.6772232074266137
+Age,Female,GaitMAE gait embeddings,2,0.6697700916572753
+Age,Female,GaitMAE gait embeddings,3,0.6728840018187919
+Age,Female,GaitMAE gait embeddings,4,0.6797837194091334
+Age,Female,GaitMAE gait embeddings,5,0.6748983072764987
+Age,Female,GaitMAE gait embeddings,6,0.6741454404532932
+Age,Female,GaitMAE gait embeddings,7,0.6747950783912072
+Age,Female,GaitMAE gait embeddings,8,0.6748600061496216
+Age,Female,GaitMAE gait embeddings,9,0.6758915769052077
+Age,Female,GaitMAE gait embeddings,10,0.679028982074366
+Age,Female,GaitMAE gait embeddings,11,0.6752318493949917
+Age,Female,GaitMAE gait embeddings,12,0.6768686221858737
+Age,Female,GaitMAE gait embeddings,13,0.6806748502542445
+Age,Female,GaitMAE gait embeddings,14,0.6794454885876283
+BMI,Male,Normalized keypoints,0,0.8621415372895616
+BMI,Male,Normalized keypoints,1,0.8627899768452093
+BMI,Male,Normalized keypoints,2,0.8636504483564525
+BMI,Male,Normalized keypoints,3,0.8610126147458422
+BMI,Male,Normalized keypoints,4,0.8615060802249804
+BMI,Female,Normalized keypoints,0,0.8894749075239125
+BMI,Female,Normalized keypoints,1,0.8877010751679548
+BMI,Female,Normalized keypoints,2,0.8889647605366531
+BMI,Female,Normalized keypoints,3,0.8880599463758898
+BMI,Female,Normalized keypoints,4,0.8883427966103653
+BMI,Male,GaitMAE gait embeddings,0,0.8980659067854702
+BMI,Male,GaitMAE gait embeddings,1,0.897539179080393
+BMI,Male,GaitMAE gait embeddings,2,0.8975445866852735
+BMI,Male,GaitMAE gait embeddings,3,0.8971897887892472
+BMI,Male,GaitMAE gait embeddings,4,0.8980003325221286
+BMI,Male,GaitMAE gait embeddings,5,0.8971711001116113
+BMI,Male,GaitMAE gait embeddings,6,0.8976531776861786
+BMI,Male,GaitMAE gait embeddings,7,0.8978973740858418
+BMI,Male,GaitMAE gait embeddings,8,0.8977132868195886
+BMI,Male,GaitMAE gait embeddings,9,0.897897490662506
+BMI,Male,GaitMAE gait embeddings,10,0.8977185734782915
+BMI,Male,GaitMAE gait embeddings,11,0.8986667161734557
+BMI,Male,GaitMAE gait embeddings,12,0.8970581999578523
+BMI,Male,GaitMAE gait embeddings,13,0.8982765632344066
+BMI,Male,GaitMAE gait embeddings,14,0.8977295005730374
+BMI,Female,GaitMAE gait embeddings,0,0.9133523781609544
+BMI,Female,GaitMAE gait embeddings,1,0.9111635416027956
+BMI,Female,GaitMAE gait embeddings,2,0.9107770598185474
+BMI,Female,GaitMAE gait embeddings,3,0.9112887214286614
+BMI,Female,GaitMAE gait embeddings,4,0.9087449519858788
+BMI,Female,GaitMAE gait embeddings,5,0.9091225653463126
+BMI,Female,GaitMAE gait embeddings,6,0.9119218560233144
+BMI,Female,GaitMAE gait embeddings,7,0.9070463511908332
+BMI,Female,GaitMAE gait embeddings,8,0.9077172880857316
+BMI,Female,GaitMAE gait embeddings,9,0.9111634415518756
+BMI,Female,GaitMAE gait embeddings,10,0.9072775601124118
+BMI,Female,GaitMAE gait embeddings,11,0.9110581848072924
+BMI,Female,GaitMAE gait embeddings,12,0.9097894657047196
+BMI,Female,GaitMAE gait embeddings,13,0.9101916745600328
+BMI,Female,GaitMAE gait embeddings,14,0.9089706523579554
+VAT area,Male,Normalized keypoints,0,0.7733083000911146
+VAT area,Male,Normalized keypoints,1,0.7719708367208498
+VAT area,Male,Normalized keypoints,2,0.770276497979171
+VAT area,Male,Normalized keypoints,3,0.7750356384818724
+VAT area,Male,Normalized keypoints,4,0.7726689200459185
+VAT area,Female,Normalized keypoints,0,0.7785453145962551
+VAT area,Female,Normalized keypoints,1,0.7771501590119321
+VAT area,Female,Normalized keypoints,2,0.7753381274819084
+VAT area,Female,Normalized keypoints,3,0.7758275892808437
+VAT area,Female,Normalized keypoints,4,0.776965743485758
+VAT area,Male,GaitMAE gait embeddings,0,0.8140477005417287
+VAT area,Male,GaitMAE gait embeddings,1,0.8155216847012609
+VAT area,Male,GaitMAE gait embeddings,2,0.8158074625875942
+VAT area,Male,GaitMAE gait embeddings,3,0.8127087039326325
+VAT area,Male,GaitMAE gait embeddings,4,0.8155994628602931
+VAT area,Male,GaitMAE gait embeddings,5,0.815456594818272
+VAT area,Male,GaitMAE gait embeddings,6,0.8139536288783956
+VAT area,Male,GaitMAE gait embeddings,7,0.8153098326949825
+VAT area,Male,GaitMAE gait embeddings,8,0.8138855506409768
+VAT area,Male,GaitMAE gait embeddings,9,0.813055980786754
+VAT area,Male,GaitMAE gait embeddings,10,0.814957414101681
+VAT area,Male,GaitMAE gait embeddings,11,0.8130916872812165
+VAT area,Male,GaitMAE gait embeddings,12,0.816274495601233
+VAT area,Male,GaitMAE gait embeddings,13,0.8103587823206108
+VAT area,Male,GaitMAE gait embeddings,14,0.8114781465938857
+VAT area,Female,GaitMAE gait embeddings,0,0.7971604067803861
+VAT area,Female,GaitMAE gait embeddings,1,0.79675466750226
+VAT area,Female,GaitMAE gait embeddings,2,0.8004279297847375
+VAT area,Female,GaitMAE gait embeddings,3,0.7970361748505825
+VAT area,Female,GaitMAE gait embeddings,4,0.797828988702067
+VAT area,Female,GaitMAE gait embeddings,5,0.7993601068122601
+VAT area,Female,GaitMAE gait embeddings,6,0.7973873939007247
+VAT area,Female,GaitMAE gait embeddings,7,0.7976286771600232
+VAT area,Female,GaitMAE gait embeddings,8,0.7958575943913057
+VAT area,Female,GaitMAE gait embeddings,9,0.7958184132721755
+VAT area,Female,GaitMAE gait embeddings,10,0.797698254254283
+VAT area,Female,GaitMAE gait embeddings,11,0.7987574977063894
+VAT area,Female,GaitMAE gait embeddings,12,0.7958574712300556
+VAT area,Female,GaitMAE gait embeddings,13,0.796507227202507
+VAT area,Female,GaitMAE gait embeddings,14,0.7964542114051429
+Heart rate,Male,Normalized keypoints,0,0.2578588381247844
+Heart rate,Male,Normalized keypoints,1,0.2371444008777398
+Heart rate,Male,Normalized keypoints,2,0.2543862588390667
+Heart rate,Male,Normalized keypoints,3,0.2629976366599929
+Heart rate,Male,Normalized keypoints,4,0.2539951428949364
+Heart rate,Female,Normalized keypoints,0,0.2032497916341801
+Heart rate,Female,Normalized keypoints,1,0.2204945647253623
+Heart rate,Female,Normalized keypoints,2,0.2019838926552536
+Heart rate,Female,Normalized keypoints,3,0.214652032065282
+Heart rate,Female,Normalized keypoints,4,0.2181526548865885
+Heart rate,Male,GaitMAE gait embeddings,0,0.3562180988949278
+Heart rate,Male,GaitMAE gait embeddings,1,0.3585258252931016
+Heart rate,Male,GaitMAE gait embeddings,2,0.3633499941457317
+Heart rate,Male,GaitMAE gait embeddings,3,0.3650414632656482
+Heart rate,Male,GaitMAE gait embeddings,4,0.3653723682624221
+Heart rate,Male,GaitMAE gait embeddings,5,0.3612313181721341
+Heart rate,Male,GaitMAE gait embeddings,6,0.3539555794141664
+Heart rate,Male,GaitMAE gait embeddings,7,0.3538276286118635
+Heart rate,Male,GaitMAE gait embeddings,8,0.3495578935510297
+Heart rate,Male,GaitMAE gait embeddings,9,0.3565769442047951
+Heart rate,Male,GaitMAE gait embeddings,10,0.3488574350269645
+Heart rate,Male,GaitMAE gait embeddings,11,0.3598912995937465
+Heart rate,Male,GaitMAE gait embeddings,12,0.3578797068142704
+Heart rate,Male,GaitMAE gait embeddings,13,0.3419581805526636
+Heart rate,Male,GaitMAE gait embeddings,14,0.3595484528294138
+Heart rate,Female,GaitMAE gait embeddings,0,0.2762103998902979
+Heart rate,Female,GaitMAE gait embeddings,1,0.2820324388147544
+Heart rate,Female,GaitMAE gait embeddings,2,0.274003742348204
+Heart rate,Female,GaitMAE gait embeddings,3,0.2610483071833351
+Heart rate,Female,GaitMAE gait embeddings,4,0.2847499045988377
+Heart rate,Female,GaitMAE gait embeddings,5,0.2669627818994257
+Heart rate,Female,GaitMAE gait embeddings,6,0.2629561023142126
+Heart rate,Female,GaitMAE gait embeddings,7,0.2601911615318495
+Heart rate,Female,GaitMAE gait embeddings,8,0.2600598678481564
+Heart rate,Female,GaitMAE gait embeddings,9,0.2707596698436744
+Heart rate,Female,GaitMAE gait embeddings,10,0.2661923106357526
+Heart rate,Female,GaitMAE gait embeddings,11,0.2662085674370319
+Heart rate,Female,GaitMAE gait embeddings,12,0.2572382112745547
+Heart rate,Female,GaitMAE gait embeddings,13,0.2714526097062839
+Heart rate,Female,GaitMAE gait embeddings,14,0.2645315793852549
+Grip right,Male,Normalized keypoints,0,0.3903178013061685
+Grip right,Male,Normalized keypoints,1,0.3814878522578951
+Grip right,Male,Normalized keypoints,2,0.3791609880839183
+Grip right,Male,Normalized keypoints,3,0.3851602722529285
+Grip right,Male,Normalized keypoints,4,0.3869603405316089
+Grip right,Female,Normalized keypoints,0,0.3664526455723272
+Grip right,Female,Normalized keypoints,1,0.3869723959443374
+Grip right,Female,Normalized keypoints,2,0.3933199946421233
+Grip right,Female,Normalized keypoints,3,0.3844525679412818
+Grip right,Female,Normalized keypoints,4,0.3824389760547974
+Grip right,Male,GaitMAE gait embeddings,0,0.4752553922542141
+Grip right,Male,GaitMAE gait embeddings,1,0.4675283014774592
+Grip right,Male,GaitMAE gait embeddings,2,0.468669539611983
+Grip right,Male,GaitMAE gait embeddings,3,0.4689797789161229
+Grip right,Male,GaitMAE gait embeddings,4,0.4727255219181655
+Grip right,Male,GaitMAE gait embeddings,5,0.4691870240377408
+Grip right,Male,GaitMAE gait embeddings,6,0.4678681866986305
+Grip right,Male,GaitMAE gait embeddings,7,0.4740886278417865
+Grip right,Male,GaitMAE gait embeddings,8,0.4721007533955008
+Grip right,Male,GaitMAE gait embeddings,9,0.4672078432885781
+Grip right,Male,GaitMAE gait embeddings,10,0.4708782064924231
+Grip right,Male,GaitMAE gait embeddings,11,0.4712830063959811
+Grip right,Male,GaitMAE gait embeddings,12,0.4726502418684651
+Grip right,Male,GaitMAE gait embeddings,13,0.4581608514904904
+Grip right,Male,GaitMAE gait embeddings,14,0.4647026542979323
+Grip right,Female,GaitMAE gait embeddings,0,0.4238631616678727
+Grip right,Female,GaitMAE gait embeddings,1,0.4226664156649075
+Grip right,Female,GaitMAE gait embeddings,2,0.4217112006398089
+Grip right,Female,GaitMAE gait embeddings,3,0.4163719670887003
+Grip right,Female,GaitMAE gait embeddings,4,0.4242594319413952
+Grip right,Female,GaitMAE gait embeddings,5,0.4244185347503459
+Grip right,Female,GaitMAE gait embeddings,6,0.4213813958731979
+Grip right,Female,GaitMAE gait embeddings,7,0.4221864728608049
+Grip right,Female,GaitMAE gait embeddings,8,0.423256942064552
+Grip right,Female,GaitMAE gait embeddings,9,0.4141217387353096
+Grip right,Female,GaitMAE gait embeddings,10,0.4272434233931711
+Grip right,Female,GaitMAE gait embeddings,11,0.4248468553056985
+Grip right,Female,GaitMAE gait embeddings,12,0.4097101458201123
+Grip right,Female,GaitMAE gait embeddings,13,0.4211574532686569
+Grip right,Female,GaitMAE gait embeddings,14,0.4184732441594548
+Liver elasticity,Male,Normalized keypoints,0,0.1890985905317701
+Liver elasticity,Male,Normalized keypoints,1,0.1443504967811994
+Liver elasticity,Male,Normalized keypoints,2,0.1700760458539198
+Liver elasticity,Male,Normalized keypoints,3,0.1298272438715209
+Liver elasticity,Male,Normalized keypoints,4,0.1566376773745168
+Liver elasticity,Female,Normalized keypoints,0,0.1483307514536884
+Liver elasticity,Female,Normalized keypoints,1,0.12491781838293
+Liver elasticity,Female,Normalized keypoints,2,0.131392624453234
+Liver elasticity,Female,Normalized keypoints,3,0.117618369176178
+Liver elasticity,Female,Normalized keypoints,4,0.1170822646566535
+Liver elasticity,Male,GaitMAE gait embeddings,0,0.2123417137183506
+Liver elasticity,Male,GaitMAE gait embeddings,1,0.1983760295214936
+Liver elasticity,Male,GaitMAE gait embeddings,2,0.1957212413428531
+Liver elasticity,Male,GaitMAE gait embeddings,3,0.1956425294922968
+Liver elasticity,Male,GaitMAE gait embeddings,4,0.1909577961021963
+Liver elasticity,Male,GaitMAE gait embeddings,5,0.183879110520706
+Liver elasticity,Male,GaitMAE gait embeddings,6,0.1993847858098684
+Liver elasticity,Male,GaitMAE gait embeddings,7,0.1971284978498419
+Liver elasticity,Male,GaitMAE gait embeddings,8,0.1965540462446703
+Liver elasticity,Male,GaitMAE gait embeddings,9,0.1853516486670833
+Liver elasticity,Male,GaitMAE gait embeddings,10,0.1890837699126965
+Liver elasticity,Male,GaitMAE gait embeddings,11,0.1990640031985305
+Liver elasticity,Male,GaitMAE gait embeddings,12,0.1965548352154164
+Liver elasticity,Male,GaitMAE gait embeddings,13,0.2038337988457886
+Liver elasticity,Male,GaitMAE gait embeddings,14,0.180977697502689
+Liver elasticity,Female,GaitMAE gait embeddings,0,0.1697978035650457
+Liver elasticity,Female,GaitMAE gait embeddings,1,0.1539565828379729
+Liver elasticity,Female,GaitMAE gait embeddings,2,0.1537235008424641
+Liver elasticity,Female,GaitMAE gait embeddings,3,0.1711203080117538
+Liver elasticity,Female,GaitMAE gait embeddings,4,0.1625238655912125
+Liver elasticity,Female,GaitMAE gait embeddings,5,0.1608330399462783
+Liver elasticity,Female,GaitMAE gait embeddings,6,0.1715813213109282
+Liver elasticity,Female,GaitMAE gait embeddings,7,0.1585216478251554
+Liver elasticity,Female,GaitMAE gait embeddings,8,0.1360328012652631
+Liver elasticity,Female,GaitMAE gait embeddings,9,0.1488469491643027
+Liver elasticity,Female,GaitMAE gait embeddings,10,0.1534287654243472
+Liver elasticity,Female,GaitMAE gait embeddings,11,0.176314336014821
+Liver elasticity,Female,GaitMAE gait embeddings,12,0.1574842983068947
+Liver elasticity,Female,GaitMAE gait embeddings,13,0.1600121871549266
+Liver elasticity,Female,GaitMAE gait embeddings,14,0.1639746665484243

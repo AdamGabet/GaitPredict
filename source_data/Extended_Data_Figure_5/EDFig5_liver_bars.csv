@@ -1,0 +1,7 @@
+panel,gender,x_position,series_key,series,pearson_r,error_bar_sd,n_seeds
+Male,male,1,gait,Gait Embeddings,0.1613806473485314,0.0084295169361365,15
+Male,male,1,demo,Age + BMI,0.0891464608730631,0.0086256790901058,15
+Male,male,1,clinical,Age+BMI + routine liver biomarkers,0.1482093100754971,0.0097078823592978,15
+Female,female,2,gait,Gait Embeddings,0.1671877116583091,0.0086627460563382,15
+Female,female,2,demo,Age + BMI,0.1339022035165413,0.0102281910461753,15
+Female,female,2,clinical,Age+BMI + routine liver biomarkers,0.1442113651936645,0.0048541913313213,15

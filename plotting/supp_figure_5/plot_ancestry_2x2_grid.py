@@ -128,8 +128,9 @@ def plot_ancestry_discrimination(ax, ash_vs_non, background):
     ax.set_xticks(xpos)
     ax.set_xticklabels([g["label"] for g in groups], fontsize=10)
     ax.set_xlim(-0.6, len(groups) - 1 + 0.6)
-    ax.set_ylim(0.38, 0.70)
-    ax.set_yticks([0.40, 0.45, 0.50, 0.55, 0.60, 0.65])
+    # Nature policy: y-axis must start at 0 (was 0.38, which truncated the bars).
+    ax.set_ylim(0, 0.75)
+    ax.set_yticks([0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7])
     ax.grid(axis="y", color="#E7EAF0", linewidth=0.9)
     ax.set_axisbelow(True)
     ax.spines["top"].set_visible(False)
@@ -208,7 +209,7 @@ def plot_transfer_panel(ax, panel_df, is_first):
 # ── main ─────────────────────────────────────────────────────────────────────
 
 def main():
-    plt.rcParams.update({"font.family": "DejaVu Sans",
+    plt.rcParams.update({
                          "pdf.fonttype": 42, "ps.fonttype": 42})
 
     transfer   = pd.read_csv(TRANSFER_CSV)

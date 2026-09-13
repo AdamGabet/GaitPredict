@@ -59,7 +59,7 @@ def main():
     xlabels = [LABEL_NAMES[l] for l in label_order]
     x = np.arange(len(label_order))
     w = 0.35
-    y_max = summary[["full_mean", "clean_mean"]].max().max() * 1.25
+    y_max = summary[["full_mean", "clean_mean"]].max().max() * 1.40
 
     fig, axes = plt.subplots(1, 2, figsize=(8, 5), sharey=True)
 
@@ -71,6 +71,28 @@ def main():
         ax.bar(x + w/2, s["clean_mean"], w, yerr=s["clean_sem"],
                label="Unrelated-only", color="#b2182b", edgecolor="black", linewidth=0.7,
                alpha=0.85, capsize=4, error_kw={"linewidth": 1.2})
+
+        # Nature policy: show the per-seed distribution behind each bar.
+        for xi, lab in enumerate(label_order):
+            seeds = all_df[(all_df["label"] == lab) & (all_df["gender"] == gender_name)]
+            for col, off in [("delta_full", -w/2), ("delta_clean", w/2)]:
+                vals = seeds[col].to_numpy(dtype=float)
+                if not len(vals):
+                    continue
+                jitter = np.linspace(-w * 0.17, w * 0.17, len(vals))
+                ax.scatter(x[xi] + off + jitter, vals, s=8, color="black", alpha=0.55,
+                           linewidths=0.3, edgecolors="white", zorder=6)
+        # Nature policy: exact P values on the figure (two-sided paired Wilcoxon
+        # across seeds, original vs unrelated-only). Previously computed but only
+        # printed to the console.
+        for xi, lab in enumerate(label_order):
+            pv = float(s.loc[lab, "wilcox_p"])
+            top = max(s.loc[lab, "full_mean"] + s.loc[lab, "full_sem"],
+                      s.loc[lab, "clean_mean"] + s.loc[lab, "clean_sem"])
+            txt = f"P = {pv:.1e}" if pv < 1e-3 else f"P = {pv:.3f}"
+            ax.text(x[xi], top + y_max * 0.045, txt, ha="center", va="bottom",
+                    fontsize=8, color="#333333")
+
         ax.axhline(0, color="black", linewidth=0.8)
         ax.set_xticks(x)
         ax.set_xticklabels(xlabels, fontsize=11)

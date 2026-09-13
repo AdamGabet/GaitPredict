@@ -1,0 +1,91 @@
+panel,gender,series_key,series,seed,pearson_r
+Male,male,gait,Gait Embeddings,0,0.1775405834906253
+Male,male,gait,Gait Embeddings,1,0.1649257288464269
+Male,male,gait,Gait Embeddings,2,0.1601656032391714
+Male,male,gait,Gait Embeddings,3,0.163240841316673
+Male,male,gait,Gait Embeddings,4,0.1524277481078846
+Male,male,gait,Gait Embeddings,5,0.1474314485778151
+Male,male,gait,Gait Embeddings,6,0.163334030040072
+Male,male,gait,Gait Embeddings,7,0.1633153661405578
+Male,male,gait,Gait Embeddings,8,0.1637292264070021
+Male,male,gait,Gait Embeddings,9,0.1472426726233107
+Male,male,gait,Gait Embeddings,10,0.1572861712613274
+Male,male,gait,Gait Embeddings,11,0.1697130398070384
+Male,male,gait,Gait Embeddings,12,0.1676516299623355
+Male,male,gait,Gait Embeddings,13,0.168526894537372
+Male,male,gait,Gait Embeddings,14,0.1541787258703593
+Male,male,demo,Age + BMI,0,0.1057040357061636
+Male,male,demo,Age + BMI,1,0.0929954590375962
+Male,male,demo,Age + BMI,2,0.0971799247164225
+Male,male,demo,Age + BMI,3,0.0926372765046217
+Male,male,demo,Age + BMI,4,0.0909386863956995
+Male,male,demo,Age + BMI,5,0.0921207710164378
+Male,male,demo,Age + BMI,6,0.0989120646853194
+Male,male,demo,Age + BMI,7,0.0912769965375588
+Male,male,demo,Age + BMI,8,0.0896698844014942
+Male,male,demo,Age + BMI,9,0.0844101655435377
+Male,male,demo,Age + BMI,10,0.0775060357976856
+Male,male,demo,Age + BMI,11,0.0841974821202532
+Male,male,demo,Age + BMI,12,0.0807349521942005
+Male,male,demo,Age + BMI,13,0.0872904420824535
+Male,male,demo,Age + BMI,14,0.0716227363565021
+Male,male,clinical,Age+BMI + routine liver biomarkers,0,0.1622919653123233
+Male,male,clinical,Age+BMI + routine liver biomarkers,1,0.1435222223193152
+Male,male,clinical,Age+BMI + routine liver biomarkers,2,0.1594080125229812
+Male,male,clinical,Age+BMI + routine liver biomarkers,3,0.1383289774152128
+Male,male,clinical,Age+BMI + routine liver biomarkers,4,0.1463557193760825
+Male,male,clinical,Age+BMI + routine liver biomarkers,5,0.1625121438076517
+Male,male,clinical,Age+BMI + routine liver biomarkers,6,0.145561637456413
+Male,male,clinical,Age+BMI + routine liver biomarkers,7,0.1465290738747827
+Male,male,clinical,Age+BMI + routine liver biomarkers,8,0.1549906026429974
+Male,male,clinical,Age+BMI + routine liver biomarkers,9,0.1496048166422732
+Male,male,clinical,Age+BMI + routine liver biomarkers,10,0.1389056873633057
+Male,male,clinical,Age+BMI + routine liver biomarkers,11,0.1483345698302379
+Male,male,clinical,Age+BMI + routine liver biomarkers,12,0.1537099785332561
+Male,male,clinical,Age+BMI + routine liver biomarkers,13,0.1260247729606501
+Male,male,clinical,Age+BMI + routine liver biomarkers,14,0.1470594710749733
+Female,female,gait,Gait Embeddings,0,0.1735050531899758
+Female,female,gait,Gait Embeddings,1,0.1589192835842783
+Female,female,gait,Gait Embeddings,2,0.1593636962742025
+Female,female,gait,Gait Embeddings,3,0.177081193800518
+Female,female,gait,Gait Embeddings,4,0.172087668529805
+Female,female,gait,Gait Embeddings,5,0.1708637080344821
+Female,female,gait,Gait Embeddings,6,0.1791152502979732
+Female,female,gait,Gait Embeddings,7,0.1603698581617455
+Female,female,gait,Gait Embeddings,8,0.1514402674878674
+Female,female,gait,Gait Embeddings,9,0.1607925983957826
+Female,female,gait,Gait Embeddings,10,0.1634495984660468
+Female,female,gait,Gait Embeddings,11,0.1825752252967808
+Female,female,gait,Gait Embeddings,12,0.1690020833921631
+Female,female,gait,Gait Embeddings,13,0.1639519921543519
+Female,female,gait,Gait Embeddings,14,0.1652981978086641
+Female,female,demo,Age + BMI,0,0.135301940414753
+Female,female,demo,Age + BMI,1,0.1324876267798271
+Female,female,demo,Age + BMI,2,0.1497779804871757
+Female,female,demo,Age + BMI,3,0.1261447407999615
+Female,female,demo,Age + BMI,4,0.1221809066656646
+Female,female,demo,Age + BMI,5,0.1308170524088989
+Female,female,demo,Age + BMI,6,0.1508498231537534
+Female,female,demo,Age + BMI,7,0.1517400644321538
+Female,female,demo,Age + BMI,8,0.1338265019319388
+Female,female,demo,Age + BMI,9,0.1188507012398297
+Female,female,demo,Age + BMI,10,0.133139984128903
+Female,female,demo,Age + BMI,11,0.1387883851330849
+Female,female,demo,Age + BMI,12,0.1244030140244862
+Female,female,demo,Age + BMI,13,0.1337283132874877
+Female,female,demo,Age + BMI,14,0.1264960178602006
+Female,female,clinical,Age+BMI + routine liver biomarkers,0,0.1494530095587173
+Female,female,clinical,Age+BMI + routine liver biomarkers,1,0.1476822281908581
+Female,female,clinical,Age+BMI + routine liver biomarkers,2,0.1529169197056555
+Female,female,clinical,Age+BMI + routine liver biomarkers,3,0.1387322471505759
+Female,female,clinical,Age+BMI + routine liver biomarkers,4,0.1399454668722606
+Female,female,clinical,Age+BMI + routine liver biomarkers,5,0.1397358567494839
+Female,female,clinical,Age+BMI + routine liver biomarkers,6,0.1376314369126863
+Female,female,clinical,Age+BMI + routine liver biomarkers,7,0.1432321636491879
+Female,female,clinical,Age+BMI + routine liver biomarkers,8,0.1411987597805932
+Female,female,clinical,Age+BMI + routine liver biomarkers,9,0.143137166453063
+Female,female,clinical,Age+BMI + routine liver biomarkers,10,0.1508108545390552
+Female,female,clinical,Age+BMI + routine liver biomarkers,11,0.1439785606329685
+Female,female,clinical,Age+BMI + routine liver biomarkers,12,0.1501318852714566
+Female,female,clinical,Age+BMI + routine liver biomarkers,13,0.1405868219345344
+Female,female,clinical,Age+BMI + routine liver biomarkers,14,0.1439971005038706

@@ -1,0 +1,73 @@
+panel,target,target_display,gender,x_position,x_label,series,pearson_r,error_bar_sd,score_pvalue,n_seeds,n_subjects
+c,age,Age,male,1,Gait Fusion,Gait Embeddings,0.7020236222210311,0.0028903442625782,1.0797395447949298e-240,15,3405
+c,age,Age,male,1,Gait Fusion,Gait Features,0.4552666655240945,0.007225037609337739,,15,
+c,age,Age,male,2,Treadmill Walk (3 km/h),Gait Embeddings,0.6437201569353262,0.004800742780664,1.641626879023954e-179,15,3189
+c,age,Age,male,2,Treadmill Walk (3 km/h),Gait Features,0.3084158391031339,0.00960465254837742,2.4546199758448797e-30,15,2888
+c,age,Age,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,0.6397200863525812,0.0051828682927359,2.9451002390131333e-179,15,3257
+c,age,Age,male,3,Treadmill Walk (Self-Paced),Gait Features,0.2643783284383627,0.007009820488119343,4.047285093010088e-23,15,2888
+c,age,Age,male,4,Stationary Walking,Gait Embeddings,0.5843925075786487,0.0034077537446905,2.131581839425535e-147,15,3395
+c,age,Age,male,4,Stationary Walking,Gait Features,0.3959908753669098,0.0026068334410689277,1.064923222437061e-53,15,2888
+c,age,Age,male,5,Sit-to-Stand,Gait Embeddings,0.5123360988030251,0.0054949711553413,2.1253175294976987e-107,15,3396
+c,age,Age,male,5,Sit-to-Stand,Gait Features,0.3019181764411947,0.041556122248609335,4.313572343178585e-18,15,2888
+c,age,Age,male,6,Romberg's Test,Gait Embeddings,0.4029828840354477,0.0045348753176212,7.384308451783575e-64,15,3387
+c,age,Age,male,6,Romberg's Test,Gait Features,0.1618523878417267,0.00602508367295019,2.169559074836405e-09,15,2888
+d,age,Age,female,1,Gait Fusion,Gait Embeddings,0.6762682124491318,0.0029432296814623,1.4516964185832676e-230,15,3405
+d,age,Age,female,1,Gait Fusion,Gait Features,0.4641210377724958,0.010423205423066914,,15,
+d,age,Age,female,2,Treadmill Walk (3 km/h),Gait Embeddings,0.6050122892164224,0.003743956656318,2.1686839288118412e-160,15,3189
+d,age,Age,female,2,Treadmill Walk (3 km/h),Gait Features,0.3657557930377864,0.008674175955437796,5.273293152824673e-45,15,2888
+d,age,Age,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,0.5811571185837465,0.0036782950324054,1.0538185437492204e-148,15,3257
+d,age,Age,female,3,Treadmill Walk (Self-Paced),Gait Features,0.3272638996601323,0.008348961646495418,3.044798195702568e-36,15,2888
+d,age,Age,female,4,Stationary Walking,Gait Embeddings,0.5640670511692571,0.0031892255078642,2.5951628173828798e-145,15,3395
+d,age,Age,female,4,Stationary Walking,Gait Features,0.3575279009857406,0.030420711619442573,1.0636389187956684e-30,15,2888
+d,age,Age,female,5,Sit-to-Stand,Gait Embeddings,0.4922721416656955,0.0056288420943858,2.6892832077906015e-103,15,3396
+d,age,Age,female,5,Sit-to-Stand,Gait Features,0.2129488146549812,0.01788540074523237,1.351360394621196e-13,15,2888
+d,age,Age,female,6,Romberg's Test,Gait Embeddings,0.4089421010542831,0.0049618733371728,1.323389681168339e-69,15,3387
+d,age,Age,female,6,Romberg's Test,Gait Features,0.1518937245704008,0.016040965884025572,1.8271511539306082e-07,15,2888
+e,bmi,Body Mass Index,male,1,Gait Fusion,Gait Embeddings,0.897741451776352,0.0004266812733708,0.0,15,3404
+e,bmi,Body Mass Index,male,1,Gait Fusion,Gait Features,0.4107453404571261,0.010698825931093526,,15,
+e,bmi,Body Mass Index,male,2,Treadmill Walk (3 km/h),Gait Embeddings,0.8404210660076442,0.0014914732597341,0.0,15,3188
+e,bmi,Body Mass Index,male,2,Treadmill Walk (3 km/h),Gait Features,0.278789210235751,0.012083377668872462,1.601386968142991e-23,15,2888
+e,bmi,Body Mass Index,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,0.8375690676894549,0.0008218249734335,0.0,15,3256
+e,bmi,Body Mass Index,male,3,Treadmill Walk (Self-Paced),Gait Features,0.3080889601133928,0.0077825439457438386,2.9655901115255752e-30,15,2888
+e,bmi,Body Mass Index,male,4,Stationary Walking,Gait Embeddings,0.8618902266552249,0.0008956466251969,0.0,15,3394
+e,bmi,Body Mass Index,male,4,Stationary Walking,Gait Features,0.2584246672266483,0.0036907814404160038,1.1568074477722112e-22,15,2888
+e,bmi,Body Mass Index,male,5,Sit-to-Stand,Gait Embeddings,0.7988886461034814,0.0026374581568902,0.0,15,3395
+e,bmi,Body Mass Index,male,5,Sit-to-Stand,Gait Features,0.1524198145132283,0.016759248202059485,1.953240836777163e-07,15,2888
+e,bmi,Body Mass Index,male,6,Romberg's Test,Gait Embeddings,0.817075467496527,0.0015019062432075,0.0,15,3386
+e,bmi,Body Mass Index,male,6,Romberg's Test,Gait Features,0.2406763723980954,0.01363281196948311,3.334995019948719e-16,15,2888
+f,bmi,Body Mass Index,female,1,Gait Fusion,Gait Embeddings,0.9099723795158212,0.0018095872302186,0.0,15,3404
+f,bmi,Body Mass Index,female,1,Gait Fusion,Gait Features,0.4606590807382816,0.013113765082381811,,15,
+f,bmi,Body Mass Index,female,2,Treadmill Walk (3 km/h),Gait Embeddings,0.8733448698139299,0.0015043791696663,0.0,15,3188
+f,bmi,Body Mass Index,female,2,Treadmill Walk (3 km/h),Gait Features,0.3303720339118126,0.014137665071100458,1.0303749023819326e-33,15,2888
+f,bmi,Body Mass Index,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,0.8733480798717712,0.0013701791561828,0.0,15,3256
+f,bmi,Body Mass Index,female,3,Treadmill Walk (Self-Paced),Gait Features,0.3167400593520268,0.0072932023202457565,4.832150223889189e-33,15,2888
+f,bmi,Body Mass Index,female,4,Stationary Walking,Gait Embeddings,0.8677390822450438,0.0036876528407906,0.0,15,3394
+f,bmi,Body Mass Index,female,4,Stationary Walking,Gait Features,0.2999931495664043,0.023296202760191762,1.3430919796972233e-22,15,2888
+f,bmi,Body Mass Index,female,5,Sit-to-Stand,Gait Embeddings,0.825161814498594,0.0035069050433442,0.0,15,3395
+f,bmi,Body Mass Index,female,5,Sit-to-Stand,Gait Features,0.2757871605816551,0.012979844839275376,1.210198007783706e-23,15,2888
+f,bmi,Body Mass Index,female,6,Romberg's Test,Gait Embeddings,0.8410248183353397,0.0042739728845383,0.0,15,3386
+f,bmi,Body Mass Index,female,6,Romberg's Test,Gait Features,0.2058195749260569,0.013621524688590493,9.632331809211484e-14,15,2888
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,1,Gait Fusion,Gait Embeddings,0.8141004752227678,0.001709970441463,0.0,15,3305
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,1,Gait Fusion,Gait Features,0.4878493928359375,0.010853460814721333,,15,
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,2,Treadmill Walk (3 km/h),Gait Embeddings,0.770318020432578,0.0027457412943649,4.390391784730102e-300,15,3101
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,2,Treadmill Walk (3 km/h),Gait Features,0.3328250353304349,0.015285256166740747,1.86310209602541e-32,15,2811
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,3,Treadmill Walk (Self-Paced),Gait Embeddings,0.7727223997711039,0.002592759467102,2.2333756343791142e-304,15,3164
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,3,Treadmill Walk (Self-Paced),Gait Features,0.3526432006995852,0.009200577964746586,6.314817895656295e-39,15,2811
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,4,Stationary Walking,Gait Embeddings,0.7878366564876695,0.0020006342169459,0.0,15,3295
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,4,Stationary Walking,Gait Features,0.3593858308400534,0.004809715918431264,1.948058447693348e-42,15,2811
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,5,Sit-to-Stand,Gait Embeddings,0.6973107390012114,0.0040998170646588,3.3869284406112417e-231,15,3296
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,5,Sit-to-Stand,Gait Features,0.24678675280963,0.04360500204308557,8.042520826664202e-13,15,2811
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,6,Romberg's Test,Gait Embeddings,0.7226675348765235,0.003366749492407,1.5643521318593337e-252,15,3287
+g,total_scan_vat_area,Visceral Adipose Tissue Area,male,6,Romberg's Test,Gait Features,0.1981453702109734,0.008471096039512831,8.672805024423813e-13,15,2811
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,1,Gait Fusion,Gait Embeddings,0.7973690009969935,0.0013288506358399,0.0,15,3305
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,1,Gait Fusion,Gait Features,0.4232704273494542,0.010954932959260213,,15,
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,2,Treadmill Walk (3 km/h),Gait Embeddings,0.7235376457524068,0.0027528866730091,6.01809585591737e-250,15,3101
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,2,Treadmill Walk (3 km/h),Gait Features,0.2869792001337777,0.008320227737578758,1.870809292475318e-26,15,2811
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,3,Treadmill Walk (Self-Paced),Gait Embeddings,0.7222893420023291,0.0028809495845547,1.397954412885549e-255,15,3164
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,3,Treadmill Walk (Self-Paced),Gait Features,0.2905014491835441,0.007743984125681867,1.2518925623648054e-27,15,2811
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,4,Stationary Walking,Gait Embeddings,0.7657382151192341,0.0023030346992232,3.6629903e-317,15,3295
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,4,Stationary Walking,Gait Features,0.3106365883935852,0.008088558469826273,3.880826722916583e-30,15,2811
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,5,Sit-to-Stand,Gait Embeddings,0.6954856243353255,0.0028532171882034,6.79656987243744e-238,15,3296
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,5,Sit-to-Stand,Gait Features,0.2088247330190151,0.020219437460725947,8.281479781364844e-12,15,2811
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,6,Romberg's Test,Gait Embeddings,0.7304934993652837,0.0015624992543344,1.5413853112685636e-276,15,3287
+h,total_scan_vat_area,Visceral Adipose Tissue Area,female,6,Romberg's Test,Gait Features,0.1906087339698942,0.008651550422352976,7.503039934463807e-12,15,2811

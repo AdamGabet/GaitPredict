@@ -14,6 +14,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from publication_colors import get_system_colors, SYSTEM_RENAME_DICT, SYSTEM_COLOR_MAP, merge_systems
 
+# Nature requires every piece of figure text to print between 5 and 7 pt once the
+# figure sits at the 180 mm two-column width. The shipped combined figure has a
+# fixed 14 in (355.6 mm) canvas, so printed size = fontsize x 180/355.6 = x0.506.
+# The original hierarchy (17/19/20/22 pt) printed at 8.6-11.1 pt; scaling it by
+# 0.61 keeps the same proportions and lands every element in 5.3-6.8 pt.
+FS_YTICK = 10.5   # prints at 5.3 pt
+FS_XTICK = 11.5   # prints at 5.8 pt
+FS_YLABEL = 12.0  # prints at 6.1 pt
+FS_TITLE = 13.5   # prints at 6.8 pt
+
 
 def load_filtered_data(csv_path, model_type, gender, score_type, fdr_threshold=0.1):
     """
@@ -110,11 +120,11 @@ def draw_boxplot_on_ax(ax, data, systems_ordered, color_dict, sig_counts, total_
     
     ax.set_xticks(range(1, len(systems_ordered) + 1))
     if show_xticklabels:
-        ax.set_xticklabels(tick_labels, rotation=45, ha='right', fontsize=19)
+        ax.set_xticklabels(tick_labels, rotation=45, ha='right', fontsize=FS_XTICK)
     else:
         ax.set_xticklabels([])
-    ax.set_ylabel(ylabel, fontsize=20, fontweight='bold')
-    ax.tick_params(axis='y', labelsize=17)
+    ax.set_ylabel(ylabel, fontsize=FS_YLABEL, fontweight='bold')
+    ax.tick_params(axis='y', labelsize=FS_YTICK)
     
     if ylim:
         ax.set_ylim(ylim)
@@ -199,9 +209,15 @@ def generate_figures(pearson_path, r2_path, model_type, output_dir, fdr_threshol
     # --- Combined 4-row Pearson figure ---
     # Uses GridSpec with 5 rows: 4 plots + 1 empty spacer between male/female pairs
     from matplotlib.gridspec import GridSpec
-    fig = plt.figure(figsize=(14, 27))
-    gs = GridSpec(5, 1, figure=fig, height_ratios=[1, 1, 0.08, 1, 1],
-                  left=0.11, right=0.97, bottom=0.08, top=0.96, hspace=0.55)
+    fig = plt.figure(figsize=(14, 23))
+    # Row gaps are sized for the rotated x-tick labels. Those labels dropped
+    # from 19 pt to 11.5 pt for Nature's 5-7 pt window, so the old hspace=0.55
+    # and the 0.08 male/female spacer left a band of dead white space roughly
+    # four times the height of the text it was meant to clear. Tightened to
+    # match the smaller labels; the sexes stay visually separated because the
+    # spacer row still doubles the gap between the blocks.
+    gs = GridSpec(5, 1, figure=fig, height_ratios=[1, 1, 0.03, 1, 1],
+                  left=0.11, right=0.97, bottom=0.05, top=0.96, hspace=0.36)
 
     axes = [fig.add_subplot(gs[i]) for i in [0, 1, 3, 4]]
 
@@ -223,8 +239,8 @@ def generate_figures(pearson_path, r2_path, model_type, output_dir, fdr_threshol
         delta_ax.set_zorder(5)
         delta_ax.patch.set_visible(False)
 
-    axes[0].set_title('Male', fontsize=22, fontweight='bold', pad=14)
-    axes[2].set_title('Female', fontsize=22, fontweight='bold', pad=14)
+    axes[0].set_title('Male', fontsize=FS_TITLE, fontweight='bold', pad=14)
+    axes[2].set_title('Female', fontsize=FS_TITLE, fontweight='bold', pad=14)
 
     combined_path = os.path.join(output_dir, f"{model_type}_pearson_combined.png")
     plt.savefig(combined_path, dpi=300)
@@ -267,9 +283,15 @@ def main():
 
     # --- Combined 4-row composite figure (Male delta/score, Female delta/score) ---
     from matplotlib.gridspec import GridSpec
-    fig = plt.figure(figsize=(14, 27))
-    gs = GridSpec(5, 1, figure=fig, height_ratios=[1, 1, 0.08, 1, 1],
-                  left=0.11, right=0.97, bottom=0.08, top=0.96, hspace=0.55)
+    fig = plt.figure(figsize=(14, 23))
+    # Row gaps are sized for the rotated x-tick labels. Those labels dropped
+    # from 19 pt to 11.5 pt for Nature's 5-7 pt window, so the old hspace=0.55
+    # and the 0.08 male/female spacer left a band of dead white space roughly
+    # four times the height of the text it was meant to clear. Tightened to
+    # match the smaller labels; the sexes stay visually separated because the
+    # spacer row still doubles the gap between the blocks.
+    gs = GridSpec(5, 1, figure=fig, height_ratios=[1, 1, 0.03, 1, 1],
+                  left=0.11, right=0.97, bottom=0.05, top=0.96, hspace=0.36)
 
     axes = [fig.add_subplot(gs[i]) for i in [0, 1, 3, 4]]
 
@@ -291,8 +313,8 @@ def main():
         delta_ax.set_zorder(5)
         delta_ax.patch.set_visible(False)
 
-    axes[0].set_title('Male', fontsize=22, fontweight='bold', pad=14)
-    axes[2].set_title('Female', fontsize=22, fontweight='bold', pad=14)
+    axes[0].set_title('Male', fontsize=FS_TITLE, fontweight='bold', pad=14)
+    axes[2].set_title('Female', fontsize=FS_TITLE, fontweight='bold', pad=14)
 
     combined_png = os.path.join(output_dir, "gait_pearson_combined.png")
     plt.savefig(combined_png, dpi=300)

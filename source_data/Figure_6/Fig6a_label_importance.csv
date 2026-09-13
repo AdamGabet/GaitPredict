@@ -1,0 +1,969 @@
+row_order,system,system_display,body_group,gender,label,label_display,importance,rank_in_system,in_top10_mean
+1,frailty,Frailty,Arms,male,hand_grip_left,L Hand Grip,1.1542445218449497,1,True
+1,frailty,Frailty,Arms,female,hand_grip_right,R Hand Grip Strength,0.6908385647076507,2,True
+1,frailty,Frailty,Arms,female,hand_grip_left,L Hand Grip,0.6532815122506241,3,True
+1,frailty,Frailty,Arms,male,hand_grip_right,R Hand Grip Strength,0.5297737927327755,4,True
+1,frailty,Frailty,Arms,female,frailty_body_comp_leg_left_lean_mass,Frailty Leg Left Lean Mass,0.15858558405089165,5,True
+1,frailty,Frailty,Arms,male,frailty_body_comp_leg_left_lean_mass,Frailty Leg Left Lean Mass,0.14026268578791765,6,True
+1,frailty,Frailty,Head,female,frailty_body_comp_leg_left_lean_mass,Frailty Leg Left Lean Mass,0.30908541117102917,1,True
+1,frailty,Frailty,Head,male,hand_grip_left,L Hand Grip,0.2600692306895004,2,True
+1,frailty,Frailty,Head,male,frailty_body_comp_leg_left_lean_mass,Frailty Leg Left Lean Mass,0.0,3,True
+1,frailty,Frailty,Head,male,hand_grip_right,R Hand Grip Strength,0.0,4,True
+1,frailty,Frailty,Head,female,hand_grip_left,L Hand Grip,0.0,5,True
+1,frailty,Frailty,Head,female,hand_grip_right,R Hand Grip Strength,0.0,6,True
+1,frailty,Frailty,Legs,male,hand_grip_right,R Hand Grip Strength,2.0,1,True
+1,frailty,Frailty,Legs,female,frailty_body_comp_leg_left_lean_mass,Frailty Leg Left Lean Mass,2.0,2,True
+1,frailty,Frailty,Legs,female,hand_grip_left,L Hand Grip,2.0,3,True
+1,frailty,Frailty,Legs,female,hand_grip_right,R Hand Grip Strength,2.0,4,True
+1,frailty,Frailty,Legs,male,frailty_body_comp_leg_left_lean_mass,Frailty Leg Left Lean Mass,1.8057155771658917,5,True
+1,frailty,Frailty,Legs,male,hand_grip_left,L Hand Grip,1.5897897131078467,6,True
+1,frailty,Frailty,Torso,male,frailty_body_comp_leg_left_lean_mass,Frailty Leg Left Lean Mass,1.615024263469115,1,True
+1,frailty,Frailty,Torso,male,hand_grip_right,R Hand Grip Strength,1.021557144930309,2,True
+1,frailty,Frailty,Torso,female,hand_grip_left,L Hand Grip,0.5877894213703796,3,True
+1,frailty,Frailty,Torso,female,frailty_body_comp_leg_left_lean_mass,Frailty Leg Left Lean Mass,0.5670661504373113,4,True
+1,frailty,Frailty,Torso,female,hand_grip_right,R Hand Grip Strength,0.4365473908414177,5,True
+1,frailty,Frailty,Torso,male,hand_grip_left,L Hand Grip,0.30097140948096,6,True
+2,hematopoietic,Hematopoietic,Arms,male,bt__hct,BT Hct,1.6727062278812754,1,True
+2,hematopoietic,Hematopoietic,Arms,male,bt__ferritin,BT Ferritin,1.0,2,True
+2,hematopoietic,Hematopoietic,Arms,female,bt__ferritin,BT Ferritin,1.0,3,True
+2,hematopoietic,Hematopoietic,Arms,female,bt__hct,BT Hct,0.3096974433013944,4,True
+2,hematopoietic,Hematopoietic,Arms,male,bt__mchc,BT MCHC,0.15805159450581155,5,True
+2,hematopoietic,Hematopoietic,Arms,female,bt__mchc,BT MCHC,0.14614293956780097,6,True
+2,hematopoietic,Hematopoietic,Head,female,bt__ferritin,BT Ferritin,1.7952920172898705,1,True
+2,hematopoietic,Hematopoietic,Head,female,bt__hct,BT Hct,1.5420675871961371,2,True
+2,hematopoietic,Hematopoietic,Head,male,bt__ferritin,BT Ferritin,0.7636095476465926,3,True
+2,hematopoietic,Hematopoietic,Head,male,bt__mchc,BT MCHC,0.7487598554452826,4,True
+2,hematopoietic,Hematopoietic,Head,male,bt__hct,BT Hct,0.17557991474627827,5,True
+2,hematopoietic,Hematopoietic,Head,female,bt__mchc,BT MCHC,0.025320157046808928,6,True
+2,hematopoietic,Hematopoietic,Legs,male,bt__mchc,BT MCHC,2.0,1,True
+2,hematopoietic,Hematopoietic,Legs,female,bt__mchc,BT MCHC,2.0,2,True
+2,hematopoietic,Hematopoietic,Legs,female,bt__hct,BT Hct,1.5259852000864742,3,True
+2,hematopoietic,Hematopoietic,Legs,male,bt__ferritin,BT Ferritin,1.4573428219733233,4,True
+2,hematopoietic,Hematopoietic,Legs,male,bt__hct,BT Hct,0.2783436234838616,5,True
+2,hematopoietic,Hematopoietic,Legs,female,bt__ferritin,BT Ferritin,0.06640458698545793,6,True
+2,hematopoietic,Hematopoietic,Torso,male,bt__hct,BT Hct,1.190032276326918,1,True
+2,hematopoietic,Hematopoietic,Torso,female,bt__hct,BT Hct,0.7673925293721185,2,True
+2,hematopoietic,Hematopoietic,Torso,female,bt__ferritin,BT Ferritin,0.4906825365926748,3,True
+2,hematopoietic,Hematopoietic,Torso,male,bt__ferritin,BT Ferritin,0.45432286266499927,4,True
+2,hematopoietic,Hematopoietic,Torso,female,bt__mchc,BT MCHC,0.24342342900177513,5,True
+2,hematopoietic,Hematopoietic,Torso,male,bt__mchc,BT MCHC,0.0,6,True
+3,cardiovascular_system,Cardiovascular,Arms,female,r_mv_V3,R-Wave Peak Amplitude,2.0,1,True
+3,cardiovascular_system,Cardiovascular,Arms,female,automorph_vein_fractal_dimension,Vein Fractal Dim,1.864739904936537,2,True
+3,cardiovascular_system,Cardiovascular,Arms,male,r_mv_V3,R-Wave Peak Amplitude,1.7465819408505256,3,True
+3,cardiovascular_system,Cardiovascular,Arms,male,automorph_artery_fractal_dimension,Artery Fractal Dim,1.7029868285089684,4,True
+3,cardiovascular_system,Cardiovascular,Arms,female,t_mv_V4,T Mv V4,1.4330947964532732,5,True
+3,cardiovascular_system,Cardiovascular,Arms,male,r_ms_V3,R Ms V3,1.356289360016821,6,True
+3,cardiovascular_system,Cardiovascular,Arms,female,automorph_fractal_dimension,Automorph Fractal Dimension,1.269307919094354,7,True
+3,cardiovascular_system,Cardiovascular,Arms,female,r_mv_V2,R Mv V2,1.2427836372360312,8,True
+3,cardiovascular_system,Cardiovascular,Arms,male,r_mv_V2,R Mv V2,1.2393290359836433,9,True
+3,cardiovascular_system,Cardiovascular,Arms,female,hr_bpm,Heart Rate,1.0,10,True
+3,cardiovascular_system,Cardiovascular,Arms,female,intima_media_th_2_fit,Carotid IMT,1.0,11,False
+3,cardiovascular_system,Cardiovascular,Arms,female,q_ms_aVL,Q Ms Avl,1.0,12,False
+3,cardiovascular_system,Cardiovascular,Arms,female,r_r_ms,R R Ms,1.0,13,False
+3,cardiovascular_system,Cardiovascular,Arms,male,t_mv_V4,T Mv V4,0.9282230779442389,14,False
+3,cardiovascular_system,Cardiovascular,Arms,male,t_mv_I,T Mv I,0.815682437267171,15,False
+3,cardiovascular_system,Cardiovascular,Arms,male,r_mv_V4,R Mv V4,0.7008853692787774,16,False
+3,cardiovascular_system,Cardiovascular,Arms,female,qt_ms,ECG QT Interval,0.6869658959185844,17,False
+3,cardiovascular_system,Cardiovascular,Arms,male,automorph_vein_fractal_dimension,Vein Fractal Dim,0.6602468507238969,18,False
+3,cardiovascular_system,Cardiovascular,Arms,female,intima_media_th_1_fit,IMT,0.5280571383862424,19,False
+3,cardiovascular_system,Cardiovascular,Arms,female,automorph_artery_fractal_dimension,Artery Fractal Dim,0.4914367050364751,20,False
+3,cardiovascular_system,Cardiovascular,Arms,male,automorph_fractal_dimension,Automorph Fractal Dimension,0.4514640871426322,21,False
+3,cardiovascular_system,Cardiovascular,Arms,male,t_mv_V5,T Mv V5,0.41334373413086284,22,False
+3,cardiovascular_system,Cardiovascular,Arms,male,t_mv_V1,T Mv V1,0.39332665888989277,23,False
+3,cardiovascular_system,Cardiovascular,Arms,female,t_mv_V5,T Mv V5,0.3819020670246958,24,False
+3,cardiovascular_system,Cardiovascular,Arms,female,t_mv_V1,T Mv V1,0.36753293203650256,25,False
+3,cardiovascular_system,Cardiovascular,Arms,male,r_mv_V5,R Mv V5,0.2579763262689678,26,False
+3,cardiovascular_system,Cardiovascular,Arms,male,intima_media_th_2_fit,Carotid IMT,0.2327419320061173,27,False
+3,cardiovascular_system,Cardiovascular,Arms,male,sitting_blood_pressure_pulse_rate,Sitting Blood Pressure Pulse Rate,0.20583659318189534,28,False
+3,cardiovascular_system,Cardiovascular,Arms,male,r_mv_I,R Mv I,0.19668428253050582,29,False
+3,cardiovascular_system,Cardiovascular,Arms,female,r_mv_V5,R Mv V5,0.15678870945425225,30,False
+3,cardiovascular_system,Cardiovascular,Arms,male,hr_bpm,Heart Rate,0.13403583282530182,31,False
+3,cardiovascular_system,Cardiovascular,Arms,female,lying_blood_pressure_pulse_rate,Heart Rate,0.11648789161061711,32,False
+3,cardiovascular_system,Cardiovascular,Arms,female,sitting_blood_pressure_pulse_rate,Sitting Blood Pressure Pulse Rate,0.11398471419437647,33,False
+3,cardiovascular_system,Cardiovascular,Arms,female,r_mv_V4,R Mv V4,0.057700709503913504,34,False
+3,cardiovascular_system,Cardiovascular,Arms,male,r_r_ms,R R Ms,0.043895969605287286,35,False
+3,cardiovascular_system,Cardiovascular,Arms,male,intima_media_th_1_fit,IMT,0.032512413536906724,36,False
+3,cardiovascular_system,Cardiovascular,Arms,male,lying_blood_pressure_pulse_rate,Heart Rate,0.0,37,False
+3,cardiovascular_system,Cardiovascular,Arms,male,q_ms_aVL,Q Ms Avl,0.0,38,False
+3,cardiovascular_system,Cardiovascular,Arms,male,qt_ms,ECG QT Interval,0.0,39,False
+3,cardiovascular_system,Cardiovascular,Arms,male,standing_three_min_blood_pressure_pulse_rate,Standing Three Min Blood Pressure Pulse Rate,0.0,40,False
+3,cardiovascular_system,Cardiovascular,Arms,female,r_ms_V3,R Ms V3,0.0,41,False
+3,cardiovascular_system,Cardiovascular,Arms,female,r_mv_I,R Mv I,0.0,42,False
+3,cardiovascular_system,Cardiovascular,Arms,female,standing_three_min_blood_pressure_pulse_rate,Standing Three Min Blood Pressure Pulse Rate,0.0,43,False
+3,cardiovascular_system,Cardiovascular,Arms,female,t_mv_I,T Mv I,0.0,44,False
+3,cardiovascular_system,Cardiovascular,Head,female,automorph_artery_fractal_dimension,Artery Fractal Dim,2.0,1,True
+3,cardiovascular_system,Cardiovascular,Head,male,lying_blood_pressure_pulse_rate,Heart Rate,1.779223961867698,2,True
+3,cardiovascular_system,Cardiovascular,Head,female,r_mv_V2,R Mv V2,1.7772538251310688,3,True
+3,cardiovascular_system,Cardiovascular,Head,male,r_mv_V5,R Mv V5,1.6362134084621245,4,True
+3,cardiovascular_system,Cardiovascular,Head,female,standing_three_min_blood_pressure_pulse_rate,Standing Three Min Blood Pressure Pulse Rate,1.5595146461104856,5,True
+3,cardiovascular_system,Cardiovascular,Head,male,standing_three_min_blood_pressure_pulse_rate,Standing Three Min Blood Pressure Pulse Rate,1.422443486039291,6,True
+3,cardiovascular_system,Cardiovascular,Head,female,q_ms_aVL,Q Ms Avl,1.4126263828412624,7,True
+3,cardiovascular_system,Cardiovascular,Head,male,t_mv_V5,T Mv V5,1.4123441865005035,8,True
+3,cardiovascular_system,Cardiovascular,Head,female,r_mv_I,R Mv I,1.3486706716684893,9,True
+3,cardiovascular_system,Cardiovascular,Head,male,intima_media_th_1_fit,IMT,1.2387457229596648,10,True
+3,cardiovascular_system,Cardiovascular,Head,female,t_mv_V1,T Mv V1,1.2339916252769991,11,False
+3,cardiovascular_system,Cardiovascular,Head,male,r_mv_V4,R Mv V4,1.1911892606691947,12,False
+3,cardiovascular_system,Cardiovascular,Head,female,hr_bpm,Heart Rate,1.1273862745393117,13,False
+3,cardiovascular_system,Cardiovascular,Head,male,automorph_fractal_dimension,Automorph Fractal Dimension,1.1218870541105954,14,False
+3,cardiovascular_system,Cardiovascular,Head,female,t_mv_I,T Mv I,1.047907888262859,15,False
+3,cardiovascular_system,Cardiovascular,Head,male,qt_ms,ECG QT Interval,1.0362631091733139,16,False
+3,cardiovascular_system,Cardiovascular,Head,male,r_mv_V2,R Mv V2,1.0,17,False
+3,cardiovascular_system,Cardiovascular,Head,male,r_mv_V3,R-Wave Peak Amplitude,1.0,18,False
+3,cardiovascular_system,Cardiovascular,Head,male,q_ms_aVL,Q Ms Avl,0.8780676504451628,19,False
+3,cardiovascular_system,Cardiovascular,Head,female,t_mv_V5,T Mv V5,0.8091604279495292,20,False
+3,cardiovascular_system,Cardiovascular,Head,female,t_mv_V4,T Mv V4,0.7642214524760912,21,False
+3,cardiovascular_system,Cardiovascular,Head,male,sitting_blood_pressure_pulse_rate,Sitting Blood Pressure Pulse Rate,0.7421108449369117,22,False
+3,cardiovascular_system,Cardiovascular,Head,male,r_mv_I,R Mv I,0.7049211924694152,23,False
+3,cardiovascular_system,Cardiovascular,Head,female,r_mv_V5,R Mv V5,0.6745281617337361,24,False
+3,cardiovascular_system,Cardiovascular,Head,male,hr_bpm,Heart Rate,0.6522421215581626,25,False
+3,cardiovascular_system,Cardiovascular,Head,male,r_r_ms,R R Ms,0.6307496017526605,26,False
+3,cardiovascular_system,Cardiovascular,Head,female,r_mv_V4,R Mv V4,0.5438839291311268,27,False
+3,cardiovascular_system,Cardiovascular,Head,female,lying_blood_pressure_pulse_rate,Heart Rate,0.4783249583787104,28,False
+3,cardiovascular_system,Cardiovascular,Head,male,t_mv_I,T Mv I,0.47063953941289394,29,False
+3,cardiovascular_system,Cardiovascular,Head,female,r_mv_V3,R-Wave Peak Amplitude,0.4480699988987095,30,False
+3,cardiovascular_system,Cardiovascular,Head,female,r_ms_V3,R Ms V3,0.4462158234285035,31,False
+3,cardiovascular_system,Cardiovascular,Head,female,sitting_blood_pressure_pulse_rate,Sitting Blood Pressure Pulse Rate,0.4418096505636735,32,False
+3,cardiovascular_system,Cardiovascular,Head,male,automorph_vein_fractal_dimension,Vein Fractal Dim,0.3409554758845712,33,False
+3,cardiovascular_system,Cardiovascular,Head,female,intima_media_th_2_fit,Carotid IMT,0.3391521067593973,34,False
+3,cardiovascular_system,Cardiovascular,Head,male,r_ms_V3,R Ms V3,0.3345541991320473,35,False
+3,cardiovascular_system,Cardiovascular,Head,male,intima_media_th_2_fit,Carotid IMT,0.2925998337027044,36,False
+3,cardiovascular_system,Cardiovascular,Head,female,r_r_ms,R R Ms,0.1304187342208048,37,False
+3,cardiovascular_system,Cardiovascular,Head,male,t_mv_V1,T Mv V1,0.06547163478653945,38,False
+3,cardiovascular_system,Cardiovascular,Head,male,automorph_artery_fractal_dimension,Artery Fractal Dim,0.05110209091015339,39,False
+3,cardiovascular_system,Cardiovascular,Head,male,t_mv_V4,T Mv V4,0.0,40,False
+3,cardiovascular_system,Cardiovascular,Head,female,automorph_fractal_dimension,Automorph Fractal Dimension,0.0,41,False
+3,cardiovascular_system,Cardiovascular,Head,female,automorph_vein_fractal_dimension,Vein Fractal Dim,0.0,42,False
+3,cardiovascular_system,Cardiovascular,Head,female,intima_media_th_1_fit,IMT,0.0,43,False
+3,cardiovascular_system,Cardiovascular,Head,female,qt_ms,ECG QT Interval,0.0,44,False
+3,cardiovascular_system,Cardiovascular,Legs,male,automorph_vein_fractal_dimension,Vein Fractal Dim,2.0,1,True
+3,cardiovascular_system,Cardiovascular,Legs,male,intima_media_th_1_fit,IMT,2.0,2,True
+3,cardiovascular_system,Cardiovascular,Legs,male,intima_media_th_2_fit,Carotid IMT,2.0,3,True
+3,cardiovascular_system,Cardiovascular,Legs,male,q_ms_aVL,Q Ms Avl,2.0,4,True
+3,cardiovascular_system,Cardiovascular,Legs,male,t_mv_V1,T Mv V1,2.0,5,True
+3,cardiovascular_system,Cardiovascular,Legs,female,intima_media_th_1_fit,IMT,2.0,6,True
+3,cardiovascular_system,Cardiovascular,Legs,female,lying_blood_pressure_pulse_rate,Heart Rate,2.0,7,True
+3,cardiovascular_system,Cardiovascular,Legs,female,qt_ms,ECG QT Interval,2.0,8,True
+3,cardiovascular_system,Cardiovascular,Legs,female,standing_three_min_blood_pressure_pulse_rate,Standing Three Min Blood Pressure Pulse Rate,2.0,9,True
+3,cardiovascular_system,Cardiovascular,Legs,female,t_mv_V1,T Mv V1,1.8685586248870742,10,True
+3,cardiovascular_system,Cardiovascular,Legs,male,automorph_fractal_dimension,Automorph Fractal Dimension,1.8353592869460646,11,False
+3,cardiovascular_system,Cardiovascular,Legs,female,r_ms_V3,R Ms V3,1.8005767844351208,12,False
+3,cardiovascular_system,Cardiovascular,Legs,male,t_mv_I,T Mv I,1.7893420637359831,13,False
+3,cardiovascular_system,Cardiovascular,Legs,female,r_mv_V4,R Mv V4,1.6573549404400671,14,False
+3,cardiovascular_system,Cardiovascular,Legs,female,sitting_blood_pressure_pulse_rate,Sitting Blood Pressure Pulse Rate,1.6076907597485244,15,False
+3,cardiovascular_system,Cardiovascular,Legs,male,t_mv_V4,T Mv V4,1.5892372992178811,16,False
+3,cardiovascular_system,Cardiovascular,Legs,female,r_mv_I,R Mv I,1.412874265562671,17,False
+3,cardiovascular_system,Cardiovascular,Legs,female,r_mv_V5,R Mv V5,1.3424724123796938,18,False
+3,cardiovascular_system,Cardiovascular,Legs,male,automorph_artery_fractal_dimension,Artery Fractal Dim,1.2980898052866432,19,False
+3,cardiovascular_system,Cardiovascular,Legs,male,r_r_ms,R R Ms,1.2862480441619293,20,False
+3,cardiovascular_system,Cardiovascular,Legs,female,t_mv_I,T Mv I,1.2787540955068237,21,False
+3,cardiovascular_system,Cardiovascular,Legs,male,hr_bpm,Heart Rate,1.277857974839162,22,False
+3,cardiovascular_system,Cardiovascular,Legs,male,qt_ms,ECG QT Interval,1.2673615054039895,23,False
+3,cardiovascular_system,Cardiovascular,Legs,female,automorph_vein_fractal_dimension,Vein Fractal Dim,1.1707877167953122,24,False
+3,cardiovascular_system,Cardiovascular,Legs,female,t_mv_V5,T Mv V5,1.083423102720337,25,False
+3,cardiovascular_system,Cardiovascular,Legs,female,r_r_ms,R R Ms,1.0434820685674893,26,False
+3,cardiovascular_system,Cardiovascular,Legs,male,sitting_blood_pressure_pulse_rate,Sitting Blood Pressure Pulse Rate,1.0,27,False
+3,cardiovascular_system,Cardiovascular,Legs,female,hr_bpm,Heart Rate,0.9449727618004269,28,False
+3,cardiovascular_system,Cardiovascular,Legs,male,t_mv_V5,T Mv V5,0.7896848905027761,29,False
+3,cardiovascular_system,Cardiovascular,Legs,male,lying_blood_pressure_pulse_rate,Heart Rate,0.7019346080949717,30,False
+3,cardiovascular_system,Cardiovascular,Legs,male,r_ms_V3,R Ms V3,0.6258308003686314,31,False
+3,cardiovascular_system,Cardiovascular,Legs,female,automorph_fractal_dimension,Automorph Fractal Dimension,0.5104661221237097,32,False
+3,cardiovascular_system,Cardiovascular,Legs,male,r_mv_V3,R-Wave Peak Amplitude,0.4731521417573853,33,False
+3,cardiovascular_system,Cardiovascular,Legs,female,q_ms_aVL,Q Ms Avl,0.4583711251889554,34,False
+3,cardiovascular_system,Cardiovascular,Legs,male,standing_three_min_blood_pressure_pulse_rate,Standing Three Min Blood Pressure Pulse Rate,0.4514205296975192,35,False
+3,cardiovascular_system,Cardiovascular,Legs,male,r_mv_V5,R Mv V5,0.39537447811790183,36,False
+3,cardiovascular_system,Cardiovascular,Legs,male,r_mv_I,R Mv I,0.3437918227770412,37,False
+3,cardiovascular_system,Cardiovascular,Legs,male,r_mv_V4,R Mv V4,0.2593810040277026,38,False
+3,cardiovascular_system,Cardiovascular,Legs,male,r_mv_V2,R Mv V2,0.2111489723840922,39,False
+3,cardiovascular_system,Cardiovascular,Legs,female,intima_media_th_2_fit,Carotid IMT,0.2031088679172674,40,False
+3,cardiovascular_system,Cardiovascular,Legs,female,r_mv_V3,R-Wave Peak Amplitude,0.19653239854549653,41,False
+3,cardiovascular_system,Cardiovascular,Legs,female,t_mv_V4,T Mv V4,0.00594640157889431,42,False
+3,cardiovascular_system,Cardiovascular,Legs,female,automorph_artery_fractal_dimension,Artery Fractal Dim,0.0,43,False
+3,cardiovascular_system,Cardiovascular,Legs,female,r_mv_V2,R Mv V2,0.0,44,False
+3,cardiovascular_system,Cardiovascular,Torso,male,r_mv_I,R Mv I,2.0,1,True
+3,cardiovascular_system,Cardiovascular,Torso,male,r_mv_V4,R Mv V4,2.0,2,True
+3,cardiovascular_system,Cardiovascular,Torso,male,standing_three_min_blood_pressure_pulse_rate,Standing Three Min Blood Pressure Pulse Rate,2.0,3,True
+3,cardiovascular_system,Cardiovascular,Torso,female,t_mv_V5,T Mv V5,2.0,4,True
+3,cardiovascular_system,Cardiovascular,Torso,female,automorph_vein_fractal_dimension,Vein Fractal Dim,1.872019866944592,5,True
+3,cardiovascular_system,Cardiovascular,Torso,male,t_mv_V4,T Mv V4,1.773144235004732,6,True
+3,cardiovascular_system,Cardiovascular,Torso,female,t_mv_I,T Mv I,1.7458782316799033,7,True
+3,cardiovascular_system,Cardiovascular,Torso,male,r_mv_V3,R-Wave Peak Amplitude,1.6931828362916144,8,True
+3,cardiovascular_system,Cardiovascular,Torso,female,t_mv_V4,T Mv V4,1.6345024758552555,9,True
+3,cardiovascular_system,Cardiovascular,Torso,female,hr_bpm,Heart Rate,1.5333220470948423,10,True
+3,cardiovascular_system,Cardiovascular,Torso,male,lying_blood_pressure_pulse_rate,Heart Rate,1.48856736025209,11,False
+3,cardiovascular_system,Cardiovascular,Torso,male,r_ms_V3,R Ms V3,1.4533388498809268,12,False
+3,cardiovascular_system,Cardiovascular,Torso,female,r_ms_V3,R Ms V3,1.4405709892922602,13,False
+3,cardiovascular_system,Cardiovascular,Torso,female,sitting_blood_pressure_pulse_rate,Sitting Blood Pressure Pulse Rate,1.4290630687157755,14,False
+3,cardiovascular_system,Cardiovascular,Torso,female,r_mv_V5,R Mv V5,1.3938315774525087,15,False
+3,cardiovascular_system,Cardiovascular,Torso,male,qt_ms,ECG QT Interval,1.360641821900079,16,False
+3,cardiovascular_system,Cardiovascular,Torso,female,r_mv_V4,R Mv V4,1.3256570001358619,17,False
+3,cardiovascular_system,Cardiovascular,Torso,male,r_mv_V5,R Mv V5,1.3111492722926705,18,False
+3,cardiovascular_system,Cardiovascular,Torso,male,r_r_ms,R R Ms,1.2969040483645085,19,False
+3,cardiovascular_system,Cardiovascular,Torso,male,hr_bpm,Heart Rate,1.2950782740182487,20,False
+3,cardiovascular_system,Cardiovascular,Torso,male,t_mv_V5,T Mv V5,1.2442134696406064,21,False
+3,cardiovascular_system,Cardiovascular,Torso,female,intima_media_th_2_fit,Carotid IMT,1.1996317732468484,22,False
+3,cardiovascular_system,Cardiovascular,Torso,female,qt_ms,ECG QT Interval,1.1556581730048319,23,False
+3,cardiovascular_system,Cardiovascular,Torso,female,r_mv_V3,R-Wave Peak Amplitude,1.1142851857091154,24,False
+3,cardiovascular_system,Cardiovascular,Torso,female,r_mv_I,R Mv I,1.1112210103994118,25,False
+3,cardiovascular_system,Cardiovascular,Torso,male,r_mv_V2,R Mv V2,1.1110005653445811,26,False
+3,cardiovascular_system,Cardiovascular,Torso,female,q_ms_aVL,Q Ms Avl,1.0966648380105526,27,False
+3,cardiovascular_system,Cardiovascular,Torso,female,r_mv_V2,R Mv V2,1.0190772484139727,28,False
+3,cardiovascular_system,Cardiovascular,Torso,female,automorph_fractal_dimension,Automorph Fractal Dimension,1.0073316078844847,29,False
+3,cardiovascular_system,Cardiovascular,Torso,male,sitting_blood_pressure_pulse_rate,Sitting Blood Pressure Pulse Rate,1.0,30,False
+3,cardiovascular_system,Cardiovascular,Torso,male,t_mv_I,T Mv I,1.0,31,False
+3,cardiovascular_system,Cardiovascular,Torso,male,intima_media_th_2_fit,Carotid IMT,0.9004558564631493,32,False
+3,cardiovascular_system,Cardiovascular,Torso,female,r_r_ms,R R Ms,0.8026936168687844,33,False
+3,cardiovascular_system,Cardiovascular,Torso,male,t_mv_V1,T Mv V1,0.7566724648935672,34,False
+3,cardiovascular_system,Cardiovascular,Torso,female,intima_media_th_1_fit,IMT,0.7319127399900272,35,False
+3,cardiovascular_system,Cardiovascular,Torso,male,intima_media_th_1_fit,IMT,0.6743093647499833,36,False
+3,cardiovascular_system,Cardiovascular,Torso,male,automorph_fractal_dimension,Automorph Fractal Dimension,0.5841526307472618,37,False
+3,cardiovascular_system,Cardiovascular,Torso,female,standing_three_min_blood_pressure_pulse_rate,Standing Three Min Blood Pressure Pulse Rate,0.5429044348403322,38,False
+3,cardiovascular_system,Cardiovascular,Torso,male,q_ms_aVL,Q Ms Avl,0.5408340913692393,39,False
+3,cardiovascular_system,Cardiovascular,Torso,female,lying_blood_pressure_pulse_rate,Heart Rate,0.4055259541373225,40,False
+3,cardiovascular_system,Cardiovascular,Torso,female,automorph_artery_fractal_dimension,Artery Fractal Dim,0.3094587680532906,41,False
+3,cardiovascular_system,Cardiovascular,Torso,male,automorph_artery_fractal_dimension,Artery Fractal Dim,0.2359085978850863,42,False
+3,cardiovascular_system,Cardiovascular,Torso,female,t_mv_V1,T Mv V1,0.1811087020469851,43,False
+3,cardiovascular_system,Cardiovascular,Torso,male,automorph_vein_fractal_dimension,Vein Fractal Dim,0.0,44,False
+4,bone_density,Bone Density,Arms,male,body_arms_bmc,Arms BMC,2.0,1,True
+4,bone_density,Bone Density,Arms,male,spine_l1_l4_bmd,Spine L1 L4 BMD,2.0,2,True
+4,bone_density,Bone Density,Arms,female,femur_total_mean_bmc,Femur Total Mean BMC,1.9586477922026215,3,True
+4,bone_density,Bone Density,Arms,female,body_total_bmd,Body Total BMD,1.9209762966917903,4,True
+4,bone_density,Bone Density,Arms,male,body_trunk_bmc,Trunk BMC,1.836814767653879,5,True
+4,bone_density,Bone Density,Arms,female,body_arms_bmc,Arms BMC,1.7667194242583242,6,True
+4,bone_density,Bone Density,Arms,male,body_head_bmc,Head BMC,1.726812403331304,7,True
+4,bone_density,Bone Density,Arms,female,body_arms_bmd,Arms BMD,1.5054785586913582,8,True
+4,bone_density,Bone Density,Arms,female,body_pelvis_bmc,Body Pelvis BMC,1.3739646990026966,9,True
+4,bone_density,Bone Density,Arms,female,femur_total_mean_bmd,Femur Total Mean BMD,1.3543346330077348,10,True
+4,bone_density,Bone Density,Arms,male,femur_total_mean_bmd,Femur Total Mean BMD,1.1075235651953044,11,False
+4,bone_density,Bone Density,Arms,male,body_trunk_bmd,Trunk BMD,1.0444884636100253,12,False
+4,bone_density,Bone Density,Arms,male,body_head_bmd,Head BMD,1.0435810853727465,13,False
+4,bone_density,Bone Density,Arms,male,spine_l1_l4_bmc,Spine L1 L4 BMC,1.0261827906666865,14,False
+4,bone_density,Bone Density,Arms,female,body_legs_bmd,Legs BMD,1.0,15,False
+4,bone_density,Bone Density,Arms,female,body_pelvis_bmd,Body Pelvis BMD,1.0,16,False
+4,bone_density,Bone Density,Arms,male,body_arms_bmd,Arms BMD,0.9930020137885405,17,False
+4,bone_density,Bone Density,Arms,male,body_pelvis_bmd,Body Pelvis BMD,0.9463365445535201,18,False
+4,bone_density,Bone Density,Arms,female,body_head_bmd,Head BMD,0.9004593499036138,19,False
+4,bone_density,Bone Density,Arms,female,body_total_bmc,Body Total BMC,0.8533139497474882,20,False
+4,bone_density,Bone Density,Arms,female,spine_l1_l4_bmd,Spine L1 L4 BMD,0.7395401992213718,21,False
+4,bone_density,Bone Density,Arms,female,body_trunk_bmd,Trunk BMD,0.7304139199810608,22,False
+4,bone_density,Bone Density,Arms,male,femur_total_mean_bmc,Femur Total Mean BMC,0.6986419212268763,23,False
+4,bone_density,Bone Density,Arms,male,body_total_bmc,Body Total BMC,0.6805869449543616,24,False
+4,bone_density,Bone Density,Arms,female,body_head_bmc,Head BMC,0.6358802861670161,25,False
+4,bone_density,Bone Density,Arms,female,body_trunk_bmc,Trunk BMC,0.5108556619004322,26,False
+4,bone_density,Bone Density,Arms,female,spine_l1_l4_bmc,Spine L1 L4 BMC,0.39550183500240266,27,False
+4,bone_density,Bone Density,Arms,male,body_legs_bmc,Legs BMC,0.25190254287765407,28,False
+4,bone_density,Bone Density,Arms,female,body_legs_bmc,Legs BMC,0.17659255219218115,29,False
+4,bone_density,Bone Density,Arms,male,body_total_bmd,Body Total BMD,0.12953791526746467,30,False
+4,bone_density,Bone Density,Arms,male,body_legs_bmd,Legs BMD,0.03730022541909303,31,False
+4,bone_density,Bone Density,Arms,male,body_pelvis_bmc,Body Pelvis BMC,0.0,32,False
+4,bone_density,Bone Density,Head,male,body_head_bmc,Head BMC,1.7897461248184952,1,True
+4,bone_density,Bone Density,Head,female,femur_total_mean_bmd,Femur Total Mean BMD,1.7057036364693485,2,True
+4,bone_density,Bone Density,Head,female,body_legs_bmd,Legs BMD,1.2919292784099063,3,True
+4,bone_density,Bone Density,Head,female,body_trunk_bmc,Trunk BMC,1.2338513785998524,4,True
+4,bone_density,Bone Density,Head,female,body_head_bmc,Head BMC,1.178811636986503,5,True
+4,bone_density,Bone Density,Head,female,body_total_bmd,Body Total BMD,1.1645985151909262,6,True
+4,bone_density,Bone Density,Head,female,body_arms_bmc,Arms BMC,1.1358178570117583,7,True
+4,bone_density,Bone Density,Head,female,spine_l1_l4_bmd,Spine L1 L4 BMD,1.1028557997150759,8,True
+4,bone_density,Bone Density,Head,female,body_total_bmc,Body Total BMC,1.0579785842685854,9,True
+4,bone_density,Bone Density,Head,female,body_trunk_bmd,Trunk BMD,1.0371865873155237,10,True
+4,bone_density,Bone Density,Head,male,body_arms_bmd,Arms BMD,1.0,11,False
+4,bone_density,Bone Density,Head,female,body_pelvis_bmc,Body Pelvis BMC,1.0,12,False
+4,bone_density,Bone Density,Head,female,body_pelvis_bmd,Body Pelvis BMD,1.0,13,False
+4,bone_density,Bone Density,Head,female,body_head_bmd,Head BMD,0.9554190559403815,14,False
+4,bone_density,Bone Density,Head,male,body_total_bmd,Body Total BMD,0.7893110103699105,15,False
+4,bone_density,Bone Density,Head,male,spine_l1_l4_bmd,Spine L1 L4 BMD,0.7706374097893743,16,False
+4,bone_density,Bone Density,Head,male,body_total_bmc,Body Total BMC,0.7622193908086181,17,False
+4,bone_density,Bone Density,Head,male,body_pelvis_bmc,Body Pelvis BMC,0.679174778650551,18,False
+4,bone_density,Bone Density,Head,male,body_arms_bmc,Arms BMC,0.6403355962889277,19,False
+4,bone_density,Bone Density,Head,female,femur_total_mean_bmc,Femur Total Mean BMC,0.5950853618749458,20,False
+4,bone_density,Bone Density,Head,male,body_trunk_bmc,Trunk BMC,0.5588110390756741,21,False
+4,bone_density,Bone Density,Head,male,body_trunk_bmd,Trunk BMD,0.5301108696688437,22,False
+4,bone_density,Bone Density,Head,female,body_legs_bmc,Legs BMC,0.5079873641749623,23,False
+4,bone_density,Bone Density,Head,male,body_legs_bmd,Legs BMD,0.4997716710773829,24,False
+4,bone_density,Bone Density,Head,male,body_head_bmd,Head BMD,0.4522686183012105,25,False
+4,bone_density,Bone Density,Head,male,body_legs_bmc,Legs BMC,0.4470644120056324,26,False
+4,bone_density,Bone Density,Head,male,body_pelvis_bmd,Body Pelvis BMD,0.23096424960162817,27,False
+4,bone_density,Bone Density,Head,male,femur_total_mean_bmc,Femur Total Mean BMC,0.20065071672678989,28,False
+4,bone_density,Bone Density,Head,female,spine_l1_l4_bmc,Spine L1 L4 BMC,0.02593106640587152,29,False
+4,bone_density,Bone Density,Head,male,femur_total_mean_bmd,Femur Total Mean BMD,0.0,30,False
+4,bone_density,Bone Density,Head,male,spine_l1_l4_bmc,Spine L1 L4 BMC,0.0,31,False
+4,bone_density,Bone Density,Head,female,body_arms_bmd,Arms BMD,0.0,32,False
+4,bone_density,Bone Density,Legs,male,body_legs_bmc,Legs BMC,2.0,1,True
+4,bone_density,Bone Density,Legs,male,body_total_bmd,Body Total BMD,2.0,2,True
+4,bone_density,Bone Density,Legs,male,femur_total_mean_bmc,Femur Total Mean BMC,2.0,3,True
+4,bone_density,Bone Density,Legs,male,spine_l1_l4_bmc,Spine L1 L4 BMC,2.0,4,True
+4,bone_density,Bone Density,Legs,female,body_legs_bmc,Legs BMC,2.0,5,True
+4,bone_density,Bone Density,Legs,female,spine_l1_l4_bmc,Spine L1 L4 BMC,2.0,6,True
+4,bone_density,Bone Density,Legs,male,body_pelvis_bmd,Body Pelvis BMD,1.8953385389162338,7,True
+4,bone_density,Bone Density,Legs,male,body_legs_bmd,Legs BMD,1.8168009457101384,8,True
+4,bone_density,Bone Density,Legs,female,body_arms_bmc,Arms BMC,1.7437132545238065,9,True
+4,bone_density,Bone Density,Legs,female,body_pelvis_bmc,Body Pelvis BMC,1.6757059459447987,10,True
+4,bone_density,Bone Density,Legs,female,body_total_bmc,Body Total BMC,1.6149734762403127,11,False
+4,bone_density,Bone Density,Legs,male,body_arms_bmc,Arms BMC,1.5863388942908732,12,False
+4,bone_density,Bone Density,Legs,male,body_pelvis_bmc,Body Pelvis BMC,1.3237975782247449,13,False
+4,bone_density,Bone Density,Legs,female,femur_total_mean_bmc,Femur Total Mean BMC,1.2437792135335028,14,False
+4,bone_density,Bone Density,Legs,female,body_trunk_bmc,Trunk BMC,1.1463341422979074,15,False
+4,bone_density,Bone Density,Legs,male,femur_total_mean_bmd,Femur Total Mean BMD,1.1319171054645927,16,False
+4,bone_density,Bone Density,Legs,male,body_total_bmc,Body Total BMC,1.0,17,False
+4,bone_density,Bone Density,Legs,female,body_head_bmc,Head BMC,1.0,18,False
+4,bone_density,Bone Density,Legs,female,body_head_bmd,Head BMD,1.0,19,False
+4,bone_density,Bone Density,Legs,female,spine_l1_l4_bmd,Spine L1 L4 BMD,1.0,20,False
+4,bone_density,Bone Density,Legs,female,body_trunk_bmd,Trunk BMD,0.9968707758183126,21,False
+4,bone_density,Bone Density,Legs,male,body_trunk_bmc,Trunk BMC,0.9046740373446593,22,False
+4,bone_density,Bone Density,Legs,female,body_arms_bmd,Arms BMD,0.778256280276099,23,False
+4,bone_density,Bone Density,Legs,male,body_arms_bmd,Arms BMD,0.7747862494888254,24,False
+4,bone_density,Bone Density,Legs,female,body_pelvis_bmd,Body Pelvis BMD,0.6846924789316271,25,False
+4,bone_density,Bone Density,Legs,male,body_head_bmc,Head BMC,0.6519781290676736,26,False
+4,bone_density,Bone Density,Legs,male,body_trunk_bmd,Trunk BMD,0.4153367313186763,27,False
+4,bone_density,Bone Density,Legs,male,spine_l1_l4_bmd,Spine L1 L4 BMD,0.3132097448464476,28,False
+4,bone_density,Bone Density,Legs,female,body_legs_bmd,Legs BMD,0.30974356160972133,29,False
+4,bone_density,Bone Density,Legs,male,body_head_bmd,Head BMD,0.3027709028831624,30,False
+4,bone_density,Bone Density,Legs,female,femur_total_mean_bmd,Femur Total Mean BMD,0.27791604399463044,31,False
+4,bone_density,Bone Density,Legs,female,body_total_bmd,Body Total BMD,0.18218294034702245,32,False
+4,bone_density,Bone Density,Torso,male,body_trunk_bmc,Trunk BMC,2.0,1,True
+4,bone_density,Bone Density,Torso,male,body_trunk_bmd,Trunk BMD,2.0,2,True
+4,bone_density,Bone Density,Torso,female,body_arms_bmd,Arms BMD,1.558492918948605,3,True
+4,bone_density,Bone Density,Torso,male,spine_l1_l4_bmd,Spine L1 L4 BMD,1.5580643589965213,4,True
+4,bone_density,Bone Density,Torso,female,body_head_bmc,Head BMC,1.5080253514554363,5,True
+4,bone_density,Bone Density,Torso,male,femur_total_mean_bmd,Femur Total Mean BMD,1.4429963636171752,6,True
+4,bone_density,Bone Density,Torso,male,body_pelvis_bmc,Body Pelvis BMC,1.409777454836619,7,True
+4,bone_density,Bone Density,Torso,male,body_arms_bmd,Arms BMD,1.337720548306947,8,True
+4,bone_density,Bone Density,Torso,male,body_legs_bmd,Legs BMD,1.2229225992496755,9,True
+4,bone_density,Bone Density,Torso,male,body_total_bmc,Body Total BMC,1.162834491059209,10,True
+4,bone_density,Bone Density,Torso,male,body_head_bmd,Head BMD,1.0,11,False
+4,bone_density,Bone Density,Torso,male,body_pelvis_bmd,Body Pelvis BMD,1.0,12,False
+4,bone_density,Bone Density,Torso,female,body_head_bmd,Head BMD,1.0,13,False
+4,bone_density,Bone Density,Torso,female,body_trunk_bmd,Trunk BMD,1.0,14,False
+4,bone_density,Bone Density,Torso,female,femur_total_mean_bmd,Femur Total Mean BMD,1.0,15,False
+4,bone_density,Bone Density,Torso,female,spine_l1_l4_bmd,Spine L1 L4 BMD,1.0,16,False
+4,bone_density,Bone Density,Torso,female,body_legs_bmd,Legs BMD,0.9686699180004089,17,False
+4,bone_density,Bone Density,Torso,male,femur_total_mean_bmc,Femur Total Mean BMC,0.8647310385833811,18,False
+4,bone_density,Bone Density,Torso,female,body_total_bmd,Body Total BMD,0.8495881789568724,19,False
+4,bone_density,Bone Density,Torso,male,spine_l1_l4_bmc,Spine L1 L4 BMC,0.7703728984674423,20,False
+4,bone_density,Bone Density,Torso,male,body_head_bmc,Head BMC,0.7326715738752542,21,False
+4,bone_density,Bone Density,Torso,female,body_pelvis_bmd,Body Pelvis BMD,0.7015216195121883,22,False
+4,bone_density,Bone Density,Torso,female,body_legs_bmc,Legs BMC,0.5954781643915588,23,False
+4,bone_density,Bone Density,Torso,male,body_legs_bmc,Legs BMC,0.41690489624350935,24,False
+4,bone_density,Bone Density,Torso,male,body_total_bmd,Body Total BMD,0.3492001450248513,25,False
+4,bone_density,Bone Density,Torso,female,body_trunk_bmc,Trunk BMC,0.3228559731643407,26,False
+4,bone_density,Bone Density,Torso,female,body_pelvis_bmc,Body Pelvis BMC,0.23454117138219518,27,False
+4,bone_density,Bone Density,Torso,female,femur_total_mean_bmc,Femur Total Mean BMC,0.2175753903061436,28,False
+4,bone_density,Bone Density,Torso,female,spine_l1_l4_bmc,Spine L1 L4 BMC,0.058795773850457644,29,False
+4,bone_density,Bone Density,Torso,male,body_arms_bmc,Arms BMC,0.0,30,False
+4,bone_density,Bone Density,Torso,female,body_arms_bmc,Arms BMC,0.0,31,False
+4,bone_density,Bone Density,Torso,female,body_total_bmc,Body Total BMC,0.0,32,False
+5,blood_tests_lipids,Lipids,Arms,male,bt__hdl_cholesterol,BT HDL Cholesterol,1.2428006794716766,1,True
+5,blood_tests_lipids,Lipids,Arms,male,bt__triglycerides,BT Triglycerides,0.9974778149865877,2,True
+5,blood_tests_lipids,Lipids,Arms,female,bt__triglycerides,BT Triglycerides,0.6765726012784634,3,True
+5,blood_tests_lipids,Lipids,Arms,female,bt__hdl_cholesterol,BT HDL Cholesterol,0.0,4,True
+5,blood_tests_lipids,Lipids,Head,male,bt__hdl_cholesterol,BT HDL Cholesterol,1.8363789445312935,1,True
+5,blood_tests_lipids,Lipids,Head,male,bt__triglycerides,BT Triglycerides,1.5509394966815488,2,True
+5,blood_tests_lipids,Lipids,Head,female,bt__hdl_cholesterol,BT HDL Cholesterol,1.2882693549035358,3,True
+5,blood_tests_lipids,Lipids,Head,female,bt__triglycerides,BT Triglycerides,0.8260360031823676,4,True
+5,blood_tests_lipids,Lipids,Legs,female,bt__triglycerides,BT Triglycerides,2.0,1,True
+5,blood_tests_lipids,Lipids,Legs,male,bt__triglycerides,BT Triglycerides,1.7685216873007457,2,True
+5,blood_tests_lipids,Lipids,Legs,female,bt__hdl_cholesterol,BT HDL Cholesterol,1.1489791304071595,3,True
+5,blood_tests_lipids,Lipids,Legs,male,bt__hdl_cholesterol,BT HDL Cholesterol,1.0,4,True
+5,blood_tests_lipids,Lipids,Torso,female,bt__hdl_cholesterol,BT HDL Cholesterol,1.5137822132118997,1,True
+5,blood_tests_lipids,Lipids,Torso,male,bt__hdl_cholesterol,BT HDL Cholesterol,0.599008954919292,2,True
+5,blood_tests_lipids,Lipids,Torso,female,bt__triglycerides,BT Triglycerides,0.1458952178513205,3,True
+5,blood_tests_lipids,Lipids,Torso,male,bt__triglycerides,BT Triglycerides,0.0,4,True
+6,nightingale,Nightingale,Arms,male,L_HDL_FC,L Hdl Fc,2.0,1,True
+6,nightingale,Nightingale,Arms,male,L_HDL_L,L Hdl L,2.0,2,True
+6,nightingale,Nightingale,Arms,male,L_HDL_PL,L Hdl Pl,2.0,3,True
+6,nightingale,Nightingale,Arms,male,XL_HDL_P,Xl Hdl P,2.0,4,True
+6,nightingale,Nightingale,Arms,female,L_HDL_FC,L Hdl Fc,2.0,5,True
+6,nightingale,Nightingale,Arms,female,L_HDL_L,L Hdl L,2.0,6,True
+6,nightingale,Nightingale,Arms,female,L_HDL_PL,L Hdl Pl,2.0,7,True
+6,nightingale,Nightingale,Arms,male,HDL_size,Hdl Size,1.8536919815221204,8,True
+6,nightingale,Nightingale,Arms,female,HDL_size,Hdl Size,1.7863421556720318,9,True
+6,nightingale,Nightingale,Arms,male,VLDL_size,Vldl Size,1.4636342457211897,10,True
+6,nightingale,Nightingale,Arms,male,XL_VLDL_P,Xl Vldl P,1.3359577168699506,11,False
+6,nightingale,Nightingale,Arms,female,XL_VLDL_L,Xl Vldl L,1.045635566936288,12,False
+6,nightingale,Nightingale,Arms,male,L_VLDL_TG,L Vldl Tg,1.0,13,False
+6,nightingale,Nightingale,Arms,male,XL_VLDL_TG,Xl Vldl Tg,0.9829506128569487,14,False
+6,nightingale,Nightingale,Arms,female,L_HDL_P,L Hdl P,0.8529203113045933,15,False
+6,nightingale,Nightingale,Arms,female,L_VLDL_PL,L Vldl Pl,0.7689633528277617,16,False
+6,nightingale,Nightingale,Arms,female,VLDL_size,Vldl Size,0.6890954265622127,17,False
+6,nightingale,Nightingale,Arms,female,L_VLDL_FC,L Vldl Fc,0.6392466471107242,18,False
+6,nightingale,Nightingale,Arms,male,L_VLDL_PL,L Vldl Pl,0.43218691346289223,19,False
+6,nightingale,Nightingale,Arms,female,XL_VLDL_TG,Xl Vldl Tg,0.3497949716858407,20,False
+6,nightingale,Nightingale,Arms,female,L_VLDL_C,L Vldl C,0.34960079765863006,21,False
+6,nightingale,Nightingale,Arms,female,XL_HDL_P,Xl Hdl P,0.32952680816666025,22,False
+6,nightingale,Nightingale,Arms,male,L_VLDL_FC,L Vldl Fc,0.2360951101665826,23,False
+6,nightingale,Nightingale,Arms,male,L_HDL_P,L Hdl P,0.14020154819148117,24,False
+6,nightingale,Nightingale,Arms,male,L_VLDL_C,L Vldl C,0.054801960705537,25,False
+6,nightingale,Nightingale,Arms,female,L_VLDL_TG,L Vldl Tg,0.05322715890583324,26,False
+6,nightingale,Nightingale,Arms,male,XL_VLDL_L,Xl Vldl L,0.0,27,False
+6,nightingale,Nightingale,Arms,female,XL_VLDL_P,Xl Vldl P,0.0,28,False
+6,nightingale,Nightingale,Head,female,L_HDL_P,L Hdl P,1.956382158349252,1,True
+6,nightingale,Nightingale,Head,male,L_HDL_P,L Hdl P,1.876463373875922,2,True
+6,nightingale,Nightingale,Head,male,HDL_size,Hdl Size,1.6647570345913936,3,True
+6,nightingale,Nightingale,Head,female,XL_HDL_P,Xl Hdl P,1.4369129793936393,4,True
+6,nightingale,Nightingale,Head,male,XL_HDL_P,Xl Hdl P,1.364088004455381,5,True
+6,nightingale,Nightingale,Head,male,L_HDL_FC,L Hdl Fc,1.054210153616486,6,True
+6,nightingale,Nightingale,Head,male,XL_VLDL_L,Xl Vldl L,1.0524570841181653,7,True
+6,nightingale,Nightingale,Head,male,XL_VLDL_P,Xl Vldl P,0.9549457334659828,8,True
+6,nightingale,Nightingale,Head,male,L_HDL_L,L Hdl L,0.9534547912900014,9,True
+6,nightingale,Nightingale,Head,male,XL_VLDL_TG,Xl Vldl Tg,0.9187485964397906,10,True
+6,nightingale,Nightingale,Head,female,L_HDL_PL,L Hdl Pl,0.8259976928183929,11,False
+6,nightingale,Nightingale,Head,male,L_VLDL_PL,L Vldl Pl,0.7969886396514623,12,False
+6,nightingale,Nightingale,Head,male,L_VLDL_FC,L Vldl Fc,0.7558462797407954,13,False
+6,nightingale,Nightingale,Head,male,L_HDL_PL,L Hdl Pl,0.7386433194940504,14,False
+6,nightingale,Nightingale,Head,female,XL_VLDL_TG,Xl Vldl Tg,0.7298917888725517,15,False
+6,nightingale,Nightingale,Head,female,XL_VLDL_P,Xl Vldl P,0.7050403225713922,16,False
+6,nightingale,Nightingale,Head,female,L_HDL_FC,L Hdl Fc,0.6449018237096069,17,False
+6,nightingale,Nightingale,Head,female,L_VLDL_TG,L Vldl Tg,0.6448756166724386,18,False
+6,nightingale,Nightingale,Head,male,L_VLDL_C,L Vldl C,0.6181788531121973,19,False
+6,nightingale,Nightingale,Head,female,L_HDL_L,L Hdl L,0.5695872100382328,20,False
+6,nightingale,Nightingale,Head,male,VLDL_size,Vldl Size,0.5355800891631244,21,False
+6,nightingale,Nightingale,Head,male,L_VLDL_TG,L Vldl Tg,0.472745102299608,22,False
+6,nightingale,Nightingale,Head,female,VLDL_size,Vldl Size,0.4471423647961188,23,False
+6,nightingale,Nightingale,Head,female,L_VLDL_FC,L Vldl Fc,0.2880043757364333,24,False
+6,nightingale,Nightingale,Head,female,L_VLDL_PL,L Vldl Pl,0.20096799963743253,25,False
+6,nightingale,Nightingale,Head,female,L_VLDL_C,L Vldl C,0.0999558199490998,26,False
+6,nightingale,Nightingale,Head,female,HDL_size,Hdl Size,0.025333017858142674,27,False
+6,nightingale,Nightingale,Head,female,XL_VLDL_L,Xl Vldl L,0.0,28,False
+6,nightingale,Nightingale,Legs,male,L_VLDL_C,L Vldl C,2.0,1,True
+6,nightingale,Nightingale,Legs,male,L_VLDL_FC,L Vldl Fc,2.0,2,True
+6,nightingale,Nightingale,Legs,male,L_VLDL_PL,L Vldl Pl,2.0,3,True
+6,nightingale,Nightingale,Legs,female,L_VLDL_C,L Vldl C,2.0,4,True
+6,nightingale,Nightingale,Legs,female,L_VLDL_PL,L Vldl Pl,2.0,5,True
+6,nightingale,Nightingale,Legs,female,VLDL_size,Vldl Size,2.0,6,True
+6,nightingale,Nightingale,Legs,female,L_VLDL_TG,L Vldl Tg,1.9543781474598478,7,True
+6,nightingale,Nightingale,Legs,female,L_VLDL_FC,L Vldl Fc,1.882102850985987,8,True
+6,nightingale,Nightingale,Legs,male,VLDL_size,Vldl Size,1.8277214555939292,9,True
+6,nightingale,Nightingale,Legs,female,XL_VLDL_L,Xl Vldl L,1.7910599066847963,10,True
+6,nightingale,Nightingale,Legs,female,XL_VLDL_TG,Xl Vldl Tg,1.7503648659897735,11,False
+6,nightingale,Nightingale,Legs,male,XL_VLDL_L,Xl Vldl L,1.409071713362305,12,False
+6,nightingale,Nightingale,Legs,female,XL_VLDL_P,Xl Vldl P,1.1072450492368642,13,False
+6,nightingale,Nightingale,Legs,male,L_HDL_P,L Hdl P,1.0,14,False
+6,nightingale,Nightingale,Legs,male,XL_VLDL_TG,Xl Vldl Tg,1.0,15,False
+6,nightingale,Nightingale,Legs,male,L_VLDL_TG,L Vldl Tg,0.9891930444259021,16,False
+6,nightingale,Nightingale,Legs,female,XL_HDL_P,Xl Hdl P,0.8934214074685676,17,False
+6,nightingale,Nightingale,Legs,male,L_HDL_PL,L Hdl Pl,0.4472808743788613,18,False
+6,nightingale,Nightingale,Legs,female,HDL_size,Hdl Size,0.4297738646080053,19,False
+6,nightingale,Nightingale,Legs,male,L_HDL_FC,L Hdl Fc,0.38145395080920996,20,False
+6,nightingale,Nightingale,Legs,male,L_HDL_L,L Hdl L,0.37581752905169274,21,False
+6,nightingale,Nightingale,Legs,male,HDL_size,Hdl Size,0.29901020126513495,22,False
+6,nightingale,Nightingale,Legs,female,L_HDL_P,L Hdl P,0.26706464073727004,23,False
+6,nightingale,Nightingale,Legs,male,XL_HDL_P,Xl Hdl P,0.0,24,False
+6,nightingale,Nightingale,Legs,male,XL_VLDL_P,Xl Vldl P,0.0,25,False
+6,nightingale,Nightingale,Legs,female,L_HDL_FC,L Hdl Fc,0.0,26,False
+6,nightingale,Nightingale,Legs,female,L_HDL_L,L Hdl L,0.0,27,False
+6,nightingale,Nightingale,Legs,female,L_HDL_PL,L Hdl Pl,0.0,28,False
+6,nightingale,Nightingale,Torso,male,XL_VLDL_P,Xl Vldl P,2.0,1,True
+6,nightingale,Nightingale,Torso,female,XL_VLDL_L,Xl Vldl L,1.9586207637898236,2,True
+6,nightingale,Nightingale,Torso,male,L_VLDL_TG,L Vldl Tg,1.932904645644189,3,True
+6,nightingale,Nightingale,Torso,female,L_HDL_P,L Hdl P,1.8310855746691177,4,True
+6,nightingale,Nightingale,Torso,female,L_VLDL_TG,L Vldl Tg,1.7871719094801877,5,True
+6,nightingale,Nightingale,Torso,female,XL_VLDL_P,Xl Vldl P,1.6279126051157613,6,True
+6,nightingale,Nightingale,Torso,female,XL_VLDL_TG,Xl Vldl Tg,1.5981508761235148,7,True
+6,nightingale,Nightingale,Torso,female,XL_HDL_P,Xl Hdl P,1.595614626561948,8,True
+6,nightingale,Nightingale,Torso,male,XL_VLDL_TG,Xl Vldl Tg,1.4732167688221662,9,True
+6,nightingale,Nightingale,Torso,female,L_HDL_PL,L Hdl Pl,1.4719034845882084,10,True
+6,nightingale,Nightingale,Torso,male,XL_VLDL_L,Xl Vldl L,1.4400828966093393,11,False
+6,nightingale,Nightingale,Torso,female,L_HDL_FC,L Hdl Fc,1.3649485988563466,12,False
+6,nightingale,Nightingale,Torso,male,XL_HDL_P,Xl Hdl P,1.259802011449854,13,False
+6,nightingale,Nightingale,Torso,female,L_HDL_L,L Hdl L,1.2357100222867956,14,False
+6,nightingale,Nightingale,Torso,female,HDL_size,Hdl Size,1.0728740979917595,15,False
+6,nightingale,Nightingale,Torso,female,L_VLDL_FC,L Vldl Fc,1.0,16,False
+6,nightingale,Nightingale,Torso,male,L_VLDL_PL,L Vldl Pl,0.8619191611420469,17,False
+6,nightingale,Nightingale,Torso,female,L_VLDL_PL,L Vldl Pl,0.8439627038424384,18,False
+6,nightingale,Nightingale,Torso,male,L_VLDL_C,L Vldl C,0.7386158110880803,19,False
+6,nightingale,Nightingale,Torso,male,L_VLDL_FC,L Vldl Fc,0.7318928577196446,20,False
+6,nightingale,Nightingale,Torso,female,L_VLDL_C,L Vldl C,0.6468812149237444,21,False
+6,nightingale,Nightingale,Torso,male,L_HDL_P,L Hdl P,0.6444489309656254,22,False
+6,nightingale,Nightingale,Torso,female,VLDL_size,Vldl Size,0.45543782429815777,23,False
+6,nightingale,Nightingale,Torso,male,L_HDL_FC,L Hdl Fc,0.26200925412006826,24,False
+6,nightingale,Nightingale,Torso,male,HDL_size,Hdl Size,0.052255884697993055,25,False
+6,nightingale,Nightingale,Torso,male,L_HDL_PL,L Hdl Pl,0.014662337271762287,26,False
+6,nightingale,Nightingale,Torso,male,L_HDL_L,L Hdl L,0.0,27,False
+6,nightingale,Nightingale,Torso,male,VLDL_size,Vldl Size,0.0,28,False
+7,liver,Liver,Arms,female,liver_sound_speed,Liver Sound Speed,2.0,1,True
+7,liver,Liver,Arms,female,liver_elasticity,Liver Elasticity,1.6158290192090323,2,True
+7,liver,Liver,Arms,male,liver_elasticity,Liver Elasticity,0.8961950024111034,3,True
+7,liver,Liver,Arms,male,liver_sound_speed,Liver Sound Speed,0.8887333191732931,4,True
+7,liver,Liver,Arms,male,liver_viscosity,Liver Viscosity,0.7400587017841942,5,True
+7,liver,Liver,Arms,male,bt__alkaline_phosphatase,BT Alkaline Phosphatase,0.43753979482125244,6,True
+7,liver,Liver,Arms,female,bt__alkaline_phosphatase,BT Alkaline Phosphatase,0.0,7,True
+7,liver,Liver,Arms,female,liver_viscosity,Liver Viscosity,0.0,8,True
+7,liver,Liver,Head,male,bt__alkaline_phosphatase,BT Alkaline Phosphatase,1.5549760515949949,1,True
+7,liver,Liver,Head,female,liver_elasticity,Liver Elasticity,1.2428055448283186,2,True
+7,liver,Liver,Head,female,bt__alkaline_phosphatase,BT Alkaline Phosphatase,0.9381691231254201,3,True
+7,liver,Liver,Head,female,liver_viscosity,Liver Viscosity,0.766681018470975,4,True
+7,liver,Liver,Head,male,liver_viscosity,Liver Viscosity,0.4999252595430476,5,True
+7,liver,Liver,Head,male,liver_elasticity,Liver Elasticity,0.27611888970487475,6,True
+7,liver,Liver,Head,male,liver_sound_speed,Liver Sound Speed,0.0,7,True
+7,liver,Liver,Head,female,liver_sound_speed,Liver Sound Speed,0.0,8,True
+7,liver,Liver,Legs,male,liver_sound_speed,Liver Sound Speed,2.0,1,True
+7,liver,Liver,Legs,male,liver_viscosity,Liver Viscosity,2.0,2,True
+7,liver,Liver,Legs,female,liver_sound_speed,Liver Sound Speed,1.3407358189637826,3,True
+7,liver,Liver,Legs,female,liver_elasticity,Liver Elasticity,1.247362549079616,4,True
+7,liver,Liver,Legs,female,liver_viscosity,Liver Viscosity,1.13593294901331,5,True
+7,liver,Liver,Legs,female,bt__alkaline_phosphatase,BT Alkaline Phosphatase,1.039376621016073,6,True
+7,liver,Liver,Legs,male,liver_elasticity,Liver Elasticity,0.5412802774178247,7,True
+7,liver,Liver,Legs,male,bt__alkaline_phosphatase,BT Alkaline Phosphatase,0.25498684534242455,8,True
+7,liver,Liver,Torso,male,liver_elasticity,Liver Elasticity,2.0,1,True
+7,liver,Liver,Torso,male,bt__alkaline_phosphatase,BT Alkaline Phosphatase,1.916722653780063,2,True
+7,liver,Liver,Torso,female,liver_viscosity,Liver Viscosity,1.816772732664842,3,True
+7,liver,Liver,Torso,female,bt__alkaline_phosphatase,BT Alkaline Phosphatase,1.3493489436106443,4,True
+7,liver,Liver,Torso,female,liver_sound_speed,Liver Sound Speed,0.9483100194941934,5,True
+7,liver,Liver,Torso,male,liver_viscosity,Liver Viscosity,0.9127283280750338,6,True
+7,liver,Liver,Torso,male,liver_sound_speed,Liver Sound Speed,0.5240653313087539,7,True
+7,liver,Liver,Torso,female,liver_elasticity,Liver Elasticity,0.0,8,True
+8,sleep_group,Sleep,Arms,female,rdi,Rdi,1.9021087106213879,1,True
+8,sleep_group,Sleep,Arms,female,saturation_mean,Saturation Mean,1.0,2,True
+8,sleep_group,Sleep,Arms,male,saturation_mean,Saturation Mean,0.33428408984698826,3,True
+8,sleep_group,Sleep,Arms,female,heart_rate_mean_during_sleep,HR During Sleep,0.04183759443987169,4,True
+8,sleep_group,Sleep,Arms,male,heart_rate_mean_during_sleep,HR During Sleep,0.0,5,True
+8,sleep_group,Sleep,Arms,male,rdi,Rdi,0.0,6,True
+8,sleep_group,Sleep,Head,male,rdi,Rdi,1.39581089667998,1,True
+8,sleep_group,Sleep,Head,male,heart_rate_mean_during_sleep,HR During Sleep,1.211948474932896,2,True
+8,sleep_group,Sleep,Head,male,saturation_mean,Saturation Mean,0.8989687790926724,3,True
+8,sleep_group,Sleep,Head,female,saturation_mean,Saturation Mean,0.8568546785597697,4,True
+8,sleep_group,Sleep,Head,female,heart_rate_mean_during_sleep,HR During Sleep,0.7304793141951192,5,True
+8,sleep_group,Sleep,Head,female,rdi,Rdi,0.6800982667059519,6,True
+8,sleep_group,Sleep,Legs,male,saturation_mean,Saturation Mean,1.4422707877219885,1,True
+8,sleep_group,Sleep,Legs,male,rdi,Rdi,1.3335872431227975,2,True
+8,sleep_group,Sleep,Legs,female,heart_rate_mean_during_sleep,HR During Sleep,0.8368772903010598,3,True
+8,sleep_group,Sleep,Legs,male,heart_rate_mean_during_sleep,HR During Sleep,0.7624646126541981,4,True
+8,sleep_group,Sleep,Legs,female,saturation_mean,Saturation Mean,0.6469680383733913,5,True
+8,sleep_group,Sleep,Legs,female,rdi,Rdi,0.0,6,True
+8,sleep_group,Sleep,Torso,male,rdi,Rdi,2.0,1,True
+8,sleep_group,Sleep,Torso,female,heart_rate_mean_during_sleep,HR During Sleep,2.0,2,True
+8,sleep_group,Sleep,Torso,female,rdi,Rdi,1.967838933134785,3,True
+8,sleep_group,Sleep,Torso,female,saturation_mean,Saturation Mean,1.9246364844985264,4,True
+8,sleep_group,Sleep,Torso,male,heart_rate_mean_during_sleep,HR During Sleep,1.8521085893673526,5,True
+8,sleep_group,Sleep,Torso,male,saturation_mean,Saturation Mean,1.59883960622243,6,True
+9,lifestyle,Lifestyle,Arms,male,tea_cups_day,Tea Cups Day,2.0,1,True
+9,lifestyle,Lifestyle,Arms,male,work_hours_per_day,Work Hours Per Day,2.0,2,True
+9,lifestyle,Lifestyle,Arms,female,hours_computer_not_work,Hours Computer Not Work,2.0,3,True
+9,lifestyle,Lifestyle,Arms,female,vigorous_activity_minutes,Vigorous Activity,2.0,4,True
+9,lifestyle,Lifestyle,Arms,female,work_hours_per_day,Work Hours Per Day,2.0,5,True
+9,lifestyle,Lifestyle,Arms,female,moderate_activity_minutes,Moderate Activity,1.9094436689337069,6,True
+9,lifestyle,Lifestyle,Arms,male,coffee_cups_day,Coffee Cups Day,1.873648002762187,7,True
+9,lifestyle,Lifestyle,Arms,female,smoking_ordinal,Smoking Ordinal,1.8414278043255052,8,True
+9,lifestyle,Lifestyle,Arms,female,raw_veg_tablespoons,Raw Veg Tablespoons,1.8046722481041506,9,True
+9,lifestyle,Lifestyle,Arms,male,moderate_activity_minutes,Moderate Activity,1.7121512413723674,10,True
+9,lifestyle,Lifestyle,Arms,male,hours_watching_tv,Hours Watching Tv,1.6780956941264502,11,False
+9,lifestyle,Lifestyle,Arms,male,smoking_ordinal,Smoking Ordinal,1.6042197912537215,12,False
+9,lifestyle,Lifestyle,Arms,male,easy_wakeup_ordinal,Easy Wakeup Ordinal,1.5694713309304427,13,False
+9,lifestyle,Lifestyle,Arms,female,moderate_activity_days,Moderate Activity Days,1.5525057880107833,14,False
+9,lifestyle,Lifestyle,Arms,male,vigorous_activity_minutes,Vigorous Activity,1.5508409728538926,15,False
+9,lifestyle,Lifestyle,Arms,female,coffee_cups_day,Coffee Cups Day,1.5435472372622587,16,False
+9,lifestyle,Lifestyle,Arms,female,hours_watching_tv,Hours Watching Tv,1.495784826662745,17,False
+9,lifestyle,Lifestyle,Arms,male,chronotype_ordinal,Chronotype Ordinal,1.4755672238081703,18,False
+9,lifestyle,Lifestyle,Arms,female,daytime_sleepiness_ordinal,Daytime Sleepiness Ordinal,1.4395370520789557,19,False
+9,lifestyle,Lifestyle,Arms,male,fresh_fruit_day,Fresh Fruit Day,1.3627434334196136,20,False
+9,lifestyle,Lifestyle,Arms,female,easy_wakeup_ordinal,Easy Wakeup Ordinal,1.337618050267552,21,False
+9,lifestyle,Lifestyle,Arms,female,cooked_veg_tablespoons,Cooked Veg Tablespoons,1.2889056366591891,22,False
+9,lifestyle,Lifestyle,Arms,male,cooked_veg_tablespoons,Cooked Veg Tablespoons,1.2556194517454107,23,False
+9,lifestyle,Lifestyle,Arms,male,climb_stairs_ordinal,Stair Climbing,1.2434916195872483,24,False
+9,lifestyle,Lifestyle,Arms,male,manual_work_ordinal,Manual Work Ordinal,1.1498058695678026,25,False
+9,lifestyle,Lifestyle,Arms,male,moderate_activity_days,Moderate Activity Days,1.0970910614803941,26,False
+9,lifestyle,Lifestyle,Arms,male,hours_computer_not_work,Hours Computer Not Work,1.075041697979746,27,False
+9,lifestyle,Lifestyle,Arms,female,high_exercise_freq_ordinal,High Exercise Freq Ordinal,1.0661756514482508,28,False
+9,lifestyle,Lifestyle,Arms,male,alcohol_freq_ordinal,Alcohol Freq Ordinal,1.0,29,False
+9,lifestyle,Lifestyle,Arms,female,work_days_per_week,Work Days Per Week,1.0,30,False
+9,lifestyle,Lifestyle,Arms,female,manual_work_ordinal,Manual Work Ordinal,0.9845373221098254,31,False
+9,lifestyle,Lifestyle,Arms,male,hours_outdoors_summer,Hours Outdoors Summer,0.9782556392942616,32,False
+9,lifestyle,Lifestyle,Arms,female,chronotype_ordinal,Chronotype Ordinal,0.8190231431116318,33,False
+9,lifestyle,Lifestyle,Arms,male,high_exercise_duration_ordinal,High Exercise Duration Ordinal,0.8067868604465885,34,False
+9,lifestyle,Lifestyle,Arms,male,raw_veg_tablespoons,Raw Veg Tablespoons,0.7925755915810614,35,False
+9,lifestyle,Lifestyle,Arms,female,water_glasses_day,Water Glasses Day,0.7787170642562352,36,False
+9,lifestyle,Lifestyle,Arms,female,hours_driving,Hours Driving,0.7461094371122385,37,False
+9,lifestyle,Lifestyle,Arms,male,water_glasses_day,Water Glasses Day,0.7234672052198294,38,False
+9,lifestyle,Lifestyle,Arms,female,fresh_fruit_day,Fresh Fruit Day,0.7051785842595153,39,False
+9,lifestyle,Lifestyle,Arms,female,alcohol_freq_ordinal,Alcohol Freq Ordinal,0.6438731791219984,40,False
+9,lifestyle,Lifestyle,Arms,male,sleep_hours,Sleep Hours in 24H,0.6163927556442298,41,False
+9,lifestyle,Lifestyle,Arms,male,work_days_per_week,Work Days Per Week,0.6012056285201519,42,False
+9,lifestyle,Lifestyle,Arms,male,walking_days_per_week,Walking Days Per Week,0.5223308452842044,43,False
+9,lifestyle,Lifestyle,Arms,male,high_exercise_freq_ordinal,High Exercise Freq Ordinal,0.4188767367890683,44,False
+9,lifestyle,Lifestyle,Arms,female,tea_cups_day,Tea Cups Day,0.39427905814281644,45,False
+9,lifestyle,Lifestyle,Arms,female,climb_stairs_ordinal,Stair Climbing,0.3371587936052545,46,False
+9,lifestyle,Lifestyle,Arms,female,walking_days_per_week,Walking Days Per Week,0.32160536573656373,47,False
+9,lifestyle,Lifestyle,Arms,female,high_exercise_duration_ordinal,High Exercise Duration Ordinal,0.2681317646413315,48,False
+9,lifestyle,Lifestyle,Arms,male,hours_driving,Hours Driving,0.18841971832079363,49,False
+9,lifestyle,Lifestyle,Arms,male,hours_outdoors_winter,Hours Outdoors Winter,0.17354676609011416,50,False
+9,lifestyle,Lifestyle,Arms,male,vigorous_activity_days,Vigorous Activity Days,0.1498748115183709,51,False
+9,lifestyle,Lifestyle,Arms,female,bread_slices_week,Bread Slices Week,0.07366669376296803,52,False
+9,lifestyle,Lifestyle,Arms,male,bread_slices_week,Bread Slices Week,0.024913753573010372,53,False
+9,lifestyle,Lifestyle,Arms,female,hours_outdoors_summer,Hours Outdoors Summer,0.0010964885357803201,54,False
+9,lifestyle,Lifestyle,Arms,male,daytime_sleepiness_ordinal,Daytime Sleepiness Ordinal,0.0,55,False
+9,lifestyle,Lifestyle,Arms,male,walking_pace_ordinal,Walking Pace Ordinal,0.0,56,False
+9,lifestyle,Lifestyle,Arms,female,hours_outdoors_winter,Hours Outdoors Winter,0.0,57,False
+9,lifestyle,Lifestyle,Arms,female,sleep_hours,Sleep Hours in 24H,0.0,58,False
+9,lifestyle,Lifestyle,Arms,female,vigorous_activity_days,Vigorous Activity Days,0.0,59,False
+9,lifestyle,Lifestyle,Arms,female,walking_pace_ordinal,Walking Pace Ordinal,0.0,60,False
+9,lifestyle,Lifestyle,Head,female,manual_work_ordinal,Manual Work Ordinal,2.0,1,True
+9,lifestyle,Lifestyle,Head,male,bread_slices_week,Bread Slices Week,1.9705837337078136,2,True
+9,lifestyle,Lifestyle,Head,male,fresh_fruit_day,Fresh Fruit Day,1.938254867702772,3,True
+9,lifestyle,Lifestyle,Head,female,coffee_cups_day,Coffee Cups Day,1.8815380831458346,4,True
+9,lifestyle,Lifestyle,Head,male,hours_driving,Hours Driving,1.8178420707106024,5,True
+9,lifestyle,Lifestyle,Head,female,sleep_hours,Sleep Hours in 24H,1.7373173041318202,6,True
+9,lifestyle,Lifestyle,Head,male,work_days_per_week,Work Days Per Week,1.7214223190968045,7,True
+9,lifestyle,Lifestyle,Head,female,moderate_activity_days,Moderate Activity Days,1.6795606920615718,8,True
+9,lifestyle,Lifestyle,Head,female,hours_outdoors_winter,Hours Outdoors Winter,1.6638993650158547,9,True
+9,lifestyle,Lifestyle,Head,female,hours_watching_tv,Hours Watching Tv,1.643629178512281,10,True
+9,lifestyle,Lifestyle,Head,male,hours_computer_not_work,Hours Computer Not Work,1.5055885971691585,11,False
+9,lifestyle,Lifestyle,Head,female,tea_cups_day,Tea Cups Day,1.4731795585909768,12,False
+9,lifestyle,Lifestyle,Head,female,walking_pace_ordinal,Walking Pace Ordinal,1.4235737115402625,13,False
+9,lifestyle,Lifestyle,Head,male,manual_work_ordinal,Manual Work Ordinal,1.3802426740237592,14,False
+9,lifestyle,Lifestyle,Head,female,alcohol_freq_ordinal,Alcohol Freq Ordinal,1.3239816022158417,15,False
+9,lifestyle,Lifestyle,Head,male,climb_stairs_ordinal,Stair Climbing,1.1524097469123733,16,False
+9,lifestyle,Lifestyle,Head,male,alcohol_freq_ordinal,Alcohol Freq Ordinal,1.0151218182760182,17,False
+9,lifestyle,Lifestyle,Head,male,high_exercise_freq_ordinal,High Exercise Freq Ordinal,1.0,18,False
+9,lifestyle,Lifestyle,Head,male,hours_outdoors_summer,Hours Outdoors Summer,1.0,19,False
+9,lifestyle,Lifestyle,Head,male,smoking_ordinal,Smoking Ordinal,1.0,20,False
+9,lifestyle,Lifestyle,Head,male,walking_days_per_week,Walking Days Per Week,1.0,21,False
+9,lifestyle,Lifestyle,Head,female,hours_outdoors_summer,Hours Outdoors Summer,1.0,22,False
+9,lifestyle,Lifestyle,Head,female,fresh_fruit_day,Fresh Fruit Day,0.9763921199236143,23,False
+9,lifestyle,Lifestyle,Head,male,high_exercise_duration_ordinal,High Exercise Duration Ordinal,0.9329545566913693,24,False
+9,lifestyle,Lifestyle,Head,female,high_exercise_duration_ordinal,High Exercise Duration Ordinal,0.909891534818533,25,False
+9,lifestyle,Lifestyle,Head,female,vigorous_activity_minutes,Vigorous Activity,0.909638330601499,26,False
+9,lifestyle,Lifestyle,Head,female,water_glasses_day,Water Glasses Day,0.8559555322855841,27,False
+9,lifestyle,Lifestyle,Head,male,easy_wakeup_ordinal,Easy Wakeup Ordinal,0.8388629098196121,28,False
+9,lifestyle,Lifestyle,Head,male,cooked_veg_tablespoons,Cooked Veg Tablespoons,0.8049299908913563,29,False
+9,lifestyle,Lifestyle,Head,female,cooked_veg_tablespoons,Cooked Veg Tablespoons,0.7994907652478971,30,False
+9,lifestyle,Lifestyle,Head,male,moderate_activity_days,Moderate Activity Days,0.7199779865011401,31,False
+9,lifestyle,Lifestyle,Head,male,hours_outdoors_winter,Hours Outdoors Winter,0.6988589914023013,32,False
+9,lifestyle,Lifestyle,Head,male,tea_cups_day,Tea Cups Day,0.6912295481350832,33,False
+9,lifestyle,Lifestyle,Head,female,vigorous_activity_days,Vigorous Activity Days,0.6880298108161552,34,False
+9,lifestyle,Lifestyle,Head,female,daytime_sleepiness_ordinal,Daytime Sleepiness Ordinal,0.6617829756786551,35,False
+9,lifestyle,Lifestyle,Head,female,raw_veg_tablespoons,Raw Veg Tablespoons,0.6565979853732392,36,False
+9,lifestyle,Lifestyle,Head,male,raw_veg_tablespoons,Raw Veg Tablespoons,0.6468693614553154,37,False
+9,lifestyle,Lifestyle,Head,female,walking_days_per_week,Walking Days Per Week,0.6330615902477317,38,False
+9,lifestyle,Lifestyle,Head,male,sleep_hours,Sleep Hours in 24H,0.605123445866976,39,False
+9,lifestyle,Lifestyle,Head,female,high_exercise_freq_ordinal,High Exercise Freq Ordinal,0.5874349399242471,40,False
+9,lifestyle,Lifestyle,Head,male,coffee_cups_day,Coffee Cups Day,0.583106853751425,41,False
+9,lifestyle,Lifestyle,Head,male,walking_pace_ordinal,Walking Pace Ordinal,0.5157701276812321,42,False
+9,lifestyle,Lifestyle,Head,female,work_days_per_week,Work Days Per Week,0.4876116390882397,43,False
+9,lifestyle,Lifestyle,Head,male,work_hours_per_day,Work Hours Per Day,0.4625694921107378,44,False
+9,lifestyle,Lifestyle,Head,male,daytime_sleepiness_ordinal,Daytime Sleepiness Ordinal,0.4425958233402107,45,False
+9,lifestyle,Lifestyle,Head,female,climb_stairs_ordinal,Stair Climbing,0.4410391122893581,46,False
+9,lifestyle,Lifestyle,Head,male,moderate_activity_minutes,Moderate Activity,0.3752782662963613,47,False
+9,lifestyle,Lifestyle,Head,female,hours_driving,Hours Driving,0.30586354079693695,48,False
+9,lifestyle,Lifestyle,Head,male,water_glasses_day,Water Glasses Day,0.2941946938739788,49,False
+9,lifestyle,Lifestyle,Head,female,bread_slices_week,Bread Slices Week,0.26107345879420724,50,False
+9,lifestyle,Lifestyle,Head,male,vigorous_activity_days,Vigorous Activity Days,0.1280870767682969,51,False
+9,lifestyle,Lifestyle,Head,female,hours_computer_not_work,Hours Computer Not Work,0.12211825426821882,52,False
+9,lifestyle,Lifestyle,Head,female,easy_wakeup_ordinal,Easy Wakeup Ordinal,0.11266751159144368,53,False
+9,lifestyle,Lifestyle,Head,female,smoking_ordinal,Smoking Ordinal,0.04244104027557439,54,False
+9,lifestyle,Lifestyle,Head,male,chronotype_ordinal,Chronotype Ordinal,0.0,55,False
+9,lifestyle,Lifestyle,Head,male,hours_watching_tv,Hours Watching Tv,0.0,56,False
+9,lifestyle,Lifestyle,Head,male,vigorous_activity_minutes,Vigorous Activity,0.0,57,False
+9,lifestyle,Lifestyle,Head,female,chronotype_ordinal,Chronotype Ordinal,0.0,58,False
+9,lifestyle,Lifestyle,Head,female,moderate_activity_minutes,Moderate Activity,0.0,59,False
+9,lifestyle,Lifestyle,Head,female,work_hours_per_day,Work Hours Per Day,0.0,60,False
+9,lifestyle,Lifestyle,Legs,male,daytime_sleepiness_ordinal,Daytime Sleepiness Ordinal,2.0,1,True
+9,lifestyle,Lifestyle,Legs,female,sleep_hours,Sleep Hours in 24H,2.0,2,True
+9,lifestyle,Lifestyle,Legs,female,walking_days_per_week,Walking Days Per Week,2.0,3,True
+9,lifestyle,Lifestyle,Legs,female,water_glasses_day,Water Glasses Day,2.0,4,True
+9,lifestyle,Lifestyle,Legs,male,cooked_veg_tablespoons,Cooked Veg Tablespoons,1.9494147567536215,5,True
+9,lifestyle,Lifestyle,Legs,male,water_glasses_day,Water Glasses Day,1.892088963410568,6,True
+9,lifestyle,Lifestyle,Legs,female,vigorous_activity_days,Vigorous Activity Days,1.8699024100752828,7,True
+9,lifestyle,Lifestyle,Legs,male,work_days_per_week,Work Days Per Week,1.8306112068571478,8,True
+9,lifestyle,Lifestyle,Legs,female,work_days_per_week,Work Days Per Week,1.7175255266029266,9,True
+9,lifestyle,Lifestyle,Legs,female,climb_stairs_ordinal,Stair Climbing,1.7148040041180894,10,True
+9,lifestyle,Lifestyle,Legs,female,hours_driving,Hours Driving,1.6938508847696414,11,False
+9,lifestyle,Lifestyle,Legs,female,high_exercise_duration_ordinal,High Exercise Duration Ordinal,1.5699322446491966,12,False
+9,lifestyle,Lifestyle,Legs,female,moderate_activity_minutes,Moderate Activity,1.538312535666819,13,False
+9,lifestyle,Lifestyle,Legs,male,walking_days_per_week,Walking Days Per Week,1.487943523592929,14,False
+9,lifestyle,Lifestyle,Legs,female,high_exercise_freq_ordinal,High Exercise Freq Ordinal,1.4160332534634676,15,False
+9,lifestyle,Lifestyle,Legs,male,coffee_cups_day,Coffee Cups Day,1.4028041768967496,16,False
+9,lifestyle,Lifestyle,Legs,female,chronotype_ordinal,Chronotype Ordinal,1.3609396247301353,17,False
+9,lifestyle,Lifestyle,Legs,female,manual_work_ordinal,Manual Work Ordinal,1.3499348232881236,18,False
+9,lifestyle,Lifestyle,Legs,male,bread_slices_week,Bread Slices Week,1.3404370765658336,19,False
+9,lifestyle,Lifestyle,Legs,female,daytime_sleepiness_ordinal,Daytime Sleepiness Ordinal,1.3115773416226566,20,False
+9,lifestyle,Lifestyle,Legs,female,alcohol_freq_ordinal,Alcohol Freq Ordinal,1.2892907265208404,21,False
+9,lifestyle,Lifestyle,Legs,female,hours_outdoors_summer,Hours Outdoors Summer,1.285080940002329,22,False
+9,lifestyle,Lifestyle,Legs,male,chronotype_ordinal,Chronotype Ordinal,1.246644049988468,23,False
+9,lifestyle,Lifestyle,Legs,male,walking_pace_ordinal,Walking Pace Ordinal,1.2409609429575734,24,False
+9,lifestyle,Lifestyle,Legs,male,sleep_hours,Sleep Hours in 24H,1.1226045133080889,25,False
+9,lifestyle,Lifestyle,Legs,male,raw_veg_tablespoons,Raw Veg Tablespoons,1.1207608552268793,26,False
+9,lifestyle,Lifestyle,Legs,female,bread_slices_week,Bread Slices Week,1.0904468406103165,27,False
+9,lifestyle,Lifestyle,Legs,male,vigorous_activity_minutes,Vigorous Activity,1.0474570897901276,28,False
+9,lifestyle,Lifestyle,Legs,female,easy_wakeup_ordinal,Easy Wakeup Ordinal,1.0123675385651234,29,False
+9,lifestyle,Lifestyle,Legs,male,fresh_fruit_day,Fresh Fruit Day,1.0,30,False
+9,lifestyle,Lifestyle,Legs,male,high_exercise_duration_ordinal,High Exercise Duration Ordinal,1.0,31,False
+9,lifestyle,Lifestyle,Legs,male,hours_outdoors_winter,Hours Outdoors Winter,1.0,32,False
+9,lifestyle,Lifestyle,Legs,male,manual_work_ordinal,Manual Work Ordinal,1.0,33,False
+9,lifestyle,Lifestyle,Legs,male,moderate_activity_minutes,Moderate Activity,1.0,34,False
+9,lifestyle,Lifestyle,Legs,male,smoking_ordinal,Smoking Ordinal,1.0,35,False
+9,lifestyle,Lifestyle,Legs,female,cooked_veg_tablespoons,Cooked Veg Tablespoons,1.0,36,False
+9,lifestyle,Lifestyle,Legs,female,smoking_ordinal,Smoking Ordinal,1.0,37,False
+9,lifestyle,Lifestyle,Legs,female,hours_computer_not_work,Hours Computer Not Work,0.9876671232523824,38,False
+9,lifestyle,Lifestyle,Legs,female,work_hours_per_day,Work Hours Per Day,0.8676086250976901,39,False
+9,lifestyle,Lifestyle,Legs,female,hours_outdoors_winter,Hours Outdoors Winter,0.8517923678700268,40,False
+9,lifestyle,Lifestyle,Legs,female,vigorous_activity_minutes,Vigorous Activity,0.8379789666723672,41,False
+9,lifestyle,Lifestyle,Legs,male,hours_driving,Hours Driving,0.8346404316967497,42,False
+9,lifestyle,Lifestyle,Legs,male,vigorous_activity_days,Vigorous Activity Days,0.8207992154881907,43,False
+9,lifestyle,Lifestyle,Legs,male,hours_outdoors_summer,Hours Outdoors Summer,0.7245858543950038,44,False
+9,lifestyle,Lifestyle,Legs,female,walking_pace_ordinal,Walking Pace Ordinal,0.7062948903061987,45,False
+9,lifestyle,Lifestyle,Legs,male,moderate_activity_days,Moderate Activity Days,0.5782505962114185,46,False
+9,lifestyle,Lifestyle,Legs,male,hours_watching_tv,Hours Watching Tv,0.5400738839713521,47,False
+9,lifestyle,Lifestyle,Legs,male,hours_computer_not_work,Hours Computer Not Work,0.47273215418677467,48,False
+9,lifestyle,Lifestyle,Legs,male,high_exercise_freq_ordinal,High Exercise Freq Ordinal,0.4652490635052523,49,False
+9,lifestyle,Lifestyle,Legs,female,tea_cups_day,Tea Cups Day,0.46444273066282127,50,False
+9,lifestyle,Lifestyle,Legs,female,hours_watching_tv,Hours Watching Tv,0.36544979995682486,51,False
+9,lifestyle,Lifestyle,Legs,male,work_hours_per_day,Work Hours Per Day,0.33734407237507946,52,False
+9,lifestyle,Lifestyle,Legs,male,tea_cups_day,Tea Cups Day,0.10095633408351057,53,False
+9,lifestyle,Lifestyle,Legs,male,alcohol_freq_ordinal,Alcohol Freq Ordinal,0.07863751023713593,54,False
+9,lifestyle,Lifestyle,Legs,male,easy_wakeup_ordinal,Easy Wakeup Ordinal,0.042294529264229414,55,False
+9,lifestyle,Lifestyle,Legs,male,climb_stairs_ordinal,Stair Climbing,0.0,56,False
+9,lifestyle,Lifestyle,Legs,female,coffee_cups_day,Coffee Cups Day,0.0,57,False
+9,lifestyle,Lifestyle,Legs,female,fresh_fruit_day,Fresh Fruit Day,0.0,58,False
+9,lifestyle,Lifestyle,Legs,female,moderate_activity_days,Moderate Activity Days,0.0,59,False
+9,lifestyle,Lifestyle,Legs,female,raw_veg_tablespoons,Raw Veg Tablespoons,0.0,60,False
+9,lifestyle,Lifestyle,Torso,male,hours_watching_tv,Hours Watching Tv,2.0,1,True
+9,lifestyle,Lifestyle,Torso,male,vigorous_activity_days,Vigorous Activity Days,2.0,2,True
+9,lifestyle,Lifestyle,Torso,female,fresh_fruit_day,Fresh Fruit Day,2.0,3,True
+9,lifestyle,Lifestyle,Torso,male,high_exercise_freq_ordinal,High Exercise Freq Ordinal,1.9999509528953476,4,True
+9,lifestyle,Lifestyle,Torso,male,moderate_activity_days,Moderate Activity Days,1.9907885280883302,5,True
+9,lifestyle,Lifestyle,Torso,female,hours_outdoors_winter,Hours Outdoors Winter,1.9559156048622162,6,True
+9,lifestyle,Lifestyle,Torso,female,tea_cups_day,Tea Cups Day,1.9038618221300059,7,True
+9,lifestyle,Lifestyle,Torso,female,walking_pace_ordinal,Walking Pace Ordinal,1.8737509580426557,8,True
+9,lifestyle,Lifestyle,Torso,male,water_glasses_day,Water Glasses Day,1.8647488142379103,9,True
+9,lifestyle,Lifestyle,Torso,female,raw_veg_tablespoons,Raw Veg Tablespoons,1.8186999793172742,10,True
+9,lifestyle,Lifestyle,Torso,female,coffee_cups_day,Coffee Cups Day,1.7935819541052345,11,False
+9,lifestyle,Lifestyle,Torso,male,smoking_ordinal,Smoking Ordinal,1.761599467374266,12,False
+9,lifestyle,Lifestyle,Torso,male,chronotype_ordinal,Chronotype Ordinal,1.7091920607588151,13,False
+9,lifestyle,Lifestyle,Torso,male,hours_outdoors_summer,Hours Outdoors Summer,1.707933708483742,14,False
+9,lifestyle,Lifestyle,Torso,female,vigorous_activity_days,Vigorous Activity Days,1.6503522993544595,15,False
+9,lifestyle,Lifestyle,Torso,female,water_glasses_day,Water Glasses Day,1.5933252565371439,16,False
+9,lifestyle,Lifestyle,Torso,female,bread_slices_week,Bread Slices Week,1.5707840285948795,17,False
+9,lifestyle,Lifestyle,Torso,male,raw_veg_tablespoons,Raw Veg Tablespoons,1.5687480820241617,18,False
+9,lifestyle,Lifestyle,Torso,female,sleep_hours,Sleep Hours in 24H,1.5658137061895805,19,False
+9,lifestyle,Lifestyle,Torso,female,moderate_activity_minutes,Moderate Activity,1.5298408162661952,20,False
+9,lifestyle,Lifestyle,Torso,male,walking_days_per_week,Walking Days Per Week,1.4801753254128072,21,False
+9,lifestyle,Lifestyle,Torso,male,high_exercise_duration_ordinal,High Exercise Duration Ordinal,1.422565083910539,22,False
+9,lifestyle,Lifestyle,Torso,male,climb_stairs_ordinal,Stair Climbing,1.3405925960976015,23,False
+9,lifestyle,Lifestyle,Torso,male,alcohol_freq_ordinal,Alcohol Freq Ordinal,1.3337139028142775,24,False
+9,lifestyle,Lifestyle,Torso,female,chronotype_ordinal,Chronotype Ordinal,1.2589981419592404,25,False
+9,lifestyle,Lifestyle,Torso,male,moderate_activity_minutes,Moderate Activity,1.2067224820899072,26,False
+9,lifestyle,Lifestyle,Torso,female,hours_computer_not_work,Hours Computer Not Work,1.1917126449946953,27,False
+9,lifestyle,Lifestyle,Torso,male,hours_outdoors_winter,Hours Outdoors Winter,1.155038053277196,28,False
+9,lifestyle,Lifestyle,Torso,female,climb_stairs_ordinal,Stair Climbing,1.133490619500172,29,False
+9,lifestyle,Lifestyle,Torso,male,walking_pace_ordinal,Walking Pace Ordinal,1.1255176585078421,30,False
+9,lifestyle,Lifestyle,Torso,female,work_hours_per_day,Work Hours Per Day,1.0381369080028575,31,False
+9,lifestyle,Lifestyle,Torso,male,easy_wakeup_ordinal,Easy Wakeup Ordinal,1.0315626771087563,32,False
+9,lifestyle,Lifestyle,Torso,male,vigorous_activity_minutes,Vigorous Activity,1.0092854033729473,33,False
+9,lifestyle,Lifestyle,Torso,male,cooked_veg_tablespoons,Cooked Veg Tablespoons,1.0,34,False
+9,lifestyle,Lifestyle,Torso,male,hours_driving,Hours Driving,1.0,35,False
+9,lifestyle,Lifestyle,Torso,male,sleep_hours,Sleep Hours in 24H,1.0,36,False
+9,lifestyle,Lifestyle,Torso,female,cooked_veg_tablespoons,Cooked Veg Tablespoons,1.0,37,False
+9,lifestyle,Lifestyle,Torso,female,high_exercise_duration_ordinal,High Exercise Duration Ordinal,1.0,38,False
+9,lifestyle,Lifestyle,Torso,female,high_exercise_freq_ordinal,High Exercise Freq Ordinal,1.0,39,False
+9,lifestyle,Lifestyle,Torso,female,hours_driving,Hours Driving,1.0,40,False
+9,lifestyle,Lifestyle,Torso,female,hours_watching_tv,Hours Watching Tv,1.0,41,False
+9,lifestyle,Lifestyle,Torso,male,daytime_sleepiness_ordinal,Daytime Sleepiness Ordinal,0.9961706764219274,42,False
+9,lifestyle,Lifestyle,Torso,male,fresh_fruit_day,Fresh Fruit Day,0.9857007419822625,43,False
+9,lifestyle,Lifestyle,Torso,male,manual_work_ordinal,Manual Work Ordinal,0.9715753841883972,44,False
+9,lifestyle,Lifestyle,Torso,female,walking_days_per_week,Walking Days Per Week,0.8781660164637204,45,False
+9,lifestyle,Lifestyle,Torso,female,easy_wakeup_ordinal,Easy Wakeup Ordinal,0.8750779111313772,46,False
+9,lifestyle,Lifestyle,Torso,female,work_days_per_week,Work Days Per Week,0.799744624281929,47,False
+9,lifestyle,Lifestyle,Torso,female,smoking_ordinal,Smoking Ordinal,0.7791389354532339,48,False
+9,lifestyle,Lifestyle,Torso,female,alcohol_freq_ordinal,Alcohol Freq Ordinal,0.7650372942805459,49,False
+9,lifestyle,Lifestyle,Torso,female,hours_outdoors_summer,Hours Outdoors Summer,0.7549849853284638,50,False
+9,lifestyle,Lifestyle,Torso,female,manual_work_ordinal,Manual Work Ordinal,0.6911149117573924,51,False
+9,lifestyle,Lifestyle,Torso,male,tea_cups_day,Tea Cups Day,0.6817137725164285,52,False
+9,lifestyle,Lifestyle,Torso,female,moderate_activity_days,Moderate Activity Days,0.6486245070801078,53,False
+9,lifestyle,Lifestyle,Torso,male,bread_slices_week,Bread Slices Week,0.4927445518989103,54,False
+9,lifestyle,Lifestyle,Torso,male,work_hours_per_day,Work Hours Per Day,0.34155640472521054,55,False
+9,lifestyle,Lifestyle,Torso,male,coffee_cups_day,Coffee Cups Day,0.33721088039916974,56,False
+9,lifestyle,Lifestyle,Torso,male,work_days_per_week,Work Days Per Week,0.29043228051046593,57,False
+9,lifestyle,Lifestyle,Torso,female,vigorous_activity_minutes,Vigorous Activity,0.16501560257742914,58,False
+9,lifestyle,Lifestyle,Torso,male,hours_computer_not_work,Hours Computer Not Work,0.13124261111950244,59,False
+9,lifestyle,Lifestyle,Torso,female,daytime_sleepiness_ordinal,Daytime Sleepiness Ordinal,0.0,60,False
+10,anthropometric_group,Anthropometric,Arms,female,hips,Hips,2.0,1,True
+10,anthropometric_group,Anthropometric,Arms,male,hips,Hips,1.7137644046374445,2,True
+10,anthropometric_group,Anthropometric,Arms,female,waist,Waist,1.1386984176318051,3,True
+10,anthropometric_group,Anthropometric,Arms,male,waist,Waist,0.8400890953417708,4,True
+10,anthropometric_group,Anthropometric,Head,male,hips,Hips,1.3927202275300972,1,True
+10,anthropometric_group,Anthropometric,Head,female,hips,Hips,0.5888236989592203,2,True
+10,anthropometric_group,Anthropometric,Head,male,waist,Waist,0.1274466376287074,3,True
+10,anthropometric_group,Anthropometric,Head,female,waist,Waist,0.0,4,True
+10,anthropometric_group,Anthropometric,Legs,female,waist,Waist,1.6743773895497966,1,True
+10,anthropometric_group,Anthropometric,Legs,female,hips,Hips,0.9874854762504437,2,True
+10,anthropometric_group,Anthropometric,Legs,male,hips,Hips,0.0,3,True
+10,anthropometric_group,Anthropometric,Legs,male,waist,Waist,0.0,4,True
+10,anthropometric_group,Anthropometric,Torso,male,waist,Waist,2.0,1,True
+10,anthropometric_group,Anthropometric,Torso,male,hips,Hips,1.8637866289815683,2,True
+10,anthropometric_group,Anthropometric,Torso,female,waist,Waist,1.3694907739472448,3,True
+10,anthropometric_group,Anthropometric,Torso,female,hips,Hips,0.6978566112638747,4,True
+11,body_composition,Body Composition,Arms,male,body_comp_arms_lean_mass,Arms Lean Mass,2.0,1,True
+11,body_composition,Body Composition,Arms,male,body_comp_arms_tissue_mass,Arms Tissue Mass,2.0,2,True
+11,body_composition,Body Composition,Arms,male,body_comp_gynoid_fat_mass,Gynoid Fat Mass,2.0,3,True
+11,body_composition,Body Composition,Arms,male,body_comp_gynoid_tissue_mass,Gynoid Tissue Mass,2.0,4,True
+11,body_composition,Body Composition,Arms,male,body_comp_legs_fat_mass,Legs Fat Mass,2.0,5,True
+11,body_composition,Body Composition,Arms,female,body_comp_arms_fat_mass,Arms Fat Mass,2.0,6,True
+11,body_composition,Body Composition,Arms,female,body_comp_arms_lean_mass,Arms Lean Mass,2.0,7,True
+11,body_composition,Body Composition,Arms,female,body_comp_arms_tissue_mass,Arms Tissue Mass,2.0,8,True
+11,body_composition,Body Composition,Arms,female,body_comp_gynoid_fat_mass,Gynoid Fat Mass,2.0,9,True
+11,body_composition,Body Composition,Arms,female,height,Height,2.0,10,True
+11,body_composition,Body Composition,Arms,female,body_comp_gynoid_tissue_mass,Gynoid Tissue Mass,1.966807403756038,11,False
+11,body_composition,Body Composition,Arms,male,body_comp_total_fat_mass,Total Fat Mass,1.90193093722516,12,False
+11,body_composition,Body Composition,Arms,male,height,Height,1.7749198235796606,13,False
+11,body_composition,Body Composition,Arms,male,body_comp_trunk_fat_mass,Trunk Fat Mass,1.7044715513650242,14,False
+11,body_composition,Body Composition,Arms,male,body_comp_trunk_lean_mass,Trunk Lean Mass,1.5980786766056625,15,False
+11,body_composition,Body Composition,Arms,female,body_comp_total_fat_mass,Total Fat Mass,1.524203930059016,16,False
+11,body_composition,Body Composition,Arms,female,body_comp_legs_fat_mass,Legs Fat Mass,1.484301618964357,17,False
+11,body_composition,Body Composition,Arms,male,body_comp_android_fat_mass,Android Fat Mass,1.41211871823047,18,False
+11,body_composition,Body Composition,Arms,female,body_comp_trunk_fat_mass,Trunk Fat Mass,1.3217904264051237,19,False
+11,body_composition,Body Composition,Arms,male,body_comp_arms_fat_mass,Arms Fat Mass,1.1845900126475473,20,False
+11,body_composition,Body Composition,Arms,male,body_comp_android_tissue_mass,Android Tissue Mass,1.168657334292607,21,False
+11,body_composition,Body Composition,Arms,female,waist,Waist,1.140160015085118,22,False
+11,body_composition,Body Composition,Arms,female,body_comp_total_bone_mass,Total Bone Mass,1.1380618042476853,23,False
+11,body_composition,Body Composition,Arms,female,total_scan_vat_area,Total Scan Vat Area,1.0615372967027932,24,False
+11,body_composition,Body Composition,Arms,male,body_comp_total_lean_mass,Total Lean Mass,1.0479280046524566,25,False
+11,body_composition,Body Composition,Arms,female,body_comp_trunk_lean_mass,Trunk Lean Mass,1.0343480006240446,26,False
+11,body_composition,Body Composition,Arms,male,body_comp_total_bone_mass,Total Bone Mass,1.0058437381966807,27,False
+11,body_composition,Body Composition,Arms,female,body_comp_android_tissue_mass,Android Tissue Mass,1.0,28,False
+11,body_composition,Body Composition,Arms,male,total_scan_vat_area,Total Scan Vat Area,0.9337431303061627,29,False
+11,body_composition,Body Composition,Arms,male,waist,Waist,0.8459463722974832,30,False
+11,body_composition,Body Composition,Arms,female,body_comp_android_fat_mass,Android Fat Mass,0.7603249421687728,31,False
+11,body_composition,Body Composition,Arms,female,body_comp_total_lean_mass,Total Lean Mass,0.5697723836175573,32,False
+11,body_composition,Body Composition,Arms,male,body_comp_legs_lean_mass,Legs Lean Mass,0.12249193341266715,33,False
+11,body_composition,Body Composition,Arms,female,body_comp_legs_lean_mass,Legs Lean Mass,0.09960136603659857,34,False
+11,body_composition,Body Composition,Head,male,body_comp_android_fat_mass,Android Fat Mass,1.6706219715504493,1,True
+11,body_composition,Body Composition,Head,female,body_comp_total_bone_mass,Total Bone Mass,1.215874377201657,2,True
+11,body_composition,Body Composition,Head,female,body_comp_arms_lean_mass,Arms Lean Mass,1.0112468543474629,3,True
+11,body_composition,Body Composition,Head,female,body_comp_android_fat_mass,Android Fat Mass,0.921173414862743,4,True
+11,body_composition,Body Composition,Head,male,body_comp_total_bone_mass,Total Bone Mass,0.680779051170218,5,True
+11,body_composition,Body Composition,Head,male,body_comp_trunk_lean_mass,Trunk Lean Mass,0.5615585585035265,6,True
+11,body_composition,Body Composition,Head,female,body_comp_android_tissue_mass,Android Tissue Mass,0.44436769307703494,7,True
+11,body_composition,Body Composition,Head,female,body_comp_arms_tissue_mass,Arms Tissue Mass,0.35190160884377253,8,True
+11,body_composition,Body Composition,Head,female,body_comp_legs_fat_mass,Legs Fat Mass,0.1955397941680648,9,True
+11,body_composition,Body Composition,Head,female,body_comp_legs_lean_mass,Legs Lean Mass,0.1912425917298404,10,True
+11,body_composition,Body Composition,Head,female,body_comp_total_fat_mass,Total Fat Mass,0.17549298908695796,11,False
+11,body_composition,Body Composition,Head,male,body_comp_gynoid_tissue_mass,Gynoid Tissue Mass,0.16782974657737754,12,False
+11,body_composition,Body Composition,Head,male,waist,Waist,0.14935270115945465,13,False
+11,body_composition,Body Composition,Head,male,body_comp_android_tissue_mass,Android Tissue Mass,0.14381006919631703,14,False
+11,body_composition,Body Composition,Head,male,body_comp_arms_tissue_mass,Arms Tissue Mass,0.08895768677327788,15,False
+11,body_composition,Body Composition,Head,male,body_comp_total_lean_mass,Total Lean Mass,0.032225428326359884,16,False
+11,body_composition,Body Composition,Head,female,body_comp_total_lean_mass,Total Lean Mass,0.031154453468167562,17,False
+11,body_composition,Body Composition,Head,female,height,Height,0.016127901253748998,18,False
+11,body_composition,Body Composition,Head,male,body_comp_arms_fat_mass,Arms Fat Mass,0.0,19,False
+11,body_composition,Body Composition,Head,male,body_comp_arms_lean_mass,Arms Lean Mass,0.0,20,False
+11,body_composition,Body Composition,Head,male,body_comp_gynoid_fat_mass,Gynoid Fat Mass,0.0,21,False
+11,body_composition,Body Composition,Head,male,body_comp_legs_fat_mass,Legs Fat Mass,0.0,22,False
+11,body_composition,Body Composition,Head,male,body_comp_legs_lean_mass,Legs Lean Mass,0.0,23,False
+11,body_composition,Body Composition,Head,male,body_comp_total_fat_mass,Total Fat Mass,0.0,24,False
+11,body_composition,Body Composition,Head,male,body_comp_trunk_fat_mass,Trunk Fat Mass,0.0,25,False
+11,body_composition,Body Composition,Head,male,height,Height,0.0,26,False
+11,body_composition,Body Composition,Head,male,total_scan_vat_area,Total Scan Vat Area,0.0,27,False
+11,body_composition,Body Composition,Head,female,body_comp_arms_fat_mass,Arms Fat Mass,0.0,28,False
+11,body_composition,Body Composition,Head,female,body_comp_gynoid_fat_mass,Gynoid Fat Mass,0.0,29,False
+11,body_composition,Body Composition,Head,female,body_comp_gynoid_tissue_mass,Gynoid Tissue Mass,0.0,30,False
+11,body_composition,Body Composition,Head,female,body_comp_trunk_fat_mass,Trunk Fat Mass,0.0,31,False
+11,body_composition,Body Composition,Head,female,body_comp_trunk_lean_mass,Trunk Lean Mass,0.0,32,False
+11,body_composition,Body Composition,Head,female,total_scan_vat_area,Total Scan Vat Area,0.0,33,False
+11,body_composition,Body Composition,Head,female,waist,Waist,0.0,34,False
+11,body_composition,Body Composition,Legs,female,body_comp_legs_fat_mass,Legs Fat Mass,2.0,1,True
+11,body_composition,Body Composition,Legs,female,body_comp_legs_lean_mass,Legs Lean Mass,2.0,2,True
+11,body_composition,Body Composition,Legs,female,body_comp_total_fat_mass,Total Fat Mass,2.0,3,True
+11,body_composition,Body Composition,Legs,female,body_comp_total_lean_mass,Total Lean Mass,2.0,4,True
+11,body_composition,Body Composition,Legs,female,body_comp_trunk_fat_mass,Trunk Fat Mass,2.0,5,True
+11,body_composition,Body Composition,Legs,female,body_comp_trunk_lean_mass,Trunk Lean Mass,2.0,6,True
+11,body_composition,Body Composition,Legs,female,total_scan_vat_area,Total Scan Vat Area,2.0,7,True
+11,body_composition,Body Composition,Legs,male,body_comp_legs_lean_mass,Legs Lean Mass,1.8485384782481968,8,True
+11,body_composition,Body Composition,Legs,male,height,Height,1.82457896351567,9,True
+11,body_composition,Body Composition,Legs,female,height,Height,1.7821927959479789,10,True
+11,body_composition,Body Composition,Legs,female,waist,Waist,1.6822742188430442,11,False
+11,body_composition,Body Composition,Legs,male,total_scan_vat_area,Total Scan Vat Area,1.6775703197403482,12,False
+11,body_composition,Body Composition,Legs,female,body_comp_arms_lean_mass,Arms Lean Mass,1.6583331895350661,13,False
+11,body_composition,Body Composition,Legs,female,body_comp_total_bone_mass,Total Bone Mass,1.6073251361947067,14,False
+11,body_composition,Body Composition,Legs,male,body_comp_total_fat_mass,Total Fat Mass,1.5543673922331032,15,False
+11,body_composition,Body Composition,Legs,female,body_comp_gynoid_fat_mass,Gynoid Fat Mass,1.5373803768551095,16,False
+11,body_composition,Body Composition,Legs,male,body_comp_trunk_fat_mass,Trunk Fat Mass,1.493396945604863,17,False
+11,body_composition,Body Composition,Legs,male,body_comp_arms_fat_mass,Arms Fat Mass,1.3787956015659255,18,False
+11,body_composition,Body Composition,Legs,female,body_comp_gynoid_tissue_mass,Gynoid Tissue Mass,1.2755908803212566,19,False
+11,body_composition,Body Composition,Legs,male,body_comp_total_bone_mass,Total Bone Mass,1.179833884122824,20,False
+11,body_composition,Body Composition,Legs,male,body_comp_legs_fat_mass,Legs Fat Mass,1.0599259798901204,21,False
+11,body_composition,Body Composition,Legs,female,body_comp_android_tissue_mass,Android Tissue Mass,1.0597593924282056,22,False
+11,body_composition,Body Composition,Legs,male,body_comp_total_lean_mass,Total Lean Mass,1.0,23,False
+11,body_composition,Body Composition,Legs,female,body_comp_android_fat_mass,Android Fat Mass,1.0,24,False
+11,body_composition,Body Composition,Legs,female,body_comp_arms_tissue_mass,Arms Tissue Mass,0.9695177704519644,25,False
+11,body_composition,Body Composition,Legs,male,body_comp_trunk_lean_mass,Trunk Lean Mass,0.7807665212492882,26,False
+11,body_composition,Body Composition,Legs,male,body_comp_arms_lean_mass,Arms Lean Mass,0.7679052127662607,27,False
+11,body_composition,Body Composition,Legs,female,body_comp_arms_fat_mass,Arms Fat Mass,0.7624742859261732,28,False
+11,body_composition,Body Composition,Legs,male,body_comp_gynoid_fat_mass,Gynoid Fat Mass,0.6381726119876584,29,False
+11,body_composition,Body Composition,Legs,male,body_comp_android_tissue_mass,Android Tissue Mass,0.48161493634838876,30,False
+11,body_composition,Body Composition,Legs,male,body_comp_gynoid_tissue_mass,Gynoid Tissue Mass,0.3266465678438378,31,False
+11,body_composition,Body Composition,Legs,male,body_comp_arms_tissue_mass,Arms Tissue Mass,0.14997044758478514,32,False
+11,body_composition,Body Composition,Legs,male,body_comp_android_fat_mass,Android Fat Mass,0.0,33,False
+11,body_composition,Body Composition,Legs,male,waist,Waist,0.0,34,False
+11,body_composition,Body Composition,Torso,male,body_comp_android_tissue_mass,Android Tissue Mass,2.0,1,True
+11,body_composition,Body Composition,Torso,male,waist,Waist,2.0,2,True
+11,body_composition,Body Composition,Torso,male,body_comp_trunk_fat_mass,Trunk Fat Mass,1.9367830989582042,3,True
+11,body_composition,Body Composition,Torso,male,total_scan_vat_area,Total Scan Vat Area,1.9020426889039799,4,True
+11,body_composition,Body Composition,Torso,male,body_comp_total_lean_mass,Total Lean Mass,1.7764377914949878,5,True
+11,body_composition,Body Composition,Torso,male,body_comp_arms_fat_mass,Arms Fat Mass,1.6894940697102205,6,True
+11,body_composition,Body Composition,Torso,male,body_comp_legs_lean_mass,Legs Lean Mass,1.5503855800503445,7,True
+11,body_composition,Body Composition,Torso,male,body_comp_total_fat_mass,Total Fat Mass,1.543280874524281,8,True
+11,body_composition,Body Composition,Torso,male,body_comp_gynoid_tissue_mass,Gynoid Tissue Mass,1.5233361774098468,9,True
+11,body_composition,Body Composition,Torso,female,waist,Waist,1.3739483741218654,10,True
+11,body_composition,Body Composition,Torso,male,body_comp_trunk_lean_mass,Trunk Lean Mass,1.3684916787595989,11,False
+11,body_composition,Body Composition,Torso,female,body_comp_android_tissue_mass,Android Tissue Mass,1.3628416217708539,12,False
+11,body_composition,Body Composition,Torso,male,body_comp_gynoid_fat_mass,Gynoid Fat Mass,1.2389067770576208,13,False
+11,body_composition,Body Composition,Torso,male,body_comp_legs_fat_mass,Legs Fat Mass,1.2165484606455648,14,False
+11,body_composition,Body Composition,Torso,male,body_comp_android_fat_mass,Android Fat Mass,1.1253767664695904,15,False
+11,body_composition,Body Composition,Torso,male,body_comp_total_bone_mass,Total Bone Mass,1.0,16,False
+11,body_composition,Body Composition,Torso,female,body_comp_android_fat_mass,Android Fat Mass,1.0,17,False
+11,body_composition,Body Composition,Torso,female,body_comp_gynoid_tissue_mass,Gynoid Tissue Mass,0.7552392629226659,18,False
+11,body_composition,Body Composition,Torso,female,body_comp_trunk_fat_mass,Trunk Fat Mass,0.6433641225911465,19,False
+11,body_composition,Body Composition,Torso,male,body_comp_arms_tissue_mass,Arms Tissue Mass,0.6253277709482058,20,False
+11,body_composition,Body Composition,Torso,female,body_comp_arms_tissue_mass,Arms Tissue Mass,0.5155841581026804,21,False
+11,body_composition,Body Composition,Torso,male,body_comp_arms_lean_mass,Arms Lean Mass,0.5144251854602986,22,False
+11,body_composition,Body Composition,Torso,male,height,Height,0.467038135828264,23,False
+11,body_composition,Body Composition,Torso,female,body_comp_legs_fat_mass,Legs Fat Mass,0.4665665633119828,24,False
+11,body_composition,Body Composition,Torso,female,body_comp_arms_fat_mass,Arms Fat Mass,0.45986732511050643,25,False
+11,body_composition,Body Composition,Torso,female,body_comp_legs_lean_mass,Legs Lean Mass,0.45172607751967375,26,False
+11,body_composition,Body Composition,Torso,female,body_comp_trunk_lean_mass,Trunk Lean Mass,0.4374592607831327,27,False
+11,body_composition,Body Composition,Torso,female,body_comp_gynoid_fat_mass,Gynoid Fat Mass,0.4139422096117999,28,False
+11,body_composition,Body Composition,Torso,female,total_scan_vat_area,Total Scan Vat Area,0.40639091986295856,29,False
+11,body_composition,Body Composition,Torso,female,body_comp_total_fat_mass,Total Fat Mass,0.3905406198398776,30,False
+11,body_composition,Body Composition,Torso,female,height,Height,0.20103859791011217,31,False
+11,body_composition,Body Composition,Torso,female,body_comp_total_lean_mass,Total Lean Mass,0.10780199295104081,32,False
+11,body_composition,Body Composition,Torso,female,body_comp_arms_lean_mass,Arms Lean Mass,0.0,33,False
+11,body_composition,Body Composition,Torso,female,body_comp_total_bone_mass,Total Bone Mass,0.0,34,False
+12,metabolites,Metabolites,Arms,female,LysoPE(P-16_0_0_0),LysoPE 16,2.0,1,True
+12,metabolites,Metabolites,Arms,female,Sphingosine 1-phosphate (d16_1-P),Sphingosine 1-Phosphate (D16 1-P),2.0,2,True
+12,metabolites,Metabolites,Arms,female,indolelactate_	3-Indolehydracrylic acid,Indolelactate 3-Indolehydracrylic Acid,1.8839922760951908,3,True
+12,metabolites,Metabolites,Arms,female,4-Vinylphenol sulfate,4-Vinylphenol Sulfate,1.7379296328461007,4,True
+12,metabolites,Metabolites,Arms,male,indolelactate_	3-Indolehydracrylic acid,Indolelactate 3-Indolehydracrylic Acid,1.186733686214327,5,True
+12,metabolites,Metabolites,Arms,male,4-Vinylphenol sulfate,4-Vinylphenol Sulfate,1.0933434712579735,6,True
+12,metabolites,Metabolites,Arms,male,LysoPE(P-16_0_0_0),LysoPE 16,1.0179839380987512,7,True
+12,metabolites,Metabolites,Arms,male,Cortolone-3-glucuronide,Cortolone-3-Glucuronide,0.9635796465666715,8,True
+12,metabolites,Metabolites,Arms,female,Cortolone-3-glucuronide,Cortolone-3-Glucuronide,0.3360290431045062,9,True
+12,metabolites,Metabolites,Arms,male,Sphingosine 1-phosphate (d16_1-P),Sphingosine 1-Phosphate (D16 1-P),0.0,10,True
+12,metabolites,Metabolites,Head,female,4-Vinylphenol sulfate,4-Vinylphenol Sulfate,2.0,1,True
+12,metabolites,Metabolites,Head,male,LysoPE(P-16_0_0_0),LysoPE 16,1.547509016449272,2,True
+12,metabolites,Metabolites,Head,male,4-Vinylphenol sulfate,4-Vinylphenol Sulfate,1.347140527095465,3,True
+12,metabolites,Metabolites,Head,male,Sphingosine 1-phosphate (d16_1-P),Sphingosine 1-Phosphate (D16 1-P),1.2272093896672231,4,True
+12,metabolites,Metabolites,Head,male,indolelactate_	3-Indolehydracrylic acid,Indolelactate 3-Indolehydracrylic Acid,1.0,5,True
+12,metabolites,Metabolites,Head,male,Cortolone-3-glucuronide,Cortolone-3-Glucuronide,0.7111865172055718,6,True
+12,metabolites,Metabolites,Head,female,indolelactate_	3-Indolehydracrylic acid,Indolelactate 3-Indolehydracrylic Acid,0.3513759239039455,7,True
+12,metabolites,Metabolites,Head,female,LysoPE(P-16_0_0_0),LysoPE 16,0.26535526475984417,8,True
+12,metabolites,Metabolites,Head,female,Cortolone-3-glucuronide,Cortolone-3-Glucuronide,0.18211038477292682,9,True
+12,metabolites,Metabolites,Head,female,Sphingosine 1-phosphate (d16_1-P),Sphingosine 1-Phosphate (D16 1-P),0.15538262777129047,10,True
+12,metabolites,Metabolites,Legs,male,Cortolone-3-glucuronide,Cortolone-3-Glucuronide,2.0,1,True
+12,metabolites,Metabolites,Legs,male,indolelactate_	3-Indolehydracrylic acid,Indolelactate 3-Indolehydracrylic Acid,1.0,2,True
+12,metabolites,Metabolites,Legs,female,Cortolone-3-glucuronide,Cortolone-3-Glucuronide,1.0,3,True
+12,metabolites,Metabolites,Legs,female,indolelactate_	3-Indolehydracrylic acid,Indolelactate 3-Indolehydracrylic Acid,1.0,4,True
+12,metabolites,Metabolites,Legs,male,Sphingosine 1-phosphate (d16_1-P),Sphingosine 1-Phosphate (D16 1-P),0.7719239845608006,5,True
+12,metabolites,Metabolites,Legs,female,Sphingosine 1-phosphate (d16_1-P),Sphingosine 1-Phosphate (D16 1-P),0.5723941678235267,6,True
+12,metabolites,Metabolites,Legs,male,4-Vinylphenol sulfate,4-Vinylphenol Sulfate,0.0,7,True
+12,metabolites,Metabolites,Legs,male,LysoPE(P-16_0_0_0),LysoPE 16,0.0,8,True
+12,metabolites,Metabolites,Legs,female,4-Vinylphenol sulfate,4-Vinylphenol Sulfate,0.0,9,True
+12,metabolites,Metabolites,Legs,female,LysoPE(P-16_0_0_0),LysoPE 16,0.0,10,True
+12,metabolites,Metabolites,Torso,male,4-Vinylphenol sulfate,4-Vinylphenol Sulfate,2.0,1,True
+12,metabolites,Metabolites,Torso,male,LysoPE(P-16_0_0_0),LysoPE 16,1.989180339087813,2,True
+12,metabolites,Metabolites,Torso,female,4-Vinylphenol sulfate,4-Vinylphenol Sulfate,1.7046164746932937,3,True
+12,metabolites,Metabolites,Torso,male,Sphingosine 1-phosphate (d16_1-P),Sphingosine 1-Phosphate (D16 1-P),1.384479550825843,4,True
+12,metabolites,Metabolites,Torso,female,Cortolone-3-glucuronide,Cortolone-3-Glucuronide,1.233642724862383,5,True
+12,metabolites,Metabolites,Torso,female,LysoPE(P-16_0_0_0),LysoPE 16,1.0459903328586635,6,True
+12,metabolites,Metabolites,Torso,male,indolelactate_	3-Indolehydracrylic acid,Indolelactate 3-Indolehydracrylic Acid,0.9591176820066586,7,True
+12,metabolites,Metabolites,Torso,female,Sphingosine 1-phosphate (d16_1-P),Sphingosine 1-Phosphate (D16 1-P),0.8583236919266913,8,True
+12,metabolites,Metabolites,Torso,male,Cortolone-3-glucuronide,Cortolone-3-Glucuronide,0.43114683279107247,9,True
+12,metabolites,Metabolites,Torso,female,indolelactate_	3-Indolehydracrylic acid,Indolelactate 3-Indolehydracrylic Acid,0.3926905288087931,10,True

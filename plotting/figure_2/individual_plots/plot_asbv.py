@@ -50,7 +50,22 @@ TARGETS = {
 def load_data():
     metrics = pd.read_csv(os.path.join(RESULTS_DIR, 'asbv_metrics.csv'))
     movement = pd.read_csv(os.path.join(RESULTS_DIR, 'movement_features_asbv.csv'))
-    return metrics, movement
+    seeds = pd.read_csv(os.path.join(RESULTS_DIR, 'asbv_seed_values.csv'))
+    return metrics, movement, seeds
+
+
+def get_seed_vals(seeds, target, activity, gender, source):
+    """Per-seed values behind one bar (Nature data-distribution policy).
+
+    NOTE the vocabulary difference vs asbv_metrics.csv: there the movement-features
+    ensemble is stored as activity='gait', whereas here it is
+    source='features', activity='ensemble'.
+    """
+    sel = seeds[(seeds['target'] == target) & (seeds['activity'] == activity) &
+                (seeds['gender'] == gender) & (seeds['source'] == source)]
+    if sel.empty:
+        return None
+    return sel['value'].to_numpy(dtype=float)
 
 
 def get_val(metrics, target, activity, gender):
@@ -72,9 +87,8 @@ def get_movement_val(movement, target, activity_key, gender):
     return float(row['score'].iloc[0])
 
 
-def plot_grid_2x3(metrics, movement):
-    plt.rcParams['font.family'] = 'sans-serif'
-    plt.rcParams['font.sans-serif'] = ['Arial', 'Helvetica', 'DejaVu Sans']
+def plot_grid_2x3(metrics, movement, seeds):
+    # Font comes from the repo-root matplotlibrc (Times New Roman).
     plt.rcParams['axes.edgecolor'] = '#333333'
     plt.rcParams['axes.linewidth'] = 0.8
 
@@ -87,6 +101,7 @@ def plot_grid_2x3(metrics, movement):
             ax = axes[row_idx, col_idx]
 
             labels, emb_means, emb_stds, mov_means = [], [], [], []
+            emb_seed_lists, mov_seed_lists, mov_stds = [], [], []
 
             # Gait Fusion column: embedding ensemble + movement-features ensemble ('gait')
             ens_mean, ens_std = get_val(metrics, target, 'ensemble', subset)
@@ -95,6 +110,10 @@ def plot_grid_2x3(metrics, movement):
             emb_means.append(ens_mean)
             emb_stds.append(ens_std)
             mov_means.append(gait_mean)
+            emb_seed_lists.append(get_seed_vals(seeds, target, 'ensemble', subset, 'embeddings'))
+            fusion_mov_seeds = get_seed_vals(seeds, target, 'ensemble', subset, 'features')
+            mov_seed_lists.append(fusion_mov_seeds)
+            mov_stds.append(np.std(fusion_mov_seeds, ddof=1) if fusion_mov_seeds is not None else 0.0)
 
             # Per-activity columns
             for act in ACTIVITY_ORDER:
@@ -106,6 +125,10 @@ def plot_grid_2x3(metrics, movement):
                 emb_means.append(m)
                 emb_stds.append(s)
                 mov_means.append(mv if mv is not None else np.nan)
+                emb_seed_lists.append(get_seed_vals(seeds, target, act, subset, 'embeddings'))
+                act_mov_seeds = get_seed_vals(seeds, target, act, subset, 'features')
+                mov_seed_lists.append(act_mov_seeds)
+                mov_stds.append(np.std(act_mov_seeds, ddof=1) if act_mov_seeds is not None else 0.0)
 
             x = np.arange(len(labels))
             width = 0.35
@@ -117,7 +140,22 @@ def plot_grid_2x3(metrics, movement):
             ax.bar(x - width/2, emb_means, width, label='Gait Embeddings',
                    color=emb_color, zorder=3, yerr=emb_stds, error_kw=err_kw)
             ax.bar(x + width/2, mov_means, width, label='Gait Features',
-                   color=mov_color, zorder=3)
+                   color=mov_color, zorder=3, yerr=mov_stds, error_kw=err_kw)
+
+            # Nature policy: show the underlying data distribution, not just
+            # bar + error bar. One point per cross-validation seed.
+            for xc, vals in zip(x - width/2, emb_seed_lists):
+                if vals is None or len(vals) == 0:
+                    continue
+                jitter = np.linspace(-width * 0.17, width * 0.17, len(vals))
+                ax.scatter(xc + jitter, vals, s=16, color='black', alpha=0.55,
+                           linewidths=0.4, edgecolors='white', zorder=6)
+            for xc, vals in zip(x + width/2, mov_seed_lists):
+                if vals is None or len(vals) == 0:
+                    continue
+                jitter = np.linspace(-width * 0.17, width * 0.17, len(vals))
+                ax.scatter(xc + jitter, vals, s=16, color='black', alpha=0.55,
+                           linewidths=0.4, edgecolors='white', zorder=6)
 
             ax.set_ylabel(f'{TARGETS[target]["short"]} Prediction Power ($R$)',
                           fontsize=16, labelpad=10)
@@ -145,8 +183,8 @@ def plot_grid_2x3(metrics, movement):
 
 
 def main():
-    metrics, movement = load_data()
-    plot_grid_2x3(metrics, movement)
+    metrics, movement, seeds = load_data()
+    plot_grid_2x3(metrics, movement, seeds)
 
 
 if __name__ == '__main__':

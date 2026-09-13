@@ -1,7 +1,7 @@
 """
 Dumbbell plot for medical conditions and medications (male vs female).
 Publication-ready: 9 cm wide, 7.5 pt font, PNG + PDF per gender.
-Delta = score - max(baseline_score, 0.5)
+Delta = score - baseline_score
 """
 
 import os
@@ -27,6 +27,11 @@ MIN_POSITIVES = 10
 N_MEDICAL = 12
 N_MEDICATIONS = 5
 
+# Sex-specific unique-participant counts in the long_seq/ensemble predictions.
+# The metrics table's n_subjects is the number of participant-visit rows (3405),
+# not the number of unique RegistrationCodes (3328).
+COHORT_N = {"male": 1607, "female": 1721}
+
 # Publication figure dimensions: 9 cm wide
 FIG_WIDTH_CM = 9.0
 FIG_WIDTH_IN = FIG_WIDTH_CM / 2.54
@@ -39,10 +44,10 @@ GRID_COLOR = "#DADADA"
 TEXT_COLOR = "#333333"
 
 # x-axis layout (in data units)
-LABEL_X = 0.492
+LABEL_X = 0.30
 DELTA_X = 0.718
 DELTA_HEADER_X = 0.718
-X_LIM_MIN = 0.46
+X_LIM_MIN = 0.30
 X_LIM_MAX = 0.73
 
 EXCLUDE_SYSTEMS = {"medical_conditions_grouped"}
@@ -112,17 +117,15 @@ def load_seed_values(system, label, gender):
     ].sort_values("seed_idx")
     if sub.empty:
         return None, None
-    baseline_vals = np.maximum(sub["baseline_auc"].values, 0.5)
+    baseline_vals = sub["baseline_auc"].values
     gait_vals = sub["gait_auc"].values
     return baseline_vals, gait_vals
 
 
 def select_rows_for_gender(df, gender):
-    # Compute delta as score - max(baseline_score, 0.5) for proper filtering
+    # Compute delta against the unmodified baseline score.
     df = df.copy()
-    df["delta_corrected"] = df["score"] - df[["baseline_score"]].assign(
-        b=lambda x: x["baseline_score"].clip(lower=0.5)
-    )["b"]
+    df["delta_corrected"] = df["score"] - df["baseline_score"]
 
     filtered = df[
         (df["model"] == MODEL)
@@ -152,7 +155,7 @@ def select_rows_for_gender(df, gender):
             if baseline_seed is None or gait_seed is None:
                 continue
 
-            baseline_val = float(max(row["baseline_score"], 0.5))
+            baseline_val = float(row["baseline_score"])
             gait_val = float(row["score"])
             delta_val = gait_val - baseline_val
 
@@ -246,7 +249,7 @@ def draw_gender_panel(ax, panel_df, gender, panel_color, cohort_n=None, shared_y
     y_top = shared_y_max if shared_y_max is not None else rows[-1][0]
     ax.set_ylim(-1.0, y_top + 0.4)
     ax.invert_yaxis()
-    ax.set_xticks([0.50, 0.55, 0.60, 0.65, 0.70])
+    ax.set_xticks([0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70])
     ax.set_yticks([])
     ax.grid(axis="x", color=GRID_COLOR, linewidth=0.5, alpha=0.8)
 
@@ -330,9 +333,20 @@ def create_combined_plot(male_df, female_df, male_n, female_n):
         (axes[1], female_df, "female", FEMALE_COLOR, female_n, 0.80),
     ]
 
-    for ax, panel_df, gender, color, cohort_n, legend_x in panels:
+    for panel_label, (ax, panel_df, gender, color, cohort_n, legend_x) in zip(("a", "b"), panels):
         draw_gender_panel(ax, panel_df, gender, color, cohort_n=cohort_n)
         ax.set_xlabel("AUC-ROC", fontsize=FONT_SIZE, color="#666666")
+        ax.text(
+            -0.38,
+            1.08,
+            panel_label,
+            transform=ax.transAxes,
+            ha="right",
+            va="bottom",
+            fontsize=FONT_SIZE * 1.5,
+            fontweight="bold",
+            color=TEXT_COLOR,
+        )
 
         legend_handles = [
             Line2D([0], [0], marker="o", markersize=4, markerfacecolor="white", markeredgecolor=BASELINE_COLOR, lw=0, label="Age, BMI, VAT, Height"),
@@ -370,9 +384,9 @@ def create_dumbbell_plots():
     male_df, _ = select_rows_for_gender(df, "male")
     female_df, _ = select_rows_for_gender(df, "female")
 
-    create_single_gender_plot(male_df, "male", 1652, MALE_COLOR)
-    create_single_gender_plot(female_df, "female", 1762, FEMALE_COLOR)
-    create_combined_plot(male_df, female_df, 1652, 1762)
+    create_single_gender_plot(male_df, "male", COHORT_N["male"], MALE_COLOR)
+    create_single_gender_plot(female_df, "female", COHORT_N["female"], FEMALE_COLOR)
+    create_combined_plot(male_df, female_df, COHORT_N["male"], COHORT_N["female"])
 
 
 if __name__ == "__main__":
